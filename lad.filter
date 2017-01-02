@@ -1,0 +1,310 @@
+Show
+	Class Quest
+
+	
+# SPECIAL ITEMS	
+Show
+	Class "Fishing Rod"
+	SetTextColor 255 0 255
+	PlayAlertSound 1 300
+	SetFontSize 40
+	
+Show
+	BaseType "Albino Rhoa Feather"
+	SetTextColor 255 0 255
+	PlayAlertSound 1 300
+	SetFontSize 40
+	
+Show
+	BaseType "Sacrificial Garb"
+
+	
+# LABYRINTH
+Show
+#	BaseType "Silver Key" "Treasure Key" "Golden Key"
+	Class "Labyrinth"
+	SetTextColor 255 0 0
+	SetBorderColor 255 255 255
+	
+# GEMS
+Show
+    Class Gem
+    Quality > 0
+    SetBorderColor 128 128 255
+	
+Show
+	Class Gem
+	BaseType "Empower Support" "Enlighten Support" "Enhance Support" "Added Chaos Damage Support" "Detonate Mines" "Portal" "Vaal Breach"
+	SetBorderColor 128 128 255
+	SetFontSize 38
+
+	
+# LEAGUE ITEMS
+# Breach Splinters
+Show
+	BaseType "Splinter of Tul" "Splinter of Chayula" "Splinter of Uul-Netol" "Splinter of Xoph" "Splinter of Esh"
+	SetTextColor 160 32 240
+	SetBorderColor 160 32 240
+	SetFontSize 37
+# Breach Blessings
+Show
+	BaseType "Blessing of Tul" "Blessing of Chayula" "Blessing of Uul-Netol" "Blessing of Xoph" "Blessing of Esh"
+	SetTextColor 160 32 240
+	SetBorderColor 160 32 240
+	SetFontSize 37
+# Essences
+Show
+	BaseType "Essence"
+	SetTextColor 160 32 240
+	SetBorderColor 160 32 240
+# Essence
+Show
+	BaseType "Remnant"
+	SetTextColor 255 0 0
+	SetBorderColor 255 0 0
+# Perandus
+Show
+	BaseType "Perandus Coin"
+	SetBorderColor 255 0 0
+# Prophecy
+Show
+	BaseType "Silver Coin"
+	SetBorderColor 160 32 240
+# Talisman
+Show
+	BaseType "Talisman"
+	SetBorderColor 255 255 255
+
+	
+# MAPS
+Show
+	Class Map
+	SetBorderColor 255 0 255	
+
+Show
+	Class "Map Fragments"
+	SetBorderColor 255 0 0
+	
+Show
+	BaseType "Sextant"
+	SetTextColor 175 255 150
+	SetBorderColor 0 255 0
+
+	
+# SPECIAL ITEM DROPS
+Show
+    LinkedSockets >= 5
+    SetBackgroundColor 0 128 0
+	PlayAlertSound 5 300
+	SetFontSize 37
+
+Show
+    Sockets 6
+	SetTextColor 128 255 100
+    SetBorderColor 255 0 0
+	PlayAlertSound 3 300
+	SetFontSize 37
+	
+Show
+	Height <= 2
+    SocketGroup RGB
+    SetBorderColor 255 0 0
+	
+	
+
+# JEWEL
+Show
+	Class Jewel
+	SetBorderColor 255 125 255
+	
+	
+# CHISEL RECIPE
+Show
+	BaseType "Stone Hammer" "Rock Breaker" "Gavel"
+	Rarity Normal
+	SetBorderColor 200 200 0
+
+	
+# CURRENCY
+Show
+	BaseType "Exalted Orb" "Eternal Orb" "Divine Orb" "Mirror of Kalandra"
+	SetTextColor 255 0 255
+	PlayAlertSound 1 300
+	SetFontSize 40
+
+Show
+	BaseType "Chaos Orb" "Vaal Orb" "Orb of Alchemy" "Orb of Fusing" "Regal Orb" "Orb of Chance" "Gemcutter's Prism" "Cartographer's Chisel" "Orb of Regret"
+	SetTextColor 255 0 255
+	SetFontSize 38
+	
+Show
+	BaseType "Scroll of Wisdom" "Portal Scroll" "Armourer's Scrap" "Blacksmith's Whetstone"
+	
+Show
+	Class Currency
+	SetBorderColor 128 255 128
+	
+
+	
+	
+# DIVINATION CARDS
+Show
+	Class Card
+	SetBorderColor 128 0 255
+	SetFontSize 38
+
+	
+# UNIQUES
+Show
+	Rarity Unique
+	SetFontSize 35
+	PlayAlertSound 1 300
+	
+	
+# FLASKS
+Show
+    Class Flask
+    Quality > 0
+    SetBorderColor 255 0 0
+	
+Show
+	Class Utility
+	SetTextColor 0 255 255
+	
+Show
+	BaseType "Hallowed Life Flask" "Divine Life Flask" "Eternal Life Flask" "Hallowed Hybrid Flask"
+	
+Show
+	BaseType "Hallowed Mana Flask" "Divine Mana Flask" "Eternal Mana Flask"
+	
+## GG RARES
+# SHIELDS
+Show
+	Rarity Rare
+	BaseType "Titanium Spirit Shield" "Harmonic Spirit Shield" "Vaal Spirit Shield"
+	SetTextColor 100 200 200
+	SetBorderColor 255 255 0
+# OTHERS
+Show
+	Rarity Rare
+	BaseType "Vaal Regalia" "Hubris Circlet" "Sorcerer Gloves" "Sorcerer Boots" "Crystal Belt"
+	SetTextColor 100 200 200
+	SetBorderColor 255 255 0
+
+# RARE VENDOR RECIPES
+# REGAL
+Show
+	Rarity Rare
+	ItemLevel >= 75
+	SetBorderColor 255 255 255
+
+# CHAOS
+Show
+	Rarity Rare
+	ItemLevel >= 60
+	SetBorderColor 255 255 0
+	
+	
+# CHANCE ITEM BASES
+# "Titanium Spirit Shield""Prophecy Wand" "Slaughter Knife" "Occultist's Vestment"
+Show
+	BaseType  "Sorcerer Boots" 
+	Rarity Normal
+	SetBorderColor 255 128 128
+
+	
+# TOP TIER ITEM BASES
+# WEAPONS
+Show
+	ItemLevel > 80
+	BaseType "Harbinger Bow" "Vaal Axe" "Karui Chopper" "Ambusher" "Imperial Skean" "Jewelled Foil" "Vaal Rapier"
+
+# HELMS
+Show
+	ItemLevel > 80
+	BaseType "Hubris Circlet" "Royal Burgonet" "Eternal Burgonet" "Lion Pelt" "Sinner Tricorne"
+
+# ARMOUR
+Show
+	ItemLevel > 80
+	BaseType "Assassin's Garb" "Zodiac Leather" "Vaal Regalia" "Glorious Plate" "Astral Plate" "Gladiator Plate" "Saintly Chainmail"
+
+# SHIELDS	
+Show
+	ItemLevel > 80
+	BaseType "Ezomyte Tower Shield" "Colossal Tower Shield" "Pinnacle Tower Shield"
+	
+# BOOTS	
+Show
+	ItemLevel > 80
+	BaseType "Vaal Greaves" "Titan Greaves" "Stealth Boots" "Slink Boots" "Arcanist Slippers" "Sorcerer Boots"
+
+# GLOVES	
+Show
+	ItemLevel > 80
+	BaseType "Vaal Gauntlets" "Titan Gauntlets" "Stealth Gloves" "Slink Gloves" "Arcanist Gloves" "Sorcerer Gloves"
+	
+
+
+# SHOW GOOD BELTS
+Show
+	BaseType "Leather Belt" "Chain Belt" "Rustic Sash" "Heavy Belt" "Vanguard Belt" "Crystal Belt"
+	Rarity Normal
+
+
+# SHOW NEW 2.4 ITEMS
+Show
+	BaseType "Blue Pearl Amulet" "Marble Amulet" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
+	SetBorderColor 50 50 50
+	
+# ALWAYS SHOW
+Show
+	Rarity Rare
+	
+Show
+	Class Currency Ring Amulet
+	
+# GEMS - Hide most gems after lv60
+Show
+	BaseType "Immortal Call" "Spell Echo Support" "Faster Casting" "Blasphemy Support"
+	
+	
+# LEVELING
+# FLASKS
+Show
+	DropLevel <= 41
+	ItemLevel <= 41
+	BaseType Flask
+
+# 3 LINK
+Show
+	LinkedSockets = 3
+	DropLevel < 45
+	ItemLevel < 45
+	
+# 4 LINKS	
+Show
+	LinkedSockets = 4
+	SetBorderColor 255 255 255
+	DropLevel < 45
+	ItemLevel < 45
+
+Show
+	Class Gem
+	DropLevel < 45
+	
+# SHOW ALL LOW LVL DROPS WITH TINY FONT
+Show
+	DropLevel < 45
+	ItemLevel < 45
+	SetBackgroundColor 0 0 0 75
+	SetFontSize 24
+
+	
+	
+# HIDE REST
+Hide
+	Class "One Hand" "Two Hand" "Bow" "Staves" "Dagger" "Claw" "Sceptre" "Wand" "Quiver"
+	
+Hide
+	Class Armour Helmet Boots Gloves Shield Belt
