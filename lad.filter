@@ -224,6 +224,7 @@ Show
 	BaseType  "Sorcerer Boots" 
 	Rarity Normal
 	SetBorderColor 255 128 128
+	SetFontSize 42
 
 	
 # TOP TIER ITEM BASES
