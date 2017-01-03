@@ -152,9 +152,18 @@ Show
 	
 	
 # DIVINATION CARDS
+# Special Highlighting for valuable cards
 Show
 	Class Card
-	SetBorderColor 128 0 255
+	BaseType "The Doctor" "House of Mirrors" "The Fiend" "Mawr Blaidd" "Hunter's Reward" "The Immortal" "The Last One Standing" "The Dragon's Heart" "The Queen" "The Polymath" "Abandoned Wealth" "Wealth and Power" "The Ethereal" "The Thaumaturgist" "The Offering" "The Spark and the Flame" "The Artist" "The Brittle Emperor" "The Standoff" "Heterochromia" "The Wolf" "Bowyer's Dream" "The Hunger" "Last Hope" "The Sephirot" "The Saint's Treasure" "The Valkyrie" "The Enlightened" "The Harvester" "The Void" "The Vast" "The Chains that Bind" "Pride Before the Fall" "The Formless Sea" "The Celestial Justicar" "The Hoarder" "The King's Heart" "The Wolven King's Bite" "Chaotic Disposition" "Time-Lost Relic"
+	SetBorderColor 30 144 255
+	SetFontSize 41
+	PlayAlertSound 4
+	
+# The rest
+Show
+	Class Card
+	SetBorderColor 30 144 255
 	SetFontSize 38
 
 	
