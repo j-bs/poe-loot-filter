@@ -97,10 +97,14 @@ Show
 	
 # SPECIAL ITEM DROPS
 Show
-    LinkedSockets >= 5
+    LinkedSockets 6
     SetBackgroundColor 0 128 0
 	PlayAlertSound 5 300
 	SetFontSize 37
+	
+Show
+    LinkedSockets 5
+    SetBackgroundColor 0 128 0
 
 Show
     Sockets 6
