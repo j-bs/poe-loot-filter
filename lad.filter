@@ -40,40 +40,52 @@ Show
 
 	
 # LEAGUE ITEMS
+# Legacy
+Show
+	Class Leaguestone
+	SetBorderColor 0 255 255
+	
+	
 # Breach Splinters
 Show
 	BaseType "Splinter of Tul" "Splinter of Chayula" "Splinter of Uul-Netol" "Splinter of Xoph" "Splinter of Esh"
 	SetTextColor 160 32 240
 	SetBorderColor 160 32 240
 	SetFontSize 37
+	
 # Breach Blessings
 Show
 	BaseType "Blessing of Tul" "Blessing of Chayula" "Blessing of Uul-Netol" "Blessing of Xoph" "Blessing of Esh"
 	SetTextColor 160 32 240
 	SetBorderColor 160 32 240
 	SetFontSize 37
+	
 # Essences
 Show
 	Class Currency
 	BaseType "Essence"
 	SetTextColor 160 32 240
 	SetBorderColor 160 32 240
+	
 # Essence
 Show
 	Class Currency
 	BaseType "Remnant"
 	SetTextColor 255 0 0
 	SetBorderColor 255 0 0
+	
 # Perandus
 Show
 	Class Currency
 	BaseType "Perandus Coin"
 	SetBorderColor 255 0 0
+	
 # Prophecy
 Show
 	Class Currency
 	BaseType "Silver Coin"
 	SetBorderColor 160 32 240
+	
 # Talisman
 Show
 	BaseType "Talisman"
@@ -93,6 +105,12 @@ Show
 	BaseType "Sextant"
 	SetTextColor 175 255 150
 	SetBorderColor 0 255 0
+	
+Show
+	Class "Misc Map Items"
+	SetTextColor 160 32 240
+	SetBorderColor 160 32 240
+	SetFontSize 37
 
 	
 # SPECIAL ITEM DROPS
