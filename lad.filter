@@ -94,6 +94,12 @@ Show
 	
 # MAPS
 Show
+	Class "Misc Map Items"
+	SetTextColor 160 32 240
+	SetBorderColor 160 32 240
+	SetFontSize 37
+	
+Show
 	Class Map
 	SetBorderColor 255 0 255	
 
@@ -105,12 +111,7 @@ Show
 	BaseType "Sextant"
 	SetTextColor 175 255 150
 	SetBorderColor 0 255 0
-	
-Show
-	Class "Misc Map Items"
-	SetTextColor 160 32 240
-	SetBorderColor 160 32 240
-	SetFontSize 37
+
 
 	
 # SPECIAL ITEM DROPS
