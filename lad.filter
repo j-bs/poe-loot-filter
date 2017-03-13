@@ -287,19 +287,40 @@ Show
 Show
 	BaseType "Chain Belt" "Rustic Sash" "Heavy Belt" "Vanguard Belt" "Crystal Belt"
 	Rarity Normal
-
+	
+	
+# SPECIAL RINGS
+Show
+	BaseType "Prismatic Ring" "Opal Ring" "Steel Ring"
+	
+# SPECIAL AMULETS
+Show
+	BaseType "Marble Amulet" "Blue Pearl Amulet"
+	
 
 # SHOW NEW 2.4 ITEMS
 Show
-	BaseType "Blue Pearl Amulet" "Marble Amulet" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
+	BaseType "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
 	SetBorderColor 50 50 50
 	
-# ALWAYS SHOW
+# ALL RARES
 Show
 	Rarity Rare
-	
+
 Show
-	Class Currency Ring Amulet
+	Class Currency
+	
+# WHITE RINGS
+Show
+	Class Ring
+	BaseType "Unset Ring" "Two-Stone Ring" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Diamond Ring" "Moonstone Ring"
+	Rarity Normal
+	
+# WHITE AMULETS
+Show
+	Class Amulet
+	BaseType "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Agate Amulet" "Citrine Amulet" "Turquoise Amulet" "Onyx Amulet"
+	Rarity Normal
 	
 # GEMS - Hide most gems after lv60
 Show
@@ -336,7 +357,6 @@ Show
 	ItemLevel < 45
 	SetBackgroundColor 0 0 0 75
 	SetFontSize 24
-
 	
 	
 # HIDE REST
@@ -344,4 +364,4 @@ Hide
 	Class "One Hand" "Two Hand" "Bow" "Staves" "Dagger" "Claw" "Sceptre" "Wand" "Quiver"
 	
 Hide
-	Class Armour Helmet Boots Gloves Shield Belt
+	Class Armour Helmet Boots Gloves Shield Belt Ring Amulet
