@@ -244,7 +244,7 @@ Show
 # CHANCE ITEM BASES
 # "Titanium Spirit Shield""Prophecy Wand" "Slaughter Knife" "Occultist's Vestment"
 Show
-	BaseType  "Sorcerer Boots" 
+	BaseType  "Sorcerer Boots" "Leather Belt"
 	Rarity Normal
 	SetBorderColor 255 128 128
 	SetFontSize 42
@@ -285,7 +285,7 @@ Show
 
 # SHOW GOOD BELTS
 Show
-	BaseType "Leather Belt" "Chain Belt" "Rustic Sash" "Heavy Belt" "Vanguard Belt" "Crystal Belt"
+	BaseType "Chain Belt" "Rustic Sash" "Heavy Belt" "Vanguard Belt" "Crystal Belt"
 	Rarity Normal
 
 
