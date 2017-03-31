@@ -6,13 +6,13 @@ Show
 Show
 	Class "Fishing Rod"
 	SetTextColor 255 0 255
-	PlayAlertSound 1 300
+	PlayAlertSound 8 300
 	SetFontSize 40
 	
 Show
 	BaseType "Albino Rhoa Feather"
 	SetTextColor 255 0 255
-	PlayAlertSound 1 300
+	PlayAlertSound 8 300
 	SetFontSize 40
 	
 Show
@@ -29,7 +29,7 @@ Show
 # GEMS
 Show
     Class Gem
-    Quality > 0
+    Quality > 9
     SetBorderColor 128 128 255
 	
 Show
@@ -94,6 +94,11 @@ Show
 	
 # MAPS
 Show
+	BaseType "Shaped Strand Map" "Gorge Map" "Shaped Shore Map"
+	SetTextColor 255 165 0
+	SetBorderColor 255 0 255
+	SetFontSize 37
+Show
 	Class "Misc Map Items"
 	SetTextColor 160 32 240
 	SetBorderColor 160 32 240
@@ -107,11 +112,6 @@ Show
 	Class "Map Fragments"
 	SetBorderColor 255 0 0
 	
-Show
-	BaseType "Sextant"
-	SetTextColor 175 255 150
-	SetBorderColor 0 255 0
-
 
 	
 # SPECIAL ITEM DROPS
@@ -133,12 +133,18 @@ Show
 	SetFontSize 37
 	
 Show
+	Width 1
+	Height > 2
+	SocketGroup RGB
+	SetBorderColor 255 0 0
+	
+Show
 	Height <= 2
     SocketGroup RGB
     SetBorderColor 255 0 0
 	
 	
-
+	
 # JEWEL
 Show
 	Class Jewel
@@ -155,12 +161,12 @@ Show
 # CURRENCY
 Show
 	BaseType "Exalted Orb" "Eternal Orb" "Divine Orb" "Mirror of Kalandra"
-	SetTextColor 255 0 255
-	PlayAlertSound 1 300
+	SetTextColor 255 0 0
+	PlayAlertSound 8 300
 	SetFontSize 40
 
 Show
-	BaseType "Chaos Orb" "Vaal Orb" "Orb of Alchemy" "Orb of Fusing" "Regal Orb" "Orb of Chance" "Gemcutter's Prism" "Cartographer's Chisel" "Orb of Regret"
+	BaseType "Chaos Orb" "Vaal Orb" "Orb of Alchemy" "Orb of Fusing" "Regal Orb" "Orb of Chance" "Gemcutter's Prism" "Cartographer's Chisel" "Orb of Regret" "Orb of Scouring" "Sextant"
 	SetTextColor 255 0 255
 	SetFontSize 38
 	
@@ -176,31 +182,41 @@ Show
 	
 # DIVINATION CARDS
 # Special Highlighting for valuable cards
+#BIG BOIS
 Show
 	Class Card
-	BaseType "The Doctor" "House of Mirrors" "The Fiend" "Mawr Blaidd" "Hunter's Reward" "The Immortal" "The Last One Standing" "The Dragon's Heart" "The Queen" "The Polymath" "Abandoned Wealth" "Wealth and Power" "The Ethereal" "The Thaumaturgist" "The Offering" "The Spark and the Flame" "The Artist" "The Brittle Emperor" "The Standoff" "Heterochromia" "The Wolf" "Bowyer's Dream" "The Hunger" "Last Hope" "The Sephirot" "The Saint's Treasure" "The Valkyrie" "The Enlightened" "The Harvester" "The Void" "The Vast" "The Chains that Bind" "Pride Before the Fall" "The Formless Sea" "The Celestial Justicar" "The Hoarder" "The King's Heart" "The Wolven King's Bite" "Chaotic Disposition" "Time-Lost Relic"
-	SetBorderColor 30 144 255
-	SetFontSize 41
-	PlayAlertSound 4
+	BaseType "The Doctor" "House of Mirrors" "The Fiend"
+	SetBorderColor 255 0 0
+	SetTextColor 255 0 0
+	SetFontSize 40
+	PlayAlertSound 8 300
+	
+Show
+	Class Card
+	BaseType "Mawr Blaidd" "Hunter's Reward" "The Immortal" "The Last One Standing" "The Dragon's Heart" "The Queen" "The Polymath" "Abandoned Wealth" "Wealth and Power" "The Ethereal" "The Thaumaturgist" "The Offering" "The Spark and the Flame" "The Artist" "The Brittle Emperor" "The Standoff" "Heterochromia" "The Wolf" "Bowyer's Dream" "The Hunger" "Last Hope" "The Sephirot" "The Saint's Treasure" "The Valkyrie" "The Enlightened" "The Harvester" "The Void" "The Vast" "The Chains that Bind" "Pride Before the Fall" "The Formless Sea" "The Celestial Justicar" "The Hoarder" "The King's Heart" "The Wolven King's Bite" "Chaotic Disposition" "Time-Lost Relic"
+	SetBorderColor 255 0 0
+	SetTextColor 255 0 0
+	SetFontSize 40
+	PlayAlertSound 4 300
 	
 # The rest
 Show
 	Class Card
 	SetBorderColor 30 144 255
-	SetFontSize 38
+	SetFontSize 40
 
 	
 # UNIQUES
 Show
 	Rarity Unique
 	SetFontSize 35
-	PlayAlertSound 1 300
+	PlayAlertSound 1 250
 	
 	
 # FLASKS
 Show
     Class Flask
-    Quality > 0
+    Quality 20
     SetBorderColor 255 0 0
 	
 Show
@@ -213,20 +229,28 @@ Show
 Show
 	BaseType "Hallowed Mana Flask" "Divine Mana Flask" "Eternal Mana Flask"
 	
-## GG RARES
-# SHIELDS
+# Special Highlighting for T1 bases
+# JEWELRY
 Show
 	Rarity Rare
-	BaseType "Titanium Spirit Shield" "Harmonic Spirit Shield" "Vaal Spirit Shield"
-	SetTextColor 100 200 200
-	SetBorderColor 255 255 0
-# OTHERS
-Show
-	Rarity Rare
-	BaseType "Vaal Regalia" "Hubris Circlet" "Sorcerer Gloves" "Sorcerer Boots" "Crystal Belt"
+	BaseType "Crystal Belt" "Leather Belt" "Chain Belt" "Heavy Belt" "Rustic Sash" "Vanguard Belt" "Marble Amulet" "Blue Pearl Amulet" "Jade Amulet" "Lapis Amulet" "Amber Amulet" "Agate Amulet" "Citrine Amulet" "Turquoise Amulet" "Onyx Amulet" "Moonstone Ring" "Steel Ring" "Prismatic Ring" "Opal Ring" "Two-Stone Ring" "Diamond Ring" "Sapphire Ring" "Topaz Ring" "Ruby Ring"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
 
+#WEAPONS
+Show
+	Rarity Rare
+	BaseType "Runic Hatchet" "Gemini Claw" "Imperial Skean" "Sai" "Behemoth Mace" "Eternal Sword" "Jewelled Foil" "Imbued Wand" "Vaal Axe" "Fleshripper" "Harbinger Bow" "Coronal Maul" "Judgement Staff" "Exquisite Blade" "Platinum Kris" "Sambar Sceptre" "Void Sceptre" "Eclipse Staff" "Prophecy Wand"
+	SetTextColor 100 200 200
+	SetBorderColor 255 255 0
+
+#Armour
+Show
+	Rarity Rare
+	BaseType "Titanium Spirit Shield" "Vaal Regalia" "Hubris Circlet" "Sorcerer Gloves" "Sorcerer Boots" "Eternal Burgonet" "Lion Pelt" "Astral Plate" "Assassin's Garb" "Titan Greaves" "Slink Boots" "Spiked Gloves" "Fingerless Silk Gloves" "Gripped Gloves" "Pinnacle Tower Shield" "Imperial Buckler" "Broadhead Arrow Quiver" "Spike-Point Arrow Quiver"
+	SetTextColor 100 200 200
+	SetBorderColor 255 255 0
+	
 # RARE VENDOR RECIPES
 # REGAL
 Show
