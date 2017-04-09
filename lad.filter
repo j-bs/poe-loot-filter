@@ -245,7 +245,6 @@ Show
 Show
 	Class Flask
 	BaseType "Hallowed Mana Flask" "Divine Mana Flask" "Eternal Mana Flask"
-	
 	ItemLevel < 65
 
 ## GG RARES
@@ -419,8 +418,7 @@ Show
 # GEMS - Hide most gems after lv60
 Show
 	BaseType "Immortal Call" "Spell Echo Support" "Faster Casting" "Blasphemy Support"
-	
-	
+
 # LEVELING
 # FLASKS
 Show
@@ -433,7 +431,7 @@ Show
 	LinkedSockets = 3
 	DropLevel < 45
 	ItemLevel < 45
-	
+
 # 4 LINKS	
 Show
 	LinkedSockets = 4
