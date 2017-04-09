@@ -6,13 +6,13 @@ Show
 Show
 	Class "Fishing Rod"
 	SetTextColor 255 0 255
-	PlayAlertSound 1 300
+	PlayAlertSound 8 300
 	SetFontSize 40
 	
 Show
 	BaseType "Albino Rhoa Feather"
 	SetTextColor 255 0 255
-	PlayAlertSound 1 300
+	PlayAlertSound 8 300
 	SetFontSize 40
 	
 Show
@@ -215,9 +215,9 @@ Show
 Show
 	Rarity Unique
 	SetFontSize 35
-	PlayAlertSound 1 300
-	
-	
+	PlayAlertSound 6 250
+
+
 # FLASKS
 Show
     Class Flask
