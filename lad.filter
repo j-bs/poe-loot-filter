@@ -326,19 +326,23 @@ Show
 
 Show
 	Class Currency
-	
+
 # WHITE RINGS
 Show
 	Class Ring
 	BaseType "Unset Ring" "Two-Stone Ring" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Diamond Ring" "Moonstone Ring"
 	Rarity Normal
-	
+	ItemLevel < 60
+	ItemLevel >= 84
+
 # WHITE AMULETS
 Show
 	Class Amulet
 	BaseType "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Agate Amulet" "Citrine Amulet" "Turquoise Amulet" "Onyx Amulet"
 	Rarity Normal
-	
+	ItemLevel < 60
+	ItemLevel >= 84
+
 # GEMS - Hide most gems after lv60
 Show
 	BaseType "Immortal Call" "Spell Echo Support" "Faster Casting" "Blasphemy Support"
