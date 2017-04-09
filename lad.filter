@@ -363,14 +363,7 @@ Show
 	Class Gem
 	DropLevel < 45
 	
-# SHOW ALL LOW LVL DROPS WITH TINY FONT
-Show
-	DropLevel < 45
-	ItemLevel < 45
-	SetBackgroundColor 0 0 0 75
-	SetFontSize 24
-	
-	
+
 # HIDE REST
 Hide
 	Class "One Hand" "Two Hand" "Bow" "Staves" "Dagger" "Claw" "Sceptre" "Wand" "Quiver"
