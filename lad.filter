@@ -145,12 +145,19 @@ Show
     SetBorderColor 255 0 0
 	PlayAlertSound 3 300
 	SetFontSize 37
-	
+
+# CHROME 2x2
 Show
 	Height <= 2
     SocketGroup RGB
     SetBorderColor 255 0 0
-	
+
+# CHROME 1x3
+Show
+	Height 3
+	Width 1
+    SocketGroup RGB
+    SetBorderColor 255 0 0
 	
 
 # JEWEL
