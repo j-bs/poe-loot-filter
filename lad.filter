@@ -267,38 +267,37 @@ Show
 	SetBorderColor 255 128 128
 	SetFontSize 42
 
-	
+
 # TOP TIER ITEM BASES
 # WEAPONS
-Show
-	ItemLevel > 80
-	BaseType "Harbinger Bow" "Vaal Axe" "Karui Chopper" "Ambusher" "Imperial Skean" "Jewelled Foil" "Vaal Rapier"
+# Show
+	# ItemLevel > 80
+	# BaseType "Harbinger Bow" "Vaal Axe" "Karui Chopper" "Ambusher" "Imperial Skean" "Jewelled Foil" "Vaal Rapier"
 
-# HELMS
-Show
-	ItemLevel > 80
-	BaseType "Hubris Circlet" "Royal Burgonet" "Eternal Burgonet" "Lion Pelt" "Sinner Tricorne"
+# # HELMS
+# Show
+	# ItemLevel > 80
+	# BaseType "Hubris Circlet" "Royal Burgonet" "Eternal Burgonet" "Lion Pelt" "Sinner Tricorne"
 
-# ARMOUR
-Show
-	ItemLevel > 80
-	BaseType "Assassin's Garb" "Zodiac Leather" "Vaal Regalia" "Glorious Plate" "Astral Plate" "Gladiator Plate" "Saintly Chainmail"
+# # ARMOUR
+# Show
+	# ItemLevel > 80
+	# BaseType "Assassin's Garb" "Zodiac Leather" "Vaal Regalia" "Glorious Plate" "Astral Plate" "Gladiator Plate" "Saintly Chainmail"
 
-# SHIELDS	
-Show
-	ItemLevel > 80
-	BaseType "Ezomyte Tower Shield" "Colossal Tower Shield" "Pinnacle Tower Shield"
-	
-# BOOTS	
-Show
-	ItemLevel > 80
-	BaseType "Vaal Greaves" "Titan Greaves" "Stealth Boots" "Slink Boots" "Arcanist Slippers" "Sorcerer Boots"
+# # SHIELDS	
+# Show
+	# ItemLevel > 80
+	# BaseType "Ezomyte Tower Shield" "Colossal Tower Shield" "Pinnacle Tower Shield"
 
-# GLOVES	
-Show
-	ItemLevel > 80
-	BaseType "Vaal Gauntlets" "Titan Gauntlets" "Stealth Gloves" "Slink Gloves" "Arcanist Gloves" "Sorcerer Gloves"
-	
+# # BOOTS	
+# Show
+	# ItemLevel > 80
+	# BaseType "Vaal Greaves" "Titan Greaves" "Stealth Boots" "Slink Boots" "Arcanist Slippers" "Sorcerer Boots"
+
+# # GLOVES	
+# Show
+	# ItemLevel > 80
+	# BaseType "Vaal Gauntlets" "Titan Gauntlets" "Stealth Gloves" "Slink Gloves" "Arcanist Gloves" "Sorcerer Gloves"
 
 
 # SHOW GOOD BELTS
