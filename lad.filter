@@ -177,6 +177,7 @@ Show
 Show
 	BaseType "Exalted Orb" "Eternal Orb" "Divine Orb" "Mirror of Kalandra"
 	SetTextColor 255 0 255
+    SetBorderColor 255 0 255
 	PlayAlertSound 1 300
 	SetFontSize 40
 
