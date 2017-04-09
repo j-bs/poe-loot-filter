@@ -29,7 +29,7 @@ Show
 # GEMS
 Show
     Class Gem
-    Quality > 0
+    Quality > 9
     SetBorderColor 128 128 255
 	
 Show
