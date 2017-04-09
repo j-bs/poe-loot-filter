@@ -289,9 +289,13 @@ Show
 	# SetTextColor 100 200 200
 	# SetBorderColor 255 255 0
 
+# HIDE SHIT ITEMS
+Hide
 	Rarity Rare
 	ItemLevel >= 75
 	SetBorderColor 255 255 255
+	Class Shield Boots Gloves Armour Helm "One Hand" "Two Hand" "Bow" "Staves" "Claw" "Sceptre" "Quiver"
+	ItemLevel > 70
 
 # CHAOS
 # OTHERS
