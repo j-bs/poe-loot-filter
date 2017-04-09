@@ -82,12 +82,6 @@ Show
 	SetTextColor 255 0 0
 	SetBorderColor 255 0 0
 	
-# Perandus
-Show
-	Class Currency
-	BaseType "Perandus Coin"
-	SetBorderColor 255 0 0
-	
 # Prophecy
 Show
 	Class Currency
@@ -123,12 +117,6 @@ Show
 Show
 	Class "Map Fragments"
 	SetBorderColor 255 0 0
-	
-Show
-	BaseType "Sextant"
-	SetTextColor 175 255 150
-	SetBorderColor 0 255 0
-
 
 	
 # SPECIAL ITEM DROPS
@@ -177,7 +165,7 @@ Show
 	SetFontSize 40
 
 Show
-	BaseType "Chaos Orb" "Vaal Orb" "Orb of Alchemy" "Orb of Fusing" "Regal Orb" "Orb of Chance" "Gemcutter's Prism" "Cartographer's Chisel" "Orb of Regret"
+	BaseType "Chaos Orb" "Vaal Orb" "Orb of Alchemy" "Orb of Fusing" "Regal Orb" "Orb of Chance" "Gemcutter's Prism" "Cartographer's Chisel" "Orb of Regret" "Orb of Scouring" "Sextant" "Perandus Coin"
 	SetTextColor 255 0 255
 	SetFontSize 38
 	
