@@ -272,9 +272,6 @@ Show
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
 
-# RARE VENDOR RECIPES
-# REGAL
-Show
 # # QUIVER
 # Show
 	# Rarity Rare
@@ -292,16 +289,12 @@ Show
 # HIDE SHIT ITEMS
 Hide
 	Rarity Rare
-	ItemLevel >= 75
-	SetBorderColor 255 255 255
 	Class Shield Boots Gloves Armour Helm "One Hand" "Two Hand" "Bow" "Staves" "Claw" "Sceptre" "Quiver"
 	ItemLevel > 70
 
-# CHAOS
 # OTHERS
 Show
 	Rarity Rare
-	ItemLevel >= 60
 	BaseType "Crystal Belt"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
@@ -386,6 +379,20 @@ Show
 	Class Ring Amulet Belt
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
+
+# RARE VENDOR RECIPES
+# REGAL
+Show
+	Rarity Rare
+	ItemLevel >= 75
+	SetBorderColor 255 255 255
+
+# CHAOS
+Show
+	Rarity Rare
+	ItemLevel >= 60
+	SetBorderColor 255 255 0
+
 # ALL RARES
 Show
 	Rarity Rare
