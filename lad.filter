@@ -19,9 +19,8 @@ Show
 	BaseType "Sacrificial Garb"
 
 	
-# LABYRINTH
+# LAB
 Show
-#	BaseType "Silver Key" "Treasure Key" "Golden Key"
 	Class "Labyrinth"
 	SetTextColor 255 0 0
 	SetBorderColor 255 255 255
