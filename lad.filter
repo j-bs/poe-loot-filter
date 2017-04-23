@@ -378,13 +378,32 @@ Show
 	SetBorderColor 255 255 0
 	Rarity Rare
 	
-# HIGHIGHT JEWELRY AND BELTS
+# RARE JEWELRY
+# RINGS
 Show
 	Rarity Rare
-	Class Ring Amulet Belt
+	Class Ring
+	BaseType "Prismatic Ring" "Opal Ring" "Steel Ring" "Ruby Ring" "Topaz Ring" "Sapphire Ring" "Two-Stone Ring" "Unset Ring" "Diamond Ring" "Moonstone Ring" "Amethyst Ring" "Gold Ring"
+	SetTextColor 100 200 200
+	SetBorderColor 255 255 0
+	
+# AMULETS
+Show
+	Rarity Rare
+	Class Amulet
+	BaseType "Marble Amulet" "Blue Pearl Amulet" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Agate Amulet" "Citrine Amulet" "Turquoise Amulet" "Onyx Amulet" "Gold Amulet"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
 
+# BELTS
+Show
+	Rarity Rare
+	Class Belt
+	BaseType "Vanguard Belt" "Crystal Belt" "Chain Belt" "Rustic Sash" "Heavy Belt" "Leather Belt"
+	SetTextColor 100 200 200
+	SetBorderColor 255 255 0
+
+	
 # RARE VENDOR RECIPES
 # REGAL
 Show
