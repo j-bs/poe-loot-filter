@@ -151,13 +151,6 @@ Show
 Show
 	Class Jewel
 	SetBorderColor 255 125 255
-	
-	
-# CHISEL RECIPE
-Show
-	BaseType "Stone Hammer" "Rock Breaker" "Gavel"
-	Rarity Normal
-	SetBorderColor 200 200 0
 
 	
 # CURRENCY
@@ -418,6 +411,13 @@ Show
     SocketGroup RGB
     SetBorderColor 255 0 0
 
+
+# CHISEL RECIPE
+Show
+	BaseType "Stone Hammer" "Rock Breaker" "Gavel"
+	Rarity Normal
+	SetBorderColor 200 200 0
+	
 
 # LEVELING
 # FLASKS
