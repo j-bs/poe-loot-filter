@@ -352,18 +352,23 @@ Show
 	BaseType "Vanguard Belt" "Crystal Belt"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
+	SetFontSize 38
 
 # SPECIAL RINGS
 Show
+	Class Ring
 	BaseType "Prismatic Ring" "Opal Ring" "Steel Ring"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
+	SetFontSize 38
 
 # SPECIAL AMULETS
 Show
+	Class Amulet
 	BaseType "Marble Amulet" "Blue Pearl Amulet"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
+	SetFontSize 38
 
 
 # SHOW NEW 2.4 ITEMS
