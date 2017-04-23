@@ -167,7 +167,11 @@ Show
 	SetFontSize 38
 	
 Show
-	BaseType "Scroll of Wisdom" "Portal Scroll" "Armourer's Scrap" "Blacksmith's Whetstone"
+	BaseType "Scroll of Wisdom" "Portal Scroll" "Armourer's Scrap"
+	
+Show
+	BaseType "Blacksmith's Whetstone"
+	SetBorderColor 200 200 0
 	
 Show
 	Class Currency
