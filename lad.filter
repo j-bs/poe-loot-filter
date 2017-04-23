@@ -209,7 +209,7 @@ Show
 # FLASKS
 Show
     Class Flask
-    Quality > 14
+    Quality = 20
     SetBorderColor 255 0 0
 	
 Show
