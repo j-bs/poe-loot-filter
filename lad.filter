@@ -169,7 +169,7 @@ Show
 	SetFontSize 40
 
 Show
-	BaseType "Chaos Orb" "Vaal Orb" "Orb of Alchemy" "Orb of Fusing" "Regal Orb" "Orb of Chance" "Gemcutter's Prism" "Cartographer's Chisel" "Orb of Regret" "Orb of Scouring" "Sextant" "Perandus Coin"
+	BaseType "Chaos Orb" "Vaal Orb" "Orb of Alchemy" "Orb of Fusing" "Regal Orb" "Orb of Chance" "Gemcutter's Prism" "Cartographer's Chisel" "Orb of Regret" "Orb of Scouring" "Sextant"
 	SetTextColor 255 0 255
 	SetFontSize 38
 	
