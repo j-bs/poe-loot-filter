@@ -43,7 +43,7 @@ Show
 # Legacy - Best Stones
 Show
 	Class Leaguestone
-	BaseType "Breach Leaguestone" "Beyond Leaguestone" "Perandus Leaguestone" "Bloodlines Leaguestone"
+	BaseType "Breach Leaguestone" "Beyond Leaguestone" "Perandus Leaguestone" "Bloodlines Leaguestone" "Nemesis Leaguestone"
 	SetBorderColor 0 255 255
 	SetFontSize 37
 	PlayAlertSound 7 200
