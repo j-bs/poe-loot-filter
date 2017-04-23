@@ -292,6 +292,23 @@ Show
 	SetFontSize 42
 
 
+# CRAFTING ITEM BASES
+# ES GEAR
+Show
+	Rarity Normal
+	BaseType "Hubris Circlet" "Vaal Regalia" "Sorcerer Boots" "Sorcerer Gloves"
+	SetTextColor 175 255 150
+    SetBorderColor 0 255 0
+	ItemLevel >= 83
+	
+# WEAPONS ilvl 83
+Show
+	Rarity Normal Magic
+	BaseType "Ambusher" "Harbinger Bow" "Vaal Axe"
+	SetTextColor 175 255 150
+    SetBorderColor 0 255 0
+	ItemLevel = 83
+	
 # TOP TIER ITEM BASES
 # WEAPONS
 # Show
