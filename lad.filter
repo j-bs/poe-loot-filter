@@ -395,11 +395,9 @@ Show
 	ItemLevel < 60
 	ItemLevel >= 84
 
-# GEMS - Hide most gems after lv60
 
 # CHROME 2x2
 Show
-	BaseType "Immortal Call" "Spell Echo Support" "Faster Casting" "Blasphemy Support"
 	Height <= 2
     SocketGroup RGB
     SetBorderColor 255 0 0
