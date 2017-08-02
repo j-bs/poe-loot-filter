@@ -473,20 +473,39 @@ Show
 # 3 LINK
 Show
 	LinkedSockets = 3
-	DropLevel < 45
-	ItemLevel < 45
+	ItemLevel < 35
 
 # 4 LINKS	
 Show
 	LinkedSockets = 4
 	SetBorderColor 255 255 255
-	DropLevel < 45
 	ItemLevel < 45
 
 
+# LEVELING
+# HIDE NON-RARE WEPS L25+
+Hide
+	Rarity Magic Normal
+	Class "One Hand" "Two Hand" "Bow" "Staves" "Dagger" "Claw" "Sceptre" "Wand" "Quiver"
+	ItemLevel > 25
+	
+# HIDE NON-RARE ARMOUR 25+
+Hide
+	Rarity Magic Normal
+	Class Armour Helmet Boots Gloves Shield
+	ItemLevel > 25
+	
+# HIDE MAGIC JEWELRY 30+
+Hide
+	Rarity Magic
+	Class Ring Belt Amulet
+
+	
 # HIDE REST
 Hide
 	Class "One Hand" "Two Hand" "Bow" "Staves" "Dagger" "Claw" "Sceptre" "Wand" "Quiver"
+	ItemLevel > 50
 	
 Hide
     Class Armour Helmet Boots Gloves Shield Belt Ring Amulet Flask Gem
+	ItemLevel > 50
