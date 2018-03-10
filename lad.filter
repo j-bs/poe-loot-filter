@@ -41,6 +41,26 @@ Show
 
 	
 # LEAGUE ITEMS
+Show # Bestiary Orbs + Thaum Nets
+	Class Currency
+	BaseType "Bestiary Orb" "Imprinted Bestiary Orb"
+	SetBorderColor 0 255 255
+	SetTextColor 0 255 255
+	SetFontSize 38
+	
+Show # Thaum Nets
+	Class Currency
+	BaseType "Thaumaturgical Net" "Necromancy Net"
+	SetBorderColor 0 255 255
+	SetTextColor 0 255 255
+	SetFontSize 38
+	
+Show # T1-9 Nets
+	Class Currency
+	BaseType "Simple Rope Net" "Reinforced Rope Net" "Strong Rope Net" "Simple Iron Net" "Reinforced Iron Net" "Strong Iron Net" "Simple Steel Net" "Reinforced Steel Net" "Strong Steel Net"
+	SetBorderColor 0 255 255
+	SetFontSize 38
+
 # Harbinger
 Show
 	Class Currency
