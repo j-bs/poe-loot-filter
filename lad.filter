@@ -211,26 +211,8 @@ Show
 	PlayAlertSound 6 250
 
 
-# FLASKS
 Show
-    Class Flask
-    Quality = 20
-    SetBorderColor 255 0 0
-	
 Show
-	Class Utility
-	SetTextColor 0 255 255
-	ItemLevel < 70
-	
-Show
-	Class Flask
-	BaseType "Hallowed Life Flask" "Divine Life Flask" "Eternal Life Flask" "Hallowed Hybrid Flask"
-	ItemLevel < 70
-	
-Show
-	Class Flask
-	BaseType "Hallowed Mana Flask" "Divine Mana Flask" "Eternal Mana Flask"
-	ItemLevel < 65
 
 ## GG RARES
 # ES SHIELDS
@@ -441,6 +423,27 @@ Show
 	ItemLevel < 60
 	ItemLevel >= 84
 
+
+# FLASKS
+Show
+    Class Flask
+    Quality = 20
+    SetBorderColor 255 0 0
+	
+Show
+	Class Utility
+	SetTextColor 0 255 255
+	
+Show
+	Class Flask
+	BaseType "Hallowed Life Flask" "Divine Life Flask" "Eternal Life Flask" "Hallowed Hybrid Flask"
+	ItemLevel < 70
+	
+Show
+	Class Flask
+	BaseType "Hallowed Mana Flask" "Divine Mana Flask" "Eternal Mana Flask"
+	ItemLevel < 65
+	
 
 # CHROME 2x2
 Show
