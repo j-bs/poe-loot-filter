@@ -41,6 +41,37 @@ Show
 
 	
 # LEAGUE ITEMS
+# Harbinger
+Show
+	Class Currency
+	BaseType "Mirror Shard" "Exalted Shard"
+	SetFontSize 45
+	PlayAlertSound 1 300
+	SetBorderColor 0 255 255
+	SetTextColor 0 255 255
+
+Show
+	Class Currency
+	BaseType "Orb of Binding" "Orb of Horizons" "Harbinger's Orb" "Engineer's Orb" "Ancient Orb"
+	SetFontSize 38
+	PlayAlertSound 10 300
+	SetBorderColor 0 255 255
+	SetTextColor 0 255 255
+	
+Show
+	Class Currency
+	BaseType "Annulment Shard" "Binding Shard" "Horizon Shard" "Harbinger's Shard" "Engineer's Shard" "Ancient Shard"
+	SetFontSize 38
+	PlayAlertSound 10 300
+	SetBorderColor 0 255 255
+	SetTextColor 0 255 255
+	
+Show
+	Class Piece
+	SetFontSize 38
+	PlayAlertSound 10 300
+
+
 # Legacy - Best Stones
 Show
 	Class Leaguestone
