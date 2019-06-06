@@ -40,11 +40,30 @@ Show # Lvl 19/20 Gem
 
 Show # DROP ONLY GEMS
 	Class Gem
-	BaseType "Empower Support" "Enlighten Support" "Enhance Support" "Added Chaos Damage Support" "Detonate Mines" "Portal" "Vaal Breach" "Vaal Immortal Call"
+	BaseType "Empower Support" "Enlighten Support" "Enhance Support" "Added Chaos Damage Support" "Portal" "Vaal Breach" "Vaal Immortal Call"
 	SetFontSize 40
 
 	
 # LEAGUE ITEMS
+
+Show # GG Incubators
+	Class Incubator
+	BaseType "Time-Lost Incubator"
+	SetTextColor 100 159 255
+	SetBorderColor 100 159 255
+	SetFontSize 45
+	PlayAlertSound 1 300
+	MinimapIcon 0 Blue Diamond
+	PlayEffect Blue
+
+Show # All Incubators
+	Class Incubator
+	SetTextColor 100 159 255
+	SetBorderColor 100 159 255
+	SetFontSize 45
+	PlayAlertSound 16 250
+	MinimapIcon 1 Blue Diamond
+	PlayEffect Blue Temp
 
 Show # Fractured Items
 	FracturedItem True
@@ -260,9 +279,29 @@ Show # Delve Reliquary Key
 Show # Breachlord keys
 	Class "Misc Map Items"
 	SetTextColor 160 32 240
-    SetBorderColor 160 32 240
+	SetBorderColor 160 32 240
 	SetFontSize 45
-	PlayAlertSound 14 300
+	PlayAlertSound 9 300
+	MinimapIcon 0 Red Square
+	PlayEffect Red
+
+Show # Legion Emblems
+	Class "Stackable Currency"
+	BaseType "Timeless Karui Emblem" "Timeless Maraketh Emblem" "Timeless Eternal Empire Emblem" "Timeless Templar Emblem" "Timeless Vaal Emblem"
+	SetTextColor 160 32 240
+	SetBorderColor 160 32 240
+	SetFontSize 45
+	PlayAlertSound 9 300
+	MinimapIcon 0 Red Square
+	PlayEffect Red
+
+Show # Legion Splinters
+	Class "Stackable Currency"
+	BaseType "Timeless Karui Splinter" "Timeless Maraketh Splinter" "Timeless Eternal Empire Splinter" "Timeless Templar Splinter" "Timeless Vaal Splinter"
+	SetTextColor 160 32 240
+	SetBorderColor 160 32 240
+	SetFontSize 45
+	MinimapIcon 1 Red Triangle
 
 Show # T16 Elder Maps
 	Class Map
