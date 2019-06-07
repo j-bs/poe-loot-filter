@@ -669,13 +669,11 @@ Show
 	SetFontSize 40
 	
 	
-# CHANCE ITEM BASES
-# "Close Helmet"  "Glorious Plate" "Sapphire Flask"
-Show
-	BaseType "Leather Belt"
+Show # CHANCE ITEM BASES
+	BaseType "Glorious Plate" "Sapphire Flask" "Full Wyrmscale"		# "Close Helmet" "Leather Belt"
 	Rarity Normal
 	SetBorderColor 255 128 128
-	SetFontSize 40
+	SetFontSize 35
 
 
 # CRAFTING ITEM BASES
