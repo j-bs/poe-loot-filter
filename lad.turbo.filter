@@ -44,12 +44,19 @@ Show # DROP ONLY GEMS
 	SetFontSize 40
 	MinimapIcon 1 White Triangle
 
-	
+Show # Gems with low max level
+	Class Gem
+	BaseType "Brand Recall" "Blood and Sand" "Flesh and Stone"
+	GemLevel >= 5
+	SetBorderColor 128 128 255
+	SetFontSize 40
+	MinimapIcon 1 White Triangle
+
 # LEAGUE ITEMS
 
 Show # GG Incubators
 	Class Incubator
-	BaseType "Time-Lost Incubator"
+	BaseType "Time-Lost Incubator" "Geomancer's Incubator" "Eldritch Incubator"
 	SetTextColor 100 159 255
 	SetBorderColor 100 159 255
 	SetFontSize 45
@@ -86,6 +93,7 @@ Show # Gilded Scarabs
 	SetBorderColor 0 255 255
 	SetFontSize 45
 	PlayAlertSound 7 200
+	MinimapIcon 1 Yellow Triangle
 
 Show # Scarabs
 	Class "Map Fragments"
@@ -169,7 +177,7 @@ Show
 
 Show
 	Class Currency
-	BaseType "Orb of Binding" "Orb of Horizons" "Harbinger's Orb" "Engineer's Orb" "Ancient Orb"
+	BaseType "Orb of Binding" "Harbinger's Orb" "Engineer's Orb" "Ancient Orb"
 	SetFontSize 45
 	PlayAlertSound 10 300
 	SetBorderColor 0 255 255
@@ -191,6 +199,7 @@ Show
 	Class Piece
 	SetFontSize 45
 	PlayAlertSound 10 300
+	SetBorderColor 0 255 255
 
 
 # Legacy - Best Stones
@@ -298,11 +307,21 @@ Show # Breachlord keys
 	MinimapIcon 0 Red Square
 	PlayEffect Red
 
+Show # Legion Emblems T1
+	Class "Map Fragments"
+	BaseType "Timeless Maraketh Emblem" "Timeless Templar Emblem"
+	SetTextColor 255 90 90
+	SetBorderColor 255 90 90
+	SetFontSize 45
+	PlayAlertSound 1 300
+	MinimapIcon 0 Red Square
+	PlayEffect Red
+
 Show # Legion Emblems
 	Class "Map Fragments"
-	BaseType "Timeless Karui Emblem" "Timeless Maraketh Emblem" "Timeless Eternal Emblem" "Timeless Templar Emblem" "Timeless Vaal Emblem"
-	SetTextColor 160 32 240
-	SetBorderColor 160 32 240
+	BaseType "Timeless Karui Emblem" "Timeless Eternal Emblem" "Timeless Vaal Emblem"
+	SetTextColor 255 90 90
+	SetBorderColor 255 90 90
 	SetFontSize 45
 	PlayAlertSound 9 300
 	MinimapIcon 0 Red Square
@@ -316,6 +335,66 @@ Show # Legion Splinters
 	SetFontSize 45
 	MinimapIcon 1 Red Triangle
 
+# Map Fragments
+
+Show # Shaper Fragments
+	Class "Map Fragments"
+	BaseType "Fragment of the Hydra" "Fragment of the Phoenix" "Fragment of the Minotaur"  "Fragment of the Chimera"
+	SetTextColor 255 90 90
+	SetBorderColor 255 90 90
+	SetFontSize 45
+	PlayAlertSound 4 250
+	MinimapIcon 0 White Circle
+	PlayEffect White
+
+Show # Uber Atziri Fragments
+	Class "Map Fragments"
+	BaseType "Mortal Grief" "Mortal Rage" "Mortal Hope" "Mortal Ignorance"
+	SetTextColor 255 90 90
+	SetBorderColor 255 90 90
+	SetFontSize 45
+	PlayAlertSound 4 250
+	MinimapIcon 0 White Circle
+	PlayEffect White
+
+Show # Pale Council Fragments
+	Class "Map Fragments"
+	BaseType "Eber's Key" "Yriel's Key" "Inya's Key" "Volkuur's Key"
+	SetTextColor 255 90 90
+	SetBorderColor 255 90 90
+	SetFontSize 45
+	PlayAlertSound 4 250
+	MinimapIcon 0 White Circle
+	PlayEffect White
+
+Show # Atziri Fragments
+	Class "Map Fragments"
+	BaseType "Sacrifice at Dusk" "Sacrifice at Dawn" "Sacrifice at Noon" "Sacrifice at Midnight"
+	SetBorderColor 255 90 90
+	SetTextColor 255 90 90
+	SetFontSize 40
+	PlayAlertSound 12 300
+	MinimapIcon 1 White Circle
+
+Show # Breachstones
+	Class "Map Fragments"
+	BaseType "Breachstone"
+	SetTextColor 255 90 90
+	SetBorderColor 255 90 90
+	SetFontSize 45
+	PlayAlertSound 4 250
+	MinimapIcon 0 White Circle
+	PlayEffect White
+
+
+Show # Fragments Misc
+	Class "Map Fragments"
+	SetBorderColor 255 90 90
+	SetTextColor 255 90 90
+	SetFontSize 45
+	PlayAlertSound 12 300
+	MinimapIcon 1 White Circle
+
 
 Show # T16 Elder Maps
 	Class Map
@@ -326,7 +405,15 @@ Show # T16 Elder Maps
 	PlayAlertSound 9 300
 	MinimapIcon 0 Red Square
 	PlayEffect Red
-	
+
+Show # Unique Maps
+	Rarity Unique
+	Class Map
+	SetFontSize 45
+	PlayAlertSound 6 250
+	MinimapIcon 0 Brown Star
+	PlayEffect Brown
+
 Show # Red T11+ Maps
 	Class Map
 	MapTier >= 11
@@ -374,12 +461,6 @@ Show # White T1-5 Maps
 	SetFontSize 45
 	PlayAlertSound 14 300
 	MinimapIcon 1 White Square
-
-Show
-	Class "Map Fragments"
-	SetBorderColor 255 90 90
-	SetFontSize 45
-	PlayAlertSound 14 300
 
 
 Show # UNIQUES
@@ -446,7 +527,12 @@ Show
 Hide
 	Rarity Magic
 	Class Jewel "Abyss Jewel"
-	
+
+Show # Prophecy
+	Class Currency
+	BaseType "Prophecy"
+	SetFontSize 40
+
 # CURRENCY
 Show # T1 Currency
 	Class Currency
@@ -469,7 +555,7 @@ Show # T2 Currency
 
 Show # T3 Currency
 	Class Currency
-	BaseType "Chaos Orb" "Vaal Orb" "Orb of Alchemy" "Regal Orb" "Gemcutter's Prism" "Cartographer's Chisel" "Orb of Regret" "Sextant" "Orb of Scouring" "Orb of Fusing"
+	BaseType "Chaos Orb" "Vaal Orb" "Orb of Alchemy" "Regal Orb" "Gemcutter's Prism" "Cartographer's Chisel" "Orb of Regret" "Sextant" "Orb of Scouring" "Orb of Fusing" "Orb of Horizons" "Orb of Binding"
 	SetTextColor 255 0 255
 	SetFontSize 45
 	PlayAlertSound 12 300
@@ -482,7 +568,7 @@ Show
 	SetBorderColor 30 144 255
 	SetTextColor 0 125 200
 	SetFontSize 45
-	PlayAlertSound 4 250
+	PlayAlertSound 12 300
 	
 Hide
 	BaseType "Orb of Chance"
@@ -520,16 +606,16 @@ Show # T1 Cards
 	PlayAlertSound 1 300
 	
 
-Show # T3 - Workaround
+Hide # T3 - Workaround
 	Class Card
-	BaseType "The Wolf's Shadow"
+	BaseType "The Wolf's Shadow" "The Master Artisan"
 	SetBorderColor 30 144 255
 	SetFontSize 40
 	MinimapIcon 0 Blue Circle
 
 Show # T2 Cards
 	Class Card
-	BaseType "Mawr Blaidd" "Hunter's Reward" "The Immortal" "The Last One Standing" "The Dragon's Heart" "The Queen" "The Polymath" "Abandoned Wealth" "Wealth and Power" "The Ethereal" "The Thaumaturgist" "The Offering" "The Spark and the Flame" "The Artist" "The Brittle Emperor" "The Standoff" "Heterochromia" "The Wolf" "Bowyer's Dream" "The Hunger" "Last Hope" "The Sephirot" "The Saint's Treasure" "The Enlightened" "The Harvester" "The Void" "The Vast" "The Chains that Bind" "Pride Before the Fall" "The Formless Sea" "The Celestial Justicar" "The Hoarder" "The King's Heart" "The Wolven King's Bite" "Chaotic Disposition" "Time-Lost Relic" "The Celestial Stone" "Perfection" "The Hale Heart" "The Undisputed" "The Beast" "The Darkest Dream" "Harmony of Souls" "The Dreamland" "The Fathomless Depths" "The Master" "The Mayor" "The Professor" "The Samurai's Eye" "The Undaunted" "The Risk" "The Iron Bard" "The World Eater" "The Wind" "The Dreamer" "The Cartographer" "The Wilted Rose" "Beauty Through Death" "The Cacophony" "The Innocent" "The Price of Protection" "The Twilight Moon" "The Sacrifice" "A Dab of Ink" "The Master Artisan" "The Life Thief" "The Messenger" "The Mad King" "Boon of Justice" "The Journey" "Arrogance of the Vaal" "The Landing" "Seven Years Bad Luck" "The Golden Era" "Alone in the Darkness" "Sambodhi's Vow" "The Lord of Celebration" "Alluring Bounty" "Buried Treasure" "Burning Blood" "Pride of the First Ones"
+	BaseType "Mawr Blaidd" "Hunter's Reward" "The Immortal" "The Last One Standing" "The Dragon's Heart" "The Queen" "The Polymath" "Abandoned Wealth" "Wealth and Power" "The Ethereal" "The Thaumaturgist" "The Offering" "The Spark and the Flame" "The Artist" "The Brittle Emperor" "The Standoff" "Heterochromia" "The Wolf" "Bowyer's Dream" "The Hunger" "Last Hope" "The Sephirot" "The Saint's Treasure" "The Enlightened" "The Harvester" "The Void" "The Vast" "The Chains that Bind" "Pride Before the Fall" "The Formless Sea" "The Celestial Justicar" "The Hoarder" "The King's Heart" "The Wolven King's Bite" "Chaotic Disposition" "Time-Lost Relic" "The Celestial Stone" "Perfection" "The Hale Heart" "The Undisputed" "The Beast" "The Darkest Dream" "Harmony of Souls" "The Dreamland" "The Fathomless Depths" "The Master" "The Mayor" "The Professor" "The Samurai's Eye" "The Undaunted" "The Risk" "The Iron Bard" "The World Eater" "The Wind" "The Dreamer" "The Cartographer" "The Wilted Rose" "Beauty Through Death" "The Cacophony" "The Innocent" "The Price of Protection" "The Twilight Moon" "The Sacrifice" "A Dab of Ink" "The Life Thief" "The Messenger" "The Journey" "Arrogance of the Vaal" "The Landing" "Seven Years Bad Luck" "The Golden Era" "Alone in the Darkness" "Sambodhi's Vow" "The Lord of Celebration" "Alluring Bounty" "Buried Treasure" "Burning Blood" "Pride of the First Ones" "The Gladiator"
 	SetBorderColor 30 144 255
 	SetTextColor 0 125 200
 	SetFontSize 45
@@ -570,23 +656,30 @@ Show # Veiled Mod
 	SetFontSize 45
 	PlayAlertSound 16 250
 
+Show # Bestiary Mod Items
+	Identified True
+	HasExplicitMod "of Craiceann" "of Farrul" "of Fenumus" "of Saqawal"
+	SetBorderColor 155 210 135
+	SetFontSize 40
+	PlayAlertSound 16 250
+
 Show # Delve Mod Items
 	Identified True
 	HasExplicitMod "Subterranean" "of the Underground" "of Weaponcraft" "of Spellcraft" "of Crafting"
 	SetBorderColor 155 210 135
-	SetFontSize 45
+	SetFontSize 40
 	PlayAlertSound 16 250
 
 Show # Incursion Mod Items
 	HasExplicitMod "Tacati's" "Citaqualotl's" "Matatl's" "Topotante's" "Xopec's" "Guatelitzi's" "of Tacati" "of Citaqualotl" "of Matatl" "of Puhuarte" "of Guatelitzi"
 	SetBorderColor 155 210 135
-	SetFontSize 45
+	SetFontSize 40
 	PlayAlertSound 16 250
 
 Show # Warband Mod Items
 	Identified True
 	HasExplicitMod "Brinerot" "Mutewind" "Redblade" "Betrayer's" "Deceiver's" "Turncoat's"
-	SetFontSize 45
+	SetFontSize 40
 	SetBorderColor 155 210 135
 	PlayAlertSound 16 250
 
