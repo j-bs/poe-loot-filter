@@ -1,0 +1,10 @@
+# Non-repo PoE folders/files
+Countdown/*
+DailyDealCache/*
+Minimap/*
+MOTDCache/*
+Screenshots/*
+ShopImages/*
+*.ini
+*.credentials
+*.txt
