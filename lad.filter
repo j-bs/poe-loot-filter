@@ -53,6 +53,16 @@ Show # Gems with low max level
 
 # LEAGUE ITEMS
 
+Show # Blight Oils
+	Class "Stackable Currency"
+	BaseType "Clear Oil" "Sepia Oil" "Amber Oil" "Verdant Oil" "Teal Oil" "Azure Oil" "Violet Oil" "Crimson Oil" "Black Oil" "Opalescent Oil" "Silver Oil" "Golden Oil"
+	SetTextColor 255 181 0
+	SetBorderColor 255 181 0
+	SetFontSize 45
+	PlayAlertSound 11 300
+	MinimapIcon 0 Yellow Star
+	PlayEffect Yellow
+
 Show # GG Incubators
 	Class Incubator
 	BaseType "Time-Lost Incubator" "Geomancer's Incubator" "Eldritch Incubator"
@@ -108,14 +118,26 @@ Show # Delve Fossils
 	SetBorderColor 100 159 255
 	SetFontSize 45
 	PlayAlertSound 16 250
+
+Show # Prime Resonators
+	Class "Delve Stackable Socketable Currency"
+	BaseType "Prime Chaotic Resonator"	
+	SetTextColor 100 159 255
+	SetBorderColor 100 159 255
+	PlayAlertSound 1 300
+	SetFontSize 45
+	MinimapIcon 0 Red Triangle
+	PlayEffect Red
 	
 Show # Delve Resonators
-	Class Currency
+	Class "Delve Stackable Socketable Currency"
 	BaseType "Primitive Alchemical Resonator" "Potent Alchemical Resonator" "Powerful Alchemical Resonator" "Prime Alchemical Resonator" "Primitive Chaotic Resonator" "Potent Chaotic Resonator" "Powerful Chaotic Resonator" "Prime Chaotic Resonator"
 	SetTextColor 100 159 255
 	SetBorderColor 100 159 255
 	SetFontSize 45
 	PlayAlertSound 16 250
+	MinimapIcon 1 Yellow Triangle
+	PlayEffect Yellow
 
 
 Show # Incursion
@@ -229,22 +251,33 @@ Show # Breach Blessings
 	SetFontSize 45
 	MinimapIcon 0 Red Triangle
 
-Show # Epic Essences
+Show # T1 Essences
 	Class Currency
 	BaseType "Essence of Hysteria" "Essence of Delirium" "Essence of Horror" "Essence of Insanity"
 	SetTextColor 160 32 240
 	SetBorderColor 160 32 240
 	SetFontSize 45
-	PlayAlertSound 1 300
+	PlayAlertSound 4 300
 	MinimapIcon 0 Red Triangle
 	PlayEffect Red
-	
+
+Show # T2 Essences
+	Class Currency
+	BaseType "Deafening Essence" "Shrieking Essence" "Screaming Essence"
+	SetTextColor 160 32 240
+	SetBorderColor 160 32 240
+	SetFontSize 45
+	PlayAlertSound 12 300
+	MinimapIcon 0 Red Triangle
+
 Show # Essences
 	Class Currency
 	BaseType "Essence"
 	SetTextColor 160 32 240
 	SetBorderColor 160 32 240
-	SetFontSize 45
+	SetFontSize 40
+	PlayAlertSound 12 300
+	MinimapIcon 0 Red Triangle
 
 Show # Essence Remnant
 	Class Currency
@@ -314,9 +347,18 @@ Show # Legion Emblems
 	MinimapIcon 0 Red Square
 	PlayEffect Red
 
+Show # T1 Legion Splinters
+	Class "Stackable Currency"
+	BaseType "Timeless Maraketh Splinter" "Timeless Templar Splinter"
+	SetTextColor 160 32 240
+	SetBorderColor 160 32 240
+	SetFontSize 45
+	PlayAlertSound 12 300
+	MinimapIcon 0 Red Triangle
+
 Show # Legion Splinters
 	Class "Stackable Currency"
-	BaseType "Timeless Karui Splinter" "Timeless Maraketh Splinter" "Timeless Eternal Empire Splinter" "Timeless Templar Splinter" "Timeless Vaal Splinter"
+	BaseType "Timeless Karui Splinter" "Timeless Eternal Empire Splinter" "Timeless Vaal Splinter"
 	SetTextColor 160 32 240
 	SetBorderColor 160 32 240
 	SetFontSize 45
@@ -399,7 +441,17 @@ Show # Unique Maps
 	PlayAlertSound 6 250
 	MinimapIcon 0 Brown Star
 	PlayEffect Brown
-	
+
+Show # Blighted Maps
+	Class Map
+	BlightedMap True
+	SetTextColor 255 90 90
+	SetBorderColor 255 90 90
+	SetFontSize 45
+	PlayAlertSound 9 300
+	MinimapIcon 0 Red Square
+	PlayEffect Red
+
 Show # Red T11+ Maps
 	Class Map
 	MapTier >= 11
@@ -448,17 +500,36 @@ Show # White T1-5 Maps
 	MinimapIcon 1 White Square
 
 
-Show # TABULA
-	LinkedSockets 6
+# UNIQUES
+Show # Tabula
 	Rarity Unique
+	SocketGroup WWWWWW
 	BaseType "Simple Robe"
 	SetBorderColor 175 96 37
 	PlayAlertSound 5 300
 	SetFontSize 45
 	MinimapIcon 0 Brown Star
 	PlayEffect Brown
-	
-Show # UNIQUES
+
+Show # T1 Uniques
+	Rarity Unique
+	BaseType "Ambush Mitts" "Callous Mask" "Carnal Boots" "Crusader Boots" "Ezomyte Tower Shield" "Gemstone Sword" "Glorious Plate" "Golden Hoop" "Greatwolf Talisman" "Jingling Spirit Shield" "Legion Gloves" "Nightmare Mace" "Nubuck Boots" "Ornate Quiver" "Prismatic Jewel" "Prophecy Wand" "Rawhide Boots" "Riveted Gloves" "Royal Axe" "Ruby Amulet" "Ruby Flask" "Sorcerer Boots" "Timeless Jewel" "Vaal Rapier" "Wyrmscale Doublet" "Zodiac Leather"
+	SetBorderColor 175 96 37
+	PlayAlertSound 1 300
+	SetFontSize 45
+	MinimapIcon 0 Brown Star
+	PlayEffect Brown
+
+Show # Meta Uniques
+	Rarity Unique
+	BaseType "Ezomyte Dagger"
+	SetBorderColor 175 96 37
+	PlayAlertSound 1 300
+	SetFontSize 45
+	MinimapIcon 0 Brown Star
+	PlayEffect Brown
+
+Show # All Uniques
 	Rarity Unique
 	SetFontSize 45
 	PlayAlertSound 6 250
@@ -567,7 +638,7 @@ Show
 
 # DIVINATION CARDS
 Show # T1 Cards
-	BaseType "The Doctor" "House of Mirrors" "The Fiend" "Immortal Resolve"
+	BaseType "The Doctor" "House of Mirrors" "The Fiend" "Immortal Resolve" "The Demon" "The Old Man"
 	SetBorderColor 30 144 255
 	SetTextColor 0 125 200
 	SetFontSize 45
@@ -583,7 +654,7 @@ Show # T3 - Workaround
 
 Show # T2 Cards
 	Class Card
-	BaseType "Mawr Blaidd" "Hunter's Reward" "The Immortal" "The Last One Standing" "The Dragon's Heart" "The Queen" "The Polymath" "Abandoned Wealth" "Wealth and Power" "The Ethereal" "The Thaumaturgist" "The Offering" "The Spark and the Flame" "The Artist" "The Brittle Emperor" "The Standoff" "Heterochromia" "The Wolf" "Bowyer's Dream" "The Hunger" "Last Hope" "The Sephirot" "The Saint's Treasure" "The Enlightened" "The Harvester" "The Void" "The Vast" "The Chains that Bind" "Pride Before the Fall" "The Formless Sea" "The Celestial Justicar" "The Hoarder" "The King's Heart" "The Wolven King's Bite" "Chaotic Disposition" "Time-Lost Relic" "The Celestial Stone" "Perfection" "The Hale Heart" "The Undisputed" "The Beast" "The Darkest Dream" "Harmony of Souls" "The Dreamland" "The Fathomless Depths" "The Master" "The Mayor" "The Professor" "The Samurai's Eye" "The Undaunted" "The Risk" "The Iron Bard" "The World Eater" "The Wind" "The Dreamer" "The Cartographer" "The Wilted Rose" "Beauty Through Death" "The Cacophony" "The Innocent" "The Price of Protection" "The Twilight Moon" "The Sacrifice" "A Dab of Ink" "The Life Thief" "The Messenger" "The Journey" "Arrogance of the Vaal" "The Landing" "Seven Years Bad Luck" "The Golden Era" "Alone in the Darkness" "Sambodhi's Vow" "The Lord of Celebration" "Alluring Bounty" "Buried Treasure" "Burning Blood" "Pride of the First Ones" "The Porcupine" "The Gladiator"
+	BaseType "Mawr Blaidd" "Hunter's Reward" "The Immortal" "The Last One Standing" "The Dragon's Heart" "The Queen" "The Polymath" "Abandoned Wealth" "Wealth and Power" "The Ethereal" "The Thaumaturgist" "The Offering" "The Spark and the Flame" "The Artist" "The Brittle Emperor" "The Standoff" "Heterochromia" "The Wolf" "Bowyer's Dream" "The Hunger" "Last Hope" "The Sephirot" "The Saint's Treasure" "The Enlightened" "The Harvester" "The Void" "The Vast" "The Chains that Bind" "Pride Before the Fall" "The Formless Sea" "The Celestial Justicar" "The Hoarder" "The King's Heart" "The Wolven King's Bite" "Chaotic Disposition" "Time-Lost Relic" "The Celestial Stone" "Perfection" "The Hale Heart" "The Undisputed" "The Beast" "The Darkest Dream" "Harmony of Souls" "The Dreamland" "The Fathomless Depths" "The Master" "The Mayor" "The Professor" "The Samurai's Eye" "The Undaunted" "The Risk" "The Iron Bard" "The World Eater" "The Wind" "The Dreamer" "The Cartographer" "The Wilted Rose" "Beauty Through Death" "The Cacophony" "The Innocent" "The Price of Protection" "The Twilight Moon" "The Sacrifice" "The Life Thief" "The Messenger" "Arrogance of the Vaal" "The Landing" "Seven Years Bad Luck" "The Golden Era" "Alone in the Darkness" "Sambodhi's Vow" "The Lord of Celebration" "Alluring Bounty" "Buried Treasure" "Burning Blood" "Pride of the First Ones" "The Porcupine" "The Gladiator" "The Damned" "Remembrance" "The Price of Loyalty" "Nook's Crown" "The Eye of Terror" "Azyran's Reward"
 	SetBorderColor 30 144 255
 	SetTextColor 0 125 200
 	SetFontSize 45
@@ -592,7 +663,7 @@ Show # T2 Cards
 	
 Show # T3 Cards
 	Class Card
-	BaseType "The Encroaching Darkness" "The Survivalist" "The Fathomless Depths" "Humility" "Scholar of the Seas" "Vinia's Token" "No Traces" "The Wrath" "The Seeker" "Lucky Connections" "The Jeweller's Boon" "The Inventor" "Emperor of Purity" "Monochrome" "The Mad King" "The Obscured" "The Valkyrie" "Three Faces in the Dark" "The Valley of Steel Boxes" "Dark Dreams" "The Fool" "Imperial Legacy" "Vanity" "The Primordial" "Thirst for Knowledge" "Demigod's Wager" "The Deep Ones" "The Master Artisan"
+	BaseType "The Encroaching Darkness" "The Survivalist" "The Fathomless Depths" "Humility" "Scholar of the Seas" "Vinia's Token" "No Traces" "The Wrath" "The Seeker" "Lucky Connections" "The Jeweller's Boon" "The Inventor" "Emperor of Purity" "Monochrome" "The Mad King" "The Obscured" "The Valkyrie" "Three Faces in the Dark" "The Valley of Steel Boxes" "Dark Dreams" "The Fool" "Imperial Legacy" "Vanity" "The Primordial" "Thirst for Knowledge" "Demigod's Wager" "The Deep Ones" "The Master Artisan" "More is Never Enough" "The Bargain" "The Deal" "Void of the Elements" "The Wolf's Legacy" "The Heroic Shot" "Akil's Prophecy" "The Journey" "A Dab of Ink"
 	SetBorderColor 30 144 255
 	SetTextColor 0 125 200
 	SetFontSize 45
@@ -845,20 +916,13 @@ Show # Weapons i83+
 	SetFontSize 36
 	ItemLevel >= 83
 
-
-# SHOW GOOD BELTS
-# Show
-	# BaseType "Chain Belt" "Rustic Sash" "Heavy Belt" 
-	# Rarity Normal
-
-
-Show # T1 Belt Bases - Stygian
+Show # Stygian Belts
 	BaseType "Stygian Vise"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
 	SetFontSize 45
 	
-Show # T1 Belt Bases - Crystal
+Show # T1 Atlas Belts
 	BaseType "Crystal Belt"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
@@ -866,13 +930,12 @@ Show # T1 Belt Bases - Crystal
 	PlayAlertSound 12 300
 	MinimapIcon 0 Yellow Circle
 
-Show # SPECIAL BELTS
+Show # Atlas Belts
 	BaseType "Vanguard Belt" 
 	SetBorderColor 255 255 255
 	SetFontSize 40
 
-# SPECIAL RINGS
-Show
+Show # T1 Atlas Rings
 	Class Ring
 	BaseType  "Opal Ring" "Steel Ring"
 #	SetTextColor 100 200 200
@@ -880,17 +943,14 @@ Show
 	SetFontSize 40
 	PlayAlertSound 13 300
 
-# SPECIAL AMULETS
-Show
+Show # Atlas Jewelry
 	Class Amulet Ring
-	BaseType "Marble Amulet" "Blue Pearl Amulet" "Prismatic Ring"
+	BaseType "Marble Amulet" "Blue Pearl Amulet" "Prismatic Ring" "Vermillion Ring" "Cerulean Ring"
 #	SetTextColor 100 200 200
 	SetBorderColor 255 255 255
 	SetFontSize 40
 
-
-# SHOW NEW 2.4 ITEMS
-Show
+Show # Atlas Items
 	BaseType "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
 	#SetTextColor 50 50 50
 	SetBorderColor 50 50 50
@@ -898,8 +958,7 @@ Show
 #	PlayAlertSound 12 300
 	
 # RARE JEWELRY
-# RINGS
-Show
+Show # T1 Rare Rings
 	Rarity Rare
 	Class Ring
 	BaseType "Prismatic Ring" "Opal Ring" "Steel Ring" "Ruby Ring" "Topaz Ring" "Sapphire Ring" "Two-Stone Ring" "Unset Ring" "Diamond Ring" "Moonstone Ring" "Amethyst Ring" "Gold Ring"
