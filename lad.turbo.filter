@@ -5,6 +5,12 @@ Show # Quest
 	MinimapIcon 0 Green Circle
 	PlayEffect Green
 
+Show # LAB
+	Class "Labyrinth"
+	SetFontSize 45
+	MinimapIcon 0 Green Circle
+	PlayEffect Green
+
 Show # Fishing Rods
 	Class "Fishing Rod"
 	SetTextColor 255 0 255
@@ -18,41 +24,105 @@ Show
 	BaseType "Sacrificial Garb"
 	SetFontSize 45
 
-
-Show # LAB
-	Class "Labyrinth"
-	SetTextColor 255 0 0
-	SetBorderColor 255 255 255
-	SetFontSize 45
-
 # GEMS
-Show # Quality Gems
+Show # Awakened Gems
 	Class Gem
-	Quality > 9
+	BaseType "Awakened"
+	SetTextColor 255 0 255
+	SetBorderColor 255 0 255
+	PlayAlertSound 1 300
+	SetFontSize 45
+	MinimapIcon 0 Red Triangle
+	PlayEffect Red
+
+Show # Lvl 21 Gems
+	Class Gem
+	GemLevel = 21
 	SetBorderColor 128 128 255
-	SetFontSize 40
+	SetFontSize 45
+	PlayAlertSound 4 250
+	MinimapIcon 0 White Triangle
+
+Show # Lvl 2+ Empower/Enlighten/Enhance
+	Class Gem
+	BaseType "Empower" "Enhance" "Enlighten"
+	GemLevel >= 2
+	SetBorderColor 128 128 255
+	SetFontSize 45
+	PlayAlertSound 4 250
+	MinimapIcon 0 White Triangle
+
+Show # Lv 7 Special Gems
+	Class Gem
+	BaseType "Brand Recall" "Blood and Sand"
+	GemLevel >= 5
+	SetBorderColor 128 128 255
+	SetFontSize 45
+	PlayAlertSound 4 250
+	MinimapIcon 0 White Triangle
 
 Show # Lvl 19/20 Gem
 	Class Gem
 	GemLevel >= 18
 	SetBorderColor 128 128 255
 	SetFontSize 40
+	MinimapIcon 1 White Triangle
 
-Show # DROP ONLY GEMS
+Show # T1 Drop Only Gems
 	Class Gem
-	BaseType "Empower Support" "Enlighten Support" "Enhance Support" "Added Chaos Damage Support" "Portal" "Vaal Breach" "Vaal Immortal Call"
+	BaseType "Empower Support" "Enlighten Support" "Enhance Support"
+	SetFontSize 40
+	PlayAlertSound 12 300
+	MinimapIcon 1 White Triangle
+
+Show # T2 Drop Only Gems
+	Class Gem
+	BaseType "Added Chaos Damage Support" "Portal" "Vaal Breach" "Vaal Immortal Call"
 	SetFontSize 40
 	MinimapIcon 1 White Triangle
 
 Show # Gems with low max level
 	Class Gem
-	BaseType "Brand Recall" "Blood and Sand" "Flesh and Stone"
+	BaseType "Brand Recall" "Blood and Sand"
 	GemLevel >= 5
 	SetBorderColor 128 128 255
 	SetFontSize 40
 	MinimapIcon 1 White Triangle
 
+Show # 20 Quality Gems
+	Class Gem
+	Quality = 20
+	SetBorderColor 128 128 255
+	SetFontSize 40
+	PlayAlertSound 12 300
+	MinimapIcon 1 White Triangle
+
+Show # Quality Gems
+	Class Gem
+	Quality > 14
+	SetBorderColor 128 128 255
+	SetFontSize 40
+	MinimapIcon 1 White Triangle
+
 # LEAGUE ITEMS
+
+Show #Metamorph Samples
+	Class "Metamorph Sample"
+	BaseType "Metamorph Brain" "Metamorph Eye" "Metamorph Liver" "Metamorph Lung" "Metamorph Heart"
+	SetTextColor 43 148 1
+	SetBorderColor 43 148 1
+	SetFontSize 45
+	PlayAlertSound 11 300
+	MinimapIcon 1 Green Star
+
+Show # Metamorph Catalysts
+	Class "Stackable Currency"
+	BaseType "Turbulent Catalyst" "Imbued Catalyst" "Abrasive Catalyst" "Tempering Catalyst" "Fertile Catalyst" "Prismatic Catalyst" "Intrinsic Catalyst" 
+	SetTextColor 43 148 1
+	SetBorderColor 43 148 1
+	SetFontSize 45
+	PlayAlertSound 11 300
+	MinimapIcon 1 Green Star
 
 Show # Blight Oils
 	Class "Stackable Currency"
@@ -372,9 +442,29 @@ Show # Legion Splinters
 
 # Map Fragments
 
+Show # Elder Fragments
+	Class "Map Fragments"
+	BaseType "Fragment of Enslavement" "Fragment of Eradication" "Fragment of Constriction" "Fragment of Purification"
+	SetTextColor 255 90 90
+	SetBorderColor 255 90 90
+	SetFontSize 45
+	PlayAlertSound 4 250
+	MinimapIcon 0 White Circle
+	PlayEffect White
+
+Show # Uber Elder Fragments
+	Class "Map Fragments"
+	BaseType "Fragment of Shape" "Fragment of Knowledge" "Fragment of Terror" "Fragment of Emptiness"
+	SetTextColor 255 90 90
+	SetBorderColor 255 90 90
+	SetFontSize 45
+	PlayAlertSound 4 250
+	MinimapIcon 0 White Circle
+	PlayEffect White
+
 Show # Shaper Fragments
 	Class "Map Fragments"
-	BaseType "Fragment of the Hydra" "Fragment of the Phoenix" "Fragment of the Minotaur"  "Fragment of the Chimera"
+	BaseType "Fragment of the Hydra" "Fragment of the Phoenix" "Fragment of the Minotaur" "Fragment of the Chimera"
 	SetTextColor 255 90 90
 	SetBorderColor 255 90 90
 	SetFontSize 45
@@ -430,6 +520,15 @@ Show # Fragments Misc
 	PlayAlertSound 12 300
 	MinimapIcon 1 White Circle
 
+Show # Watchstones
+	Class "Atlas Region Upgrade Item"
+	BaseType "Watchstone"
+	SetTextColor 255 90 90
+	SetBorderColor 255 90 90
+	SetFontSize 45
+	PlayAlertSound 4 250
+	MinimapIcon 0 White Circle
+	PlayEffect White
 
 Show # T16 Elder Maps
 	Class Map
@@ -600,7 +699,7 @@ Show # Prophecy
 # CURRENCY
 Show # T1 Currency
 	Class Currency
-	BaseType "Exalted Orb" "Eternal Orb" "Divine Orb" "Mirror of Kalandra" "Albino Rhoa Feather" "Orb of Annulment"
+	BaseType "Exalted Orb" "Eternal Orb" "Divine Orb" "Mirror of Kalandra" "Albino Rhoa Feather" "Orb of Annulment" "Crusader's Exalted Orb" "Redeemer's Exalted Orb" "Hunter's Exalted Orb" "Warlord's Exalted Orb" "Awakener's Orb"
 	SetTextColor 255 0 255
 	SetBorderColor 255 0 255
 	PlayAlertSound 1 300
@@ -610,7 +709,7 @@ Show # T1 Currency
 	
 Show # T2 Currency
 	Class Currency
-	BaseType "Master Cartographer's Sextant" "Journeyman Cartographer's Sextant" "Apprentice Cartographer's Sextant"
+	BaseType "Awakened Sextant" "Prime Sextant" "Simple Sextant"
 	SetTextColor 255 0 255
 	SetBorderColor 255 0 255
 	PlayAlertSound 12 300
@@ -663,7 +762,7 @@ Show
 
 # DIVINATION CARDS
 Show # T1 Cards
-	BaseType "The Doctor" "House of Mirrors" "The Fiend" "Immortal Resolve" "The Nurse" "The Demon" "The Old Man"
+	BaseType "The Doctor" "House of Mirrors" "The Fiend" "Immortal Resolve" "The Nurse" "The Demon" "The Old Man" "Baited Expectations" "The Fishmonger"
 	SetBorderColor 30 144 255
 	SetTextColor 0 125 200
 	SetFontSize 45
@@ -679,7 +778,7 @@ Hide # T3 - Workaround
 
 Show # T2 Cards
 	Class Card
-	BaseType "Mawr Blaidd" "Hunter's Reward" "The Immortal" "The Last One Standing" "The Dragon's Heart" "The Queen" "The Polymath" "Abandoned Wealth" "Wealth and Power" "The Ethereal" "The Thaumaturgist" "The Offering" "The Spark and the Flame" "The Artist" "The Brittle Emperor" "The Standoff" "Heterochromia" "The Wolf" "Bowyer's Dream" "The Hunger" "Last Hope" "The Sephirot" "The Saint's Treasure" "The Enlightened" "The Harvester" "The Void" "The Vast" "The Chains that Bind" "Pride Before the Fall" "The Formless Sea" "The Celestial Justicar" "The Hoarder" "The King's Heart" "The Wolven King's Bite" "Chaotic Disposition" "Time-Lost Relic" "The Celestial Stone" "Perfection" "The Hale Heart" "The Undisputed" "The Beast" "The Darkest Dream" "Harmony of Souls" "The Dreamland" "The Fathomless Depths" "The Master" "The Mayor" "The Professor" "The Samurai's Eye" "The Undaunted" "The Risk" "The Iron Bard" "The World Eater" "The Wind" "The Dreamer" "The Cartographer" "The Wilted Rose" "Beauty Through Death" "The Cacophony" "The Innocent" "The Price of Protection" "The Twilight Moon" "The Sacrifice" "The Life Thief" "The Messenger" "Arrogance of the Vaal" "The Landing" "Seven Years Bad Luck" "The Golden Era" "Alone in the Darkness" "Sambodhi's Vow" "The Lord of Celebration" "Alluring Bounty" "Buried Treasure" "Burning Blood" "Pride of the First Ones" "The Gladiator" "The Damned" "Remembrance" "The Price of Loyalty" "Nook's Crown" "The Eye of Terror" "Azyran's Reward"
+	BaseType "Mawr Blaidd" "Hunter's Reward" "The Immortal" "The Last One Standing" "The Dragon's Heart" "The Queen" "The Polymath" "Abandoned Wealth" "Wealth and Power" "The Ethereal" "The Thaumaturgist" "The Offering" "The Spark and the Flame" "The Artist" "The Brittle Emperor" "Heterochromia" "The Wolf" "Bowyer's Dream" "The Hunger" "Last Hope" "The Sephirot" "The Saint's Treasure" "The Enlightened" "The Harvester" "The Void" "The Vast" "The Chains that Bind" "Pride Before the Fall" "The Formless Sea" "The Celestial Justicar" "The Hoarder" "The King's Heart" "The Wolven King's Bite" "Chaotic Disposition" "Time-Lost Relic" "The Celestial Stone" "Perfection" "The Hale Heart" "The Undisputed" "The Darkest Dream" "Harmony of Souls" "The Dreamland" "The Master" "The Mayor" "The Professor" "The Samurai's Eye" "The Undaunted" "The Risk" "The Iron Bard" "The World Eater" "The Wind" "The Dreamer" "The Cartographer" "The Wilted Rose" "Beauty Through Death" "The Cacophony" "The Innocent" "The Twilight Moon" "The Sacrifice" "The Life Thief" "The Messenger" "The Landing" "Seven Years Bad Luck" "Alone in the Darkness" "Alluring Bounty" "Buried Treasure" "Burning Blood" "Pride of the First Ones" "The Porcupine" "The Gladiator" "The Damned" "Remembrance" "The Price of Loyalty" "Nook's Crown" "The Eye of Terror" "Azyran's Reward" "The Chosen" "The Craving" "Divine Justice" "The Escape" "Etched in Blood" "Friendship" "Squandered Prosperity" "Succor of the Sinless" "Underground Forest"
 	SetBorderColor 30 144 255
 	SetTextColor 0 125 200
 	SetFontSize 45
@@ -688,7 +787,7 @@ Show # T2 Cards
 	
 Show # T3 Cards
 	Class Card
-	BaseType "The Encroaching Darkness" "The Survivalist" "The Fathomless Depths" "Humility" "Scholar of the Seas" "Vinia's Token" "No Traces" "The Wrath" "The Seeker" "Lucky Connections" "The Jeweller's Boon" "The Inventor" "Emperor of Purity" "Monochrome" "The Mad King" "The Obscured" "The Valkyrie" "Three Faces in the Dark" "The Valley of Steel Boxes" "Dark Dreams" "The Fool" "Imperial Legacy" "Vanity" "The Primordial" "Thirst for Knowledge" "Demigod's Wager" "The Deep Ones" "More is Never Enough" "The Bargain" "The Deal" "Void of the Elements" "The Wolf's Legacy" "The Heroic Shot" "The Journey" "A Dab of Ink"
+	BaseType "The Encroaching Darkness" "The Survivalist" "The Fathomless Depths" "Humility" "Scholar of the Seas" "Vinia's Token" "No Traces" "The Wrath" "The Seeker" "Lucky Connections" "The Jeweller's Boon" "The Inventor" "Emperor of Purity" "Monochrome" "The Mad King" "The Obscured" "The Valkyrie" "Three Faces in the Dark" "The Valley of Steel Boxes" "Dark Dreams" "The Fool" "Imperial Legacy" "Vanity" "The Primordial" "Demigod's Wager" "The Deep Ones" "The Wretched" "More is Never Enough" "The Bargain" "The Deal" "Void of the Elements" "The Wolf's Legacy" "The Heroic Shot" "The Journey" "A Dab of Ink" "Arrogance of the Vaal" "Sambodhi's Vow" "The Beast" "The Price of Protection" "Cameria's Cut" "The Bones" "Deathly Designs"
 	SetBorderColor 30 144 255
 	SetTextColor 0 125 200
 	SetFontSize 45
