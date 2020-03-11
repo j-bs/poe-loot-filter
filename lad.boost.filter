@@ -32,7 +32,8 @@ Show # Lvl 21 Gems
 	SetBorderColor 128 128 255
 	SetFontSize 45
 	PlayAlertSound 4 250
-	MinimapIcon 0 White Triangle
+	PlayEffect Cyan
+	MinimapIcon 0 Cyan Triangle
 
 Show # Lvl 2+ Empower/Enlighten/Enhance
 	Class Gem
@@ -41,7 +42,8 @@ Show # Lvl 2+ Empower/Enlighten/Enhance
 	SetBorderColor 128 128 255
 	SetFontSize 45
 	PlayAlertSound 4 250
-	MinimapIcon 0 White Triangle
+	PlayEffect Cyan
+	MinimapIcon 0 Cyan Triangle
 
 Show # Lv 7 Special Gems
 	Class Gem
@@ -50,7 +52,8 @@ Show # Lv 7 Special Gems
 	SetBorderColor 128 128 255
 	SetFontSize 45
 	PlayAlertSound 4 250
-	MinimapIcon 0 White Triangle
+	PlayEffect Cyan
+	MinimapIcon 0 Cyan Triangle
 
 Show # 20 Quality Gems
 	Class Gem
@@ -58,34 +61,34 @@ Show # 20 Quality Gems
 	SetBorderColor 128 128 255
 	SetFontSize 40
 	PlayAlertSound 12 300
-	MinimapIcon 1 White Triangle
+	MinimapIcon 1 Cyan Triangle
 
 Show # Quality Gems
 	Class Gem
 	Quality > 15
 	SetBorderColor 128 128 255
 	SetFontSize 40
-	MinimapIcon 1 White Triangle
+	MinimapIcon 1 Cyan Triangle
 
 Show # Lvl 19/20 Gem
 	Class Gem
 	GemLevel >= 18
 	SetBorderColor 128 128 255
 	SetFontSize 40
-	MinimapIcon 1 White Triangle
+	MinimapIcon 1 Cyan Triangle
 
 Show # T1 Drop Only Gems
 	Class Gem
 	BaseType "Empower Support" "Enlighten Support" "Enhance Support"
 	SetFontSize 40
 	PlayAlertSound 12 300
-	MinimapIcon 1 White Triangle
+	MinimapIcon 1 Cyan Triangle
 
 Show # T2 Drop Only Gems
 	Class Gem
-	BaseType "Added Chaos Damage Support" "Portal" "Vaal Breach" "Vaal Immortal Call"
+	BaseType "Portal" "Vaal Breach" "Vaal Immortal Call"
 	SetFontSize 40
-	MinimapIcon 1 White Triangle
+	MinimapIcon 1 Cyan Triangle
 
 Show # Gems with low max level
 	Class Gem
@@ -93,10 +96,40 @@ Show # Gems with low max level
 	GemLevel >= 5
 	SetBorderColor 128 128 255
 	SetFontSize 40
-	MinimapIcon 1 White Triangle
+	MinimapIcon 1 Cyan Triangle
 
 
 # LEAGUE ITEMS
+
+Show # Delirium Orbs
+	Class "Stackable Currency"
+	BaseType "Delirium Orb"
+	SetTextColor 99 99 99
+	SetBorderColor 99 99 99
+	SetFontSize 45
+	PlayAlertSound 11 300
+	MinimapIcon 0 Grey Star
+	PlayEffect Grey
+
+Show # Delirium Simulacrum Splinters
+	Class "Stackable Currency"
+	BaseType "Simulacrum Splinter"
+	SetTextColor 99 99 99
+	SetBorderColor 99 99 99
+	SetFontSize 45
+	PlayAlertSound 11 300
+	MinimapIcon 0 Grey Star
+	PlayEffect Grey
+
+Show # Delirium Simulacrum Map
+	Class "Map Fragment"
+	BaseType "Simulacrum"
+	SetTextColor 99 99 99
+	SetBorderColor 99 99 99
+	SetFontSize 45
+	PlayAlertSound 9 300
+	MinimapIcon 0 Grey Star
+	PlayEffect Grey
 
 Show # T1 Blight Oils
 	Class "Stackable Currency"
@@ -654,6 +687,16 @@ Show # Abyss Jewels i82+ - T1 life
 	SetBorderColor 175 255 150
 	SetFontSize 45
 
+Show # Cluster Jewels
+	Class Jewel
+	BaseType "Cluster"
+	SetFontSize 255 125 255
+	SetBorderColor 255 125 255
+	SetFontSize 45
+	PlayAlertSound 11 300
+	MinimapIcon 0 Orange Pentagon
+	PlayEffect Orange
+
 Show # All Jewels - Rare
 	Rarity Rare
 	Class Jewel "Abyss Jewel"
@@ -783,7 +826,7 @@ Show # T3 - Workaround
 
 Show # T2 Cards
 	Class Card
-	BaseType "Mawr Blaidd" "Hunter's Reward" "The Immortal" "The Last One Standing" "The Dragon's Heart" "The Queen" "The Polymath" "Abandoned Wealth" "Wealth and Power" "The Ethereal" "The Thaumaturgist" "The Offering" "The Spark and the Flame" "The Artist" "The Brittle Emperor" "Heterochromia" "The Wolf" "Bowyer's Dream" "The Hunger" "Last Hope" "The Sephirot" "The Saint's Treasure" "The Enlightened" "The Harvester" "The Void" "The Vast" "The Chains that Bind" "Pride Before the Fall" "The Formless Sea" "The Celestial Justicar" "The Hoarder" "The King's Heart" "The Wolven King's Bite" "Chaotic Disposition" "Time-Lost Relic" "The Celestial Stone" "Perfection" "The Hale Heart" "The Undisputed" "The Darkest Dream" "Harmony of Souls" "The Dreamland" "The Master" "The Mayor" "The Professor" "The Samurai's Eye" "The Undaunted" "The Risk" "The Iron Bard" "The World Eater" "The Wind" "The Dreamer" "The Cartographer" "The Wilted Rose" "Beauty Through Death" "The Cacophony" "The Innocent" "The Twilight Moon" "The Sacrifice" "The Life Thief" "The Messenger" "The Landing" "Seven Years Bad Luck" "Alone in the Darkness" "Alluring Bounty" "Buried Treasure" "Burning Blood" "Pride of the First Ones" "The Porcupine" "The Gladiator" "The Damned" "Remembrance" "The Price of Loyalty" "Nook's Crown" "The Eye of Terror" "Azyran's Reward"
+	BaseType "Mawr Blaidd" "Hunter's Reward" "The Immortal" "The Last One Standing" "The Dragon's Heart" "The Queen" "The Polymath" "Abandoned Wealth" "Wealth and Power" "The Ethereal" "The Thaumaturgist" "The Offering" "The Spark and the Flame" "The Artist" "The Brittle Emperor" "Heterochromia" "The Wolf" "Bowyer's Dream" "The Hunger" "Last Hope" "The Sephirot" "The Saint's Treasure" "The Enlightened" "The Harvester" "The Void" "The Vast" "The Chains that Bind" "Pride Before the Fall" "The Formless Sea" "The Celestial Justicar" "The Hoarder" "The King's Heart" "The Wolven King's Bite" "Chaotic Disposition" "Time-Lost Relic" "The Celestial Stone" "Perfection" "The Hale Heart" "The Undisputed" "The Darkest Dream" "Harmony of Souls" "The Dreamland" "The Master" "The Mayor" "The Professor" "The Samurai's Eye" "The Undaunted" "The Risk" "The Iron Bard" "The World Eater" "The Wind" "The Dreamer" "The Cartographer" "The Wilted Rose" "Beauty Through Death" "The Cacophony" "The Innocent" "The Twilight Moon" "The Sacrifice" "The Life Thief" "The Messenger" "The Landing" "Seven Years Bad Luck" "Alone in the Darkness" "Alluring Bounty" "Buried Treasure" "Burning Blood" "Pride of the First Ones" "The Porcupine" "The Gladiator" "The Damned" "Remembrance" "The Price of Loyalty" "Nook's Crown" "The Eye of Terror" "Azyran's Reward" "The Progeny of Lunaris" "The Cheater" "Council of Cats" "The Strategist" "The Eldritch Decay"
 	SetBorderColor 30 144 255
 	SetTextColor 0 125 200
 	SetFontSize 45
@@ -792,7 +835,7 @@ Show # T2 Cards
 	
 Show # T3 Cards
 	Class Card
-	BaseType "The Encroaching Darkness" "The Survivalist" "The Fathomless Depths" "Humility" "Scholar of the Seas" "Vinia's Token" "No Traces" "The Wrath" "The Seeker" "Lucky Connections" "The Jeweller's Boon" "The Inventor" "Emperor of Purity" "Monochrome" "The Mad King" "The Obscured" "The Valkyrie" "Three Faces in the Dark" "The Valley of Steel Boxes" "Dark Dreams" "The Fool" "Imperial Legacy" "Vanity" "The Primordial" "Demigod's Wager" "The Deep Ones" "The Wretched" "More is Never Enough" "The Bargain" "The Deal" "Void of the Elements" "The Wolf's Legacy" "The Heroic Shot" "The Journey" "A Dab of Ink" "Arrogance of the Vaal" "Sambodhi's Vow" "The Beast" "The Price of Protection"
+	BaseType "The Encroaching Darkness" "The Survivalist" "The Fathomless Depths" "Humility" "Scholar of the Seas" "Vinia's Token" "No Traces" "The Wrath" "The Seeker" "Lucky Connections" "The Jeweller's Boon" "The Inventor" "Emperor of Purity" "Monochrome" "The Mad King" "The Obscured" "The Valkyrie" "Three Faces in the Dark" "The Valley of Steel Boxes" "Dark Dreams" "The Fool" "Imperial Legacy" "Vanity" "The Primordial" "Demigod's Wager" "The Deep Ones" "The Wretched" "More is Never Enough" "The Bargain" "The Deal" "Void of the Elements" "The Wolf's Legacy" "The Heroic Shot" "The Journey" "A Dab of Ink" "Arrogance of the Vaal" "Sambodhi's Vow" "The Beast" "The Price of Protection" "The Tinkerer's Table" "The Easy Stroll"
 	SetBorderColor 30 144 255
 	SetTextColor 0 125 200
 	SetFontSize 45
