@@ -1124,27 +1124,25 @@ Show
 	ItemLevel < 60
 	ItemLevel >= 84
 
-	
 # FLASKS
 Show
 	Class Flask
-	Rarity = Normal
 	Quality = 20
 	SetBorderColor 255 0 0
 	SetFontSize 40
-	
+
 #Show
 #	Class Utility
 #	SetBorderColor 0 255 255
 #	SetFontSize 40
 	#ItemLevel < 70
-	
+
 Show
 	Class Flask
 	BaseType "Hallowed Life Flask" "Divine Life Flask" "Eternal Life Flask" "Hallowed Hybrid Flask"
 	ItemLevel < 70
 	SetFontSize 40
-	
+
 Show
 	Class Flask
 	BaseType "Hallowed Mana Flask" "Divine Mana Flask" "Eternal Mana Flask"
@@ -1152,15 +1150,12 @@ Show
 	SetFontSize 40
 
 
-
 # HIDE REST
 Hide
 	Class "One Hand" "Two Hand" "Bow" "Staves" "Dagger" "Claw" "Sceptre" "Wand" "Quiver"
-	#ItemLevel > 50
-	
+
 Hide
 	Class Armour Helmet Boots Gloves Shield Belt Ring Amulet Flask Gem
-	#ItemLevel > 50
-	
+
 Hide
 	Class Gem
