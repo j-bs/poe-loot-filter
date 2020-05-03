@@ -1,6 +1,8 @@
 # SPECIAL ITEMS
 Show # Quest
 	Class Quest
+	SetTextColor 0 255 0
+	SetBorderColor 0 255 0
 	SetFontSize 45
 	PlayAlertSound 15 200
 	MinimapIcon 0 Green Circle
@@ -8,6 +10,15 @@ Show # Quest
 
 Show # LAB
 	Class "Labyrinth"
+	SetTextColor 0 255 0
+	SetBorderColor 0 255 0
+	SetFontSize 45
+	PlayAlertSound 15 200
+	MinimapIcon 0 Green Circle
+	PlayEffect Green
+
+Show # Incursion
+	Class "Incursion Item"
 	SetTextColor 0 255 0
 	SetBorderColor 0 255 0
 	SetFontSize 45
@@ -135,13 +146,17 @@ Show # Quality Gems
 	SetFontSize 40
 	MinimapIcon 1 White Triangle
 
+Show # Vaal Gems
+	Class Gem
+	BaseType "Vaal" "Impurity"
+
 # LEAGUE ITEMS
 
 Show # Delirium Orbs
 	Class "Stackable Currency"
 	BaseType "Delirium Orb"
-	SetTextColor 99 99 99
-	SetBorderColor 99 99 99
+	SetTextColor 160 32 240
+	SetBorderColor 160 32 240
 	SetFontSize 45
 	PlayAlertSound 11 300
 	MinimapIcon 0 Grey Star
@@ -150,8 +165,8 @@ Show # Delirium Orbs
 Show # Delirium Simulacrum Splinters
 	Class "Stackable Currency"
 	BaseType "Simulacrum Splinter"
-	SetTextColor 99 99 99
-	SetBorderColor 99 99 99
+	SetTextColor 160 32 240
+	SetBorderColor 160 32 240
 	SetFontSize 45
 	PlayAlertSound 11 300
 	MinimapIcon 0 Grey Star
@@ -160,14 +175,14 @@ Show # Delirium Simulacrum Splinters
 Show # Delirium Simulacrum Map
 	Class "Map Fragment"
 	BaseType "Simulacrum"
-	SetTextColor 99 99 99
-	SetBorderColor 99 99 99
+	SetTextColor 160 32 240
+	SetBorderColor 160 32 240
 	SetFontSize 45
 	PlayAlertSound 9 300
 	MinimapIcon 0 Grey Star
 	PlayEffect Grey
 
-Show #Metamorph Samples
+Show # Metamorph Samples
 	Class "Metamorph Sample"
 	BaseType "Metamorph Brain" "Metamorph Eye" "Metamorph Liver" "Metamorph Lung" "Metamorph Heart"
 	SetTextColor 43 148 1
@@ -176,24 +191,34 @@ Show #Metamorph Samples
 	PlayAlertSound 11 300
 	MinimapIcon 1 Green Star
 
-Show # Metamorph Catalysts
+Show # T1 Blight Oils
 	Class "Stackable Currency"
-	BaseType "Turbulent Catalyst" "Imbued Catalyst" "Abrasive Catalyst" "Tempering Catalyst" "Fertile Catalyst" "Prismatic Catalyst" "Intrinsic Catalyst" 
-	SetTextColor 43 148 1
-	SetBorderColor 43 148 1
+	BaseType "Silver Oil" "Golden Oil"
+	SetTextColor 255 181 0
+	SetBorderColor 255 181 0
 	SetFontSize 45
-	PlayAlertSound 11 300
-	MinimapIcon 1 Green Star
+	PlayAlertSound 1 300
+	MinimapIcon 0 Yellow Star
+	PlayEffect Yellow
 
 Show # Blight Oils
 	Class "Stackable Currency"
-	BaseType "Clear Oil" "Sepia Oil" "Amber Oil" "Verdant Oil" "Teal Oil" "Azure Oil" "Violet Oil" "Crimson Oil" "Black Oil" "Opalescent Oil" "Silver Oil" "Golden Oil"
+	BaseType "Verdant Oil" "Teal Oil" "Azure Oil" "Violet Oil" "Crimson Oil" "Black Oil" "Opalescent Oil" "Silver Oil" "Golden Oil"
 	SetTextColor 255 181 0
 	SetBorderColor 255 181 0
 	SetFontSize 45
 	PlayAlertSound 11 300
-	MinimapIcon 0 Yellow Star
+	MinimapIcon 1 Yellow Star
 	PlayEffect Yellow
+
+Show # Common Blight Oils
+	Class "Stackable Currency"
+	BaseType "Clear Oil" "Sepia Oil" "Amber Oil"
+	SetTextColor 255 181 0
+	SetBorderColor 255 181 0
+	SetFontSize 40
+	PlayAlertSound 11 300
+	MinimapIcon 2 Yellow Star
 
 Show # GG Incubators
 	Class Incubator
@@ -309,30 +334,6 @@ Show # T1-9 Nets
 	SetBorderColor 0 255 255
 	SetFontSize 45
 
-Show # Harbinger T1
-	Class Currency
-	BaseType "Mirror Shard" "Exalted Shard"
-	SetFontSize 45
-	PlayAlertSound 1 300
-	SetBorderColor 0 255 255
-	SetTextColor 0 255 255
-
-Show # Harbinger T2
-	Class Currency
-	BaseType "Harbinger's Orb" "Ancient Orb"
-	SetFontSize 45
-	PlayAlertSound 10 300
-	SetBorderColor 0 255 255
-	SetTextColor 0 255 255
-	
-Show # Harbinger T3
-	Class Currency
-	BaseType "Annulment Shard" "Binding Shard" "Horizon Shard" "Harbinger's Shard" "Engineer's Shard" "Ancient Shard" "Engineer's Orb"
-	SetFontSize 45
-	PlayAlertSound 10 300
-	SetBorderColor 0 255 255
-	SetTextColor 0 255 255
-	
 Show # Harbinger Set Pieces
 	Class Piece
 	SetFontSize 45
@@ -667,9 +668,18 @@ Show # Tabula
 	MinimapIcon 0 Brown Star
 	PlayEffect Brown
 
+Show # 6L uniques
+	Rarity Unique
+	LinkedSockets 6
+	SetBorderColor 175 96 37
+	PlayAlertSound 5 150
+	SetFontSize 45
+	MinimapIcon 0 Brown Star
+	PlayEffect Brown
+
 Show # T1 Uniques
 	Rarity Unique
-	BaseType "Ambush Mitts" "Callous Mask" "Carnal Boots" "Crusader Boots" "Ezomyte Tower Shield" "Gemstone Sword" "Glorious Plate" "Golden Hoop" "Greatwolf Talisman" "Jingling Spirit Shield" "Legion Gloves" "Nightmare Mace" "Nubuck Boots" "Ornate Quiver" "Prismatic Jewel" "Prophecy Wand" "Rawhide Boots" "Riveted Gloves" "Royal Axe" "Ruby Amulet" "Ruby Flask" "Sorcerer Boots" "Timeless Jewel" "Vaal Rapier" "Wyrmscale Doublet" "Zodiac Leather"
+	BaseType "Ambush Mitts" "Callous Mask" "Carnal Boots" "Crusader Boots" "Ezomyte Tower Shield" "Gemstone Sword" "Golden Hoop" "Greatwolf Talisman" "Jingling Spirit Shield" "Legion Gloves" "Nightmare Mace" "Nubuck Boots" "Ornate Quiver" "Prismatic Jewel" "Prophecy Wand" "Rawhide Boots" "Riveted Gloves" "Royal Axe" "Ruby Amulet" "Ruby Flask" "Sorcerer Boots" "Timeless Jewel" "Vaal Rapier" "Wyrmscale Doublet" "Zodiac Leather" "Silk Gloves" "Magistrate Crown" "Blood Raiment"
 	SetBorderColor 175 96 37
 	PlayAlertSound 1 300
 	SetFontSize 45
@@ -678,10 +688,17 @@ Show # T1 Uniques
 
 Show # Meta Uniques
 	Rarity Unique
-	BaseType "Ezomyte Dagger"
+	BaseType "Ezomyte Dagger" "Deerskin Gloves"
 	SetBorderColor 175 96 37
 	PlayAlertSound 1 300
 	SetFontSize 45
+	MinimapIcon 0 Brown Star
+	PlayEffect Brown
+
+Show # Harbinger Piece
+	Class Piece
+	SetFontSize 45
+	PlayAlertSound 6 250
 	MinimapIcon 0 Brown Star
 	PlayEffect Brown
 
@@ -731,12 +748,26 @@ Show # Abyss Jewels i82+ - T1 life
 	SetBorderColor 175 255 150
 	SetFontSize 45
 
+Show # Cluster Jewels
+	Class Jewel
+	BaseType "Cluster"
+	SetBorderColor 255 125 255
+	SetFontSize 45
+	PlayAlertSound 11 300
+	MinimapIcon 0 Orange Pentagon
+	PlayEffect Orange
+
 Show # All Jewels - Rare
 	Rarity Rare
 	Class Jewel "Abyss Jewel"
 	SetBorderColor 255 125 255
 	SetFontSize 45
-	
+
+Show # Jewels
+	Class Jewel "Abyss Jewel"
+	SetBorderColor 255 125 255
+	SetFontSize 45
+
 Show # Abyss Jewels
 	Class "Abyss Jewel"
 	SetFontSize 40
@@ -754,8 +785,8 @@ Show # T1 Prophecy
 	SetFontSize 45
 	SetBorderColor 150 0 225
 	PlayAlertSound 1 300
-	MinimapIcon 0 Red Circle
-	PlayEffect Red
+	MinimapIcon 0 Purple Circle
+	PlayEffect Purple
 
 Show # T2 Prophecy
 	Prophecy "Wind and Thunder" "The Jeweller's Touch" "Darktongue's Shriek" "Monstrous Treasure" "Cleanser of Sins" "Flesh of the Beast" "Vaal Winds" "Twice Enchanted" "The Lost Undying" "Graceful Flames" "The Apex Predator" "The Queen's Vaults" "Servant's Heart" "Dishonourable Death" "Fire from the Sky" "Ice from Above" "The Undead Storm" "Crushing Squall" "Lightning Falls" "Plague of Rats" "Plague of Frogs" "The Cursed Choir" "The Hungering Swarm" "Brothers of Necromancy" "Undead Brutes" "Soil, Worms and Blood" "Hidden Reinforcements" "The Trembling Earth" "The Scout" "The Plaguemaw V" "Deadly Rivalry V" "The Unbreathing Queen V" "Unbearable Whispers V" "Thaumaturgical History IV" "The Warmongers IV"
@@ -763,8 +794,8 @@ Show # T2 Prophecy
 	SetFontSize 42
 	SetBorderColor 150 0 225
 	PlayAlertSound 4 300
-	MinimapIcon 1 Red Circle
-	PlayEffect Red 1
+	MinimapIcon 1 Purple Circle
+	PlayEffect Purple 1
 
 Show # T3+ Prophecy
 	BaseType "Prophecy"
@@ -772,31 +803,31 @@ Show # T3+ Prophecy
 	SetFontSize 37
 	SetBorderColor 150 0 225
 	PlayAlertSound 12 250
-	MinimapIcon 2 Red Circle
+	MinimapIcon 2 Purple Circle
 
 # CURRENCY
-Show
+Show # T1 Currency
 	Class Currency
-	BaseType "Exalted Orb" "Eternal Orb" "Divine Orb" "Mirror of Kalandra" "Albino Rhoa Feather" "Orb of Annulment" "Crusader's Exalted Orb" "Redeemer's Exalted Orb" "Hunter's Exalted Orb" "Warlord's Exalted Orb" "Awakener's Orb"
-	SetTextColor 255 0 255
+	BaseType "Exalted Orb" "Eternal Orb" "Divine Orb" "Mirror of Kalandra" "Albino Rhoa Feather" "Orb of Annulment" "Crusader's Exalted Orb" "Redeemer's Exalted Orb" "Hunter's Exalted Orb" "Warlord's Exalted Orb" "Awakener's Orb" "Mirror Shard" "Exalted Shard"
 	SetBorderColor 255 0 255
+	SetTextColor 255 0 255
 	PlayAlertSound 1 300
 	SetFontSize 45
 	MinimapIcon 0 Red Triangle
 	PlayEffect Red
 	
-Show
+Show # T2 Currency
 	Class Currency
-	BaseType "Awakened Sextant" "Prime Sextant" "Simple Sextant"
+	BaseType "Awakened Sextant" "Prime Sextant" "Simple Sextant" "Harbinger's Orb" "Ancient Orb" "Ancient Shard" "Annulment Shard" "Harbinger's Shard" "Tempering Catalyst" "Fertile Catalyst" "Prismatic Catalyst"
 	SetTextColor 255 0 255
 	SetBorderColor 255 0 255
 	PlayAlertSound 12 300
 	SetFontSize 45
 	MinimapIcon 0 Red Triangle
 
-Show
+Show # T3 Currency
 	Class Currency
-	BaseType "Chaos Orb" "Vaal Orb" "Orb of Alchemy" "Regal Orb" "Gemcutter's Prism" "Cartographer's Chisel" "Orb of Regret" "Sextant" "Orb of Scouring" "Orb of Fusing"  "Orb of Horizons" "Orb of Binding"
+	BaseType "Chaos Orb" "Vaal Orb" "Orb of Alchemy" "Regal Orb" "Gemcutter's Prism" "Cartographer's Chisel" "Orb of Regret" "Sextant" "Orb of Scouring" "Orb of Fusing"  "Orb of Horizons" "Orb of Binding" "Turbulent Catalyst" "Imbued Catalyst" "Abrasive Catalyst"  "Intrinsic Catalyst"
 	SetTextColor 255 0 255
 	SetFontSize 45
 	PlayAlertSound 12 300
@@ -845,7 +876,7 @@ Show # Useful low currency 1 stack
 Show # Low Currency 1 Stacks #
 	Class Currency
 	StackSize 1
-	BaseType "Armourer's Scrap" "Blacksmith's Whetstone" "Portal Scroll" 
+	BaseType "Armourer's Scrap" "Blacksmith's Whetstone" "Portal Scroll" "Scroll of Wisdom"
 	SetTextColor 170 158 130
 	SetBorderColor 170 158 130
 
@@ -857,9 +888,14 @@ Show # Low Currency Multistacks
 	SetTextColor 170 158 130
 	SetBorderColor 170 158 130
 
+Show # Low Value Shards
+	Class Currency
+	BaseType "Engineer's Shard" "Engineer's Orb" "Binding Shard" "Horizon Shard"
+	SetBorderColor 170 158 130
+
 Hide # Hide worthless currency
 	Class Currency
-	BaseType "Transmutation Shard" "Alteration Shard" "Alchemy Shard" "Scroll Fragment" "Scroll of Wisdom"
+	BaseType "Transmutation Shard" "Alteration Shard" "Alchemy Shard" "Scroll Fragment"
 
 Show # Default Currency
 	Class Currency
@@ -884,7 +920,7 @@ Show # T3 - Workaround
 
 Show # T2 Cards
 	Class Card
-	BaseType "Mawr Blaidd" "Hunter's Reward" "The Immortal" "The Last One Standing" "The Dragon's Heart" "The Queen" "The Polymath" "Abandoned Wealth" "Wealth and Power" "The Ethereal" "The Thaumaturgist" "The Offering" "The Spark and the Flame" "The Artist" "The Brittle Emperor" "Heterochromia" "The Wolf" "Bowyer's Dream" "The Hunger" "Last Hope" "The Sephirot" "The Saint's Treasure" "The Enlightened" "The Harvester" "The Void" "The Vast" "The Chains that Bind" "Pride Before the Fall" "The Formless Sea" "The Celestial Justicar" "The Hoarder" "The King's Heart" "The Wolven King's Bite" "Chaotic Disposition" "Time-Lost Relic" "The Celestial Stone" "Perfection" "The Hale Heart" "The Undisputed" "The Darkest Dream" "Harmony of Souls" "The Dreamland" "The Master" "The Mayor" "The Professor" "The Samurai's Eye" "The Undaunted" "The Risk" "The Iron Bard" "The World Eater" "The Wind" "The Dreamer" "The Cartographer" "The Wilted Rose" "Beauty Through Death" "The Cacophony" "The Innocent" "The Twilight Moon" "The Sacrifice" "The Life Thief" "The Messenger" "The Landing" "Seven Years Bad Luck" "Alone in the Darkness" "Alluring Bounty" "Buried Treasure" "Burning Blood" "Pride of the First Ones" "The Porcupine" "The Gladiator" "The Damned" "Remembrance" "The Price of Loyalty" "Nook's Crown" "The Eye of Terror" "Azyran's Reward" "The Chosen" "The Craving" "Divine Justice" "The Escape" "Etched in Blood" "Friendship" "Squandered Prosperity" "Succor of the Sinless" "Underground Forest" "The Progeny of Lunaris" "The Cheater" "Council of Cats" "The Strategist" "The Eldritch Decay"
+	BaseType "Mawr Blaidd" "Hunter's Reward" "The Immortal" "The Last One Standing" "The Dragon's Heart" "The Queen" "The Polymath" "Abandoned Wealth" "Wealth and Power" "The Ethereal" "The Thaumaturgist" "The Offering" "The Spark and the Flame" "The Artist" "The Brittle Emperor" "Heterochromia" "The Wolf" "Bowyer's Dream" "The Hunger" "Last Hope" "The Sephirot" "The Saint's Treasure" "The Enlightened" "The Harvester" "The Void" "The Vast" "The Chains that Bind" "Pride Before the Fall" "The Formless Sea" "The Celestial Justicar" "The Hoarder" "The King's Heart" "The Wolven King's Bite" "Chaotic Disposition" "Time-Lost Relic" "The Celestial Stone" "Perfection" "The Hale Heart" "The Undisputed" "The Darkest Dream" "Harmony of Souls" "The Dreamland" "The Master" "The Mayor" "The Professor" "The Samurai's Eye" "The Undaunted" "The Risk" "The Iron Bard" "The World Eater" "The Wind" "The Dreamer" "The Cartographer" "The Wilted Rose" "Beauty Through Death" "The Cacophony" "The Innocent" "The Twilight Moon" "The Sacrifice" "The Life Thief" "The Messenger" "The Landing" "Seven Years Bad Luck" "Alone in the Darkness" "Alluring Bounty" "Buried Treasure" "Burning Blood" "Pride of the First Ones" "The Porcupine" "The Gladiator" "The Damned" "Remembrance" "The Price of Loyalty" "Nook's Crown" "The Eye of Terror" "Azyran's Reward" "The Chosen" "The Craving" "Divine Justice" "The Escape" "Etched in Blood" "Friendship" "Squandered Prosperity" "Succor of the Sinless" "Underground Forest" "The Progeny of Lunaris" "The Cheater" "Council of Cats" "The Strategist" "The Eldritch Decay" "The Betrayal"
 	SetBorderColor 30 144 255
 	SetTextColor 0 125 200
 	SetFontSize 45
@@ -901,9 +937,9 @@ Show # T3 Cards
 	MinimapIcon 1 Blue Circle
 	PlayEffect Blue
 
-Hide # T5 Cards
+Show # T5 Cards
 	Class Card
-	BaseType "Thunderous Skies" "Prosperity" "The Gambler" "The Betrayal" "The Incantation" "Shard of Fate" "Lantador's Lost Love" "The Carrion Crow" "The Endurance" "The Lover" "Struck by Lightning" "The Summoner" "The Web" "The King's Blade" "The Metalsmith's Gift"
+	BaseType "Thunderous Skies" "Prosperity" "The Gambler" "The Incantation" "Shard of Fate" "Lantador's Lost Love" "The Carrion Crow" "The Endurance" "The Lover" "Struck by Lightning" "The Summoner" "The Web" "The King's Blade" "The Metalsmith's Gift"
 
 Show # T4 Cards
 	Class Card
@@ -915,20 +951,6 @@ Show # Talismans
 	BaseType "Talisman"
 	SetBorderColor 255 255 255
 	SetFontSize 40
-
-Show # Cluster Jewels
-	Class Jewel
-	BaseType "Cluster"
-	SetBorderColor 255 125 255
-	SetFontSize 45
-	PlayAlertSound 11 300
-	MinimapIcon 0 Orange Pentagon
-	PlayEffect Orange
-
-Show # Jewels
-	Class Jewel "Abyss Jewel"
-	SetBorderColor 255 125 255
-	SetFontSize 45
 
 Show # Enchanted Items
 	AnyEnchantment True
@@ -977,6 +999,7 @@ Show # Elder
 	SetTextColor 128 232 86
 	SetBorderColor 128 232 86
 	PlayAlertSound 11 300
+	MinimapIcon 1 Green Triangle
 
 Show # Shaper
 	HasInfluence Shaper
@@ -984,6 +1007,7 @@ Show # Shaper
 	SetTextColor 128 232 86
 	SetBorderColor 128 232 86
 	PlayAlertSound 11 300
+	MinimapIcon 1 Green Triangle
 
 Show # Crusader
 	HasInfluence Crusader
@@ -991,6 +1015,7 @@ Show # Crusader
 	SetTextColor 128 232 86
 	SetBorderColor 128 232 86
 	PlayAlertSound 11 300
+	MinimapIcon 1 Green Triangle
 
 Show # Warlord
 	HasInfluence Warlord
@@ -998,6 +1023,7 @@ Show # Warlord
 	SetTextColor 128 232 86
 	SetBorderColor 128 232 86
 	PlayAlertSound 11 300
+	MinimapIcon 1 Green Triangle
 
 Show # Hunter
 	HasInfluence Hunter
@@ -1005,6 +1031,7 @@ Show # Hunter
 	SetTextColor 128 232 86
 	SetBorderColor 128 232 86
 	PlayAlertSound 11 300
+	MinimapIcon 1 Green Triangle
 
 Show # Redeemer
 	HasInfluence Redeemer
@@ -1012,25 +1039,26 @@ Show # Redeemer
 	SetTextColor 128 232 86
 	SetBorderColor 128 232 86
 	PlayAlertSound 11 300
+	MinimapIcon 1 Green Triangle
 
 # WEAPONS
-Show # 1H Weps
+Show # T1 1H Weps
 	Rarity Rare
-	BaseType "Jewelled Foil" "Corsair Sword" "Siege Axe" "Imperial Claw"
+	BaseType "Jewelled Foil" "Spiraled Foil" "Imbued Wand" "Opal Wand"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
 	SetFontSize 40
 
-Show # 2H WEPS # "Exquisite Blade" "Vaal Axe"
+Show # T2 1H Weps
 	Rarity Rare
-	BaseType "Harbinger Bow"
+	BaseType "Corsair Sword" "Siege Axe" "Imperial Claw" "Sambar Sceptre" "Void Sceptre" "Opal Sceptre" "Platinum Kris" "Golden Kris" "Copper Kris" "Profane Wand" "Prophecy Wand"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
-	SetFontSize 40
+	SetFontSize 38
 
-Show # T1 Wands
+Show # T1 2H WEPS
 	Rarity Rare
-	BaseType "Imbued Wand" "Profane Wand"
+	BaseType "Eclipse Staff" "Harbinger Bow" "Exquisite Blade" "Vaal Axe"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
 	SetFontSize 40
@@ -1051,26 +1079,12 @@ Show # T2 Quivers
 	SetBorderColor 255 255 0
 	SetFontSize 40
 
-Show # Quivers
+Show # T3 Quivers
 	Rarity Rare
 	Class Quiver
 	#SetTextColor 100 200 200
 	SetBorderColor 255 255 0
 	SetFontSize 35
-
-Show # Ele Sceptres
-	Rarity Rare
-	BaseType "Sambar Sceptre" "Void Sceptre" "Opal Sceptre"
-	SetTextColor 100 200 200
-	SetBorderColor 255 255 0
-	SetFontSize 40
-
-Show # Crit Daggers
-	Rarity Rare
-	BaseType "Platinum Kris" "Golden Kris" "Copper Kris"
-	SetTextColor 100 200 200
-	SetBorderColor 255 255 0
-	SetFontSize 40
 
 Show # Atlas Wand
 	Rarity Rare
@@ -1090,14 +1104,21 @@ Show # Chests
 
 Show # T1 Shields
 	Rarity Rare
-	BaseType "Titanium Spirit Shield" "Harmonic Spirit Shield" "Vaal Spirit Shield" "Archon Kite Shield" "Angelic Kite Shield"
+	BaseType "Titanium Spirit Shield" "Harmonic Spirit Shield" "Fossilised Spirit Shield" "Archon Kite Shield" "Angelic Kite Shield"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
 	SetFontSize 40
 
+Show # T2 Shields
+	Rarity Rare
+	BaseType "Vaal Spirit Shield" "Archon Kite Shield" "Angelic Kite Shield"
+	SetTextColor 100 200 200
+	SetBorderColor 255 255 0
+	SetFontSize 38
+
 Show # Gloves
 	Rarity Rare
-	BaseType "Spiked Gloves" "Gripped Gloves" "Titan Gauntlets" "Sorcerer Gloves"  "Fingerless Silk Gloves"
+	BaseType "Spiked Gloves" "Gripped Gloves" "Titan Gauntlets" "Sorcerer Gloves" "Fingerless Silk Gloves"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
 	SetFontSize 40
@@ -1370,15 +1391,22 @@ Show # CHROME 1x3
 Show # 3B Wands
 	SocketGroup 3B
 	Class Wand
-	AreaLevel <= 68
+	AreaLevel <= 67
 	SetBorderColor 255 255 255
 	SetFontSize 45
 
+Show # T1 Wand Base
+	Class Wand
+	BaseType "Imbued"
+	AreaLevel <= 67
+	SetBorderColor 255 255 255
+	SetFontSize 38
+
 Show # Levelling Wands
 	Class Wand
-	AreaLevel <= 68
+	AreaLevel <= 67
 	SetBorderColor 255 255 255
-	SetFontSize 40
+	SetFontSize 38
 
 # 1H AXES
 Show # Cleaver
@@ -1461,14 +1489,62 @@ Show # Wraith Axe
 	
 Show # Siege Axe
 	BaseType "Siege Axe" "Corsair Sword"
-	AreaLevel <= 70
-	#SetBorderColor 255 255 255
-	SetFontSize 40
+	AreaLevel <= 68
 
 # FLASKS
-Show
-	BaseType Flask
-	AreaLevel  <= 41
+Show # Mana Flasks
+	Class "Mana Flask"
+	BaseType "Eternal"
+	AreaLevel <= 70
+	SetBorderColor 255 255 255
+	SetFontSize 45
+
+Show # Mana Flasks
+	Class "Mana Flask"
+	BaseType "Divine"
+	AreaLevel <= 70
+	SetBorderColor 255 255 255
+	SetFontSize 45
+
+Show # Mana Flasks
+	Class "Mana Flask"
+	BaseType "Sanctified"
+	AreaLevel <= 60
+	SetBorderColor 255 255 255
+	SetFontSize 45
+
+Show # Mana Flasks
+	Class "Mana Flask"
+	BaseType "Hallowed"
+	AreaLevel <= 52
+	SetBorderColor 255 255 255
+	SetFontSize 45
+
+Show # Mana Flasks
+	Class "Mana Flask"
+	BaseType "Sacred"
+	AreaLevel <= 46
+	SetBorderColor 255 255 255
+	SetFontSize 45
+
+Show # Mana Flasks
+	Class "Mana Flask"
+	BaseType "Colossal"
+	AreaLevel <= 40
+	SetBorderColor 255 255 255
+	SetFontSize 45
+
+Show # Mana Flasks
+	Class "Mana Flask"
+	BaseType "Giant"
+	AreaLevel <= 34
+	SetBorderColor 255 255 255
+	SetFontSize 45
+
+Show # Mana Flasks
+	Class "Mana Flask"
+	BaseType "Grand"
+	AreaLevel <= 25
 	SetBorderColor 255 255 255
 	SetFontSize 45
 
