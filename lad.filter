@@ -581,13 +581,23 @@ Show # Watchstones
 	PlayEffect White
 
 # Maps
-Show # T16 Elder Maps
+Show # Elder Maps
 	Class Map
-	ElderMap True
+	HasInfluence Elder
 	SetTextColor 255 90 90
 	SetBorderColor 255 90 90
 	SetFontSize 45
-	PlayAlertSound 9 300
+	PlayAlertSound 4 300
+	MinimapIcon 0 Red Square
+	PlayEffect Red
+
+Show # Shaper Maps
+	Class Map
+	HasInfluence Shaper
+	SetTextColor 255 90 90
+	SetBorderColor 255 90 90
+	SetFontSize 45
+	PlayAlertSound 4 300
 	MinimapIcon 0 Red Square
 	PlayEffect Red
 
@@ -612,27 +622,6 @@ Show # Blighted Maps
 Show # Red T11+ Maps
 	Class Map
 	MapTier >= 11
-	SetTextColor 255 90 90
-	SetBorderColor 255 90 90
-	SetFontSize 45
-	PlayAlertSound 9 300
-	MinimapIcon 0 Red Square
-	PlayEffect Red
-
-Show # SHAPED MAPS
-	Class Map
-	ShapedMap True
-	MapTier >= 10
-	SetTextColor 255 90 90
-	SetBorderColor 255 90 90
-	SetFontSize 45
-	PlayAlertSound 9 300
-	MinimapIcon 0 Red Square
-	PlayEffect Red
-
-Show # Burial
-	Class Map
-	BaseType "Burial Chambers"
 	SetTextColor 255 90 90
 	SetBorderColor 255 90 90
 	SetFontSize 45
@@ -679,7 +668,7 @@ Show # 6L uniques
 
 Show # T1 Uniques
 	Rarity Unique
-	BaseType "Ambush Mitts" "Callous Mask" "Carnal Boots" "Crusader Boots" "Ezomyte Tower Shield" "Gemstone Sword" "Golden Hoop" "Greatwolf Talisman" "Jingling Spirit Shield" "Legion Gloves" "Nightmare Mace" "Nubuck Boots" "Ornate Quiver" "Prismatic Jewel" "Prophecy Wand" "Rawhide Boots" "Riveted Gloves" "Royal Axe" "Ruby Amulet" "Ruby Flask" "Sorcerer Boots" "Timeless Jewel" "Vaal Rapier" "Wyrmscale Doublet" "Zodiac Leather" "Silk Gloves" "Magistrate Crown" "Blood Raiment"
+	BaseType "Ambush Mitts" "Callous Mask" "Carnal Boots" "Crusader Boots" "Ezomyte Tower Shield" "Gemstone Sword" "Golden Hoop" "Greatwolf Talisman" "Jingling Spirit Shield" "Legion Gloves" "Nightmare Mace" "Nubuck Boots" "Ornate Quiver" "Prismatic Jewel" "Prophecy Wand" "Rawhide Boots" "Riveted Gloves""Ruby Amulet" "Ruby Flask" "Sorcerer Boots" "Timeless Jewel" "Vaal Rapier" "Wyrmscale Doublet" "Zodiac Leather" "Silk Gloves" "Magistrate Crown" "Blood Raiment"
 	SetBorderColor 175 96 37
 	PlayAlertSound 1 300
 	SetFontSize 45

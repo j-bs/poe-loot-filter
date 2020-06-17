@@ -568,13 +568,23 @@ Show # Watchstones
 	MinimapIcon 0 White Circle
 	PlayEffect White
 
-Show # T16 Elder Maps
+Show # Elder Maps
 	Class Map
-	ElderMap True
+	HasInfluence Elder
 	SetTextColor 255 90 90
 	SetBorderColor 255 90 90
 	SetFontSize 45
-	PlayAlertSound 9 300
+	PlayAlertSound 4 300
+	MinimapIcon 0 Red Square
+	PlayEffect Red
+
+Show # Shaper Maps
+	Class Map
+	HasInfluence Shaper
+	SetTextColor 255 90 90
+	SetBorderColor 255 90 90
+	SetFontSize 45
+	PlayAlertSound 4 300
 	MinimapIcon 0 Red Square
 	PlayEffect Red
 
@@ -599,27 +609,6 @@ Show # Blighted Maps
 Show # Red T11+ Maps
 	Class Map
 	MapTier >= 11
-	SetTextColor 255 90 90
-	SetBorderColor 255 90 90
-	SetFontSize 45
-	PlayAlertSound 9 300
-	MinimapIcon 0 Red Square
-	PlayEffect Red
-
-Show # SHAPED MAPS
-	Class Map
-	ShapedMap True
-	MapTier >= 10
-	SetTextColor 255 90 90
-	SetBorderColor 255 90 90
-	SetFontSize 45
-	PlayAlertSound 9 300
-	MinimapIcon 0 Red Square
-	PlayEffect Red
-
-Show # Burial
-	Class Map
-	BaseType "Burial Chambers"
 	SetTextColor 255 90 90
 	SetBorderColor 255 90 90
 	SetFontSize 45
@@ -666,7 +655,7 @@ Show # 6L uniques
 
 Show # T1 Uniques
 	Rarity Unique
-	BaseType "Ambush Mitts" "Callous Mask" "Carnal Boots" "Crusader Boots" "Ezomyte Tower Shield" "Gemstone Sword" "Golden Hoop" "Greatwolf Talisman" "Jingling Spirit Shield" "Legion Gloves" "Nightmare Mace" "Nubuck Boots" "Ornate Quiver" "Prismatic Jewel" "Prophecy Wand" "Rawhide Boots" "Riveted Gloves" "Royal Axe" "Ruby Amulet" "Ruby Flask" "Sorcerer Boots" "Timeless Jewel" "Vaal Rapier" "Wyrmscale Doublet" "Zodiac Leather" "Silk Gloves" "Blood Raiment"
+	BaseType "Ambush Mitts" "Callous Mask" "Carnal Boots" "Crusader Boots" "Ezomyte Tower Shield" "Gemstone Sword" "Golden Hoop" "Greatwolf Talisman" "Jingling Spirit Shield" "Legion Gloves" "Nightmare Mace" "Nubuck Boots" "Ornate Quiver" "Prismatic Jewel" "Prophecy Wand" "Rawhide Boots" "Riveted Gloves" "Ruby Amulet" "Ruby Flask" "Sorcerer Boots" "Timeless Jewel" "Vaal Rapier" "Wyrmscale Doublet" "Zodiac Leather" "Silk Gloves" "Blood Raiment"
 	SetBorderColor 175 96 37
 	PlayAlertSound 1 300
 	SetFontSize 45
@@ -711,30 +700,22 @@ Show # SIX SOCKET
 	Sockets 6
 	SetTextColor 138 234 172
 	SetBorderColor 255 0 0
-	PlayAlertSound 3 300
+	PlayAlertSound 12 300
 	SetFontSize 45
 	MinimapIcon 0 Yellow Hexagon
 
-Show # FIVE LINK
+Hide # FIVE LINK
 	LinkedSockets 5
 	SetBackgroundColor 150 150 150
 	SetBorderColor 255 255 255
 	SetTextColor 0 0 0
-#	PlayAlertSound 13 300
 	SetFontSize 40
-	MinimapIcon 1 Yellow Hexagon
 
 Show # Corrupted 3 White Weps/Shields
 	SocketGroup WWW
 	Class "One Hand" "Shield" "Wand"
 
 # Jewels
-Show # Abyss Jewels i82+ - T1 life
-	ItemLevel >= 82
-	Class "Abyss Jewel"
-	SetBorderColor 175 255 150
-	SetFontSize 45
-
 Show # Abyss Jewels i82+ - T1 life
 	ItemLevel >= 82
 	Class "Abyss Jewel"
@@ -755,6 +736,11 @@ Show # All Jewels - Rare
 	Class Jewel "Abyss Jewel"
 	SetBorderColor 255 125 255
 	SetFontSize 45
+
+Show # Cobalt Harold Jewels
+	Class Jewel
+	BaseType "Cobalt"
+	SetFontSize 40
 	
 Hide # Abyss Jewels
 	Class "Abyss Jewel"
@@ -838,7 +824,7 @@ Hide # Low stack count Perandus Coins
 
 Show # Semi useful currency
 	Class Currency
-	BaseType "Orb of Alteration" "Silver Coin" "Glassblower's Bauble" 
+	BaseType "Orb of Alteration" "Silver Coin" "Glassblower's Bauble" "Chromatic Orb"
 	SetTextColor 170 158 130
 	SetBorderColor 170 158 130
 	SetFontSize 40
@@ -851,10 +837,16 @@ Show # Useful low currency multistack
 	SetTextColor 170 158 130
 	SetBorderColor 170 158 130
 
-Hide # Useful low currency 1 stack
+Show # Portal Override
+	Class Currency
+	BaseType "Portal Scroll"
+	SetTextColor 170 158 130
+	SetBorderColor 170 158 130
+
+Hide # Useful low currency 1 stack # "Orb of Transmutation"
 	Class Currency
 	StackSize 1
-	BaseType "Orb of Augmentation" "Orb of Transmutation" "Portal Scroll" "Jeweller's Orb" "Chromatic Orb" "Orb of Chance"
+	BaseType "Orb of Augmentation" "Portal Scroll" "Jeweller's Orb" "Chromatic Orb" "Orb of Chance"
 	SetTextColor 170 158 130
 	SetBorderColor 170 158 130
 
@@ -1024,7 +1016,7 @@ Show # Redeemer
 	MinimapIcon 1 Green Triangle
 
 # WEAPONS
-Show # T1 1H Weps
+Hide # T1 1H Weps
 	Rarity Rare
 	BaseType "Jewelled Foil" "Spiraled Foil" "Imbued Wand" "Opal Wand"
 	SetTextColor 100 200 200
@@ -1062,6 +1054,14 @@ Hide # Quivers
 	SetFontSize 40
 
 # ARMOUR
+Show # T1 ES Gear
+	Rarity Rare
+	ItemLevel >= 84
+	BaseType "Sorcerer Gloves" "Sorcerer Boots"
+	SetTextColor 100 200 200
+	SetBorderColor 255 255 0
+	SetFontSize 38
+
 Hide # T1 Chests
 	Rarity Rare
 	BaseType "Vaal Regalia" "Astral Plate" "Assassin's Garb"
@@ -1085,7 +1085,7 @@ Hide # T2 Shields
 
 Hide # Gloves
 	Rarity Rare
-	BaseType "Spiked Gloves" "Gripped Gloves" "Titan Gauntlets" "Sorcerer Gloves"  "Fingerless Silk Gloves"
+	BaseType "Spiked Gloves" "Gripped Gloves" "Titan Gauntlets" "Sorcerer Gloves" "Fingerless Silk Gloves"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
 	SetFontSize 40
@@ -1127,17 +1127,8 @@ Show
 	SetBorderColor 255 255 0
 	SetFontSize 40
 	
-
-# CHANCE ITEM BASES
-# "Close Helmet" "Leather Belt"
-#Show
-#	BaseType "Glorious Plate" "Sapphire Flask" "Full Wyrmscale"
-#	Rarity Normal
-#	SetBorderColor 255 128 128
-#	SetFontSize 42
-	
 # CRAFTING BASES
-Show # God Tier i86+
+Hide # God Tier i86+
 	Rarity < Rare
 	BaseType "Onyx Amulet" "Diamond Ring" "Two-Stone" "Unset Ring" "Eternal Burgonet" "Lion Pelt" "Colossal Tower Shield"
 	SetTextColor 175 255 150
@@ -1145,7 +1136,7 @@ Show # God Tier i86+
 	SetFontSize 40
 	ItemLevel >= 86
 
-Show # God Tier Scraps i86+
+Hide # God Tier Scraps i86+
 	Rarity < Rare
 	BaseType "Titan Gauntlets" "Slink Gloves" "Royal Burgonet" "Titan Greaves" "Slink Boots" "Hubris Circlet" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Prismatic" "Gold Ring" "Citrine Amulet" "Turquoise Amulet" "Agate Amulet" "Coral Ring" "Moonstone Ring" "Leather Belt" "Heavy Belt" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Rustic Sash" "Vaal Axe" "Coronal Maul" "Exquisite Blade" "Fleshripper" "Harbinger Bow" "Gemini Claw" "Ambusher" "Siege Axe" "Harpy Rapier" "Demon Dagger" "Skean" "Spiraled Foil" "Jewelled Foil" "Profane Wand" "Sambar Sceptre" "Void Sceptre" "Imbued Wand" "Pinnacle Tower Shield" "Kris" "Prismatic" "Astral Plate" "Assassin's Garb" "Saintly Chainmail" "Harmonic Spirit Shield" "Fossilised Spirit Shield" "Titanium Spirit Shield" "Sorcerer Boots" "Sorcerer Gloves" "Vaal Regalia"
 	SetTextColor 175 255 150
@@ -1233,7 +1224,7 @@ Show # Atlas Jewelry
 #	Rarity Rare
 	
 # RARE JEWELRY
-Show # T1 Rings
+Hide # T1 Rings
 	Rarity Rare
 	Class Ring
 	BaseType "Prismatic Ring" "Opal Ring" "Steel Ring" "Ruby Ring" "Topaz Ring" "Sapphire Ring" "Two-Stone Ring" "Unset Ring" "Diamond Ring" "Moonstone Ring" "Amethyst Ring" "Gold Ring"
@@ -1242,7 +1233,7 @@ Show # T1 Rings
 	SetFontSize 40
 	
 # AMULETS
-Show
+Hide
 	Rarity Rare
 	Class Amulet
 	BaseType "Marble Amulet" "Blue Pearl Amulet" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Agate Amulet" "Citrine Amulet" "Turquoise Amulet" "Onyx Amulet" "Gold Amulet"
@@ -1251,28 +1242,13 @@ Show
 	SetFontSize 40
 
 # BELTS
-Show
+Hide
 	Rarity Rare
 	Class Belt
 	BaseType "Vanguard Belt" "Crystal Belt" "Leather Belt"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
 	SetFontSize 40
-	# "Rustic Sash" "Heavy Belt"
-
-	
-# RARE VENDOR RECIPES
-# REGAL
-#Show
-#	Rarity Rare
-#	ItemLevel >= 75
-#	SetBorderColor 255 255 255
-
-# CHAOS
-#Show
-#	Rarity Rare
-#	ItemLevel >= 60
-#	SetBorderColor 255 255 0
 
 # ALL RARES
 #Show
@@ -1283,7 +1259,7 @@ Show
 #	SetFontSize 40
 
 # WHITE RINGS
-Show
+Hide
 	Class Ring
 	BaseType "Unset Ring" "Two-Stone Ring" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Diamond Ring" "Moonstone Ring"
 	Rarity Normal
@@ -1291,7 +1267,7 @@ Show
 	ItemLevel >= 84
 
 # WHITE AMULETS
-Show
+Hide
 	Class Amulet
 	BaseType "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Agate Amulet" "Citrine Amulet" "Turquoise Amulet" "Onyx Amulet"
 	Rarity Normal
