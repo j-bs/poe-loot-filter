@@ -139,6 +139,104 @@ Show # Quality Gems
 
 # LEAGUE ITEMS
 
+Show # Harvested Currency
+	Class "Stackable Currency"
+	BaseType "Infused Engineer's Orb" "Time-light Scroll" "Fragmentation Scroll" "Deregulation Scroll" "Electroshock Scroll" "Haemocombustion Scroll" "Specularity Scroll" "Facetor's Lens"
+	SetTextColor 45 133 223
+	SetBorderColor 45 133 223
+	SetFontSize 45
+	PlayAlertSound 11 300
+	MinimapIcon 0 Blue Star
+	PlayEffect Blue
+
+Show # Harvested Goddess Fragments
+	Class "MapFragment"
+	BaseType "Tribute to the Goddess" "Gift to the Goddess" "Dedication to the Goddess"
+	SetTextColor 45 133 223
+	SetBorderColor 45 133 223
+	SetFontSize 45
+	PlayAlertSound 11 300
+	MinimapIcon 0 Blue Star
+	PlayEffect Blue
+
+Show # Harvested Scarabs
+	Class "MapFragment"
+	BaseType "Winged"
+	SetTextColor 45 133 223
+	SetBorderColor 45 133 223
+	SetFontSize 45
+	PlayAlertSound 11 300
+	MinimapIcon 0 Blue Star
+	PlayEffect Blue
+
+Show # Harvested Goddess Fragments
+	Class "MapFragment"
+	BaseType "Tribute to the Goddess" "Gift to the Goddess" "Dedication to the Goddess" "Deregulation Scroll" "Electroshock Scroll" "Haemocombustion Scroll" "Specularity Scroll" "Facetor's Lens"
+	SetTextColor 45 133 223
+	SetBorderColor 45 133 223
+	SetFontSize 45
+	PlayAlertSound 11 300
+	MinimapIcon 0 Blue Star
+	PlayEffect Blue
+
+Show # T1 Harvest Seeds
+	Class "Harvest Seed"
+	BaseType "Grain"
+	SetTextColor 45 133 223
+	SetBorderColor 45 133 223
+	SetFontSize 45
+	PlayAlertSound 11 300
+	MinimapIcon 0 Blue Star
+	PlayEffect Blue
+
+Show # T2 Harvest Seeds
+	Class "Harvest Seed"
+	BaseType "Seed"
+	SetTextColor 45 133 223
+	SetBorderColor 45 133 223
+	SetFontSize 45
+	PlayAlertSound 11 300
+	MinimapIcon 0 Blue Star
+	PlayEffect Blue
+
+Show # T3 Harvest Seeds
+	Class "Harvest Seed"
+	BaseType "Bulb"
+	SetTextColor 45 133 223
+	SetBorderColor 45 133 223
+	SetFontSize 45
+	PlayAlertSound 11 300
+	MinimapIcon 0 Blue Star
+	PlayEffect Blue
+
+Show # T4 Harvest Seeds
+	Class "Harvest Seed"
+	BaseType "Thornfruit" "Scalefruit" "Blisterfruit"
+	SetTextColor 45 133 223
+	SetBorderColor 45 133 223
+	SetFontSize 45
+	PlayAlertSound 11 300
+	MinimapIcon 0 Blue Star
+	PlayEffect Blue
+
+Show # Secret Seeds?
+	Class "Harvest Seed"
+	SetTextColor 45 133 223
+	SetBorderColor 45 133 223
+	SetFontSize 45
+	PlayAlertSound 1 300
+	MinimapIcon 0 Blue Star
+	PlayEffect Blue
+
+Show # Harvest Infrastructure?
+	Class "HarvestInfrastructure"
+	SetTextColor 45 133 223
+	SetBorderColor 45 133 223
+	SetFontSize 45
+	PlayAlertSound 11 300
+	MinimapIcon 0 Blue Star
+	PlayEffect Blue
+
 Show # Delirium Orbs
 	Class "Stackable Currency"
 	BaseType "Delirium Orb"
@@ -190,7 +288,7 @@ Show # T1 Blight Oils
 
 Show # Blight Oils
 	Class "Stackable Currency"
-	BaseType "Verdant Oil" "Teal Oil" "Azure Oil" "Violet Oil" "Crimson Oil" "Black Oil" "Opalescent Oil" "Silver Oil" "Golden Oil"
+	BaseType "Verdant Oil" "Teal Oil" "Azure Oil" "Indigo Oil" "Violet Oil" "Crimson Oil" "Black Oil" "Opalescent Oil"
 	SetTextColor 255 181 0
 	SetBorderColor 255 181 0
 	SetFontSize 45
@@ -895,7 +993,7 @@ Show # T2 Cards
 	
 Show # T3 Cards
 	Class Card
-	BaseType "The Encroaching Darkness" "The Survivalist" "The Fathomless Depths" "Humility" "Scholar of the Seas" "Vinia's Token" "No Traces" "The Wrath" "The Seeker" "Lucky Connections" "The Jeweller's Boon" "The Inventor" "Emperor of Purity" "Monochrome" "The Mad King" "The Obscured" "The Valkyrie" "Three Faces in the Dark" "The Valley of Steel Boxes" "Dark Dreams" "The Fool" "Imperial Legacy" "Vanity" "The Primordial" "Demigod's Wager" "The Deep Ones" "The Wretched" "More is Never Enough" "The Bargain" "The Deal" "Void of the Elements" "The Wolf's Legacy" "The Heroic Shot" "The Journey" "A Dab of Ink" "Arrogance of the Vaal" "Sambodhi's Vow" "The Beast" "The Price of Protection" "Cameria's Cut" "The Bones" "Deathly Designs" "The Tinkerer's Table" "The Easy Stroll" "Loyalty"
+	BaseType "The Encroaching Darkness" "The Survivalist" "The Fathomless Depths" "Humility" "Scholar of the Seas" "Vinia's Token" "No Traces" "The Wrath" "The Seeker" "Lucky Connections" "The Jeweller's Boon" "The Inventor" "Emperor of Purity" "Monochrome" "The Mad King" "The Obscured" "The Valkyrie" "Three Faces in the Dark" "The Valley of Steel Boxes" "Dark Dreams" "The Fool" "Imperial Legacy" "Vanity" "The Primordial" "Demigod's Wager" "The Deep Ones" "The Wretched" "More is Never Enough" "The Bargain" "The Deal" "Void of the Elements" "The Wolf's Legacy" "The Heroic Shot" "The Journey" "A Dab of Ink" "Arrogance of the Vaal" "Sambodhi's Vow" "The Beast" "The Price of Protection" "Cameria's Cut" "The Bones" "Deathly Designs" "The Tinkerer's Table" "The Easy Stroll" "Loyalty" "Prometheus' Armoury" "The Tumbleweed" "The Hive of Knowledge" "Gift of Asenath" "A Note in the Wind" "The Greatest Intentions" "The White Knight" "The Sustenance" "Peaceful Moments" "The Awakened" "A Familiar Call" "The Long Con"
 	SetBorderColor 30 144 255
 	SetTextColor 0 125 200
 	SetFontSize 45
