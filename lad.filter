@@ -163,7 +163,7 @@ Show # Harvested Currency
 	PlayEffect Blue
 
 Show # Harvested Goddess Fragments
-	Class "MapFragment"
+	Class "Map Fragments"
 	BaseType "Tribute to the Goddess" "Gift to the Goddess" "Dedication to the Goddess"
 	SetTextColor 45 133 223
 	SetBorderColor 45 133 223
@@ -173,7 +173,7 @@ Show # Harvested Goddess Fragments
 	PlayEffect Blue
 
 Show # Harvested Scarabs
-	Class "MapFragment"
+	Class "Map Fragments"
 	BaseType "Winged"
 	SetTextColor 45 133 223
 	SetBorderColor 45 133 223
@@ -183,7 +183,7 @@ Show # Harvested Scarabs
 	PlayEffect Blue
 
 Show # Harvested Goddess Fragments
-	Class "MapFragment"
+	Class "Map Fragments"
 	BaseType "Tribute to the Goddess" "Gift to the Goddess" "Dedication to the Goddess" "Deregulation Scroll" "Electroshock Scroll" "Haemocombustion Scroll" "Specularity Scroll" "Facetor's Lens"
 	SetTextColor 45 133 223
 	SetBorderColor 45 133 223
@@ -192,9 +192,10 @@ Show # Harvested Goddess Fragments
 	MinimapIcon 0 Blue Star
 	PlayEffect Blue
 
+# Harvest Seeds
 Show # T1 Harvest Seeds
 	Class "Harvest Seed"
-	BaseType "Grain"
+	BaseType "Seed"
 	SetTextColor 45 133 223
 	SetBorderColor 45 133 223
 	SetFontSize 45
@@ -204,7 +205,7 @@ Show # T1 Harvest Seeds
 
 Show # T2 Harvest Seeds
 	Class "Harvest Seed"
-	BaseType "Seed"
+	BaseType "Grain"
 	SetTextColor 45 133 223
 	SetBorderColor 45 133 223
 	SetFontSize 45
@@ -218,7 +219,7 @@ Show # T3 Harvest Seeds
 	SetTextColor 45 133 223
 	SetBorderColor 45 133 223
 	SetFontSize 45
-	PlayAlertSound 11 300
+	PlayAlertSound 4 300
 	MinimapIcon 0 Blue Star
 	PlayEffect Blue
 
@@ -228,11 +229,11 @@ Show # T4 Harvest Seeds
 	SetTextColor 45 133 223
 	SetBorderColor 45 133 223
 	SetFontSize 45
-	PlayAlertSound 11 300
+	PlayAlertSound 1 300
 	MinimapIcon 0 Blue Star
 	PlayEffect Blue
 
-Show # Secret Seeds?
+Show # Tx Seeds
 	Class "Harvest Seed"
 	SetTextColor 45 133 223
 	SetBorderColor 45 133 223
@@ -241,12 +242,43 @@ Show # Secret Seeds?
 	MinimapIcon 0 Blue Star
 	PlayEffect Blue
 
-Show # Harvest Infrastructure?
-	Class "HarvestInfrastructure"
+# Harvest Enhancers
+Show # T1 Enhancers
+	Class "Seed Enhancer"
+	BaseType "Fortune Bud" "Horticrafting Bud" "Lifeforce Bud"
 	SetTextColor 45 133 223
 	SetBorderColor 45 133 223
 	SetFontSize 45
 	PlayAlertSound 11 300
+	MinimapIcon 0 Blue Star
+	PlayEffect Blue
+
+Show # T2 Enhancers
+	Class "Seed Enhancer"
+	BaseType "Fortune Flower" "Horticrafting Flower" "Lifeforce Flower"
+	SetTextColor 45 133 223
+	SetBorderColor 45 133 223
+	SetFontSize 45
+	PlayAlertSound 4 300
+	MinimapIcon 0 Blue Star
+	PlayEffect Blue
+
+Show # T3 Enhancers
+	Class "Seed Enhancer"
+	BaseType "Fortune Blossom" "Horticrafting Blossom" "Lifeforce Blossom"
+	SetTextColor 45 133 223
+	SetBorderColor 45 133 223
+	SetFontSize 45
+	PlayAlertSound 4 300
+	MinimapIcon 0 Blue Star
+	PlayEffect Blue
+
+Show # Tx Enhancers
+	Class "Seed Enhancer"
+	SetTextColor 45 133 223
+	SetBorderColor 45 133 223
+	SetFontSize 45
+	PlayAlertSound 4 300
 	MinimapIcon 0 Blue Star
 	PlayEffect Blue
 
@@ -1007,7 +1039,7 @@ Show # T3 - Workaround
 
 Show # T2 Cards
 	Class Card
-	BaseType "Mawr Blaidd" "Hunter's Reward" "The Immortal" "The Last One Standing" "The Dragon's Heart" "The Queen" "The Polymath" "Abandoned Wealth" "Wealth and Power" "The Ethereal" "The Thaumaturgist" "The Offering" "The Spark and the Flame" "The Artist" "The Brittle Emperor" "Heterochromia" "The Wolf" "Bowyer's Dream" "The Hunger" "Last Hope" "The Sephirot" "The Saint's Treasure" "The Enlightened" "The Harvester" "The Void" "The Vast" "The Chains that Bind" "Pride Before the Fall" "The Formless Sea" "The Celestial Justicar" "The Hoarder" "The King's Heart" "The Wolven King's Bite" "Chaotic Disposition" "Time-Lost Relic" "The Celestial Stone" "Perfection" "The Hale Heart" "The Undisputed" "The Darkest Dream" "Harmony of Souls" "The Dreamland" "The Master" "The Mayor" "The Professor" "The Samurai's Eye" "The Undaunted" "The Risk" "The Iron Bard" "The World Eater" "The Wind" "The Dreamer" "The Cartographer" "The Wilted Rose" "Beauty Through Death" "The Cacophony" "The Innocent" "The Twilight Moon" "The Sacrifice" "The Life Thief" "The Messenger" "The Landing" "Seven Years Bad Luck" "Alone in the Darkness" "Alluring Bounty" "Buried Treasure" "Burning Blood" "Pride of the First Ones" "The Porcupine" "The Gladiator" "The Damned" "Remembrance" "The Price of Loyalty" "Nook's Crown" "The Eye of Terror" "Azyran's Reward" "The Chosen" "The Craving" "Divine Justice" "The Escape" "Etched in Blood" "Friendship" "Squandered Prosperity" "Succor of the Sinless" "Underground Forest" "The Progeny of Lunaris" "The Cheater" "Council of Cats" "The Strategist" "The Eldritch Decay" "The Betrayal"
+	BaseType "Mawr Blaidd" "Hunter's Reward" "The Immortal" "The Last One Standing" "The Dragon's Heart" "The Queen" "The Polymath" "Abandoned Wealth" "Wealth and Power" "The Ethereal" "The Thaumaturgist" "The Offering" "The Spark and the Flame" "The Artist" "The Brittle Emperor" "Heterochromia" "The Wolf" "Bowyer's Dream" "The Hunger" "Last Hope" "The Sephirot" "The Saint's Treasure" "The Enlightened" "The Harvester" "The Void" "The Vast" "The Chains that Bind" "Pride Before the Fall" "The Formless Sea" "The Celestial Justicar" "The Hoarder" "The King's Heart" "The Wolven King's Bite" "Chaotic Disposition" "Time-Lost Relic" "The Celestial Stone" "Perfection" "The Hale Heart" "The Undisputed" "The Darkest Dream" "Harmony of Souls" "The Dreamland" "The Master" "The Mayor" "The Professor" "The Samurai's Eye" "The Undaunted" "The Risk" "The Iron Bard" "The World Eater" "The Wind" "The Dreamer" "The Cartographer" "The Wilted Rose" "Beauty Through Death" "The Cacophony" "The Innocent" "The Twilight Moon" "The Sacrifice" "The Life Thief" "The Messenger" "The Landing" "Seven Years Bad Luck" "Alone in the Darkness" "Alluring Bounty" "Buried Treasure" "Burning Blood" "Pride of the First Ones" "The Porcupine" "The Gladiator" "The Damned" "Remembrance" "The Price of Loyalty" "Nook's Crown" "The Eye of Terror" "Azyran's Reward" "The Chosen" "The Craving" "Divine Justice" "The Escape" "Etched in Blood" "Friendship" "Squandered Prosperity" "Succor of the Sinless" "Underground Forest" "The Progeny of Lunaris" "The Cheater" "Council of Cats" "The Strategist" "The Eldritch Decay" "The Betrayal" "Gift of Asenath"
 	SetBorderColor 30 144 255
 	SetTextColor 0 125 200
 	SetFontSize 45
@@ -1016,7 +1048,7 @@ Show # T2 Cards
 	
 Show # T3 Cards
 	Class Card
-	BaseType "The Encroaching Darkness" "The Survivalist" "The Fathomless Depths" "Humility" "Scholar of the Seas" "Vinia's Token" "No Traces" "The Wrath" "The Seeker" "Lucky Connections" "The Jeweller's Boon" "The Inventor" "Emperor of Purity" "Monochrome" "The Mad King" "The Obscured" "The Valkyrie" "Three Faces in the Dark" "The Valley of Steel Boxes" "Dark Dreams" "The Fool" "Imperial Legacy" "Vanity" "The Primordial" "Demigod's Wager" "The Deep Ones" "The Wretched" "More is Never Enough" "The Bargain" "The Deal" "Void of the Elements" "The Wolf's Legacy" "The Heroic Shot" "The Journey" "A Dab of Ink" "Arrogance of the Vaal" "Sambodhi's Vow" "The Beast" "The Price of Protection" "Cameria's Cut" "The Bones" "Deathly Designs" "The Tinkerer's Table" "The Easy Stroll" "Prometheus' Armoury" "The Tumbleweed" "The Hive of Knowledge" "Gift of Asenath" "A Note in the Wind" "The Greatest Intentions" "The White Knight" "The Sustenance" "Peaceful Moments" "The Awakened" "A Familiar Call" "The Long Con"
+	BaseType "The Encroaching Darkness" "The Survivalist" "The Fathomless Depths" "Humility" "Scholar of the Seas" "Vinia's Token" "No Traces" "The Wrath" "The Seeker" "Lucky Connections" "The Jeweller's Boon" "The Inventor" "Emperor of Purity" "Monochrome" "The Mad King" "The Obscured" "The Valkyrie" "Three Faces in the Dark" "The Valley of Steel Boxes" "Dark Dreams" "The Fool" "Imperial Legacy" "Vanity" "The Primordial" "Demigod's Wager" "The Deep Ones" "The Wretched" "More is Never Enough" "The Bargain" "The Deal" "Void of the Elements" "The Wolf's Legacy" "The Heroic Shot" "The Journey" "A Dab of Ink" "Arrogance of the Vaal" "Sambodhi's Vow" "The Beast" "The Price of Protection" "Cameria's Cut" "The Bones" "Deathly Designs" "The Tinkerer's Table" "The Easy Stroll" "Prometheus' Armoury" "The Tumbleweed" "The Hive of Knowledge" "A Note in the Wind" "The Greatest Intentions" "The White Knight" "The Sustenance" "Peaceful Moments" "The Awakened" "A Familiar Call" "The Long Con"
 	SetBorderColor 30 144 255
 	SetTextColor 0 125 200
 	SetFontSize 45
@@ -1203,7 +1235,7 @@ Show # T2 Shields
 	SetBorderColor 255 255 0
 	SetFontSize 38
 
-Show # Gloves
+Show # T1 Gloves
 	Rarity Rare
 	BaseType "Spiked Gloves" "Gripped Gloves" "Titan Gauntlets" "Sorcerer Gloves" "Fingerless Silk Gloves"
 	SetTextColor 100 200 200
@@ -1228,7 +1260,7 @@ Show # T1 Helm
 Hide
 	Rarity Rare
 	Class Shield Boots Gloves Armour Helm "One Hand" "Two Hand" "Bow" "Staves" "Claw" "Sceptre" "Quiver" "Warstaves" "Dagger"
-	AreaLevel > 68
+	AreaLevel > 75
 
 # SPECIAL BELT
 Show
@@ -1580,68 +1612,68 @@ Show # Siege Axe
 
 # FLASKS
 Show # Mana Flasks
-	Class "Mana Flask"
+	Class "Flask"
 	BaseType "Eternal"
 	AreaLevel <= 70
 	SetBorderColor 255 255 255
 	SetFontSize 45
 
 Show # Mana Flasks
-	Class "Mana Flask"
+	Class "Flask"
 	BaseType "Divine"
 	AreaLevel <= 70
 	SetBorderColor 255 255 255
 	SetFontSize 45
 
 Show # Mana Flasks
-	Class "Mana Flask"
+	Class "Flask"
 	BaseType "Sanctified"
 	AreaLevel <= 60
 	SetBorderColor 255 255 255
 	SetFontSize 45
 
 Show # Mana Flasks
-	Class "Mana Flask"
+	Class "Flask"
 	BaseType "Hallowed"
 	AreaLevel <= 52
 	SetBorderColor 255 255 255
 	SetFontSize 45
 
 Show # Mana Flasks
-	Class "Mana Flask"
+	Class "Flask"
 	BaseType "Sacred"
 	AreaLevel <= 46
 	SetBorderColor 255 255 255
 	SetFontSize 45
 
 Show # Mana Flasks
-	Class "Mana Flask"
+	Class "Flask"
 	BaseType "Colossal"
 	AreaLevel <= 40
 	SetBorderColor 255 255 255
 	SetFontSize 45
 
 Show # Mana Flasks
-	Class "Mana Flask"
+	Class "Flask"
 	BaseType "Giant"
 	AreaLevel <= 34
 	SetBorderColor 255 255 255
 	SetFontSize 45
 
 Show # Mana Flasks
-	Class "Mana Flask"
+	Class "Flask"
 	BaseType "Grand"
 	AreaLevel <= 25
 	SetBorderColor 255 255 255
 	SetFontSize 45
 
 Show # Mana Flasks
-	Class "Mana Flask"
+	Class "Flask"
 	SetBorderColor 255 255 255
 	SetFontSize 45
 
-Show # Twilight Strand
-	AreaLevel = 1
+# Show # Twilight Strand
+# 	AreaLevel = 1
 
 Show # STAT AMULETS
 	Class "Amulet"
