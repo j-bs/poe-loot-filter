@@ -56,15 +56,6 @@ Show # Lvl 21 Gems
 	SetBorderColor 128 128 255
 	SetFontSize 45
 	PlayAlertSound 4 250
-	MinimapIcon 0 White Triangle
-
-# GEMS
-Show # Lvl 21 Gems
-	Class Gem
-	GemLevel = 21
-	SetBorderColor 128 128 255
-	SetFontSize 45
-	PlayAlertSound 4 250
 	PlayEffect Cyan
 	MinimapIcon 0 Cyan Triangle
 
@@ -87,6 +78,16 @@ Show # Lv 7 Special Gems
 	PlayAlertSound 4 250
 	PlayEffect Cyan
 	MinimapIcon 0 Cyan Triangle
+
+Show # Alternate Quality Gems
+	Class Gem
+	AlternateQuality True
+	SetTextColor 255 181 0
+	SetBorderColor 255 181 0
+	PlayAlertSound 11 300
+	SetFontSize 45
+	MinimapIcon 0 Yellow UpsideDownHouse
+	PlayEffect Yellow
 
 Show # 20 Quality Gems
 	Class Gem
@@ -119,7 +120,7 @@ Show # T1 Drop Only Gems
 
 Show # T2 Drop Only Gems
 	Class Gem
-	BaseType "Portal" "Vaal Breach" "Vaal Immortal Call"
+	BaseType "Portal" "Vaal Breach" "Vaal Immortal Call" "Elemental Penetration Support"
 	SetFontSize 40
 	MinimapIcon 1 Cyan Triangle
 
@@ -131,26 +132,81 @@ Show # Gems with low max level
 	SetFontSize 40
 	MinimapIcon 1 Cyan Triangle
 
-Show # 20 Quality Gems
-	Class Gem
-	Quality = 20
-	SetBorderColor 128 128 255
-	SetFontSize 40
-	PlayAlertSound 12 300
-	MinimapIcon 1 White Triangle
-
-Show # Quality Gems
-	Class Gem
-	Quality > 14
-	SetBorderColor 128 128 255
-	SetFontSize 40
-	MinimapIcon 1 White Triangle
-
 Show # Vaal Gems
 	Class Gem
 	BaseType "Vaal" "Impurity"
 
 # LEAGUE ITEMS
+
+Show # Heist Replica Uniques
+	Replica True
+	Rarity Unique
+	SetBorderColor 175 96 37
+	PlayAlertSound 1 300
+	SetFontSize 45
+	MinimapIcon 0 Brown Star
+	PlayEffect Brown
+
+Show # Heist Currency
+	Class "Stackable Currency"
+	BaseType "Rogue's Marker" "Tailoring Orb" "Tempering Orb" "Secondary Regrading Lens" "Prime Regrading Lens"
+	SetTextColor 255 181 0
+	SetBorderColor 255 181 0
+	PlayAlertSound 11 300
+	SetFontSize 45
+	MinimapIcon 0 Yellow UpsideDownHouse
+	PlayEffect Yellow
+
+Show # Heist Trinkets
+	Class Trinket
+	SetTextColor 255 181 0
+	SetBorderColor 255 181 0
+	PlayAlertSound 11 300
+	SetFontSize 45
+	MinimapIcon 0 Yellow UpsideDownHouse
+	PlayEffect Yellow
+
+Show # Heist Loot
+	Class "Heist Target"
+	SetTextColor 255 181 0
+	SetBorderColor 255 181 0
+	PlayAlertSound 11 300
+	SetFontSize 45
+	MinimapIcon 0 Yellow UpsideDownHouse
+	PlayEffect Yellow
+
+Show # Heist Contracts
+	Class Contract
+	SetTextColor 255 181 0
+	SetBorderColor 255 181 0
+	PlayAlertSound 11 300
+	SetFontSize 45
+	MinimapIcon 0 Yellow UpsideDownHouse
+	PlayEffect Yellow
+
+Show # Heist Blueprints
+	Class Blueprint
+	SetTextColor 255 181 0
+	SetBorderColor 255 181 0
+	PlayAlertSound 11 300
+	SetFontSize 45
+	MinimapIcon 0 Yellow UpsideDownHouse
+	PlayEffect Yellow
+
+Show # Heist Mercenary Gear
+	Class "Heist Cloak" "Heist Brooch" "Heist Tool" "Heist Gear"
+	SetTextColor 255 181 0
+	SetBorderColor 255 181 0
+	PlayAlertSound 11 300
+	SetFontSize 45
+	MinimapIcon 0 Yellow UpsideDownHouse
+	PlayEffect Yellow
+
+Show # Heist Experimental Basetypes
+	BaseType "Assembler Wand" "Congregator Wand" "Accumulator Wand" "Hollowpoint Dagger" "Pressurised Dagger" "Pneumatic Dagger" "Flickerflame Blade" "Flashfire Blade" "Infernal Blade" "Shadow Fangs" "Malign Fangs" "Void Fangs" "Maltreatment Axe" "Disapprobation Axe" "Psychotic Axe" "Fickle Spiritblade" "Capricious Spiritblade" "Anarchic Spiritblade" "Flare Mace" "Crack Mace" "Boom Mace" "Oscillating Sceptre" "Stabilising Sceptre" "Alternating Sceptre" "Hedron Bow" "Foundry Bow" "Solarine Bow" "Transformer Staff" "Reciprocation Staff" "Battery Staff" "Capacity Rod" "Potentiality Rod" "Eventuality Rod" "Prime Cleaver" "Honed Cleaver" "Apex Cleaver" "Rebuking Blade" "Blasting Blade" "Banishing Blade" "Blunt Force Condenser" "Crushing Force Magnifier" "Impact Force Propagator" "Micro-Distillery Belt" "Mechalarm Belt" "Astrolabe Amulet" "Simplex Amulet" "Cogwork Ring" "Geodesic Ring" "Exhausting Spirit Shield" "Subsuming Spirit Shield" "Transfer-attuned Spirit Shield" "Endothermic Buckler" "Polar Buckler" "Cold-attuned Buckler" "Exothermic Tower Shield" "Magmatic Tower Shield" "Heat-attuned Tower Shield"
+	SetBorderColor 255 181 0
+	SetFontSize 40
+	MinimapIcon 1 Yellow UpsideDownHouse
 
 Show # Harvested Currency
 	Class "Stackable Currency"
@@ -1024,7 +1080,7 @@ Show # Default Currency
 
 # DIVINATION CARDS
 Show # T1 Cards
-	BaseType "The Doctor" "House of Mirrors" "The Fiend" "Immortal Resolve" "The Demon" "The Old Man" "Baited Expectations" "The Fishmonger"
+	BaseType "The Doctor" "House of Mirrors" "The Fiend" "Immortal Resolve" "The Demon" "The Old Man" "Baited Expectations" "The Fishmonger" "Brother's Stash" "Unrequited Love"
 	SetBorderColor 30 144 255
 	SetTextColor 0 125 200
 	SetFontSize 45
@@ -1039,7 +1095,7 @@ Show # T3 - Workaround
 
 Show # T2 Cards
 	Class Card
-	BaseType "Mawr Blaidd" "Hunter's Reward" "The Immortal" "The Last One Standing" "The Dragon's Heart" "The Queen" "The Polymath" "Abandoned Wealth" "Wealth and Power" "The Ethereal" "The Thaumaturgist" "The Offering" "The Spark and the Flame" "The Artist" "The Brittle Emperor" "Heterochromia" "The Wolf" "Bowyer's Dream" "The Hunger" "Last Hope" "The Sephirot" "The Saint's Treasure" "The Enlightened" "The Harvester" "The Void" "The Vast" "The Chains that Bind" "Pride Before the Fall" "The Formless Sea" "The Celestial Justicar" "The Hoarder" "The King's Heart" "The Wolven King's Bite" "Chaotic Disposition" "Time-Lost Relic" "The Celestial Stone" "Perfection" "The Hale Heart" "The Undisputed" "The Darkest Dream" "Harmony of Souls" "The Dreamland" "The Master" "The Mayor" "The Professor" "The Samurai's Eye" "The Undaunted" "The Risk" "The Iron Bard" "The World Eater" "The Wind" "The Dreamer" "The Cartographer" "The Wilted Rose" "Beauty Through Death" "The Cacophony" "The Innocent" "The Twilight Moon" "The Sacrifice" "The Life Thief" "The Messenger" "The Landing" "Seven Years Bad Luck" "Alone in the Darkness" "Alluring Bounty" "Buried Treasure" "Burning Blood" "Pride of the First Ones" "The Porcupine" "The Gladiator" "The Damned" "Remembrance" "The Price of Loyalty" "Nook's Crown" "The Eye of Terror" "Azyran's Reward" "The Chosen" "The Craving" "Divine Justice" "The Escape" "Etched in Blood" "Friendship" "Squandered Prosperity" "Succor of the Sinless" "Underground Forest" "The Progeny of Lunaris" "The Cheater" "Council of Cats" "The Strategist" "The Eldritch Decay" "The Betrayal" "Gift of Asenath"
+	BaseType "Mawr Blaidd" "Hunter's Reward" "The Immortal" "The Last One Standing" "The Dragon's Heart" "The Queen" "The Polymath" "Abandoned Wealth" "Wealth and Power" "The Ethereal" "The Thaumaturgist" "The Offering" "The Spark and the Flame" "The Artist" "The Brittle Emperor" "Heterochromia" "The Wolf" "Bowyer's Dream" "The Hunger" "Last Hope" "The Sephirot" "The Saint's Treasure" "The Enlightened" "The Harvester" "The Void" "The Vast" "The Chains that Bind" "Pride Before the Fall" "The Formless Sea" "The Celestial Justicar" "The Hoarder" "The King's Heart" "The Wolven King's Bite" "Chaotic Disposition" "Time-Lost Relic" "The Celestial Stone" "Perfection" "The Hale Heart" "The Undisputed" "The Darkest Dream" "Harmony of Souls" "The Dreamland" "The Master" "The Mayor" "The Professor" "The Samurai's Eye" "The Undaunted" "The Risk" "The Iron Bard" "The World Eater" "The Wind" "The Dreamer" "The Cartographer" "The Wilted Rose" "Beauty Through Death" "The Cacophony" "The Innocent" "The Twilight Moon" "The Sacrifice" "The Life Thief" "The Messenger" "The Landing" "Seven Years Bad Luck" "Alone in the Darkness" "Alluring Bounty" "Buried Treasure" "Burning Blood" "Pride of the First Ones" "The Porcupine" "The Gladiator" "The Damned" "Remembrance" "The Price of Loyalty" "Nook's Crown" "The Eye of Terror" "Azyran's Reward" "The Chosen" "The Craving" "Divine Justice" "The Escape" "Etched in Blood" "Friendship" "Squandered Prosperity" "Succor of the Sinless" "Underground Forest" "The Progeny of Lunaris" "The Cheater" "Council of Cats" "The Strategist" "The Eldritch Decay" "The Betrayal" "Gift of Asenath" "Cursed Words"
 	SetBorderColor 30 144 255
 	SetTextColor 0 125 200
 	SetFontSize 45
@@ -1048,7 +1104,7 @@ Show # T2 Cards
 	
 Show # T3 Cards
 	Class Card
-	BaseType "The Encroaching Darkness" "The Survivalist" "The Fathomless Depths" "Humility" "Scholar of the Seas" "Vinia's Token" "No Traces" "The Wrath" "The Seeker" "Lucky Connections" "The Jeweller's Boon" "The Inventor" "Emperor of Purity" "Monochrome" "The Mad King" "The Obscured" "The Valkyrie" "Three Faces in the Dark" "The Valley of Steel Boxes" "Dark Dreams" "The Fool" "Imperial Legacy" "Vanity" "The Primordial" "Demigod's Wager" "The Deep Ones" "The Wretched" "More is Never Enough" "The Bargain" "The Deal" "Void of the Elements" "The Wolf's Legacy" "The Heroic Shot" "The Journey" "A Dab of Ink" "Arrogance of the Vaal" "Sambodhi's Vow" "The Beast" "The Price of Protection" "Cameria's Cut" "The Bones" "Deathly Designs" "The Tinkerer's Table" "The Easy Stroll" "Prometheus' Armoury" "The Tumbleweed" "The Hive of Knowledge" "A Note in the Wind" "The Greatest Intentions" "The White Knight" "The Sustenance" "Peaceful Moments" "The Awakened" "A Familiar Call" "The Long Con"
+	BaseType "The Encroaching Darkness" "The Survivalist" "The Fathomless Depths" "Humility" "Scholar of the Seas" "Vinia's Token" "No Traces" "The Wrath" "The Seeker" "Lucky Connections" "The Jeweller's Boon" "The Inventor" "Emperor of Purity" "Monochrome" "The Mad King" "The Obscured" "The Valkyrie" "Three Faces in the Dark" "The Valley of Steel Boxes" "Dark Dreams" "The Fool" "Imperial Legacy" "Vanity" "The Primordial" "Demigod's Wager" "The Deep Ones" "The Wretched" "More is Never Enough" "The Bargain" "The Deal" "Void of the Elements" "The Wolf's Legacy" "The Heroic Shot" "The Journey" "A Dab of Ink" "Arrogance of the Vaal" "Sambodhi's Vow" "The Beast" "The Price of Protection" "Cameria's Cut" "The Bones" "Deathly Designs" "The Tinkerer's Table" "The Easy Stroll" "Prometheus' Armoury" "The Tumbleweed" "The Hive of Knowledge" "A Note in the Wind" "The Greatest Intentions" "The White Knight" "The Sustenance" "Peaceful Moments" "The Awakened" "A Familiar Call" "The Long Con" "The Gulf" "The Bitter Blossom" "Triskaidekaphobia" "The Cache" "The Academic" "Desecrated Virtue" "Unchained" "The Unexpected Prize" "The Journalist"
 	SetBorderColor 30 144 255
 	SetTextColor 0 125 200
 	SetFontSize 45
