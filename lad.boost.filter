@@ -148,6 +148,43 @@ Show # Quality Gems
 
 # LEAGUE ITEMS
 
+Show # Ritual Splinters
+	Class Currency
+	BaseType "Ritual Splinter"
+	SetTextColor 255 181 0
+	SetBorderColor 255 181 0
+	PlayAlertSound 11 300
+	SetFontSize 45
+	MinimapIcon 0 Red Raindrop
+	PlayEffect Red
+
+Show # Ritual Vessels
+	BaseType "Ritual Vessel" "Blood-filled Vessel"
+	SetTextColor 255 181 0
+	SetBorderColor 255 181 0
+	PlayAlertSound 11 300
+	SetFontSize 45
+	MinimapIcon 0 Red Cross
+	PlayEffect Red
+
+Show # Crescent Splinters
+	Class Currency
+	BaseType "Crescent Splinter"
+	SetTextColor 255 181 0
+	SetBorderColor 255 181 0
+	PlayAlertSound 11 300
+	SetFontSize 45
+	MinimapIcon 0 Red Raindrop
+	PlayEffect Red
+
+Show # Ritual BaseTypes
+	BaseType "Dreamquest Slippers" "Cloudwhisper Boots" "Brimstone Treads" "Nightwind Slippers" "Windbreak Boots" "Darksteel Treads" "Duskwalk Slippers" "Stormrider Boots" "Basemetal Treads" "Debilitation Gauntlets" "Gruelling Gauntlets" "Taxing Gauntlets" "Sinistral Gloves" "Southswing Gloves" "Gauche Gloves" "Nexus Gloves" "Aetherwind Gloves" "Leyline Gloves" "Blizzard Crown" "Winter Crown" "Gale Crown" "Archdemon Crown" "Demon Crown" "Imp Crown" "Atonement Mask" "Penitent Mask" "Sorrow Mask"
+	SetTextColor 255 181 0
+	SetBorderColor 255 181 0
+	PlayAlertSound 11 300
+	SetFontSize 40
+	MinimapIcon 0 Yellow UpsideDownHouse
+
 Show # Heist Replica Uniques
 	Replica True
 	Rarity Unique
@@ -656,15 +693,6 @@ Show # Delve Reliquary Key
 	PlayAlertSound 1 300
 	SetFontSize 45
 
-Show # Breachlord keys
-	Class "Misc Map Items"
-	SetTextColor 160 32 240
-	SetBorderColor 160 32 240
-	SetFontSize 45
-	PlayAlertSound 9 300
-	MinimapIcon 0 Red Square
-	PlayEffect Red
-
 Show # Legion Emblems T1
 	Class "Map Fragments"
 	BaseType "Timeless Maraketh Emblem" "Timeless Templar Emblem"
@@ -780,7 +808,27 @@ Show # Fragments Misc
 	PlayAlertSound 12 300
 	MinimapIcon 2 White Circle
 
-Show # Watchstones
+Show # Maven's Writ
+	Class "Misc Map Items"
+	BaseType "The Maven's Writ"
+	SetTextColor 255 255 255
+	SetBorderColor 255 90 90
+	SetFontSize 45
+	PlayAlertSound 4 250
+	MinimapIcon 0 Orange Cross
+	PlayEffect Orange
+
+Show # Maven Watchstones
+	Class "Atlas Region Upgrade Item"
+	BaseType "Chromium" "Platinum" "Titanium"
+	SetTextColor 255 255 255
+	SetBorderColor 255 90 90
+	SetFontSize 45
+	PlayAlertSound 4 250
+	MinimapIcon 0 Orange Cross
+	PlayEffect Orange
+
+Show # Default Watchstones
 	Class "Atlas Region Upgrade Item"
 	BaseType "Watchstone"
 	SetTextColor 255 255 255
@@ -1017,7 +1065,7 @@ Show # T3+ Prophecy
 # CURRENCY
 Show # T1 Currency
 	Class Currency
-	BaseType "Exalted Orb" "Eternal Orb" "Divine Orb" "Mirror of Kalandra" "Albino Rhoa Feather" "Orb of Annulment" "Crusader's Exalted Orb" "Redeemer's Exalted Orb" "Hunter's Exalted Orb" "Warlord's Exalted Orb" "Awakener's Orb" "Mirror Shard" "Exalted Shard"
+	BaseType "Exalted Orb" "Eternal Orb" "Divine Orb" "Mirror of Kalandra" "Albino Rhoa Feather" "Orb of Annulment" "Crusader's Exalted Orb" "Redeemer's Exalted Orb" "Hunter's Exalted Orb" "Warlord's Exalted Orb" "Awakener's Orb" "Mirror Shard" "Exalted Shard" "Maven's Orb" "Orb of Unmaking"
 	SetBorderColor 255 0 255
 	SetTextColor 255 0 255
 	PlayAlertSound 1 300
@@ -1129,7 +1177,7 @@ Show # T3 - Workaround
 
 Show # T2 Cards
 	Class Card
-	BaseType "Mawr Blaidd" "Hunter's Reward" "The Immortal" "The Last One Standing" "The Dragon's Heart" "The Queen" "The Polymath" "Abandoned Wealth" "Wealth and Power" "The Ethereal" "The Thaumaturgist" "The Offering" "The Spark and the Flame" "The Artist" "The Brittle Emperor" "Heterochromia" "The Wolf" "Bowyer's Dream" "The Hunger" "Last Hope" "The Sephirot" "The Saint's Treasure" "The Enlightened" "The Harvester" "The Void" "The Vast" "The Chains that Bind" "Pride Before the Fall" "The Formless Sea" "The Celestial Justicar" "The Hoarder" "The King's Heart" "The Wolven King's Bite" "Chaotic Disposition" "Time-Lost Relic" "The Celestial Stone" "Perfection" "The Hale Heart" "The Undisputed" "The Darkest Dream" "Harmony of Souls" "The Dreamland" "The Master" "The Mayor" "The Professor" "The Samurai's Eye" "The Undaunted" "The Risk" "The Iron Bard" "The World Eater" "The Wind" "The Dreamer" "The Cartographer" "The Wilted Rose" "Beauty Through Death" "The Cacophony" "The Innocent" "The Twilight Moon" "The Sacrifice" "The Life Thief" "The Messenger" "The Landing" "Seven Years Bad Luck" "Alone in the Darkness" "Alluring Bounty" "Buried Treasure" "Burning Blood" "Pride of the First Ones" "The Porcupine" "The Gladiator" "The Damned" "Remembrance" "The Price of Loyalty" "Nook's Crown" "The Eye of Terror" "Azyran's Reward" "The Chosen" "The Craving" "Divine Justice" "The Escape" "Etched in Blood" "Friendship" "Squandered Prosperity" "Succor of the Sinless" "Underground Forest" "The Progeny of Lunaris" "Council of Cats" "The Strategist" "The Eldritch Decay" "The Betrayal" "Gift of Asenath" "Cursed Words"
+	BaseType "Mawr Blaidd" "Hunter's Reward" "The Immortal" "The Last One Standing" "The Dragon's Heart" "The Queen" "The Polymath" "Abandoned Wealth" "Wealth and Power" "The Ethereal" "The Thaumaturgist" "The Offering" "The Spark and the Flame" "The Artist" "The Brittle Emperor" "Heterochromia" "The Wolf" "Bowyer's Dream" "The Hunger" "Last Hope" "The Sephirot" "The Saint's Treasure" "The Enlightened" "The Harvester" "The Void" "The Vast" "The Chains that Bind" "Pride Before the Fall" "The Formless Sea" "The Celestial Justicar" "The Hoarder" "The King's Heart" "The Wolven King's Bite" "Chaotic Disposition" "Time-Lost Relic" "The Celestial Stone" "Perfection" "The Hale Heart" "The Undisputed" "The Darkest Dream" "Harmony of Souls" "The Dreamland" "The Master" "The Mayor" "The Professor" "The Samurai's Eye" "The Undaunted" "The Risk" "The Iron Bard" "The World Eater" "The Wind" "The Dreamer" "The Cartographer" "The Wilted Rose" "Beauty Through Death" "The Cacophony" "The Innocent" "The Twilight Moon" "The Sacrifice" "The Life Thief" "The Messenger" "The Landing" "Seven Years Bad Luck" "Alone in the Darkness" "Alluring Bounty" "Buried Treasure" "Burning Blood" "Pride of the First Ones" "The Porcupine" "The Gladiator" "The Damned" "Remembrance" "The Price of Loyalty" "Nook's Crown" "The Eye of Terror" "Azyran's Reward" "The Chosen" "The Craving" "Divine Justice" "The Escape" "Etched in Blood" "Friendship" "Squandered Prosperity" "Succor of the Sinless" "Underground Forest" "The Progeny of Lunaris" "Council of Cats" "The Strategist" "The Eldritch Decay" "The Betrayal" "Gift of Asenath" "Cursed Words" "Fateful Meeting" "Acclimatisation" "Haunting Shadows" "The Whiteout" "Society's Remorse" "Dying Light" "The Astromancer" "Keeper's Corruption" "Reckless Ambition" "Love Through Ice" "Draped in Dreams" "The Patient" "The Long Watch" "The Bear Woman" "Brotherhood in Exile"
 	SetBorderColor 30 144 255
 	SetTextColor 0 125 200
 	SetFontSize 45
