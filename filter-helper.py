@@ -1,30 +1,17 @@
-input = """Dreamquest Slippers
-Cloudwhisper Boots
-Brimstone Treads
-Nightwind Slippers
-Windbreak Boots
-Darksteel Treads
-Duskwalk Slippers
-Stormrider Boots
-Basemetal Treads
-Debilitation Gauntlets
-Gruelling Gauntlets
-Taxing Gauntlets
-Sinistral Gloves
-Southswing Gloves
-Gauche Gloves
-Nexus Gloves
-Aetherwind Gloves
-Leyline Gloves
-Blizzard Crown
-Winter Crown
-Gale Crown
-Archdemon Crown
-Demon Crown
-Imp Crown
-Atonement Mask
-Penitent Mask
-Sorrow Mask"""
+input = """Winter's Embrace
+Sambodhi's Wisdom
+The Enthusiasts
+Broken Promises
+Brush, Paint and Palette
+Deadly Joy
+The Adventuring Spirit
+The Eternal War
+Prejudice
+The Shortcut
+The Card Sharp
+A Modest Request
+Luminous Trove
+The Hook"""
 
 all_baseTypes = ""
 

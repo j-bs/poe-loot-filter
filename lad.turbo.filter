@@ -127,6 +127,16 @@ Show # Gems with low max level
 
 # LEAGUE ITEMS
 
+Show # Ultimatum Map
+	Class "Misc Map Items"
+	BaseType "Inscribed Ultimatum"
+	SetTextColor 255 0 0
+	SetBorderColor 255 0 0
+	SetFontSize 45
+	PlayAlertSound 11 250
+	MinimapIcon 0 Red Cross
+	PlayEffect Red
+
 Show # Ritual Splinters
 	Class Currency
 	BaseType "Ritual Splinter"
@@ -357,7 +367,7 @@ Show # T1 Blight Oils
 
 Show # Blight Oils
 	Class "Stackable Currency"
-	BaseType "Verdant Oil" "Teal Oil" "Azure Oil" "Indigo Oil" "Violet Oil" "Crimson Oil" "Black Oil" "Opalescent Oil"
+	BaseType "Verdant Oil" "Teal Oil" "Azure Oil" "Indigo Oil" "Violet Oil" "Crimson Oil" "Black Oil" "Opalescent Oil" "Tainted Oil"
 	SetTextColor 255 181 0
 	SetBorderColor 255 181 0
 	SetFontSize 40
@@ -593,21 +603,23 @@ Show # Essence Remnant
 	MinimapIcon 0 Red Triangle
 
 # MAPS
-Show # Legacy Key
+Show # Reliquary Key
 	Class "Misc Map Items"
-	BaseType "Ancient Reliquary Key"
-	SetTextColor 255 150 50
-	SetBorderColor 255 150 50
-	PlayAlertSound 4 300
-	SetFontSize 45
-
-Show # Delve Reliquary Key
-	Class "Misc Map Items"
-	BaseType "Timeworn Reliquary Key"
+	BaseType "Timeworn Reliquary Key" "Ancient Reliquary Key" "Vaal Reliquary Key"
 	SetTextColor 255 0 255
 	SetBorderColor 255 0 255
 	PlayAlertSound 1 300
 	SetFontSize 45
+
+Show # Heart of the Grove
+	Class "Misc Map Items"
+	BaseType "Chronicle of Atzoatl"
+	SetTextColor 255 255 255
+	SetBorderColor 255 90 90
+	SetFontSize 45
+	PlayAlertSound 1 250
+	MinimapIcon 0 Orange Cross
+	PlayEffect Orange
 
 Show # Legion Emblems T1
 	Class "Map Fragments"
@@ -1015,7 +1027,7 @@ Show # T1 Currency
 	
 Show # T2 Currency
 	Class Currency
-	BaseType "Awakened Sextant" "Prime Sextant" "Simple Sextant" "Harbinger's Orb" "Ancient Orb" "Tempering Catalyst" "Fertile Catalyst" "Prismatic Catalyst"
+	BaseType "Awakened Sextant" "Prime Sextant" "Simple Sextant" "Harbinger's Orb" "Ancient Orb" "Tempering Catalyst" "Fertile Catalyst" "Prismatic Catalyst" "Accelerating Catalyst" "Noxious Catalyst" "Unstable Catalyst"
 	SetTextColor 255 0 255
 	SetBorderColor 255 0 255
 	PlayAlertSound 12 300
@@ -1129,7 +1141,7 @@ Hide # T3 - Workaround
 
 Show # T2 Cards
 	Class Card
-	BaseType "Mawr Blaidd" "Hunter's Reward" "The Immortal" "The Last One Standing" "The Dragon's Heart" "The Queen" "The Polymath" "Abandoned Wealth" "Wealth and Power" "The Ethereal" "The Thaumaturgist" "The Offering" "The Spark and the Flame" "The Artist" "The Brittle Emperor" "Heterochromia" "The Wolf" "Bowyer's Dream" "The Hunger" "Last Hope" "The Sephirot" "The Saint's Treasure" "The Enlightened" "The Harvester" "The Void" "The Vast" "The Chains that Bind" "Pride Before the Fall" "The Formless Sea" "The Celestial Justicar" "The Hoarder" "The King's Heart" "The Wolven King's Bite" "Chaotic Disposition" "Time-Lost Relic" "The Celestial Stone" "Perfection" "The Hale Heart" "The Undisputed" "The Darkest Dream" "Harmony of Souls" "The Dreamland" "The Master" "The Mayor" "The Professor" "The Samurai's Eye" "The Undaunted" "The Risk" "The Iron Bard" "The World Eater" "The Wind" "The Dreamer" "The Cartographer" "The Wilted Rose" "Beauty Through Death" "The Cacophony" "The Innocent" "The Twilight Moon" "The Sacrifice" "The Life Thief" "The Messenger" "The Landing" "Seven Years Bad Luck" "Alone in the Darkness" "Alluring Bounty" "Buried Treasure" "Burning Blood" "Pride of the First Ones" "The Porcupine" "The Damned" "Remembrance" "The Price of Loyalty" "Nook's Crown" "The Eye of Terror" "Azyran's Reward" "The Chosen" "The Craving" "Divine Justice" "The Escape" "Etched in Blood" "Friendship" "Squandered Prosperity" "Succor of the Sinless" "Underground Forest" "The Progeny of Lunaris" "Council of Cats" "The Strategist" "The Eldritch Decay" "The Betrayal" "Gift of Asenath" "Cursed Words" "Fateful Meeting" "Acclimatisation" "Haunting Shadows" "The Whiteout" "Society's Remorse" "Dying Light" "The Astromancer" "Keeper's Corruption" "Reckless Ambition" "Love Through Ice" "Draped in Dreams" "The Patient" "The Long Watch" "The Bear Woman" "Brotherhood in Exile"
+	BaseType "Mawr Blaidd" "Hunter's Reward" "The Immortal" "The Last One Standing" "The Dragon's Heart" "The Queen" "The Polymath" "Abandoned Wealth" "Wealth and Power" "The Ethereal" "The Thaumaturgist" "The Offering" "The Spark and the Flame" "The Artist" "The Brittle Emperor" "Heterochromia" "The Wolf" "Bowyer's Dream" "The Hunger" "Last Hope" "The Sephirot" "The Saint's Treasure" "The Enlightened" "The Harvester" "The Void" "The Vast" "The Chains that Bind" "Pride Before the Fall" "The Formless Sea" "The Celestial Justicar" "The Hoarder" "The King's Heart" "The Wolven King's Bite" "Chaotic Disposition" "Time-Lost Relic" "The Celestial Stone" "Perfection" "The Hale Heart" "The Undisputed" "The Darkest Dream" "Harmony of Souls" "The Dreamland" "The Master" "The Mayor" "The Professor" "The Samurai's Eye" "The Undaunted" "The Risk" "The Iron Bard" "The World Eater" "The Wind" "The Dreamer" "The Cartographer" "The Wilted Rose" "Beauty Through Death" "The Cacophony" "The Innocent" "The Twilight Moon" "The Sacrifice" "The Life Thief" "The Messenger" "The Landing" "Seven Years Bad Luck" "Alone in the Darkness" "Alluring Bounty" "Buried Treasure" "Burning Blood" "Pride of the First Ones" "The Porcupine" "The Damned" "Remembrance" "The Price of Loyalty" "Nook's Crown" "The Eye of Terror" "Azyran's Reward" "The Chosen" "The Craving" "Divine Justice" "The Escape" "Etched in Blood" "Friendship" "Squandered Prosperity" "Succor of the Sinless" "Underground Forest" "The Progeny of Lunaris" "Council of Cats" "The Strategist" "The Eldritch Decay" "The Betrayal" "Gift of Asenath" "Cursed Words" "Fateful Meeting" "Acclimatisation" "Haunting Shadows" "The Whiteout" "Society's Remorse" "Dying Light" "The Astromancer" "Keeper's Corruption" "Reckless Ambition" "Love Through Ice" "Draped in Dreams" "The Patient" "The Long Watch" "The Bear Woman" "Brotherhood in Exile" "Winter's Embrace" "Sambodhi's Wisdom" "The Enthusiasts" "Broken Promises" "Brush, Paint and Palette" "Deadly Joy" "The Adventuring Spirit" "The Eternal War" "Prejudice" "The Shortcut" "The Card Sharp" "A Modest Request" "Luminous Trove" "The Hook"
 	SetBorderColor 30 144 255
 	SetTextColor 0 125 200
 	SetFontSize 45
@@ -1424,23 +1436,16 @@ Show # T1 Atlas Belts
 	PlayAlertSound 12 300
 	MinimapIcon 0 Yellow Circle
 
-Show # Atlas Belts
-	BaseType "Vanguard Belt" 
-	SetBorderColor 255 255 255
-	SetFontSize 40
-
 Show # T1 Atlas Rings
 	Class Ring
-	BaseType "Opal Ring" "Steel Ring" "Vermillion Ring"
-#	SetTextColor 100 200 200
+	BaseType "Opal Ring" "Steel Ring" "Vermillion Ring" "Iolite Ring"
 	SetBorderColor 255 255 255
 	PlayAlertSound 13 300
 	SetFontSize 40
 
 Show # Atlas Jewelry
 	Class Amulet Ring
-	BaseType "Marble Amulet" "Blue Pearl Amulet" "Prismatic Ring" "Cerulean Ring"
-#	SetTextColor 255 111 255
+	BaseType "Marble Amulet" "Blue Pearl Amulet" "Prismatic Ring" "Cerulean Ring" "Seaglass Amulet"
 	SetBorderColor 255 255 255
 	SetFontSize 40
 
