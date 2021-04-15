@@ -1,4 +1,6 @@
 # Non-repo PoE folders/files
+ShaderCacheD3D11/*
+ShaderCacheVulkan/*
 Countdown/*
 DailyDealCache/*
 Minimap/*
@@ -8,3 +10,4 @@ ShopImages/*
 *.ini
 *.credentials
 *.txt
+engine.version
