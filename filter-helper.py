@@ -1,61 +1,30 @@
-input = """Assembler Wand
-Congregator Wand
-Accumulator Wand
-Hollowpoint Dagger
-Pressurised Dagger
-Pneumatic Dagger
-Flickerflame Blade
-Flashfire Blade
-Infernal Blade
-Shadow Fangs
-Malign Fangs
-Void Fangs
-Maltreatment Axe
-Disapprobation Axe
-Psychotic Axe
-Fickle Spiritblade
-Capricious Spiritblade
-Anarchic Spiritblade
-Flare Hammer
-Crack Hammer
-Boom Hammer
-Oscillating Sceptre
-Stabilising Sceptre
-Alternating Sceptre
-Hedron Bow
-Foundry Bow
-Solarine Bow
-Transformer Staff
-Accumulator Staff
-Battery Staff
-Capacity Rod
-Potentiality Rod
-Eventuality Rod
-Prime Cleaver
-Honed Cleaver
-Apex Cleaver
-Rebuking Blade
-Blasting Blade
-Banishing Blade
-Blunt Force Condenser
-Crushing Force Magnifier
-Impact Force Propagator
-Micro-Distillery Belt
-Mechalarm Belt
-Astrolabe Amulet
-Simplex Amulet
-Cogwork Ring
-Geodisic Ring
-Exhausting Spirit Shield
-Subsuming Spirit Shield
-Transfer-attuned Spirit Shield
-Endothermic Buckler
-Polar Buckler
-Cold-attuned Buckler
-Exothermic Tower Shield
-Magmatic Tower Shield
-Heat-attuned Tower Shield
-"""
+input = """Dreamquest Slippers
+Cloudwhisper Boots
+Brimstone Treads
+Nightwind Slippers
+Windbreak Boots
+Darksteel Treads
+Duskwalk Slippers
+Stormrider Boots
+Basemetal Treads
+Debilitation Gauntlets
+Gruelling Gauntlets
+Taxing Gauntlets
+Sinistral Gloves
+Southswing Gloves
+Gauche Gloves
+Nexus Gloves
+Aetherwind Gloves
+Leyline Gloves
+Blizzard Crown
+Winter Crown
+Gale Crown
+Archdemon Crown
+Demon Crown
+Imp Crown
+Atonement Mask
+Penitent Mask
+Sorrow Mask"""
 
 all_baseTypes = ""
 
