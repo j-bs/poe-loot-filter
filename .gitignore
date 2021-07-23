@@ -11,3 +11,5 @@ ShopImages/*
 *.credentials
 *.txt
 engine.version
+*.vdf
+*.dmp
