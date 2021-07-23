@@ -154,7 +154,7 @@ Show # Ultimatum Map
 	SetTextColor 255 0 0
 	SetBorderColor 255 0 0
 	SetFontSize 45
-	PlayAlertSound 11 250
+	PlayAlertSound 4 300
 	MinimapIcon 0 Red Cross
 	PlayEffect Red
 
@@ -253,7 +253,7 @@ Show # Heist Contracts
 	Class Contract
 	SetTextColor 255 181 0
 	SetBorderColor 255 181 0
-	PlayAlertSound 11 300
+	PlayAlertSound 14 300
 	SetFontSize 45
 	MinimapIcon 0 Yellow UpsideDownHouse
 	PlayEffect Yellow
@@ -262,7 +262,7 @@ Show # Heist Blueprints
 	Class Blueprint
 	SetTextColor 255 181 0
 	SetBorderColor 255 181 0
-	PlayAlertSound 11 300
+	PlayAlertSound 9 300
 	SetFontSize 45
 	MinimapIcon 0 Yellow UpsideDownHouse
 	PlayEffect Yellow
@@ -317,16 +317,6 @@ Show # Harvested Goddess Fragments
 	MinimapIcon 0 Blue Star
 	PlayEffect Blue
 
-Show # Harvested Scarabs
-	Class "Map Fragments"
-	BaseType "Winged"
-	SetTextColor 45 133 223
-	SetBorderColor 45 133 223
-	SetFontSize 45
-	PlayAlertSound 11 300
-	MinimapIcon 0 Orange Moon
-	PlayEffect Orange
-
 Show # Harvested Goddess Fragments
 	Class "Map Fragments"
 	BaseType "Tribute to the Goddess" "Gift to the Goddess" "Dedication to the Goddess" "Deregulation Scroll" "Electroshock Scroll" "Haemocombustion Scroll" "Specularity Scroll" "Facetor's Lens"
@@ -378,17 +368,17 @@ Show # Metamorph Samples
 
 Show # T1 Blight Oils
 	Class "Stackable Currency"
-	BaseType "Silver Oil" "Golden Oil"
+	BaseType "Golden Oil" "Silver Oil" "Tainted Oil"
 	SetTextColor 255 181 0
 	SetBorderColor 255 181 0
 	SetFontSize 45
-	PlayAlertSound 1 300
+	PlayAlertSound 4 300
 	MinimapIcon 0 Yellow Star
 	PlayEffect Yellow
 
 Show # Blight Oils
 	Class "Stackable Currency"
-	BaseType "Verdant Oil" "Teal Oil" "Azure Oil" "Indigo Oil" "Violet Oil" "Crimson Oil" "Black Oil" "Opalescent Oil" "Tainted Oil"
+	BaseType "Verdant Oil" "Teal Oil" "Azure Oil" "Indigo Oil" "Violet Oil" "Crimson Oil" "Black Oil" "Opalescent Oil"
 	SetTextColor 255 181 0
 	SetBorderColor 255 181 0
 	SetFontSize 45
@@ -405,6 +395,13 @@ Show # >1 Stacks Common Blight Oils
 	SetFontSize 40
 	PlayAlertSound 11 300
 	MinimapIcon 2 Yellow Star
+
+Show # Common Blight Oils
+	Class "Stackable Currency"
+	BaseType "Clear Oil" "Sepia Oil" "Amber Oil"
+	AreaLevel <= 78
+	SetTextColor 255 181 0
+	SetFontSize 38
 
 Hide # Common Blight Oils
 	Class "Stackable Currency"
@@ -444,6 +441,16 @@ Show # Synthesised Items
 	SetTextColor 128 232 86
 	SetBorderColor 128 232 86
 	PlayAlertSound 16 250
+
+Show # Winged Scarabs
+	Class "Map Fragments"
+	BaseType "Winged"
+	SetBorderColor 255 90 90
+	SetTextColor 255 255 255
+	SetFontSize 45
+	PlayAlertSound 4 300
+	MinimapIcon 0 Orange Moon
+	PlayEffect Orange
 
 Show # Gilded Scarabs
 	Class "Map Fragments"
@@ -897,18 +904,18 @@ Show # 6L uniques
 
 Show # T1 Uniques
 	Rarity Unique
-	BaseType "Ambush Mitts" "Callous Mask" "Carnal Boots" "Crusader Boots" "Ezomyte Tower Shield" "Gemstone Sword" "Golden Hoop" "Greatwolf Talisman" "Jingling Spirit Shield" "Legion Gloves" "Nightmare Mace" "Nubuck Boots" "Ornate Quiver" "Prismatic Jewel" "Prophecy Wand" "Rawhide Boots" "Riveted Gloves" "Ruby Amulet" "Ruby Flask" "Sorcerer Boots" "Timeless Jewel" "Vaal Rapier" "Wyrmscale Doublet" "Zodiac Leather" "Silk Gloves" "Magistrate Crown" "Blood Raiment"
+	BaseType "Ambush Mitts" "Carnal Boots" "Crusader Boots" "Ezomyte Tower Shield" "Gemstone Sword" "Golden Hoop" "Greatwolf Talisman" "Jingling Spirit Shield" "Legion Gloves" "Nightmare Mace" "Nubuck Boots" "Ornate Quiver" "Prismatic Jewel" "Prophecy Wand" "Rawhide Boots" "Riveted Gloves" "Ruby Amulet" "Ruby Flask" "Sorcerer Boots" "Timeless Jewel" "Vaal Rapier" "Wyrmscale Doublet" "Zodiac Leather" "Silk Gloves" "Magistrate Crown" "Blood Raiment"
 	SetBorderColor 175 96 37
 	PlayAlertSound 1 300
 	SetFontSize 45
 	MinimapIcon 0 Brown Star
 	PlayEffect Brown
 
-Show # Meta Uniques
+Show # HH?!
 	Rarity Unique
-	BaseType "Deerskin Gloves"
+	BaseType "Leather Belt"
 	SetBorderColor 175 96 37
-	PlayAlertSound 1 300
+	PlayAlertSound 6 300
 	SetFontSize 45
 	MinimapIcon 0 Brown Star
 	PlayEffect Brown
@@ -1008,6 +1015,12 @@ Hide # Abyss Jewels
 	Class "Abyss Jewel"
 	SetFontSize 40
 	SetBorderColor 136 136 255
+
+Show # Cobalt Jewels for Auras
+	Rarity Magic
+	Class Jewel
+	BaseType "Cobalt Jewel"
+	SetFontSize 38
 
 Hide
 	Rarity Magic
@@ -1159,7 +1172,7 @@ Hide # T3 - Workaround
 
 Show # T2 Cards
 	Class Card
-	BaseType "Mawr Blaidd" "Hunter's Reward" "The Immortal" "The Last One Standing" "The Dragon's Heart" "The Queen" "The Polymath" "Abandoned Wealth" "Wealth and Power" "The Ethereal" "The Thaumaturgist" "The Offering" "The Spark and the Flame" "The Artist" "The Brittle Emperor" "Heterochromia" "The Wolf" "Bowyer's Dream" "The Hunger" "Last Hope" "The Sephirot" "The Saint's Treasure" "The Enlightened" "The Harvester" "The Void" "The Vast" "The Chains that Bind" "Pride Before the Fall" "The Formless Sea" "The Celestial Justicar" "The Hoarder" "The King's Heart" "The Wolven King's Bite" "Chaotic Disposition" "Time-Lost Relic" "The Celestial Stone" "Perfection" "The Hale Heart" "The Undisputed" "The Darkest Dream" "Harmony of Souls" "The Dreamland" "The Master" "The Mayor" "The Professor" "The Samurai's Eye" "The Undaunted" "The Risk" "The Iron Bard" "The World Eater" "The Wind" "The Dreamer" "The Cartographer" "The Wilted Rose" "Beauty Through Death" "The Cacophony" "The Innocent" "The Twilight Moon" "The Sacrifice" "The Life Thief" "The Messenger" "The Landing" "Seven Years Bad Luck" "Alone in the Darkness" "Alluring Bounty" "Buried Treasure" "Burning Blood" "Pride of the First Ones" "The Porcupine" "The Damned" "Remembrance" "The Price of Loyalty" "Nook's Crown" "The Eye of Terror" "Azyran's Reward" "The Chosen" "The Craving" "Divine Justice" "The Escape" "Etched in Blood" "Friendship" "Squandered Prosperity" "Succor of the Sinless" "Underground Forest" "The Progeny of Lunaris" "Council of Cats" "The Strategist" "The Eldritch Decay" "The Betrayal" "Gift of Asenath" "Cursed Words" "Fateful Meeting" "Acclimatisation" "Haunting Shadows" "The Whiteout" "Society's Remorse" "Dying Light" "The Astromancer" "Keeper's Corruption" "Reckless Ambition" "Love Through Ice" "Draped in Dreams" "The Patient" "The Long Watch" "The Bear Woman" "Brotherhood in Exile" "Winter's Embrace" "Sambodhi's Wisdom" "The Enthusiasts" "Broken Promises" "Brush, Paint and Palette" "Deadly Joy" "The Adventuring Spirit" "The Eternal War" "Prejudice" "The Shortcut" "The Card Sharp" "A Modest Request" "Luminous Trove" "The Hook"
+	BaseType "Mawr Blaidd" "Hunter's Reward" "The Immortal" "The Last One Standing" "The Dragon's Heart" "The Queen" "The Polymath" "Abandoned Wealth" "Wealth and Power" "The Ethereal" "The Thaumaturgist" "The Offering" "The Spark and the Flame" "The Artist" "The Brittle Emperor" "Heterochromia" "The Wolf" "Bowyer's Dream" "The Hunger" "Last Hope" "The Sephirot" "The Saint's Treasure" "The Enlightened" "The Harvester" "The Void" "The Vast" "The Chains that Bind" "Pride Before the Fall" "The Formless Sea" "The Celestial Justicar" "The Hoarder" "The King's Heart" "The Wolven King's Bite" "Chaotic Disposition" "The Celestial Stone" "Perfection" "The Hale Heart" "The Undisputed" "The Darkest Dream" "Harmony of Souls" "The Dreamland" "The Master" "The Mayor" "The Professor" "The Samurai's Eye" "The Undaunted" "The Risk" "The Iron Bard" "The World Eater" "The Wind" "The Dreamer" "The Cartographer" "The Wilted Rose" "Beauty Through Death" "The Cacophony" "The Innocent" "The Twilight Moon" "The Sacrifice" "The Life Thief" "The Messenger" "The Landing" "Seven Years Bad Luck" "Alone in the Darkness" "Alluring Bounty" "Buried Treasure" "Burning Blood" "Pride of the First Ones" "The Porcupine" "The Damned" "Remembrance" "The Price of Loyalty" "Nook's Crown" "The Eye of Terror" "Azyran's Reward" "The Chosen" "The Craving" "Divine Justice" "The Escape" "Etched in Blood" "Friendship" "Squandered Prosperity" "Succor of the Sinless" "Underground Forest" "The Progeny of Lunaris" "Council of Cats" "The Strategist" "The Eldritch Decay" "The Betrayal" "Gift of Asenath" "Cursed Words" "Fateful Meeting" "Acclimatisation" "Haunting Shadows" "The Whiteout" "Society's Remorse" "Dying Light" "The Astromancer" "Keeper's Corruption" "Reckless Ambition" "Love Through Ice" "Draped in Dreams" "The Patient" "The Long Watch" "The Bear Woman" "Brotherhood in Exile" "Winter's Embrace" "Sambodhi's Wisdom" "The Enthusiasts" "Broken Promises" "Brush, Paint and Palette" "Deadly Joy" "The Adventuring Spirit" "The Eternal War" "Prejudice" "The Shortcut" "The Card Sharp" "A Modest Request" "Luminous Trove" "The Hook"
 	SetBorderColor 30 144 255
 	SetTextColor 0 125 200
 	SetFontSize 45
@@ -1168,7 +1181,7 @@ Show # T2 Cards
 	
 Show # T3 Cards
 	Class Card
-	BaseType "The Encroaching Darkness" "The Survivalist" "The Fathomless Depths" "Humility" "Scholar of the Seas" "Vinia's Token" "No Traces" "The Wrath" "The Seeker" "Lucky Connections" "The Jeweller's Boon" "The Inventor" "Emperor of Purity" "Monochrome" "The Mad King" "The Obscured" "The Valkyrie" "Three Faces in the Dark" "The Valley of Steel Boxes" "Dark Dreams" "The Fool" "Imperial Legacy" "Vanity" "The Primordial" "Demigod's Wager" "The Deep Ones" "The Wretched" "More is Never Enough" "The Bargain" "The Deal" "Void of the Elements" "The Wolf's Legacy" "The Heroic Shot" "The Journey" "A Dab of Ink" "Arrogance of the Vaal" "Sambodhi's Vow" "The Beast" "Cameria's Cut" "The Bones" "Deathly Designs" "The Tinkerer's Table" "The Easy Stroll" "Loyalty" "Prometheus' Armoury" "The Tumbleweed" "The Hive of Knowledge" "A Note in the Wind" "The Greatest Intentions" "The White Knight" "The Sustenance" "Peaceful Moments" "The Awakened" "A Familiar Call" "The Long Con" "The Gulf" "The Bitter Blossom" "Triskaidekaphobia" "The Cache" "The Academic" "Desecrated Virtue" "Unchained" "The Unexpected Prize" "The Journalist"
+	BaseType "The Encroaching Darkness" "The Survivalist" "The Fathomless Depths" "Humility" "Scholar of the Seas" "Vinia's Token" "No Traces" "The Wrath" "The Seeker" "Lucky Connections" "The Jeweller's Boon" "The Inventor" "Emperor of Purity" "Monochrome" "The Mad King" "The Obscured" "The Valkyrie" "Three Faces in the Dark" "The Valley of Steel Boxes" "Dark Dreams" "The Fool" "Imperial Legacy" "Vanity" "The Primordial" "Demigod's Wager" "The Deep Ones" "The Wretched" "More is Never Enough" "The Bargain" "The Deal" "Void of the Elements" "The Wolf's Legacy" "The Heroic Shot" "The Journey" "A Dab of Ink" "Arrogance of the Vaal" "Sambodhi's Vow" "The Beast" "Cameria's Cut" "The Bones" "Deathly Designs" "The Tinkerer's Table" "The Easy Stroll" "Loyalty" "Prometheus' Armoury" "The Tumbleweed" "The Hive of Knowledge" "A Note in the Wind" "The Greatest Intentions" "The White Knight" "The Sustenance" "Peaceful Moments" "The Awakened" "A Familiar Call" "The Long Con" "The Gulf" "The Bitter Blossom" "Triskaidekaphobia" "The Cache" "The Academic" "Desecrated Virtue" "Unchained" "The Unexpected Prize" "The Journalist" "Boon of Justice" "Time-Lost Relic"
 	SetBorderColor 30 144 255
 	SetTextColor 0 125 200
 	SetFontSize 45
@@ -1178,7 +1191,7 @@ Show # T3 Cards
 
 Hide # T5 Cards
 	Class Card
-	BaseType "Thunderous Skies" "Prosperity" "The Incantation" "Shard of Fate" "Lantador's Lost Love" "The Carrion Crow" "The Endurance" "The Lover" "Struck by Lightning" "The Summoner" "The Web" "The King's Blade" "The Metalsmith's Gift" "Dark Temptation" "Death" "Destined to Crumble" "The Opulent" "Volatile Power" "Cartographer's Delight" "The Fox" "The Witch" "Dialla's Subjugation" "The Rabid Rhoa" "Her Mask" "The Gambler" "Emperor's Luck" "Call to the First Ones" "The Surgeon" "Rain of Chaos" "The Twins" "A Mother's Parting Gift" "The Wolf's Shadow" "The Warden"
+	BaseType "Thunderous Skies" "Prosperity" "The Incantation" "Shard of Fate" "Lantador's Lost Love" "The Carrion Crow" "The Endurance" "The Lover" "Struck by Lightning" "The Summoner" "The Web" "The King's Blade" "The Metalsmith's Gift" "Dark Temptation" "Death" "Destined to Crumble" "The Opulent" "Volatile Power" "Cartographer's Delight" "The Fox" "The Witch" "Dialla's Subjugation" "The Rabid Rhoa" "Her Mask" "The Gambler" "Emperor's Luck" "Call to the First Ones" "The Surgeon" "Rain of Chaos" "The Twins" "A Mother's Parting Gift" "The Wolf's Shadow" "The Warden" "The Dragon"
 	
 Show # T4 Cards
 	Class Card
@@ -1189,7 +1202,6 @@ Show # T4 Cards
 Show # Talismans
 	BaseType "Talisman"
 	SetBorderColor 255 255 255
-	SetFontSize 40
 	MinimapIcon 1 White Cross
 
 Show # Enchanted Items
@@ -1281,6 +1293,13 @@ Show # Redeemer
 	SetBorderColor 128 232 86
 	PlayAlertSound 11 300
 	MinimapIcon 1 Green Triangle
+
+# Identified Items
+Show # +Gem Wands
+	Class Wand
+	HasExplicitMod "Magister's" "Flame Shaper's" "Frost Singer's" "Thunderhand's" "Mad Lord's" "Lithomancer's"
+	SetBorderColor 255 255 0
+	SetFontSize 40
 
 # WEAPONS
 Show # T1 1H Weps
@@ -1403,7 +1422,7 @@ Show # AMULETS T1
 	SetBorderColor 255 255 0
 	SetFontSize 35
 
-Hide # AMULETS T2
+Show # AMULETS T2
 	Rarity Rare
 	Class Amulet
 	BaseType "Blue Pearl Amulet" "Gold Amulet" "Marble Amulet"
