@@ -99,7 +99,7 @@ Show # 20 Quality Gems
 
 Show # Quality Gems
 	Class Gem
-	Quality > 15
+	Quality >= 10
 	SetBorderColor 128 128 255
 	MinimapIcon 2 Cyan Triangle
 
@@ -147,6 +147,36 @@ Show # Quality Gems
 	MinimapIcon 1 White Triangle
 
 # LEAGUE ITEMS
+
+Show # Expedition Currency
+	Class "Stackable Currency"
+	BaseType "Exotic Coinage" "Scrap Metal" "Astragali" "Burial Medallion"
+	SetTextColor 255 181 0
+	SetBorderColor 255 181 0
+	PlayAlertSound 11 300
+	SetFontSize 45
+	MinimapIcon 0 Cyan Kite
+	PlayEffect Cyan
+
+Show # Expedition Artifacts
+	Class "Stackable Currency"
+	BaseType "Circle Artifact" "Scythe Artifact" "Order Artifact" "Sun Artifact"
+	SetTextColor 255 181 0
+	SetBorderColor 255 181 0
+	PlayAlertSound 11 300
+	SetFontSize 45
+	MinimapIcon 0 Cyan Kite
+	PlayEffect Cyan
+
+Show # Expedition Logbooks
+	Class "Logbook"
+	SetTextColor 255 181 0
+	SetBorderColor 255 181 0
+	PlayAlertSound 11 300
+	SetFontSize 45
+	PlayAlertSound 4 300
+	MinimapIcon 0 Cyan Cross
+	PlayEffect Cyan
 
 Show # Ultimatum Map
 	Class "Misc Map Items"
@@ -992,6 +1022,7 @@ Show # Large Cluster Jewels -- 9+ Passive
 	BaseType "Large Cluster"
 	EnchantmentPassiveNum > 8
 	SetBorderColor 255 125 255
+	MinimapIcon 2 Orange Pentagon
 	SetFontSize 40
 
 Show # Cluster Jewels
@@ -1075,7 +1106,7 @@ Show # T2 Currency
 
 Show # T3 Currency
 	Class Currency
-	BaseType "Chaos Orb" "Vaal Orb" "Orb of Alchemy" "Regal Orb" "Gemcutter's Prism" "Cartographer's Chisel" "Orb of Regret" "Sextant" "Orb of Scouring" "Orb of Fusing" "Orb of Horizons" "Orb of Binding"
+	BaseType "Chaos Orb" "Vaal Orb" "Orb of Alchemy" "Regal Orb" "Gemcutter's Prism" "Cartographer's Chisel" "Orb of Regret" "Sextant" "Orb of Scouring" "Orb of Fusing" "Orb of Horizons" "Orb of Binding" "Enkindling Orb" "Instilling Orb"
 	SetTextColor 255 0 255
 	SetFontSize 42
 	PlayAlertSound 12 300
@@ -1123,14 +1154,14 @@ Show # Useful low currency multistack
 Show # Useful low currency 1 stack
 	Class Currency
 	StackSize 1
-	BaseType "Orb of Augmentation" "Orb of Transmutation" "Portal Scroll" "Jeweller's Orb" "Chromatic Orb" "Orb of Chance" "Harbinger's Shard"
+	BaseType "Orb of Augmentation" "Orb of Transmutation" "Portal Scroll" "Jeweller's Orb" "Chromatic Orb" "Orb of Chance" "Harbinger's Shard" "Armourer's Scrap" "Blacksmith's Whetstone"
 	SetTextColor 170 158 130
 	SetBorderColor 170 158 130
 
 Hide # Low Currency 1 Stacks
 	Class Currency
 	StackSize 1
-	BaseType "Scroll of Wisdom" "Armourer's Scrap" "Blacksmith's Whetstone"
+	BaseType "Scroll of Wisdom"
 	SetTextColor 170 158 130
 	SetBorderColor 170 158 130
 
@@ -1181,7 +1212,7 @@ Show # T2 Cards
 	
 Show # T3 Cards
 	Class Card
-	BaseType "The Encroaching Darkness" "The Survivalist" "The Fathomless Depths" "Humility" "Scholar of the Seas" "Vinia's Token" "No Traces" "The Wrath" "The Seeker" "Lucky Connections" "The Jeweller's Boon" "The Inventor" "Emperor of Purity" "Monochrome" "The Mad King" "The Obscured" "The Valkyrie" "Three Faces in the Dark" "The Valley of Steel Boxes" "Dark Dreams" "The Fool" "Imperial Legacy" "Vanity" "The Primordial" "Demigod's Wager" "The Deep Ones" "The Wretched" "More is Never Enough" "The Bargain" "The Deal" "Void of the Elements" "The Wolf's Legacy" "The Heroic Shot" "The Journey" "A Dab of Ink" "Arrogance of the Vaal" "Sambodhi's Vow" "The Beast" "Cameria's Cut" "The Bones" "Deathly Designs" "The Tinkerer's Table" "The Easy Stroll" "Loyalty" "Prometheus' Armoury" "The Tumbleweed" "The Hive of Knowledge" "A Note in the Wind" "The Greatest Intentions" "The White Knight" "The Sustenance" "Peaceful Moments" "The Awakened" "A Familiar Call" "The Long Con" "The Gulf" "The Bitter Blossom" "Triskaidekaphobia" "The Cache" "The Academic" "Desecrated Virtue" "Unchained" "The Unexpected Prize" "The Journalist" "Boon of Justice" "Time-Lost Relic"
+	BaseType "The Encroaching Darkness" "The Survivalist" "The Fathomless Depths" "Humility" "Scholar of the Seas" "Vinia's Token" "No Traces" "The Wrath" "The Seeker" "Lucky Connections" "The Jeweller's Boon" "The Inventor" "Emperor of Purity" "Monochrome" "The Mad King" "The Obscured" "The Valkyrie" "Three Faces in the Dark" "The Valley of Steel Boxes" "Dark Dreams" "The Fool" "Imperial Legacy" "Vanity" "The Primordial" "Demigod's Wager" "The Deep Ones" "The Wretched" "More is Never Enough" "The Bargain" "The Deal" "Void of the Elements" "The Wolf's Legacy" "The Heroic Shot" "The Journey" "A Dab of Ink" "Arrogance of the Vaal" "Sambodhi's Vow" "The Beast" "Cameria's Cut" "The Bones" "Deathly Designs" "The Tinkerer's Table" "The Easy Stroll" "Loyalty" "Prometheus' Armoury" "The Tumbleweed" "The Hive of Knowledge" "A Note in the Wind" "The Greatest Intentions" "The White Knight" "The Sustenance" "Peaceful Moments" "The Awakened" "A Familiar Call" "The Long Con" "The Gulf" "The Bitter Blossom" "Triskaidekaphobia" "The Cache" "The Academic" "Desecrated Virtue" "Unchained" "The Unexpected Prize" "The Journalist" "Boon of Justice" "Time-Lost Relic" "The Last Supper" "The Emptiness" "A Sea of Blue" "The Offspring" "The Price of Prescience" "The Mind's Eyes" "Terrible Secret of Space" "The Blessing of Moosh" "Costly Curio" "Lachrymal Necrosis" "Dementophobia" "Ambitious Obsession"
 	SetBorderColor 30 144 255
 	SetTextColor 0 125 200
 	SetFontSize 45
@@ -1311,7 +1342,7 @@ Show # T1 1H Weps
 
 Hide # T2 1H Weps
 	Rarity Rare
-	BaseType "Corsair Sword" "Siege Axe" "Imperial Claw" "Sambar Sceptre" "Void Sceptre" "Opal Sceptre" "Platinum Kris" "Golden Kris" "Copper Kris" "Profane Wand" "Prophecy Wand"
+	BaseType "Corsair Sword" "Siege Axe" "Imperial Claw" "Gemini Claw" "Sambar Sceptre" "Void Sceptre" "Opal Sceptre" "Platinum Kris" "Golden Kris" "Copper Kris" "Profane Wand" "Prophecy Wand"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
 	SetFontSize 35
@@ -1323,6 +1354,13 @@ Show # T1 2H WEPS
 	SetBorderColor 255 255 0
 	#SetFontSize 40
 
+Show # T2 2H WEPS
+	Rarity Rare
+	BaseType "Thicket Bow" "Imperial Bow" "Citadel Bow"
+	SetTextColor 100 200 200
+	SetBorderColor 255 255 0
+	#SetFontSize 38
+
 Show # T1 Quivers
 	Rarity Rare
 	Class Quiver
@@ -1331,7 +1369,7 @@ Show # T1 Quivers
 	SetBorderColor 255 255 0
 	#SetFontSize 40
 
-Hide # T2 Quivers
+Show # T2 Quivers
 	Rarity Rare
 	Class Quiver
 	BaseType "Broadhead Arrow Quiver" "Spike-Point Arrow Quiver"
@@ -1344,7 +1382,7 @@ Hide # T3 Quivers
 # ARMOUR
 Show # T1 Chests
 	Rarity Rare
-	BaseType "Vaal Regalia" "Astral Plate" "Grasping Mail"
+	BaseType "Vaal Regalia" "Astral Plate" "Assassin's Garb" "Grasping Mail"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
 	SetFontSize 35
@@ -1365,14 +1403,14 @@ Hide # T2 Shields
 
 Show # Gloves
 	Rarity Rare
-	BaseType "Spiked Gloves" "Gripped Gloves" "Titan Gauntlets" "Sorcerer Gloves" "Fingerless Silk Gloves" "Apothecary's Gloves"
+	BaseType "Spiked Gloves" "Gripped Gloves" "Titan Gauntlets" "Sorcerer Gloves" "Fingerless Silk Gloves" "Apothecary's Gloves" "Runic Gauntlets"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
 	SetFontSize 35
 
 Show # T1 Boots
 	Rarity Rare
-	BaseType "Titan Greaves" "Two-Toned Boots" "Sorcerer Boots" "Slink Boots" "Blessed Boots"
+	BaseType "Titan Greaves" "Two-Toned Boots" "Sorcerer Boots" "Slink Boots" "Fugitive Boots" "Runic Sabatons"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
 	SetFontSize 35
@@ -1385,7 +1423,7 @@ Show # T2 Boots
 
 Show # T1 Helm
 	Rarity Rare
-	BaseType "Royal Burgonet" "Eternal Burgonet" "Lion Pelt" "Bone Helmet" "Hubris Circlet"
+	BaseType "Royal Burgonet" "Eternal Burgonet" "Lion Pelt" "Bone Helmet" "Hubris Circlet" "Runic Crown"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
 	SetFontSize 35
@@ -1417,7 +1455,7 @@ Hide # T3 Rare Rings
 Show # AMULETS T1
 	Rarity Rare
 	Class Amulet
-	BaseType  "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Agate Amulet" "Citrine Amulet" "Turquoise Amulet" "Onyx Amulet" "Seaglass Amulet"
+	BaseType  "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Agate Amulet" "Citrine Amulet" "Turquoise Amulet" "Onyx Amulet" "Seaglass Amulet" "Blue Pearl Amulet"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
 	SetFontSize 35
@@ -1425,7 +1463,7 @@ Show # AMULETS T1
 Show # AMULETS T2
 	Rarity Rare
 	Class Amulet
-	BaseType "Blue Pearl Amulet" "Gold Amulet" "Marble Amulet"
+	BaseType "Gold Amulet" "Marble Amulet"
 	SetBorderColor 255 255 0
 
 Show # T1 Belts
