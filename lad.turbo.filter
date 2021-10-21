@@ -127,6 +127,34 @@ Show # Gems with low max level
 
 # LEAGUE ITEMS
 
+Show # Scourge T1 Currency
+	Class "Stackable Currency"
+	BaseType "Tainted Exalted Orb" "Tainted Mythic Orb" "Tainted Divine Teardrop"
+	SetTextColor 255 0 0
+	SetBorderColor 255 0 0
+	SetFontSize 45
+	PlayAlertSound 4 300
+	MinimapIcon 0 Red Cross
+	PlayEffect Red
+
+Show # Scourge T2 Currency
+	Class "Stackable Currency"
+	BaseType  "Tainted Chaos Orb" "Tainted Blessing" "Tainted Chromatic Orb" "Tainted Orb of Fusing" "Tainted Jeweller's Orb" "Tainted Blacksmith's Whetstone" "Tainted Armourer's Scrap" "Tainted"
+	SetTextColor 255 0 0
+	SetBorderColor 255 0 0
+	SetFontSize 45
+	PlayAlertSound 11 300
+	MinimapIcon 1 Red Cross
+
+Show # Scourged Items
+	Scourged True
+	SetTextColor 255 0 0
+	SetBorderColor 255 0 0
+	SetFontSize 40
+	PlayAlertSound 11 300
+	MinimapIcon 0 Red Cross
+	Continue
+
 Show # Expedition Currency
 	Class "Stackable Currency"
 	BaseType "Exotic Coinage" "Scrap Metal" "Astragali" "Burial Medallion"
@@ -476,7 +504,7 @@ Show # Scarabs
 
 Show # Delve Fossils
 	Class Currency
-	BaseType "Scorched Fossil" "Frigid Fossil" "Metallic Fossil" "Jagged Fossil" "Aberrant Fossil" "Pristine Fossil" "Dense Fossil" "Corroded Fossil" "Prismatic Fossil" "Aetheric Fossil" "Serrated Fossil" "Lucent Fossil" "Shuddering Fossil" "Bound Fossil" "Perfect Fossil" "Enchanted Fossil" "Encrusted Fossil" "Faceted Fossil" "Bloodstained Fossil" "Hollow Fossil" "Fractured Fossil" "Glyphic Fossil" "Tangled Fossil" "Sanctified Fossil" "Gilded Fossil"
+	BaseType "Scorched Fossil" "Frigid Fossil" "Metallic Fossil" "Jagged Fossil" "Aberrant Fossil" "Pristine Fossil" "Dense Fossil" "Corroded Fossil" "Prismatic Fossil" "Aetheric Fossil" "Serrated Fossil" "Lucent Fossil" "Shuddering Fossil" "Bound Fossil" "Perfect Fossil" "Deft Fossil" "Fundamental Fossil" "Faceted Fossil" "Bloodstained Fossil" "Hollow Fossil" "Fractured Fossil" "Glyphic Fossil" "Tangled Fossil" "Sanctified Fossil" "Gilded Fossil"
 	SetTextColor 100 159 255
 	SetBorderColor 100 159 255
 	SetFontSize 45
@@ -653,7 +681,7 @@ Show # Heart of the Grove
 
 Show # Legion Emblems T1
 	Class "Map Fragments"
-	BaseType "Timeless Maraketh Emblem" "Timeless Templar Emblem"
+	BaseType "Unrelenting Timeless" "Timeless Maraketh Emblem" "Timeless Templar Emblem"
 	SetTextColor 255 255 255
 	SetBorderColor 255 90 90
 	SetFontSize 45
@@ -842,14 +870,24 @@ Show # Unique Maps
 	MinimapIcon 0 Brown Star
 	PlayEffect Brown
 
+Show # Uber Blight Maps
+	Class Map
+	UberBlightedMap True
+	SetTextColor 255 0 0
+	SetBorderColor 255 0 0
+	SetFontSize 45
+	PlayAlertSound 4 300
+	MinimapIcon 0 Red Cross
+	PlayEffect Red
+
 Show # Blighted Maps
 	Class Map
 	BlightedMap True
-	SetTextColor 255 90 90
-	SetBorderColor 255 90 90
+	SetTextColor 255 0 0
+	SetBorderColor 255 0 0
 	SetFontSize 45
-	PlayAlertSound 9 300
-	MinimapIcon 0 Red Square
+	PlayAlertSound 4 300
+	MinimapIcon 1 Red Cross
 	PlayEffect Red
 
 Show # Red T11+ Maps
@@ -1047,7 +1085,7 @@ Show # T3+ Prophecy
 # CURRENCY
 Show # T1 Currency
 	Class Currency
-	BaseType "Exalted Orb" "Eternal Orb" "Divine Orb" "Mirror of Kalandra" "Albino Rhoa Feather" "Orb of Annulment" "Crusader's Exalted Orb" "Redeemer's Exalted Orb" "Hunter's Exalted Orb" "Warlord's Exalted Orb" "Awakener's Orb" "Mirror Shard" "Exalted Shard" "Maven's Orb" "Orb of Unmaking" "Elevated Sextant"
+	BaseType "Exalted Orb" "Eternal Orb" "Divine Orb" "Mirror of Kalandra" "Albino Rhoa Feather" "Orb of Annulment" "Crusader's Exalted Orb" "Redeemer's Exalted Orb" "Hunter's Exalted Orb" "Warlord's Exalted Orb" "Awakener's Orb" "Mirror Shard" "Exalted Shard" "Maven's Orb" "Orb of Unmaking" "Elevated Sextant" "Sacred Orb"
 	SetBorderColor 255 0 255
 	SetTextColor 255 0 255
 	PlayAlertSound 1 300
@@ -1180,7 +1218,7 @@ Show # T2 Cards
 	
 Show # T3 Cards
 	Class Card
-	BaseType "The Encroaching Darkness" "The Survivalist" "The Fathomless Depths" "Humility" "Scholar of the Seas" "Vinia's Token" "No Traces" "The Wrath" "The Seeker" "Lucky Connections" "The Jeweller's Boon" "The Inventor" "Emperor of Purity" "Monochrome" "The Mad King" "The Obscured" "The Valkyrie" "Three Faces in the Dark" "The Valley of Steel Boxes" "Dark Dreams" "The Fool" "Imperial Legacy" "Vanity" "The Primordial" "Demigod's Wager" "The Deep Ones" "The Wretched" "More is Never Enough" "The Bargain" "The Deal" "Void of the Elements" "The Wolf's Legacy" "The Heroic Shot" "The Journey" "A Dab of Ink" "Arrogance of the Vaal" "Sambodhi's Vow" "The Beast" "Cameria's Cut" "The Bones" "Deathly Designs" "The Tinkerer's Table" "The Easy Stroll" "Prometheus' Armoury" "The Tumbleweed" "The Hive of Knowledge" "A Note in the Wind" "The Greatest Intentions" "The White Knight" "The Sustenance" "Peaceful Moments" "The Awakened" "A Familiar Call" "The Long Con" "The Gulf" "The Bitter Blossom" "Triskaidekaphobia" "The Cache" "The Academic" "Desecrated Virtue" "Unchained" "The Unexpected Prize" "The Journalist" "Boon of Justice" "Time-Lost Relic" "The Last Supper" "The Emptiness" "A Sea of Blue" "The Offspring" "The Price of Prescience" "The Mind's Eyes" "Terrible Secret of Space" "The Blessing of Moosh" "Costly Curio" "Lachrymal Necrosis" "Dementophobia" "Ambitious Obsession"
+	BaseType "The Encroaching Darkness" "The Survivalist" "The Fathomless Depths" "Humility" "Scholar of the Seas" "Vinia's Token" "No Traces" "The Wrath" "The Seeker" "Lucky Connections" "The Jeweller's Boon" "The Inventor" "Emperor of Purity" "Monochrome" "The Mad King" "The Obscured" "The Valkyrie" "Three Faces in the Dark" "The Valley of Steel Boxes" "Dark Dreams" "The Fool" "Imperial Legacy" "Vanity" "The Primordial" "Demigod's Wager" "The Deep Ones" "The Wretched" "More is Never Enough" "The Bargain" "The Deal" "Void of the Elements" "The Wolf's Legacy" "The Heroic Shot" "The Journey" "A Dab of Ink" "Arrogance of the Vaal" "Sambodhi's Vow" "The Beast" "Cameria's Cut" "The Bones" "Deathly Designs" "The Tinkerer's Table" "The Easy Stroll" "Prometheus' Armoury" "The Tumbleweed" "The Hive of Knowledge" "A Note in the Wind" "The Greatest Intentions" "The White Knight" "The Sustenance" "Peaceful Moments" "The Awakened" "A Familiar Call" "The Long Con" "The Gulf" "The Bitter Blossom" "Triskaidekaphobia" "The Cache" "The Academic" "Desecrated Virtue" "Unchained" "The Unexpected Prize" "The Journalist" "Boon of Justice" "Time-Lost Relic" "The Last Supper" "The Emptiness" "A Sea of Blue" "The Offspring" "The Price of Prescience" "The Mind's Eyes" "Terrible Secret of Space" "The Blessing of Moosh" "Costly Curio" "Lachrymal Necrosis" "Dementophobia" "Ambitious Obsession" "Desperate Crusade" "A Stone Perfected" "Treasures of the Vaal" "The Rabbit's Foot" "Chasing Risk" "The Prince of Darkness" "The Catch" "Eternal Bonds" "Disdain" "The Scout" "Guardian's Challenge" "The Forgotten Treasure" "The Fox in the Brambles" "The Aspirant"
 	SetBorderColor 30 144 255
 	SetTextColor 0 125 200
 	SetFontSize 45

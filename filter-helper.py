@@ -1,17 +1,17 @@
-input = """Winter's Embrace
-Sambodhi's Wisdom
-The Enthusiasts
-Broken Promises
-Brush, Paint and Palette
-Deadly Joy
-The Adventuring Spirit
-The Eternal War
-Prejudice
-The Shortcut
-The Card Sharp
-A Modest Request
-Luminous Trove
-The Hook"""
+input = """Desperate Crusade
+A Stone Perfected
+Treasures of the Vaal
+The Rabbit's Foot
+Chasing Risk
+The Prince of Darkness
+The Catch
+Eternal Bonds
+Disdain
+The Scout
+Guardian's Challenge
+The Forgotten Treasure
+The Fox in the Brambles
+The Aspirant"""
 
 all_baseTypes = ""
 
