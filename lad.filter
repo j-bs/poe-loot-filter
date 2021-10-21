@@ -1645,24 +1645,17 @@ Show # Atlas Items
 	SetFontSize 40
 	PlayAlertSound 12 300
 
-	
-# RARE VENDOR RECIPES
-# REGAL
-#Show
-#	Rarity Rare
-#	ItemLevel >= 75
-#	SetBorderColor 255 255 255
-
 
 # Chaos Recipe Bases
 Show # 1H 1x3 Weps
 	ItemLevel >= 60
 	ItemLevel <= 74
 	Rarity Rare
-	Width 1	
+	Width 1
 	Height 3
 	SetTextColor 255 255 0
 	SetBorderColor 255 255 0
+	SetBackgroundColor 150 150 0 150
 
 Show # All non-wep slots
 	ItemLevel >= 60
@@ -1671,6 +1664,7 @@ Show # All non-wep slots
 	Class Armour Boots Gloves Helm Ring Amulet Belt
 	SetTextColor 255 255 0
 	SetBorderColor 255 255 0
+	SetBackgroundColor 150 150 0 150
 
 # Hide shit Rares 75+
 Hide
@@ -1716,6 +1710,7 @@ Show # CHROME 1x3
 	SetBorderColor 255 0 0
 	SetFontSize 40
 	Continue
+
 
 # LEVELING
 
@@ -1803,6 +1798,13 @@ Show # Short Bow low lvl
 	SetBorderColor 255 255 255
 	#SetFontSize 42
 	AreaLevel <= 15
+
+Show # Life on hit quiver
+	Class "Quiver"
+	BaseType "Sharktooth"
+	SetBorderColor 255 255 255
+	SetFontSize 45
+	AreaLevel <= 18
 
 # 1H AXES
 Show # Cleaver
@@ -1961,14 +1963,15 @@ Show
 
 Show # Super low level Jewelry
 	Class Belt Amulet Ring
-	AreaLevel <= 10
+	AreaLevel <= 15
 	SetBorderColor 255 255 255
-	SetFontSize 45
+	SetFontSize 40
+	Continue
 
 Show # Good Jewelry
 	Class Belt Amulet Ring
 	Rarity Normal
-	BaseType "Leather Belt" "Heavy Belt" "Rustic Sash" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Agate Amulet" "Citrine Amulet" "Turquoise Amulet" "Onyx Amulet" "Two-Stone Ring" "Topaz Ring" "Ruby Ring" "Sapphire Ring" "Amethyst Ring"
+	BaseType "Leather Belt" "Heavy Belt" "Rustic Sash" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Agate Amulet" "Citrine Amulet" "Turquoise Amulet" "Onyx Amulet" "Two-Stone Ring" "Topaz Ring" "Ruby Ring" "Sapphire Ring" "Amethyst Ring" "Coral Ring"
 	AreaLevel <= 13
 	SetBorderColor 255 255 255
 	SetFontSize 45
@@ -2052,6 +2055,11 @@ Show # Levelling Gems
 	AreaLevel <= 50
 	MinimapIcon 0 Cyan Triangle
 
+Show # All Chromes
+	AreaLevel <= 68
+	SocketGroup RGB
+	SetBorderColor 255 0 0
+	SetFontSize 38
 
 Show
 	Rarity Normal
@@ -2067,14 +2075,14 @@ Show # NON-RARE WEPS L25+
 	SetBackgroundColor 0 0 0 200
 	AreaLevel <= 25
 
-Show # HIDE NON-RARE ARMOUR 25+
+Show
 	Rarity Normal
 	Class Armour Helmet Boots Gloves Shield Belt
 	SetTextColor 200 200 200 200
 	SetBackgroundColor 0 0 0 200
 	AreaLevel <= 15
 
-Show # HIDE NON-RARE ARMOUR 25+
+Show
 	Rarity Magic
 	Class Armour Helmet Boots Gloves Shield Belt
 	SetTextColor 136 136 255 200
@@ -2085,15 +2093,10 @@ Hide # HIDE MAGIC JEWELRY 30+
 	Rarity Magic
 	Class Ring Belt Amulet
 
-# HIDE REST
-Hide
+Hide # HIDE REST
 	Class "One Hand" "Two Hand" "Bow" "Staves" "Dagger" "Claw" "Sceptre" "Wand" "Quiver" "Warstaves"
 	AreaLevel > 50
 
-# Hide
-# 	Class Gem
-# 	AreaLevel > 68
-	
 Hide
 	Class Armour Helmet Boots Gloves Shield Belt Ring Amulet Flask
 	AreaLevel > 50
