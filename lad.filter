@@ -1342,7 +1342,7 @@ Show # T1 1H Weps
 
 Show # T2 1H Weps
 	Rarity Rare
-	BaseType "Corsair Sword" "Siege Axe" "Imperial Claw" "Sambar Sceptre" "Void Sceptre" "Opal Sceptre" "Platinum Kris" "Golden Kris" "Copper Kris" "Profane Wand" "Prophecy Wand"
+	BaseType "Corsair Sword" "Siege Axe" "Imperial Claw" "Gemini Claw" "Sambar Sceptre" "Void Sceptre" "Opal Sceptre" "Platinum Kris" "Golden Kris" "Copper Kris" "Profane Wand" "Prophecy Wand"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
 	SetFontSize 38
@@ -1351,6 +1351,7 @@ Show # Wands
 	Rarity Rare
 	Class Wand
 	SetBorderColor 255 255 0
+	Continue
 
 Show # T1 2H WEPS
 	Rarity Rare
@@ -1361,7 +1362,7 @@ Show # T1 2H WEPS
 
 Show # T2 2H WEPS
 	Rarity Rare
-	BaseType "Thicket Bow"
+	BaseType "Thicket Bow" "Imperial Bow" "Citadel Bow"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
 	SetFontSize 38
@@ -1383,6 +1384,7 @@ Show # T2 Quivers
 Show # T3 Quivers
 	Rarity Rare
 	Class Quiver
+	Continue
 
 Show # Atlas Wand
 	Rarity Rare
@@ -1418,6 +1420,7 @@ Show # Shields
 	Rarity Rare
 	Class Shield
 	SetBorderColor 255 255 0
+	Continue
 
 Show # T1 Gloves
 	Rarity Rare
@@ -1430,6 +1433,7 @@ Show # Gloves
 	Rarity Rare
 	Class Glove
 	SetBorderColor 255 255 0
+	Continue
 
 Show # T1 Boots
 	Rarity Rare
@@ -1449,6 +1453,7 @@ Show # Boots
 	Rarity Rare
 	Class Boots
 	SetBorderColor 255 255 0
+	Continue
 
 Show # T1 Helm
 	Rarity Rare
@@ -1461,6 +1466,7 @@ Show # Helm
 	Rarity Rare
 	Class Helmet
 	SetBorderColor 255 255 0
+	Continue
 
 Show # T1 Rare Rings
 	Rarity Rare
@@ -1513,7 +1519,7 @@ Show # T2 Belts
 Show # T3 Belts
 	Rarity Rare
 	Class Belt
-	BaseType "Vanguard Belt"  "Rustic Sash" "Heavy Belt"
+	BaseType "Vanguard Belt" "Rustic Sash" "Heavy Belt"
 	SetBorderColor 255 255 0
 
 
@@ -1672,27 +1678,6 @@ Hide
 	Class Shield Boots Gloves Armour Helm "One Hand" "Two Hand" "Bow" "Staves" "Claw" "Sceptre" "Quiver" "Warstaves" "Dagger"
 	AreaLevel > 75
 
-# ALL RARES
-Show
-	Rarity Rare
-	SetFontSize 40
-
-# Show # WHITE RINGS
-# 	Class Ring
-# 	BaseType "Unset Ring" "Two-Stone Ring" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Diamond Ring" "Moonstone Ring"
-# 	Rarity Normal
-# 	Continue
-# 	# ItemLevel < 60
-# 	# ItemLevel >= 84
-
-# Show # WHITE AMULETS
-# 	Class Amulet
-# 	BaseType "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Agate Amulet" "Citrine Amulet" "Turquoise Amulet" "Onyx Amulet"
-# 	Rarity Normal
-# 	Continue
-	# ItemLevel < 60
-	# ItemLevel >= 84
-
 
 # FLASKS
 Show
@@ -1713,6 +1698,7 @@ Show
 	BaseType "Hallowed" "Divine" "Eternal"
 	AreaLevel <= 73
 	SetBorderColor 255 255 255
+	Continue
 
 Show # CHROME 2x2
 	AreaLevel <= 75
@@ -1720,6 +1706,7 @@ Show # CHROME 2x2
 	SocketGroup RGB
 	SetBorderColor 255 0 0
 	SetFontSize 40
+	Continue
 
 Show # CHROME 1x3
 	AreaLevel <= 75
@@ -1728,8 +1715,23 @@ Show # CHROME 1x3
 	SocketGroup RGB
 	SetBorderColor 255 0 0
 	SetFontSize 40
+	Continue
 
 # LEVELING
+
+# Levelling Rares
+Show
+	Rarity Rare
+	Identified False
+	SetBorderColor 255 255 0
+	SetFontSize 36
+	Continue
+
+Show
+	Rarity Rare
+	Class "Wand" "Bow" "Two Hand Axe" "Two Hand Mace" "Dagger" "Claw" "Helm" "Gloves" "Boots" "Ring" "Amulet" "Belt" "Quiver"
+	SetFontSize 40
+	Continue
 
 # Wands
 Show # 3B Wands
@@ -1757,34 +1759,50 @@ Show # Levelling Shields
 	SocketGroup 3B
 	SetBorderColor 255 255 255
 
+# Trap Gear
+Show # 2G low lvl
+	Class "Wand" "Armour" "Gloves" "Helmet" "Boots"
+	SocketGroup >= 3GG
+	SetBorderColor 255 255 255
+	SetFontSize 42
+	AreaLevel <= 25
+	Continue
+
 # Bow Levelling
 Show
 	Class "Bow" "Armour" "Gloves" "Helmet" "Boots"
 	SocketGroup 4G
 	SetBorderColor 255 255 255
-	SetFontSize 45
+	SetFontSize 42
 	AreaLevel <= 50
 
 Show
 	Class "Bow" "Armour" "Gloves" "Helmet" "Boots"
 	SocketGroup 3G1R
 	SetBorderColor 255 255 255
-	SetFontSize 45
+	SetFontSize 42
 	AreaLevel <= 50
 
 Show
 	Class "Bow" "Armour" "Gloves" "Helmet" "Boots"
 	SocketGroup 3G
 	SetBorderColor 255 255 255
-	SetFontSize 45
+	SetFontSize 42
 	AreaLevel <= 30
 
 Show
 	Class "Bow" "Armour" "Gloves" "Helmet" "Boots"
 	SocketGroup 2G1R
 	SetBorderColor 255 255 255
-	SetFontSize 45
+	SetFontSize 42
 	AreaLevel <= 30
+
+Show # Short Bow low lvl
+	Class "Bow"
+	BaseType "Short Bow"
+	SetBorderColor 255 255 255
+	#SetFontSize 42
+	AreaLevel <= 15
 
 # 1H AXES
 Show # Cleaver
@@ -1876,63 +1894,63 @@ Show # Siege Axe
 	AreaLevel <= 68
 
 # FLASKS
-Show # Mana Flasks
+Show
 	Class "Flask"
 	BaseType "Eternal"
 	AreaLevel <= 70
 	SetBorderColor 255 255 255
 	SetFontSize 45
 
-Show # Mana Flasks
+Show
 	Class "Flask"
 	BaseType "Divine"
 	AreaLevel <= 70
 	SetBorderColor 255 255 255
 	SetFontSize 45
 
-Show # Mana Flasks
+Show
 	Class "Flask"
 	BaseType "Sanctified"
 	AreaLevel <= 60
 	SetBorderColor 255 255 255
 	SetFontSize 45
 
-Show # Mana Flasks
+Show
 	Class "Flask"
-	BaseType "Hallowed"
+	BaseType "Hallowed Mana Flask" "Hallowed Life Flask"
 	AreaLevel <= 52
 	SetBorderColor 255 255 255
 	SetFontSize 45
 
-Show # Mana Flasks
+Show
 	Class "Flask"
 	BaseType "Sacred"
 	AreaLevel <= 46
 	SetBorderColor 255 255 255
 	SetFontSize 45
 
-Show # Mana Flasks
+Show
 	Class "Flask"
 	BaseType "Colossal"
 	AreaLevel <= 40
 	SetBorderColor 255 255 255
 	SetFontSize 45
 
-Show # Mana Flasks
+Show
 	Class "Flask"
 	BaseType "Giant"
 	AreaLevel <= 34
 	SetBorderColor 255 255 255
 	SetFontSize 45
 
-Show # Mana Flasks
+Show
 	Class "Flask"
 	BaseType "Grand"
 	AreaLevel <= 25
 	SetBorderColor 255 255 255
 	SetFontSize 45
 
-Show # Mana Flasks
+Show
 	Class "Flask"
 	AreaLevel <= 25
 	SetBorderColor 255 255 255
@@ -1941,10 +1959,16 @@ Show # Mana Flasks
 # Show # Twilight Strand
 # 	AreaLevel = 1
 
+Show # Super low level Jewelry
+	Class Belt Amulet Ring
+	AreaLevel <= 10
+	SetBorderColor 255 255 255
+	SetFontSize 45
+
 Show # Good Jewelry
 	Class Belt Amulet Ring
 	Rarity Normal
-	BaseType "Leather Belt" "Heavy Belt" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Agate Amulet" "Citrine Amulet" "Turquoise Amulet" "Onyx Amulet" "Two-Stone Ring" "Topaz Ring" "Ruby Ring" "Sapphire Ring" "Amethyst Ring"
+	BaseType "Leather Belt" "Heavy Belt" "Rustic Sash" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Agate Amulet" "Citrine Amulet" "Turquoise Amulet" "Onyx Amulet" "Two-Stone Ring" "Topaz Ring" "Ruby Ring" "Sapphire Ring" "Amethyst Ring"
 	AreaLevel <= 13
 	SetBorderColor 255 255 255
 	SetFontSize 45
@@ -1952,7 +1976,7 @@ Show # Good Jewelry
 Show # Good Jewelry
 	Class Belt Amulet Ring
 	Rarity Magic
-	BaseType "Leather Belt" "Heavy Belt" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Agate Amulet" "Citrine Amulet" "Turquoise Amulet" "Onyx Amulet" "Two-Stone Ring" "Topaz Ring" "Ruby Ring" "Sapphire Ring" "Amethyst Ring"
+	BaseType "Leather Belt" "Heavy Belt" "Rustic Sash" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Agate Amulet" "Citrine Amulet" "Turquoise Amulet" "Onyx Amulet" "Two-Stone Ring" "Topaz Ring" "Ruby Ring" "Sapphire Ring" "Amethyst Ring"
 	AreaLevel <= 23
 	SetBorderColor 255 255 255
 	SetFontSize 40
@@ -1960,14 +1984,7 @@ Show # Good Jewelry
 Show # Good Jewelry
 	Class Belt Amulet Ring
 	Rarity Normal Magic
-	BaseType "Leather Belt" "Heavy Belt" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Agate Amulet" "Citrine Amulet" "Turquoise Amulet" "Onyx Amulet" "Two-Stone Ring" "Topaz Ring" "Ruby Ring" "Sapphire Ring" "Amethyst Ring"
-	SetBorderColor 255 255 255
-
-Show # Phys recipe
-	Class "Belt"
-	Rarity >= Magic
-	BaseType "Rustic Sash"
-	AreaLevel < 68
+	BaseType "Leather Belt" "Heavy Belt" "Rustic Sash" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Agate Amulet" "Citrine Amulet" "Turquoise Amulet" "Onyx Amulet" "Two-Stone Ring" "Topaz Ring" "Ruby Ring" "Sapphire Ring" "Amethyst Ring"
 	SetBorderColor 255 255 255
 
 Show # Low Quivers White
@@ -1981,7 +1998,16 @@ Show # Low Quivers Magic
 	Rarity Magic
 	AreaLevel <= 25
 	SetBorderColor 255 255 255
-	SetFontSize 40
+	SetFontSize 36
+
+Show # Speedy Boots
+	Class Boots
+	Identified True
+	AreaLevel < 68
+	SetBorderColor 136 136 255
+	HasExplicitMod "Runner's" "Sprinter's" "Stallion's" "Gazelle's" "Cheetah's"
+	SetFontSize 45
+	MinimapIcon 2 Blue Square
 
 Show # 4 Links
 	Class "Bow" "Armour" "Gloves" "Helmet" "Boots" "Shield"
@@ -1993,23 +2019,31 @@ Show # 4 Links
 Show # 3 Links
 	Class "Wand" "Armour" "Bow" "Gloves" "Helmet" "Boots" "Shield"
 	LinkedSockets >= 3
+	AreaLevel < 15
+	SetBorderColor 255 255 255
+	SetFontSize 38
+
+Show # 3 Links
+	Class "Wand" "Armour" "Bow" "Gloves" "Helmet" "Boots" "Shield"
+	LinkedSockets >= 3
 	AreaLevel < 35
 	SetBorderColor 255 255 255
-	SetFontSize 45
 
 Show # Rare Boots
 	Class Boots
 	Rarity = Rare
+	Identified False
 	AreaLevel < 50
 	SetBorderColor 255 255 255
 	SetFontSize 45
 
-Show # MAGIC BOOTS
+Show # Magic Boots
 	Class Boots
 	Rarity = Magic
+	Identified False
 	AreaLevel < 25
 	SetBorderColor 255 255 255
-	SetFontSize 45
+	SetFontSize 42
 
 Show # Levelling Gems
 	Class Gem
@@ -2019,7 +2053,7 @@ Show # Levelling Gems
 	MinimapIcon 0 Cyan Triangle
 
 
-Show # NON-RARE WEPS L25+
+Show
 	Rarity Normal
 	Class "One Hand" "Two Hand" "Bow" "Staves" "Dagger" "Claw" "Sceptre" "Wand" "Quiver"
 	SetTextColor 200 200 200 200

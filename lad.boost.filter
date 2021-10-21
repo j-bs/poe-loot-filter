@@ -99,7 +99,7 @@ Show # 20 Quality Gems
 
 Show # Quality Gems
 	Class Gem
-	Quality > 15
+	Quality >= 10
 	SetBorderColor 128 128 255
 	MinimapIcon 2 Cyan Triangle
 
@@ -1022,6 +1022,7 @@ Show # Large Cluster Jewels -- 9+ Passive
 	BaseType "Large Cluster"
 	EnchantmentPassiveNum > 8
 	SetBorderColor 255 125 255
+	MinimapIcon 2 Orange Pentagon
 	SetFontSize 40
 
 Show # Cluster Jewels
@@ -1153,14 +1154,14 @@ Show # Useful low currency multistack
 Show # Useful low currency 1 stack
 	Class Currency
 	StackSize 1
-	BaseType "Orb of Augmentation" "Orb of Transmutation" "Portal Scroll" "Jeweller's Orb" "Chromatic Orb" "Orb of Chance" "Harbinger's Shard"
+	BaseType "Orb of Augmentation" "Orb of Transmutation" "Portal Scroll" "Jeweller's Orb" "Chromatic Orb" "Orb of Chance" "Harbinger's Shard" "Armourer's Scrap" "Blacksmith's Whetstone"
 	SetTextColor 170 158 130
 	SetBorderColor 170 158 130
 
 Hide # Low Currency 1 Stacks
 	Class Currency
 	StackSize 1
-	BaseType "Scroll of Wisdom" "Armourer's Scrap" "Blacksmith's Whetstone"
+	BaseType "Scroll of Wisdom"
 	SetTextColor 170 158 130
 	SetBorderColor 170 158 130
 
@@ -1341,7 +1342,7 @@ Show # T1 1H Weps
 
 Hide # T2 1H Weps
 	Rarity Rare
-	BaseType "Corsair Sword" "Siege Axe" "Imperial Claw" "Sambar Sceptre" "Void Sceptre" "Opal Sceptre" "Platinum Kris" "Golden Kris" "Copper Kris" "Profane Wand" "Prophecy Wand"
+	BaseType "Corsair Sword" "Siege Axe" "Imperial Claw" "Gemini Claw" "Sambar Sceptre" "Void Sceptre" "Opal Sceptre" "Platinum Kris" "Golden Kris" "Copper Kris" "Profane Wand" "Prophecy Wand"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
 	SetFontSize 35
@@ -1353,6 +1354,13 @@ Show # T1 2H WEPS
 	SetBorderColor 255 255 0
 	#SetFontSize 40
 
+Show # T2 2H WEPS
+	Rarity Rare
+	BaseType "Thicket Bow" "Imperial Bow" "Citadel Bow"
+	SetTextColor 100 200 200
+	SetBorderColor 255 255 0
+	#SetFontSize 38
+
 Show # T1 Quivers
 	Rarity Rare
 	Class Quiver
@@ -1361,7 +1369,7 @@ Show # T1 Quivers
 	SetBorderColor 255 255 0
 	#SetFontSize 40
 
-Hide # T2 Quivers
+Show # T2 Quivers
 	Rarity Rare
 	Class Quiver
 	BaseType "Broadhead Arrow Quiver" "Spike-Point Arrow Quiver"
@@ -1447,7 +1455,7 @@ Hide # T3 Rare Rings
 Show # AMULETS T1
 	Rarity Rare
 	Class Amulet
-	BaseType  "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Agate Amulet" "Citrine Amulet" "Turquoise Amulet" "Onyx Amulet" "Seaglass Amulet"
+	BaseType  "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Agate Amulet" "Citrine Amulet" "Turquoise Amulet" "Onyx Amulet" "Seaglass Amulet" "Blue Pearl Amulet"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
 	SetFontSize 35
@@ -1455,7 +1463,7 @@ Show # AMULETS T1
 Show # AMULETS T2
 	Rarity Rare
 	Class Amulet
-	BaseType "Blue Pearl Amulet" "Gold Amulet" "Marble Amulet"
+	BaseType "Gold Amulet" "Marble Amulet"
 	SetBorderColor 255 255 0
 
 Show # T1 Belts
