@@ -2086,6 +2086,61 @@ Show # Siege Axe
 	BaseType "Siege Axe" "Corsair Sword"
 	AreaLevel <= 68
 
+# 2H Levelling
+Show # Lv1-8
+	BaseType "Stone Axe" "Corroded Blade"
+	AreaLevel <= 9
+	SetBorderColor 255 255 255
+	SetFontSize 40
+
+Show # Lv9-12
+	BaseType "Longsword" "Jade Chopper"
+	AreaLevel <= 12
+	SetBorderColor 255 255 255
+	SetFontSize 40
+
+Show # Lv12-18
+	BaseType "Bastard Sword" "Woodsplitter"
+	AreaLevel <= 18
+	SetBorderColor 255 255 255
+	SetFontSize 40
+
+Show # Lv18-23
+	BaseType "Two-Handed Sword" "Poleaxe"
+	AreaLevel <= 23
+	SetBorderColor 255 255 255
+	SetFontSize 40
+	
+Show # Lv22-28
+	BaseType "Ornate Sword" "Gilded Axe"
+	AreaLevel <= 28
+	SetBorderColor 255 255 255
+	SetFontSize 40
+	
+Show # Lv28-37
+	BaseType "Shadow Axe"
+	AreaLevel <= 37
+	SetBorderColor 255 255 255
+	SetFontSize 40
+	
+Show # Lv37-48
+	BaseType "Jasper Chopper" "Timber Axe"
+	AreaLevel <= 48
+	SetBorderColor 255 255 255
+	SetFontSize 40
+	
+Show # Lv49-57
+	BaseType "Labrys"
+	AreaLevel <= 57
+	SetBorderColor 255 255 255
+	SetFontSize 40
+	
+Show # Lv58-67
+	BaseType "Karui Chopper"
+	AreaLevel <= 67
+	SetBorderColor 255 255 255
+	SetFontSize 40
+
 # FLASKS
 Show
 	Class "Flask"
