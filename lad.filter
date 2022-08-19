@@ -1895,17 +1895,14 @@ Show # CHROME 1x3
 
 # LEVELING
 
-# Levelling Rares
+# CF Levelling 4 links
 Show
-	Rarity Rare
-	Identified False
-	SetBorderColor 255 255 0
-	SetFontSize 36
-
-Show
-	Rarity Rare
-	Class "Wand" "Bow" "Two Hand Axe" "Two Hand Mace" "Dagger" "Claw" "Helm" "Gloves" "Boots" "Ring" "Amulet" "Belt" "Quiver"
-	SetFontSize 40
+	SocketGroup >= 4RRBG 4RRBB 4RRRG
+	AreaLevel <= 65
+	SetBorderColor 255 255 255
+	SetFontSize 45
+	MinimapIcon 2 White Diamond
+	PlayEffect White Temp
 
 # Wands
 Show # 3B Wands
@@ -1946,30 +1943,34 @@ Show # 2G low lvl
 Show
 	Class "Bow" "Armour" "Gloves" "Helmet" "Boots"
 	SocketGroup 4G
-	SetBorderColor 255 255 255
-	SetFontSize 42
 	AreaLevel <= 50
+	SetBorderColor 255 255 255
+	SetFontSize 45
+	PlayEffect White Temp
 
 Show
 	Class "Bow" "Armour" "Gloves" "Helmet" "Boots"
 	SocketGroup 3G1R
-	SetBorderColor 255 255 255
-	SetFontSize 42
 	AreaLevel <= 50
+	SetBorderColor 255 255 255
+	SetFontSize 45
+	PlayEffect White Temp
 
 Show
 	Class "Bow" "Armour" "Gloves" "Helmet" "Boots"
 	SocketGroup 3G
-	SetBorderColor 255 255 255
-	SetFontSize 42
 	AreaLevel <= 30
+	SetBorderColor 255 255 255
+	SetFontSize 45
+	PlayEffect White Temp
 
 Show
 	Class "Bow" "Armour" "Gloves" "Helmet" "Boots"
 	SocketGroup 2G1R
-	SetBorderColor 255 255 255
-	SetFontSize 42
 	AreaLevel <= 30
+	SetBorderColor 255 255 255
+	SetFontSize 45
+	PlayEffect White Temp
 
 Show # Short Bow low lvl
 	Class "Bow"
@@ -2139,6 +2140,18 @@ Show # Lv58-67
 	BaseType "Karui Chopper"
 	AreaLevel <= 67
 	SetBorderColor 255 255 255
+	SetFontSize 40
+
+# Levelling Rares
+Show
+	Rarity Rare
+	Identified False
+	SetBorderColor 255 255 0
+	SetFontSize 36
+
+Show
+	Rarity Rare
+	Class "Wand" "Bow" "Two Hand Axe" "Two Hand Mace" "Dagger" "Claw" "Helm" "Gloves" "Boots" "Ring" "Amulet" "Belt" "Quiver"
 	SetFontSize 40
 
 # FLASKS
