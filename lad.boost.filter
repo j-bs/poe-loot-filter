@@ -163,6 +163,24 @@ Show # Vaal Gems
 
 # LEAGUE ITEMS
 
+Show # Sanctified Relic
+	Class "Sanctified Relic"
+	SetTextColor 255 181 0
+	SetBorderColor 255 181 0
+	SetFontSize 45
+	PlayAlertSound 4 300
+	MinimapIcon 0 Yellow Star
+	PlayEffect Yellow
+
+Show # Relic
+	Class "Relic"
+	SetTextColor 255 181 0
+	SetBorderColor 255 181 0
+	SetFontSize 45
+	PlayAlertSound 11 300
+	MinimapIcon 0 Yellow Star
+	PlayEffect Yellow
+
 Show # Kalandra Oil
 	Class "Stackable Currency"
 	BaseType "Reflective Oil"
@@ -866,7 +884,7 @@ Show # Atziri Fragments
 	PlayAlertSound 12 300
 
 Show # Breachstones
-	Class "Map Fragments"
+	Class "Breachstone"
 	BaseType "Breachstone"
 	SetTextColor 255 255 255
 	SetBorderColor 255 90 90
@@ -1232,7 +1250,7 @@ Hide
 # CURRENCY
 Show # T1 Currency
 	Class Currency
-	BaseType "Exalted Orb" "Divine Orb" "Eternal Orb" "Mirror of Kalandra" "Albino Rhoa Feather" "Crusader's Exalted Orb" "Redeemer's Exalted Orb" "Hunter's Exalted Orb" "Warlord's Exalted Orb" "Awakener's Orb" "Mirror Shard" "Orb of Conflict" "Orb of Dominance" "Sacred Orb" "Exceptional Eldritch"
+	BaseType "Exalted Orb" "Divine Orb" "Eternal Orb" "Mirror of Kalandra" "Albino Rhoa Feather" "Crusader's Exalted Orb" "Redeemer's Exalted Orb" "Hunter's Exalted Orb" "Warlord's Exalted Orb" "Awakener's Orb" "Mirror Shard" "Orb of Conflict" "Orb of Dominance" "Sacred Orb" "Exceptional Eldritch" "Fracturing Orb"
 	SetBorderColor 255 0 255
 	SetTextColor 255 0 255
 	PlayAlertSound 1 300
@@ -1242,7 +1260,7 @@ Show # T1 Currency
 
 Show # T2 Currency
 	Class Currency
-	BaseType "Orb of Annulment" "Exalted Shard" "Elevated Sextant" "Eldritch Chaos Orb" "Eldritch Exalted Orb" "Eldritch Orb of Annulment" "Oil Extractor"
+	BaseType "Orb of Annulment" "Exalted Shard" "Elevated Sextant" "Eldritch Chaos Orb" "Eldritch Exalted Orb" "Eldritch Orb of Annulment" "Oil Extractor" "Fracturing Shard"
 	SetBorderColor 255 0 255
 	SetTextColor 255 0 255
 	PlayAlertSound 4 300
@@ -1344,7 +1362,7 @@ Show # Default Currency
 
 # DIVINATION CARDS
 Show # T1 Cards
-	BaseType == "The Doctor" "House of Mirrors" "The Fiend" "Immortal Resolve" "The Nurse" "The Demon" "The Old Man" "Baited Expectations" "The Fishmonger" "Brother's Stash" "Unrequited Love" "The Cheater" "The Apothecary" "The Shieldbearer" "The Price of Devotion"
+	BaseType == "The Doctor" "House of Mirrors" "The Fiend" "Immortal Resolve" "The Nurse" "The Demon" "The Old Man" "Baited Expectations" "The Fishmonger" "Brother's Stash" "Unrequited Love" "The Cheater" "The Apothecary" "The Shieldbearer" "The Price of Devotion" "The Insane Cat" "Brother's Gift"
 	SetBorderColor 30 144 255
 	SetTextColor 0 125 200
 	SetFontSize 45
@@ -1353,7 +1371,7 @@ Show # T1 Cards
 
 Show # T2 Cards
 	Class Card
-	BaseType == "Mawr Blaidd" "Hunter's Reward" "The Immortal" "The Last One Standing" "The Dragon's Heart" "The Queen" "The Polymath" "Abandoned Wealth" "Wealth and Power" "The Ethereal" "The Thaumaturgist" "The Offering" "The Spark and the Flame" "The Artist" "The Brittle Emperor" "Heterochromia" "The Wolf" "Bowyer's Dream" "The Hunger" "Last Hope" "The Sephirot" "The Saint's Treasure" "The Enlightened" "The Harvester" "The Void" "The Vast" "The Chains that Bind" "Pride Before the Fall" "The Formless Sea" "The Celestial Justicar" "The Hoarder" "The King's Heart" "The Wolven King's Bite" "Chaotic Disposition" "The Celestial Stone" "Perfection" "The Hale Heart" "The Undisputed" "The Darkest Dream" "Harmony of Souls" "The Dreamland" "The Master" "The Mayor" "The Professor" "The Samurai's Eye" "The Undaunted" "The Risk" "The Iron Bard" "The World Eater" "The Wind" "The Dreamer" "The Cartographer" "The Wilted Rose" "Beauty Through Death" "The Cacophony" "The Innocent" "The Twilight Moon" "The Sacrifice" "The Life Thief" "The Messenger" "The Landing" "Seven Years Bad Luck" "Alone in the Darkness" "Alluring Bounty" "Burning Blood" "Pride of the First Ones" "The Porcupine" "The Damned" "Remembrance" "The Price of Loyalty" "Nook's Crown" "The Eye of Terror" "Azyran's Reward" "The Chosen" "The Craving" "Divine Justice" "The Escape" "Etched in Blood" "Friendship" "Squandered Prosperity" "Succor of the Sinless" "Underground Forest" "The Progeny of Lunaris" "Council of Cats" "The Strategist" "The Eldritch Decay" "The Betrayal" "Gift of Asenath" "Cursed Words" "Fateful Meeting" "Haunting Shadows" "The Whiteout" "Society's Remorse" "Dying Light" "The Astromancer" "Keeper's Corruption" "Reckless Ambition" "Love Through Ice" "Draped in Dreams" "The Patient" "The Long Watch" "The Bear Woman" "Brotherhood in Exile" "Winter's Embrace" "Sambodhi's Wisdom" "The Enthusiasts" "Broken Promises" "Brush, Paint and Palette" "Deadly Joy" "The Adventuring Spirit" "The Eternal War" "The Shortcut" "The Card Sharp" "A Modest Request" "Luminous Trove" "The Hook" "Bijoux" "Justified Ambition" "Judging Voices" "Silence and Frost" "The Bargain" "A Fate Worse Than Death" "Altered Perception" "Home" "The Destination" "Broken Truce" "Doryani's Epiphany" "Endless Night" "Choking Guilt" "The Leviathan" "Gemcutter's Mercy" "Checkmate" "Lethean Temptation" "Something Dark"
+	BaseType == "Mawr Blaidd" "Hunter's Reward" "The Immortal" "The Last One Standing" "The Dragon's Heart" "The Queen" "The Polymath" "Abandoned Wealth" "Wealth and Power" "The Ethereal" "The Thaumaturgist" "The Offering" "The Spark and the Flame" "The Artist" "The Brittle Emperor" "Heterochromia" "The Wolf" "Bowyer's Dream" "The Hunger" "Last Hope" "The Sephirot" "The Saint's Treasure" "The Enlightened" "The Harvester" "The Void" "The Vast" "The Chains that Bind" "Pride Before the Fall" "The Formless Sea" "The Celestial Justicar" "The Hoarder" "The King's Heart" "The Wolven King's Bite" "Chaotic Disposition" "The Celestial Stone" "Perfection" "The Hale Heart" "The Undisputed" "The Darkest Dream" "Harmony of Souls" "The Dreamland" "The Mayor" "The Professor" "The Samurai's Eye" "The Undaunted" "The Risk" "The Rusted Bard" "The World Eater" "The Wind" "The Dreamer" "The Cartographer" "The Wilted Rose" "Beauty Through Death" "The Cacophony" "The Innocent" "The Twilight Moon" "The Sacrifice" "The Life Thief" "The Messenger" "The Landing" "Seven Years Bad Luck" "Alone in the Darkness" "Alluring Bounty" "Burning Blood" "Pride of the First Ones" "The Porcupine" "The Damned" "Remembrance" "The Price of Loyalty" "Nook's Crown" "The Eye of Terror" "Azyran's Reward" "The Chosen" "The Craving" "Divine Justice" "The Escape" "Etched in Blood" "Friendship" "Squandered Prosperity" "Succor of the Sinless" "Underground Forest" "The Progeny of Lunaris" "Council of Cats" "The Strategist" "The Eldritch Decay" "The Betrayal" "Gift of Asenath" "Cursed Words" "Fateful Meeting" "Haunting Shadows" "The Whiteout" "Society's Remorse" "Dying Light" "The Astromancer" "Keeper's Corruption" "Reckless Ambition" "Love Through Ice" "Draped in Dreams" "The Patient" "The Long Watch" "The Bear Woman" "Brotherhood in Exile" "Winter's Embrace" "Sambodhi's Wisdom" "The Enthusiasts" "Broken Promises" "Brush, Paint and Palette" "Deadly Joy" "The Adventuring Spirit" "The Eternal War" "The Shortcut" "The Card Sharp" "A Modest Request" "Luminous Trove" "The Hook" "Bijoux" "Justified Ambition" "Judging Voices" "Silence and Frost" "The Bargain" "A Fate Worse Than Death" "Altered Perception" "Home" "The Destination" "Broken Truce" "Doryani's Epiphany" "Endless Night" "Choking Guilt" "The Leviathan" "Gemcutter's Mercy" "Checkmate" "Lethean Temptation" "Something Dark" "Divine Beauty" "The Wedding Gift" "Poisoned Faith" "Matryoshka"
 	SetBorderColor 30 144 255
 	SetTextColor 0 125 200
 	SetFontSize 45
@@ -1362,7 +1380,7 @@ Show # T2 Cards
 	
 Show # T3 Cards
 	Class Card
-	BaseType == "The Encroaching Darkness" "The Survivalist" "The Fathomless Depths" "Humility" "Scholar of the Seas" "Vinia's Token" "No Traces" "The Wrath" "The Seeker" "Lucky Connections" "The Jeweller's Boon" "The Inventor" "Emperor of Purity" "Monochrome" "The Mad King" "The Obscured" "The Valkyrie" "Three Faces in the Dark" "The Valley of Steel Boxes" "Dark Dreams" "The Fool" "Imperial Legacy" "Vanity" "The Primordial" "Demigod's Wager" "The Deep Ones" "The Wretched" "More is Never Enough" "The Deal" "Void of the Elements" "The Wolf's Legacy" "The Heroic Shot" "The Journey" "A Dab of Ink" "Arrogance of the Vaal" "Sambodhi's Vow" "The Beast" "Cameria's Cut" "The Bones" "Deathly Designs" "The Tinkerer's Table" "The Easy Stroll" "Loyalty" "Prometheus' Armoury" "The Tumbleweed" "The Hive of Knowledge" "A Note in the Wind" "The Greatest Intentions" "The White Knight" "The Sustenance" "Peaceful Moments" "The Awakened" "A Familiar Call" "The Long Con" "The Gulf" "The Bitter Blossom" "Triskaidekaphobia" "The Cache" "The Academic" "Desecrated Virtue" "Unchained" "The Unexpected Prize" "The Journalist" "Boon of Justice" "Time-Lost Relic" "The Last Supper" "The Emptiness" "A Sea of Blue" "The Offspring" "The Price of Prescience" "The Mind's Eyes" "Terrible Secret of Space" "The Blessing of Moosh" "Costly Curio" "Lachrymal Necrosis" "Dementophobia" "Ambitious Obsession" "Desperate Crusade" "A Stone Perfected" "Treasures of the Vaal" "The Rabbit's Foot" "Chasing Risk" "The Prince of Darkness" "The Catch" "Eternal Bonds" "Disdain" "The Scout" "Guardian's Challenge" "The Forgotten Treasure" "The Fox in the Brambles" "The Aspirant" "Prejudice" "Buried Treasure" "The Tireless Extractor" "Misery in Darkness" "Parasitic Passengers" "Duality" "The One That Got Away" "The Transformation" "Magnum Opus" "Imperfect Memories" "The Magma Crab" "Acclimatisation" "The Brawny Battle Mage" "Darker Half" "The Forward Gaze" "From Bone to Ashes" "Further Invention" "Rebirth and Renewal" "The Dungeon Master" "The Wolf's Shadow" "The Master Artisan" "Astral Protection" "The Shepherd's Sandals" "The Enforcer"
+	BaseType == "The Encroaching Darkness" "The Survivalist" "The Fathomless Depths" "Humility" "Scholar of the Seas" "Vinia's Token" "No Traces" "The Wrath" "The Seeker" "Lucky Connections" "The Jeweller's Boon" "The Inventor" "Emperor of Purity" "Monochrome" "The Mad King" "The Obscured" "The Valkyrie" "Three Faces in the Dark" "The Valley of Steel Boxes" "Dark Dreams" "The Fool" "Imperial Legacy" "Vanity" "The Primordial" "Demigod's Wager" "The Deep Ones" "The Wretched" "More is Never Enough" "The Deal" "Void of the Elements" "The Wolf's Legacy" "The Heroic Shot" "The Journey" "A Dab of Ink" "Arrogance of the Vaal" "Sambodhi's Vow" "The Beast" "Cameria's Cut" "The Bones" "Deathly Designs" "The Tinkerer's Table" "The Easy Stroll" "Loyalty" "Prometheus' Armoury" "The Tumbleweed" "The Hive of Knowledge" "A Note in the Wind" "The Greatest Intentions" "The White Knight" "The Sustenance" "Peaceful Moments" "The Awakened" "A Familiar Call" "The Long Con" "The Gulf" "The Bitter Blossom" "Triskaidekaphobia" "The Cache" "The Academic" "Desecrated Virtue" "Unchained" "The Unexpected Prize" "The Journalist" "Boon of Justice" "Time-Lost Relic" "The Last Supper" "The Emptiness" "A Sea of Blue" "The Offspring" "The Price of Prescience" "The Mind's Eyes" "Terrible Secret of Space" "The Blessing of Moosh" "Costly Curio" "Lachrymal Necrosis" "Dementophobia" "Ambitious Obsession" "Desperate Crusade" "A Stone Perfected" "Treasures of the Vaal" "The Rabbit's Foot" "Chasing Risk" "The Prince of Darkness" "The Catch" "Eternal Bonds" "Disdain" "The Scout" "Guardian's Challenge" "The Forgotten Treasure" "The Fox in the Brambles" "The Aspirant" "Prejudice" "Buried Treasure" "The Tireless Extractor" "Misery in Darkness" "Parasitic Passengers" "Duality" "The One That Got Away" "The Transformation" "Magnum Opus" "Imperfect Memories" "The Magma Crab" "Acclimatisation" "The Brawny Battle Mage" "Darker Half" "The Forward Gaze" "From Bone to Ashes" "Further Invention" "Rebirth and Renewal" "The Dungeon Master" "The Wolf's Shadow" "The Master Artisan" "Astral Protection" "The Shepherd's Sandals" "The Enforcer" "The Master" "Man With Bear" "Alivia's Grace" "Auspicious Ambitions" "Ever-Changing" "A Dusty Memory" "The Return of the Rat" "The Finishing Touch" "A Chilling Wind"
 	SetBorderColor 30 144 255
 	SetTextColor 0 125 200
 	SetFontSize 45
@@ -1672,7 +1690,7 @@ Show # T2 Helm
 Show # T1 Rings
 	Rarity Rare
 	Class Ring
-	BaseType == "Prismatic Ring" "Opal Ring" "Steel Ring" "Vermillion" "Cerulean" "Iolite Ring"
+	BaseType == "Prismatic Ring" "Opal Ring" "Steel Ring" "Vermillion Ring" "Cerulean Ring" "Iolite Ring"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
 	SetFontSize 40
@@ -1862,7 +1880,7 @@ Show # Atlas Belts
 
 Show # T1 Atlas Rings
 	Class Ring
-	BaseType == "Opal Ring" "Steel Ring" "Vermillion Ring" "Iolite Ring" "Dusk Ring" "Penumbra Ring" "Gloam Ring" "Tenebrous Ring" "Shadowed Ring" "Bone Ring" "Ring"
+	BaseType == "Opal Ring" "Steel Ring" "Vermillion Ring" "Iolite Ring" "Dusk Ring" "Penumbra Ring" "Gloam Ring" "Tenebrous Ring" "Shadowed Ring" "Ring"
 	SetBorderColor 100 200 200
 	SetFontSize 40
 	MinimapIcon 1 Yellow Circle
