@@ -163,14 +163,23 @@ Show # Vaal Gems
 
 # LEAGUE ITEMS
 # Ancestors
-Show # Misc Ancestor Currency
+Show # Hinekora's Lock
 	Class "Stackable Currency"
-	BaseType "Hinekora's Lock" "Silver Coin"
+	BaseType == "Hinekora's Lock"
 	SetTextColor 255 0 255
 	SetBorderColor 255 0 255
 	PlayAlertSound 12 300
 	SetFontSize 45
 	MinimapIcon 0 Red Triangle
+
+Show # Silver Coins
+	Class "Stackable Currency"
+	BaseType == "Silver Coin"
+	SetTextColor 255 0 0
+	SetBorderColor 255 0 0
+	PlayAlertSound 11 300
+	SetFontSize 45
+	MinimapIcon 0 Red UpsideDownHouse
 
 Show # Omens
 	Class "Stackable Currency"
@@ -634,13 +643,169 @@ Show # All Incubators
 	MinimapIcon 1 Blue Diamond
 	PlayEffect Blue Temp
 
-Show # Fractured Items
+# Fractured Items
+Show # Jewels/Flasks
 	FracturedItem True
+	Class Jewel Flask
 	SetFontSize 45
 	SetTextColor 28 132 186
 	SetBorderColor 28 132 186
 	PlayAlertSound 16 250
-	
+
+Show # T1 Rings
+	FracturedItem True
+	Class Ring
+	BaseType == "Prismatic Ring" "Opal Ring" "Steel Ring" "Vermillion Ring" "Cerulean Ring" "Iolite Ring"
+	SetFontSize 45
+	SetTextColor 28 132 186
+	SetBorderColor 28 132 186
+	PlayAlertSound 16 250
+
+Show # T2 Rings
+	FracturedItem True
+	Class Ring
+	BaseType == "Ruby Ring" "Topaz Ring" "Sapphire Ring" "Two-Stone Ring" "Coral Ring" "Amethyst Ring" "Dusk Ring" "Penumbra Ring" "Gloam Ring" "Tenebrous Ring" "Shadowed Ring" "Bone Ring" "Ring"
+	SetFontSize 40
+	SetTextColor 28 132 186
+	SetBorderColor 28 132 186
+	PlayAlertSound 16 250
+
+Show # T1 Amulets
+	FracturedItem True
+	Class Amulet
+	BaseType == "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Agate Amulet" "Citrine Amulet" "Turquoise Amulet" "Onyx Amulet"
+	SetFontSize 45
+	SetTextColor 28 132 186
+	SetBorderColor 28 132 186
+	PlayAlertSound 16 250
+
+Show # T1 Belts
+	FracturedItem True
+	Class Belt
+	BaseType == "Crystal Belt" "Stygian Vise"
+	SetFontSize 45
+	SetTextColor 28 132 186
+	SetBorderColor 28 132 186
+	PlayAlertSound 16 250
+
+Show # T2 Belts
+	FracturedItem True
+	Class Belt
+	BaseType == "Leather Belt" "Heavy Belt"
+	SetFontSize 40
+	SetTextColor 28 132 186
+	SetBorderColor 28 132 186
+	PlayAlertSound 16 250
+
+Show # T1 Fractured Weps
+	FracturedItem True
+	BaseType "Opal Sceptre" "Void Sceptre" "Sambar Sceptre" "Profane Wand" "Prophecy Wand" "Imbued Wand" "Demon's Horn" "Opal Wand" "Convoking Wand" "Carved Wand" "Engraved Wand" "Calling Wand" "Convening Wand"
+	SetFontSize 45
+	SetTextColor 28 132 186
+	SetBorderColor 28 132 186
+	PlayAlertSound 16 250
+
+Show # T2 Fractured Weps
+	FracturedItem True
+	BaseType "Eclipse Staff" "Exquisite Blade" "Vaal Axe" "Karui Maul" "Karui Chopper" "Platinum Kris" "Golden Kris" "Copper Kris" "Jewelled Foil" "Spiraled Foil" "Imperial Claw" "Gemini Claw"
+	SetFontSize 38
+	SetTextColor 28 132 186
+	SetBorderColor 28 132 186
+
+Show # T1 Fractured Quivers
+	FracturedItem True
+	BaseType "Penetrating Arrow Quiver" "Artillery Quiver" "Broadhead Arrow Quiver" "Primal Arrow Quiver" "Two-Point Arrow Quiver"
+	SetFontSize 45
+	SetTextColor 28 132 186
+	SetBorderColor 28 132 186
+	PlayAlertSound 16 250
+
+Show # T2 Fractured Quivers
+	FracturedItem True
+	BaseType "Spike-Point Arrow Quiver" "Heavy Arrow Quiver" "Vile Arrow Quiver"
+	SetFontSize 38
+	SetTextColor 28 132 186
+	SetBorderColor 28 132 186
+
+Show # T1 Fractured Chests
+	FracturedItem True
+	BaseType "Grasping Mail" "General's Brigandine" "Triumphant Lamellar"
+	SetFontSize 45
+	SetTextColor 28 132 186
+	SetBorderColor 28 132 186
+	PlayAlertSound 16 250
+
+Show # T2 Fractured Chests
+	FracturedItem True
+	BaseType "Full Dragonscale" "Desert Brigandine" "Dragonscale Doublet" "Battle Lamellar" "Commander's Brigandine" "Exquisite Leather" "Destiny Leather" "Glorious Plate" "Gladiator Plate" "Crusader Plate" "Vaal Regalia" "Astral Plate" "Assassin's Garb" "Zodiac Leather"
+	SetFontSize 38
+	SetTextColor 28 132 186
+	SetBorderColor 28 132 186
+
+Show # T1 Shields
+	FracturedItem True
+	BaseType == "Supreme Spiked Shield" "Mirrored Spiked Shield" "Sovereign Spiked Shield" "Polished Spiked Shield"
+	SetFontSize 45
+	SetTextColor 28 132 186
+	SetBorderColor 28 132 186
+	PlayAlertSound 16 250
+
+Show # T2 Shields
+	FracturedItem True
+	BaseType == "Vaal Spirit Shield" "Archon Kite Shield" "Angelic Kite Shield" "Ezomyte Tower Shield" "Shagreen Tower Shield" "Crested Tower Shield" "Mahogany Tower Shield" "Titanium Spirit Shield" "Harmonic Spirit Shield" "Fossilised Spirit Shield" "Pinnacle Tower Shield" "Ebony Tower Shield"
+	SetFontSize 38
+	SetTextColor 28 132 186
+	SetBorderColor 28 132 186
+
+Show # T1 Gloves
+	FracturedItem True
+	BaseType == "Debilitation Gauntlets" "Gripped Gloves" "Slink Gloves" "Sinistral Gloves" "Fingerless Silk Gloves" "Nexus Gloves" "Apothecary's Gloves" "Runic Gauntlets" "Dragonscale Gauntlets" "Murder Mitts" "Assassin's Mitts" "Hydrascale Gauntlets"
+	SetFontSize 45
+	SetTextColor 28 132 186
+	SetBorderColor 28 132 186
+	PlayAlertSound 16 250
+
+Show # T2 Gloves
+	FracturedItem True
+	BaseType == "Shagreen Gloves" "Stealth Gloves" "Vaal Gauntlets" "Goliath Gauntlets" "Spiked Gloves" "Titan Gauntlets" "Sorcerer Gloves"
+	SetFontSize 38
+	SetTextColor 28 132 186
+	SetBorderColor 28 132 186
+
+Show # T1 Boots
+	FracturedItem True
+	BaseType == "Brimstone Treads" "Two-Toned Boots" "Sorcerer Boots" "Dreamquest Slippers" "Slink Boots" "Stormrider Boots" "Fugitive Boots" "Runic Sabatons" "Murder Boots" "Dragonscale Boots" "Dragonscale Boots" "Hydrascale Boots"
+	SetFontSize 45
+	SetTextColor 28 132 186
+	SetBorderColor 28 132 186
+	PlayAlertSound 16 250
+
+Show # T2 Boots
+	FracturedItem True
+	BaseType == "Vaal Greaves" "Arcanist Slippers" "Stealth Boots" "Assassin's Boots" "Carnal Boots" "Crusader Boots" "Legion Boots" "Hydrascale Boots" "Titan Greaves"
+	SetFontSize 38
+	SetTextColor 28 132 186
+	SetBorderColor 28 132 186
+
+Show # T1 Helm
+	FracturedItem True
+	BaseType == "Lion Pelt" "Sinner Tricorne" "Bone Helmet" "Hubris Circlet" "Runic Crown" "Penitent Mask" "Nightmare Bascinet" "Archdemon Crown" "Blizzard Crown" "Pig-Faced Bascinet" "Fluted Bascinet"
+	SetFontSize 45
+	SetTextColor 28 132 186
+	SetBorderColor 28 132 186
+	PlayAlertSound 16 250
+
+Show # T2 Helm
+	FracturedItem True
+	BaseType == "Ezomyte Burgonet" "Samnite Helmet" "Silken Hood" "Ursine Pelt" "Mind Cage" "Solaris Circlet""Praetor Crown" "Deicide Mask" "Vaal Mask" "Royal Burgonet" "Eternal Burgonet"
+	SetFontSize 38
+	SetTextColor 28 132 186
+	SetBorderColor 28 132 186
+
+Show # Shit Fractured Scraps
+	FracturedItem True
+	SetTextColor 28 132 186
+
 Show # Synthesised Items
 	SynthesisedItem True
 	SetFontSize 45
@@ -1090,7 +1255,7 @@ Show # SHAPED MAPS
 Show # Yellow T6-10 Maps
 	Class Map
 	MapTier >= 6
-	SetBorderColor 255 90 90
+	SetBorderColor 200 200 119
 	SetTextColor 200 200 119
 	SetFontSize 45
 	PlayAlertSound 14 300
@@ -1098,7 +1263,8 @@ Show # Yellow T6-10 Maps
 
 Show # White T1-5 Maps
 	Class Map
-	SetBorderColor 255 90 90
+	SetBorderColor 200 200 200
+	SetTextColor 200 200 200
 	SetFontSize 45
 	PlayAlertSound 14 300
 	MinimapIcon 1 White Square
@@ -1144,7 +1310,7 @@ Show # 6L uniques
 
 Show # T1 Uniques
 	Rarity Unique
-	BaseType "Ambush Mitts" "Carnal Boots" "Crusader Boots" "Ezomyte Tower Shield" "Gemstone Sword" "Golden Hoop" "Greatwolf Talisman" "Jingling Spirit Shield" "Legion Gloves" "Nightmare Mace" "Nubuck Boots" "Ornate Quiver" "Prismatic Jewel" "Prophecy Wand" "Rawhide Boots" "Riveted Gloves" "Ruby Amulet" "Ruby Flask" "Sorcerer Boots" "Timeless Jewel" "Vaal Rapier" "Wyrmscale Doublet" "Zodiac Leather" "Silk Gloves" "Magistrate Crown" "Blood Raiment"
+	BaseType "Carnal Boots" "Crusader Boots" "Ezomyte Tower Shield" "Gemstone Sword" "Golden Hoop" "Greatwolf Talisman" "Jingling Spirit Shield" "Legion Gloves" "Nightmare Mace" "Nubuck Boots" "Ornate Quiver" "Prismatic Jewel" "Prophecy Wand" "Rawhide Boots" "Riveted Gloves" "Ruby Amulet" "Ruby Flask" "Sorcerer Boots" "Timeless Jewel" "Vaal Rapier" "Wyrmscale Doublet" "Zodiac Leather" "Silk Gloves" "Magistrate Crown" "Blood Raiment"
 	SetBorderColor 175 96 37
 	PlayAlertSound 1 300
 	SetFontSize 45
@@ -1316,7 +1482,7 @@ Hide
 # CURRENCY
 Show # T1 Currency
 	Class Currency
-	BaseType "Exalted Orb" "Divine Orb" "Eternal Orb" "Mirror of Kalandra" "Albino Rhoa Feather" "Crusader's Exalted Orb" "Redeemer's Exalted Orb" "Hunter's Exalted Orb" "Warlord's Exalted Orb" "Awakener's Orb" "Mirror Shard" "Orb of Conflict" "Orb of Dominance" "Sacred Orb" "Exceptional Eldritch" "Fracturing Orb"
+	BaseType "Divine Orb" "Eternal Orb" "Mirror of Kalandra" "Albino Rhoa Feather" "Crusader's Exalted Orb" "Redeemer's Exalted Orb" "Hunter's Exalted Orb" "Warlord's Exalted Orb" "Awakener's Orb" "Mirror Shard" "Orb of Conflict" "Orb of Dominance" "Sacred Orb" "Exceptional Eldritch" "Fracturing Orb"
 	SetBorderColor 255 0 255
 	SetTextColor 255 0 255
 	PlayAlertSound 1 300
@@ -1326,7 +1492,7 @@ Show # T1 Currency
 
 Show # T2 Currency
 	Class Currency
-	BaseType "Orb of Annulment" "Exalted Shard" "Elevated Sextant" "Eldritch Chaos Orb" "Eldritch Exalted Orb" "Eldritch Orb of Annulment" "Oil Extractor" "Fracturing Shard"
+	BaseType "Orb of Annulment" "Elevated Sextant" "Eldritch Chaos Orb" "Eldritch Exalted Orb" "Eldritch Orb of Annulment" "Oil Extractor" "Fracturing Shard" "Exalted Orb"
 	SetBorderColor 255 0 255
 	SetTextColor 255 0 255
 	PlayAlertSound 4 300
@@ -1345,7 +1511,7 @@ Show # T3 Currency
 
 Show # T4 Currency
 	Class Currency
-	BaseType "Chaos Orb" "Vaal Orb" "Orb of Alchemy" "Regal Orb" "Gemcutter's Prism" "Cartographer's Chisel" "Orb of Regret" "Sextant" "Orb of Scouring" "Orb of Fusing" "Orb of Horizons" "Orb of Binding" "Enkindling Orb" "Instilling Orb" "Orb of Unmaking" "Surveyor's Compass" "Charged Compass"
+	BaseType "Chaos Orb" "Vaal Orb" "Orb of Alchemy" "Regal Orb" "Gemcutter's Prism" "Cartographer's Chisel" "Orb of Regret" "Sextant" "Orb of Scouring" "Orb of Fusing" "Orb of Horizons" "Orb of Binding" "Enkindling Orb" "Instilling Orb" "Orb of Unmaking" "Surveyor's Compass" "Charged Compass" "Exalted Shard"
 	SetTextColor 255 0 255
 	SetFontSize 42
 	PlayAlertSound 12 300
@@ -1644,14 +1810,14 @@ Show # +Gem Wands
 # WEAPONS
 Show # T1 1H Weps
 	Rarity Rare
-	BaseType "Jewelled Foil" "Spiraled Foil" "Imbued Wand" "Opal Wand" "Convoking Wand" "Carved Wand" "Engraved Wand" "Imperial Claw" "Gemini Claw" "Calling Wand" "Convening Wand"
+	BaseType "Opal Sceptre" "Void Sceptre"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
 	SetFontSize 35
 
 Hide # T2 1H Weps
 	Rarity Rare
-	BaseType "Corsair Sword" "Siege Axe" "Sambar Sceptre" "Void Sceptre" "Opal Sceptre" "Platinum Kris" "Golden Kris" "Copper Kris" "Profane Wand" "Prophecy Wand"
+	BaseType "Corsair Sword" "Siege Axe" "Sambar Sceptre" "Void Sceptre" "Opal Sceptre" "Platinum Kris" "Golden Kris" "Copper Kris" "Profane Wand" "Prophecy Wand" "Jewelled Foil" "Spiraled Foil" "Imperial Claw" "Gemini Claw" "Imbued Wand" "Demon's Horn" "Opal Wand" "Convoking Wand" "Carved Wand" "Engraved Wand" "Calling Wand" "Convening Wand"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
 	SetFontSize 35
@@ -1691,64 +1857,64 @@ Hide # T3 Quivers
 # ARMOUR
 Show # T1 Chests
 	Rarity Rare
-	BaseType "Vaal Regalia" "Astral Plate" "Assassin's Garb" "Zodiac Leather" "Grasping Mail" "General's Brigandine" "Triumphant Lamellar"
+	BaseType "Grasping Mail" "General's Brigandine" "Triumphant Lamellar"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
 	SetFontSize 35
 
 Show # T2 Chests
 	Rarity Rare
-	BaseType "Full Dragonscale" "Desert Brigandine" "Dragonscale Doublet" "Battle Lamellar" "Commander's Brigandine" "Exquisite Leather" "Destiny Leather" "Glorious Plate" "Gladiator Plate" "Crusader Plate"
+	BaseType "Full Dragonscale" "Desert Brigandine" "Dragonscale Doublet" "Battle Lamellar" "Commander's Brigandine" "Exquisite Leather" "Destiny Leather" "Glorious Plate" "Gladiator Plate" "Crusader Plate" "Vaal Regalia" "Astral Plate" "Assassin's Garb" "Zodiac Leather"
 	SetBorderColor 255 255 0
 
 Show # T1 Shields
 	Rarity Rare
-	BaseType "Titanium Spirit Shield" "Harmonic Spirit Shield" "Fossilised Spirit Shield" "Pinnacle Tower Shield" "Ebony Tower Shield"
+	BaseType == "Supreme Spiked Shield" "Mirrored Spiked Shield" "Sovereign Spiked Shield" "Polished Spiked Shield"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
 	SetFontSize 35
 
 Hide # T2 Shields
 	Rarity Rare
-	BaseType "Vaal Spirit Shield" "Archon Kite Shield" "Angelic Kite Shield" "Ezomyte Tower Shield" "Shagreen Tower Shield" "Crested Tower Shield" "Mahogany Tower Shield"
+	BaseType == "Vaal Spirit Shield" "Archon Kite Shield" "Angelic Kite Shield" "Ezomyte Tower Shield" "Shagreen Tower Shield" "Crested Tower Shield" "Mahogany Tower Shield" "Titanium Spirit Shield" "Harmonic Spirit Shield" "Fossilised Spirit Shield" "Pinnacle Tower Shield" "Ebony Tower Shield" 
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
 	SetFontSize 35
 
 Show # T1 Gloves
 	Rarity Rare
-	BaseType "Spiked Gloves" "Titan Gauntlets" "Debilitation Gauntlets" "Gripped Gloves" "Slink Gloves" "Sinistral Gloves" "Sorcerer Gloves" "Fingerless Silk Gloves" "Nexus Gloves" "Apothecary's Gloves" "Runic Gauntlets" "Dragonscale Gauntlets"
+	BaseType == "Debilitation Gauntlets" "Gripped Gloves" "Slink Gloves" "Sinistral Gloves" "Fingerless Silk Gloves" "Nexus Gloves" "Apothecary's Gloves" "Runic Gauntlets" "Dragonscale Gauntlets" "Murder Mitts" "Assassin's Mitts" "Hydrascale Gauntlets"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
 	SetFontSize 35
 
 Show # T2 Gloves
 	Rarity Rare
-	BaseType "Shagreen Gloves" "Stealth Gloves" "Vaal Gauntlets" "Goliath Gauntlets" "Murder Mitts" "Assassin's Mitts" "Hydrascale Gauntlets"
+	BaseType == "Shagreen Gloves" "Stealth Gloves" "Vaal Gauntlets" "Goliath Gauntlets" "Spiked Gloves" "Titan Gauntlets" "Sorcerer Gloves" 
 	SetBorderColor 255 255 0
 
 Show # T1 Boots
 	Rarity Rare
-	BaseType "Titan Greaves" "Brimstone Treads" "Two-Toned Boots" "Sorcerer Boots" "Dreamquest Slippers" "Slink Boots" "Stormrider Boots" "Fugitive Boots" "Runic Sabatons" "Murder Boots" "Dragonscale Boots"
+	BaseType == "Brimstone Treads" "Two-Toned Boots" "Sorcerer Boots" "Dreamquest Slippers" "Slink Boots" "Stormrider Boots" "Fugitive Boots" "Runic Sabatons" "Murder Boots" "Dragonscale Boots" "Dragonscale Boots" "Hydrascale Boots" 
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
 	SetFontSize 35
 
 Show # T2 Boots
 	Rarity Rare
-	BaseType "Vaal Greaves" "Dragonscale Boots" "Hydrascale Boots" "Arcanist Slippers" "Stealth Boots" "Assassin's Boots" "Carnal Boots" "Crusader Boots" "Legion Boots" "Hydrascale Boots"
+	BaseType == "Vaal Greaves" "Arcanist Slippers" "Stealth Boots" "Assassin's Boots" "Carnal Boots" "Crusader Boots" "Legion Boots" "Hydrascale Boots" "Titan Greaves" 
 	SetBorderColor 255 255 0
 
 Show # T1 Helm
 	Rarity Rare
-	BaseType "Royal Burgonet" "Eternal Burgonet" "Lion Pelt" "Sinner Tricorne" "Bone Helmet" "Hubris Circlet" "Runic Crown" "Penitent Mask" "Nightmare Bascinet" "Archdemon Crown" "Blizzard Crown"
+	BaseType == "Lion Pelt" "Sinner Tricorne" "Bone Helmet" "Hubris Circlet" "Runic Crown" "Penitent Mask" "Nightmare Bascinet" "Archdemon Crown" "Blizzard Crown" "Pig-Faced Bascinet" "Fluted Bascinet" 
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
 	SetFontSize 35
 
 Show # T2 Helm
 	Rarity Rare
-	BaseType "Ezomyte Burgonet" "Samnite Helmet" "Silken Hood" "Ursine Pelt" "Mind Cage" "Solaris Circlet" "Pig-Faced Bascinet" "Fluted Bascinet" "Praetor Crown" "Deicide Mask" "Vaal Mask"
+	BaseType == "Ezomyte Burgonet" "Samnite Helmet" "Silken Hood" "Ursine Pelt" "Mind Cage" "Solaris Circlet""Praetor Crown" "Deicide Mask" "Vaal Mask" "Royal Burgonet" "Eternal Burgonet"
 	SetBorderColor 255 255 0
 
 
@@ -1772,13 +1938,13 @@ Show # T2 Rings
 Hide # T3 Rare Rings
 	Rarity Rare
 	Class Ring
-	BaseType "Unset Ring" "Diamond Ring" "Moonstone Ring" "Gold Ring"
+	#BaseType "Unset Ring" "Diamond Ring" "Moonstone Ring" "Gold Ring"
 	SetBorderColor 255 255 0
 
 Show # AMULETS T1
 	Rarity Rare
 	Class Amulet
-	BaseType  "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Agate Amulet" "Citrine Amulet" "Turquoise Amulet" "Onyx Amulet" "Seaglass Amulet" "Blue Pearl Amulet"
+	BaseType == "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Agate Amulet" "Citrine Amulet" "Turquoise Amulet" "Onyx Amulet"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
 	SetFontSize 35
@@ -1786,13 +1952,13 @@ Show # AMULETS T1
 Show # AMULETS T2
 	Rarity Rare
 	Class Amulet
-	BaseType "Gold Amulet" "Marble Amulet" "Unset Amulet"
+	BaseType == "Gold Amulet" "Marble Amulet" "Unset Amulet" "Seaglass Amulet" "Blue Pearl Amulet"
 	SetBorderColor 255 255 0
 
 Show # T1 Belts
 	Rarity Rare
 	Class Belt
-	BaseType "Crystal Belt" "Stygian Vise"
+	BaseType == "Crystal Belt" "Stygian Vise"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
 	SetFontSize 45
@@ -1800,7 +1966,7 @@ Show # T1 Belts
 Show # T2 Belts
 	Rarity Rare
 	Class Belt
-	BaseType "Leather Belt"
+	BaseType == "Leather Belt" "Heavy Belt"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
 	SetFontSize 35
@@ -1808,7 +1974,7 @@ Show # T2 Belts
 Hide # T3 Belts
 	Rarity Rare
 	Class Belt
-	BaseType "Vanguard Belt" "Rustic Sash" "Heavy Belt"
+	BaseType == "Vanguard Belt" "Rustic Sash"
 	SetBorderColor 255 255 0
 	SetFontSize 35
 
