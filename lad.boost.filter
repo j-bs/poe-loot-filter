@@ -88,9 +88,9 @@ Show # Lv 7 Special Gems
 	PlayEffect Cyan
 	MinimapIcon 0 Cyan Triangle
 
-Show # Alternate Quality Gems
+Show # Transfigured Gems
 	Class Gem
-	AlternateQuality True
+	TransfiguredGem True
 	SetTextColor 255 181 0
 	SetBorderColor 255 181 0
 	PlayAlertSound 11 300
@@ -106,9 +106,15 @@ Show # 20 Quality Gems
 	PlayAlertSound 12 300
 	MinimapIcon 1 Cyan Triangle
 
+Show # 10+ Quality Gems
+	Class Gem
+	Quality > 10
+	SetBorderColor 128 128 255
+	MinimapIcon 2 Cyan Triangle
+	SetFontSize 40
+
 Show # Quality Gems
 	Class Gem
-	Quality >= 10
 	SetBorderColor 128 128 255
 	MinimapIcon 2 Cyan Triangle
 
@@ -171,15 +177,6 @@ Show # Hinekora's Lock
 	PlayAlertSound 12 300
 	SetFontSize 45
 	MinimapIcon 0 Red Triangle
-
-Show # Silver Coins
-	Class "Stackable Currency"
-	BaseType == "Silver Coin"
-	SetTextColor 255 0 0
-	SetBorderColor 255 0 0
-	PlayAlertSound 11 300
-	SetFontSize 45
-	MinimapIcon 0 Red UpsideDownHouse
 
 Show # Omens
 	Class "Stackable Currency"
@@ -497,7 +494,7 @@ Show # Heist Mercenary Gear
 	SetFontSize 35
 
 Show # Heist Experimental Basetypes
-	BaseType "Assembler Wand" "Congregator Wand" "Accumulator Wand" "Hollowpoint Dagger" "Pressurised Dagger" "Pneumatic Dagger" "Flickerflame Blade" "Flashfire Blade" "Infernal Blade" "Shadow Fangs" "Malign Fangs" "Void Fangs" "Maltreatment Axe" "Disapprobation Axe" "Psychotic Axe" "Fickle Spiritblade" "Capricious Spiritblade" "Anarchic Spiritblade" "Flare Mace" "Crack Mace" "Boom Mace" "Oscillating Sceptre" "Stabilising Sceptre" "Alternating Sceptre" "Hedron Bow" "Foundry Bow" "Solarine Bow" "Transformer Staff" "Reciprocation Staff" "Battery Staff" "Capacity Rod" "Potentiality Rod" "Eventuality Rod" "Prime Cleaver" "Honed Cleaver" "Apex Cleaver" "Rebuking Blade" "Blasting Blade" "Banishing Blade" "Blunt Force Condenser" "Crushing Force Magnifier" "Impact Force Propagator" "Micro-Distillery Belt" "Mechalarm Belt" "Astrolabe Amulet" "Simplex Amulet" "Cogwork Ring" "Geodesic Ring" "Exhausting Spirit Shield" "Subsuming Spirit Shield" "Transfer-attuned Spirit Shield" "Endothermic Buckler" "Polar Buckler" "Cold-attuned Buckler" "Exothermic Tower Shield" "Magmatic Tower Shield" "Heat-attuned Tower Shield"
+	BaseType "Assembler Wand" "Congregator Wand" "Accumulator Wand" "Hollowpoint Dagger" "Pressurised Dagger" "Pneumatic Dagger" "Flickerflame Blade" "Flashfire Blade" "Infernal Blade" "Shadow Fangs" "Malign Fangs" "Void Fangs" "Maltreatment Axe" "Disapprobation Axe" "Psychotic Axe" "Fickle Spiritblade" "Capricious Spiritblade" "Anarchic Spiritblade" "Flare Mace" "Crack Mace" "Boom Mace" "Oscillating Sceptre" "Stabilising Sceptre" "Alternating Sceptre" "Hedron Bow" "Foundry Bow" "Solarine Bow" "Transformer Staff" "Reciprocation Staff" "Battery Staff" "Capacity Rod" "Potentiality Rod" "Eventuality Rod" "Prime Cleaver" "Honed Cleaver" "Apex Cleaver" "Rebuking Blade" "Blasting Blade" "Banishing Blade" "Blunt Force Condenser" "Crushing Force Magnifier" "Impact Force Propagator" "Micro-Distillery Belt" "Mechalarm Belt" "Astrolabe Amulet" "Simplex Amulet" "Cogwork Ring" "Geodesic Ring" "Exhausting Spirit Shield" "Subsuming Spirit Shield" "Transfer-attuned Spirit Shield" "Endothermic Buckler" "Polar Buckler" "Cold-attuned Buckler" "Exothermic Tower Shield" "Magmatic Tower Shield" "Heat-attuned Tower Shield" "Composite Ring" "Manifold Ring" "Ratcheting Ring" "Helical Ring" "Focused Amulet"
 	SetBorderColor 255 181 0
 	SetFontSize 40
 	MinimapIcon 1 Yellow UpsideDownHouse
@@ -571,15 +568,6 @@ Show # Delirium Simulacrum Map
 	PlayAlertSound 9 300
 	MinimapIcon 0 Grey Star
 	PlayEffect Grey
-
-Show # Metamorph Samples
-	Class "Metamorph Sample"
-	BaseType "Metamorph Brain" "Metamorph Eye" "Metamorph Liver" "Metamorph Lung" "Metamorph Heart"
-	SetTextColor 43 148 1
-	SetBorderColor 43 148 1
-	SetFontSize 45
-	PlayAlertSound 11 300
-	MinimapIcon 1 Green Star
 
 Show # T1 Blight Oils
 	Class "Stackable Currency"
@@ -1355,7 +1343,7 @@ Show # All Uniques
 
 Show # Ultimatum Piece
 	Class Piece
-	BaseType "Ultimatum Aspect"
+	BaseType "Vaal Aspect"
 	SetFontSize 45
 	PlayAlertSound 6 250
 	MinimapIcon 0 Brown Star
@@ -1502,7 +1490,7 @@ Show # T2 Currency
 
 Show # T3 Currency
 	Class Currency
-	BaseType "Awakened Sextant" "Harbinger's Orb" "Ancient Orb" "Tempering Catalyst" "Fertile Catalyst" "Prismatic Catalyst" "Accelerating Catalyst" "Noxious Catalyst" "Unstable Catalyst" "Grand Eldritch" "Greater Eldritch" "Lesser Eldritch"
+	BaseType "Awakened Sextant" "Harbinger's Orb" "Ancient Orb" "Tempering Catalyst" "Fertile Catalyst" "Prismatic Catalyst" "Accelerating Catalyst" "Noxious Catalyst" "Unstable Catalyst" "Grand Eldritch" "Greater Eldritch" "Lesser Eldritch" "Tainted Catalyst"
 	SetTextColor 255 0 255
 	SetBorderColor 255 0 255
 	PlayAlertSound 12 300
@@ -1603,7 +1591,8 @@ Show # T1 Cards
 
 Show # T2 Cards
 	Class Card
-	BaseType == "Mawr Blaidd" "Hunter's Reward" "The Immortal" "The Last One Standing" "The Dragon's Heart" "The Queen" "The Polymath" "Abandoned Wealth" "Wealth and Power" "The Ethereal" "The Thaumaturgist" "The Offering" "The Spark and the Flame" "The Artist" "The Brittle Emperor" "Heterochromia" "The Wolf" "Bowyer's Dream" "The Hunger" "Last Hope" "The Sephirot" "The Saint's Treasure" "The Enlightened" "The Harvester" "The Void" "The Vast" "The Chains that Bind" "Pride Before the Fall" "The Formless Sea" "The Celestial Justicar" "The Hoarder" "The King's Heart" "The Wolven King's Bite" "Chaotic Disposition" "The Celestial Stone" "Perfection" "The Hale Heart" "The Undisputed" "The Darkest Dream" "Harmony of Souls" "The Dreamland" "The Mayor" "The Professor" "The Samurai's Eye" "The Undaunted" "The Risk" "The Rusted Bard" "The World Eater" "The Wind" "The Dreamer" "The Cartographer" "The Wilted Rose" "Beauty Through Death" "The Cacophony" "The Innocent" "The Twilight Moon" "The Sacrifice" "The Life Thief" "The Messenger" "The Landing" "Seven Years Bad Luck" "Alone in the Darkness" "Alluring Bounty" "Burning Blood" "Pride of the First Ones" "The Porcupine" "The Damned" "Remembrance" "The Price of Loyalty" "Nook's Crown" "The Eye of Terror" "Azyran's Reward" "The Chosen" "The Craving" "Divine Justice" "The Escape" "Etched in Blood" "Friendship" "Squandered Prosperity" "Succor of the Sinless" "Underground Forest" "The Progeny of Lunaris" "Council of Cats" "The Strategist" "The Eldritch Decay" "The Betrayal" "Gift of Asenath" "Cursed Words" "Fateful Meeting" "Haunting Shadows" "The Whiteout" "Society's Remorse" "Dying Light" "The Astromancer" "Keeper's Corruption" "Reckless Ambition" "Love Through Ice" "Draped in Dreams" "The Patient" "The Long Watch" "The Bear Woman" "Brotherhood in Exile" "Winter's Embrace" "Sambodhi's Wisdom" "The Enthusiasts" "Broken Promises" "Brush, Paint and Palette" "Deadly Joy" "The Adventuring Spirit" "The Eternal War" "The Shortcut" "The Card Sharp" "A Modest Request" "Luminous Trove" "The Hook" "Bijoux" "Justified Ambition" "Judging Voices" "Silence and Frost" "The Bargain" "A Fate Worse Than Death" "Altered Perception" "Home" "The Destination" "Broken Truce" "Doryani's Epiphany" "Endless Night" "Choking Guilt" "The Leviathan" "Gemcutter's Mercy" "Checkmate" "Lethean Temptation" "Something Dark" "Divine Beauty" "The Wedding Gift" "Poisoned Faith" "Matryoshka" "Fire of Unknown Origin"
+	BaseType == "Mawr Blaidd" "Hunter's Reward" "The Immortal" "The Last One Standing" "The Dragon's Heart" "The Queen" "The Polymath" "Abandoned Wealth" "Wealth and Power" "The Ethereal" "The Thaumaturgist" "The Offering" "The Spark and the Flame" "The Artist" "The Brittle Emperor" "Heterochromia" "The Wolf" "Bowyer's Dream" "The Hunger" "Last Hope" "The Sephirot" "The Saint's Treasure" "The Enlightened" "The Harvester" "The Void" "The Vast" "The Chains that Bind" "Pride Before the Fall" "The Formless Sea" "The Celestial Justicar" "The Hoarder" "The King's Heart" "The Wolven King's Bite" "Chaotic Disposition" "The Celestial Stone" "Perfection" "The Hale Heart" "The Undisputed" "The Darkest Dream" "Harmony of Souls" "The Dreamland" "The Mayor" "The Professor" "The Samurai's Eye" "The Undaunted" "The Risk" "The Rusted Bard" "The World Eater" "The Wind" "The Dreamer" "The Cartographer" "The Wilted Rose" "Beauty Through Death" "The Cacophony" "The Innocent" "The Twilight Moon" "The Sacrifice" "The Life Thief" "The Messenger" "The Landing" "Seven Years Bad Luck" "Alone in the Darkness" "Alluring Bounty" "Burning Blood" "Pride of the First Ones" "The Porcupine" "The Damned" "Remembrance" "The Price of Loyalty" "Nook's Crown" "The Eye of Terror" "Azyran's Reward" "The Chosen" "The Craving" "Divine Justice" "The Escape" "Etched in Blood" "Friendship" "Squandered Prosperity" "Succor of the Sinless" "Underground Forest" "The Progeny of Lunaris" "Council of Cats" "The Strategist" "The Eldritch Decay" "The Betrayal" "Gift of Asenath" "Cursed Words" "Fateful Meeting" "Haunting Shadows" "The Whiteout" "Society's Remorse" "Dying Light" "The Astromancer" "Keeper's Corruption" "Reckless Ambition" "Love Through Ice" "Draped in Dreams" "The Patient" "The Long Watch" "The Bear Woman" "Brotherhood in Exile" "Winter's Embrace" "Sambodhi's Wisdom" "The Enthusiasts" "Broken Promises" "Brush, Paint and Palette" "Deadly Joy" "The Adventuring Spirit" "The Eternal War" "The Shortcut" "The Card Sharp" "A Modest Request" "Luminous Trove" "The Hook" "Bijoux" "Justified Ambition" "Judging Voices" "Silence and Frost" "The Bargain" "A Fate Worse Than Death" "Altered Perception" "Home" "The Destination" "Broken Truce" "Doryani's Epiphany" "Endless Night" "Choking Guilt" "The Leviathan" "Gemcutter's Mercy" "Checkmate" "Lethean Temptation" "Something Dark" "Divine Beauty" "The Wedding Gift" "Poisoned Faith" "Matryoshka" "Fire of Unknown Origin" "I See Brothers" "Assassin's Gift" "Eldritch Perfection" "Who Asked"
+
 	SetBorderColor 30 144 255
 	SetTextColor 0 125 200
 	SetFontSize 45

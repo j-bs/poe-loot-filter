@@ -1,15 +1,6 @@
-# Non-repo PoE folders/files
-ShaderCacheD3D11/*
-ShaderCacheVulkan/*
-Countdown/*
-DailyDealCache/*
-Minimap/*
-MOTDCache/*
-Screenshots/*
-ShopImages/*
-*.ini
-*.credentials
-*.txt
-engine.version
-*.vdf
-*.dmp
+# Explicit includes only
+!*.filter
+!README.md
+!filter-helper.py
+
+**
