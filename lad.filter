@@ -1156,16 +1156,6 @@ Show # Influence Maps
 	MinimapIcon 0 Red Square
 	PlayEffect Red
 
-Show # Valdo Maps
-	Class Map
-	MapTier == 17
-	SetTextColor 255 90 90
-	SetBorderColor 255 90 90
-	SetFontSize 45
-	PlayAlertSound 4 300
-	MinimapIcon 0 Red Square
-	PlayEffect Red
-
 Show # Memory Maps
 	Class Memory
 	BaseType "Niko" "Alva" "Kirac" "Einhar" "Memory"
@@ -1211,6 +1201,16 @@ Show # Blighted Maps
 	SetFontSize 45
 	PlayAlertSound 4 300
 	MinimapIcon 1 Red Cross
+	PlayEffect Red
+
+Show # T17 Maps
+	Class Map
+	MapTier == 17
+	SetTextColor 255 90 90
+	SetBorderColor 255 90 90
+	SetFontSize 45
+	PlayAlertSound 4 300
+	MinimapIcon 0 Red Square
 	PlayEffect Red
 
 Show # Red T11+ Maps
