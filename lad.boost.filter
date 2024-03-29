@@ -154,6 +154,34 @@ Show # Vaal Gems
 	MinimapIcon 1 White Triangle
 
 # LEAGUE ITEMS
+# Necropolis
+Show # Flaring Allfames
+	Class "Embers of the Allflame"
+	BaseType "Flaring Allflame"
+	SetTextColor 255 0 0
+	SetBorderColor 255 0 0
+	PlayAlertSound 11 300
+	SetFontSize 45
+	MinimapIcon 0 Red UpsideDownHouse
+
+Show # T1 Allflames
+	Class "Embers of the Allflame"
+	BaseType == "Allflame Ember of Frogs" "Allflame Ember of Rats" "Allflame Ember of Untainted Beasts" "Allflame Ember of Apes" "Allflame Ember of Rhoas" "Allflame Ember of Spitters" "Allflame Ember of Maws" "Allflame Ember of Chimerals" "Allflame Ember of Devourers" "Allflame Ember of Valako" "Allflame Ember of Tukohama" "Allflame Ember of Tawhoa" "Allflame Ember of Tasalio" "Allflame Ember of Rongokurai" "Allflame Ember of Ramako" "Allflame Ember of Ngamahu" "Allflame Ember of Kitava" "Allflame Ember of Hinekora" "Allflame Ember of Arohongui"
+	SetTextColor 255 0 0
+	SetBorderColor 255 0 0
+	PlayAlertSound 11 300
+	SetFontSize 42
+	MinimapIcon 1 Red UpsideDownHouse
+
+Show # Allflames
+	Class "Embers of the Allflame"
+	SetTextColor 255 0 0
+	SetBorderColor 255 0 0
+	PlayAlertSound 11 300
+	SetFontSize 40
+	MinimapIcon 2 Red UpsideDownHouse
+
+# Affliction
 Show # Tinctures
 	Class "Tincture"
 	SetTextColor 255 0 0
@@ -742,7 +770,7 @@ Show # T2 Fractured Chests
 
 Show # T1 Shields
 	FracturedItem True
-	BaseType == "Supreme Spiked Shield" "Mirrored Spiked Shield" "Sovereign Spiked Shield" "Polished Spiked Shield"
+	BaseType == "Supreme Spiked Shield" "Mirrored Spiked Shield" "Sovereign Spiked Shield" "Polished Spiked Shield" "Titanium Spirit Shield" "Harmonic Spirit Shield" "Fossilised Spirit Shield"
 	SetFontSize 45
 	SetTextColor 28 132 186
 	SetBorderColor 28 132 186
@@ -811,19 +839,19 @@ Show # Synthesised Items
 	SetBorderColor 128 232 86
 	PlayAlertSound 16 250
 
-Show # Winged Scarabs
+Show # T1 Scarabs
 	Class "Map Fragments"
-	BaseType "Winged"
+	BaseType "Horned Scarab" "Scarab of Monstrous Lineage"
 	SetBorderColor 255 90 90
 	SetTextColor 255 255 255
 	SetFontSize 45
-	PlayAlertSound 4 300
+	PlayAlertSound 6 300
 	MinimapIcon 0 Orange Moon
 	PlayEffect Orange
 
-Show # Gilded Scarabs
+Show # T2 Scarabs
 	Class "Map Fragments"
-	BaseType "Gilded"
+	BaseType "Divination Scarab" "Harbinger Scarab" "Essence Scarab" "Legion Scarab of Eternal Conflict" "Cartography Scarab" "Breach Scarab"
 	SetBorderColor 255 90 90
 	SetTextColor 255 255 255
 	SetFontSize 45
@@ -834,6 +862,16 @@ Show # Gilded Scarabs
 Show # Scarabs
 	Class "Map Fragments"
 	BaseType "Scarab"
+	SetBorderColor 255 90 90
+	SetTextColor 255 255 255
+	SetFontSize 40
+	PlayAlertSound 12 300
+	MinimapIcon 1 Orange Moon
+	PlayEffect Orange Temp
+
+Show # Veiled Scarabs
+	Class "Stackable Currency"
+	BaseType "Veiled Scarab"
 	SetBorderColor 255 90 90
 	SetTextColor 255 255 255
 	SetFontSize 40
@@ -1054,9 +1092,9 @@ Show # Legion Splinters
 	SetBorderColor 160 32 240
 
 # Map Fragments
-Show # Elder Fragments
+Show # Uber Boss Fragments
 	Class "Map Fragments"
-	BaseType "Fragment of Enslavement" "Fragment of Eradication" "Fragment of Constriction" "Fragment of Purification"
+	BaseType "Cosmic Fragment" "Decaying Fragment" "Awakening Fragment" "Synthesising Fragment" "Reality Fragment" "Devouring Fragment" "Blazing Fragment"
 	SetTextColor 255 255 255
 	SetBorderColor 255 90 90
 	SetFontSize 45
@@ -1064,39 +1102,9 @@ Show # Elder Fragments
 	MinimapIcon 0 Orange Cross
 	PlayEffect Orange
 
-Show # Uber Elder Fragments
+Show # Boss Fragments
 	Class "Map Fragments"
-	BaseType "Fragment of Shape" "Fragment of Knowledge" "Fragment of Terror" "Fragment of Emptiness"
-	SetTextColor 255 255 255
-	SetBorderColor 255 90 90
-	SetFontSize 45
-	PlayAlertSound 4 250
-	MinimapIcon 0 Orange Cross
-	PlayEffect Orange
-
-Show # Shaper Fragments
-	Class "Map Fragments"
-	BaseType "Fragment of the Hydra" "Fragment of the Phoenix" "Fragment of the Minotaur" "Fragment of the Chimera"
-	SetTextColor 255 255 255
-	SetBorderColor 255 90 90
-	SetFontSize 45
-	PlayAlertSound 4 250
-	MinimapIcon 0 Orange Cross
-	PlayEffect Orange
-
-Show # Uber Atziri Fragments
-	Class "Map Fragments"
-	BaseType "Mortal Grief" "Mortal Rage" "Mortal Hope" "Mortal Ignorance"
-	SetTextColor 255 255 255
-	SetBorderColor 255 90 90
-	SetFontSize 45
-	PlayAlertSound 4 250
-	MinimapIcon 0 Orange Cross
-	PlayEffect Orange
-
-Show # Conquerer Fragments
-	Class "Map Fragments"
-	BaseType "Al-Hezmin's Crest" "Baran's Crest" "Drox's Crest" "Veritania's Crest"
+	BaseType "Fragment of Enslavement" "Fragment of Eradication" "Fragment of Constriction" "Fragment of Purification" "Fragment of Shape" "Fragment of Knowledge" "Fragment of Terror" "Fragment of Emptiness" "Fragment of the Hydra" "Fragment of the Phoenix" "Fragment of the Minotaur" "Fragment of the Chimera" "Mortal Grief" "Mortal Rage" "Mortal Hope" "Mortal Ignorance" "Al-Hezmin's Crest" "Baran's Crest" "Drox's Crest" "Veritania's Crest"
 	SetTextColor 255 255 255
 	SetBorderColor 255 90 90
 	SetFontSize 45
@@ -1480,7 +1488,7 @@ Show # T1 Currency
 
 Show # T2 Currency
 	Class Currency
-	BaseType "Orb of Annulment" "Elevated Sextant" "Eldritch Chaos Orb" "Eldritch Exalted Orb" "Eldritch Orb of Annulment" "Oil Extractor" "Fracturing Shard" "Exalted Orb"
+	BaseType "Orb of Annulment" "Eldritch Chaos Orb" "Eldritch Exalted Orb" "Eldritch Orb of Annulment" "Oil Extractor" "Fracturing Shard" "Exalted Orb"
 	SetBorderColor 255 0 255
 	SetTextColor 255 0 255
 	PlayAlertSound 4 300
@@ -1490,7 +1498,7 @@ Show # T2 Currency
 
 Show # T3 Currency
 	Class Currency
-	BaseType "Awakened Sextant" "Harbinger's Orb" "Ancient Orb" "Tempering Catalyst" "Fertile Catalyst" "Prismatic Catalyst" "Accelerating Catalyst" "Noxious Catalyst" "Unstable Catalyst" "Grand Eldritch" "Greater Eldritch" "Lesser Eldritch" "Tainted Catalyst"
+	BaseType "Harbinger's Orb" "Ancient Orb" "Tempering Catalyst" "Fertile Catalyst" "Prismatic Catalyst" "Accelerating Catalyst" "Noxious Catalyst" "Unstable Catalyst" "Grand Eldritch" "Greater Eldritch" "Lesser Eldritch" "Tainted Catalyst"
 	SetTextColor 255 0 255
 	SetBorderColor 255 0 255
 	PlayAlertSound 12 300
@@ -1499,7 +1507,7 @@ Show # T3 Currency
 
 Show # T4 Currency
 	Class Currency
-	BaseType "Chaos Orb" "Vaal Orb" "Orb of Alchemy" "Regal Orb" "Gemcutter's Prism" "Cartographer's Chisel" "Orb of Regret" "Sextant" "Orb of Scouring" "Orb of Fusing" "Orb of Horizons" "Orb of Binding" "Enkindling Orb" "Instilling Orb" "Orb of Unmaking" "Surveyor's Compass" "Charged Compass" "Exalted Shard"
+	BaseType "Chaos Orb" "Vaal Orb" "Orb of Alchemy" "Regal Orb" "Gemcutter's Prism" "Cartographer's Chisel" "Orb of Regret" "Orb of Scouring" "Orb of Fusing" "Orb of Horizons" "Orb of Binding" "Enkindling Orb" "Instilling Orb" "Orb of Unmaking" "Exalted Shard"
 	SetTextColor 255 0 255
 	SetFontSize 42
 	PlayAlertSound 12 300
@@ -1835,7 +1843,7 @@ Show # +Gem Wands
 # WEAPONS
 Show # T1 1H Weps
 	Rarity Rare
-	BaseType "Opal Sceptre" "Void Sceptre"
+	BaseType "Demon's Horn" "Void Sceptre" "Opal Sceptre" "Short Bow"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
 	SetFontSize 35
@@ -1882,26 +1890,26 @@ Hide # T3 Quivers
 # ARMOUR
 Show # T1 Chests
 	Rarity Rare
-	BaseType "Grasping Mail" "General's Brigandine" "Triumphant Lamellar"
+	BaseType "Grasping Mail" "General's Brigandine" "Triumphant Lamellar" "Sadist Garb" "Vaal Regalia"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
 	SetFontSize 35
 
 Show # T2 Chests
 	Rarity Rare
-	BaseType "Full Dragonscale" "Desert Brigandine" "Dragonscale Doublet" "Battle Lamellar" "Commander's Brigandine" "Exquisite Leather" "Destiny Leather" "Glorious Plate" "Gladiator Plate" "Crusader Plate" "Vaal Regalia" "Astral Plate" "Assassin's Garb" "Zodiac Leather"
+	BaseType "Full Dragonscale" "Desert Brigandine" "Dragonscale Doublet" "Battle Lamellar" "Commander's Brigandine" "Exquisite Leather" "Destiny Leather" "Glorious Plate" "Gladiator Plate" "Crusader Plate" "Astral Plate" "Assassin's Garb" "Zodiac Leather"
 	SetBorderColor 255 255 0
 
 Show # T1 Shields
 	Rarity Rare
-	BaseType == "Supreme Spiked Shield" "Mirrored Spiked Shield" "Sovereign Spiked Shield" "Polished Spiked Shield"
+	BaseType == "Titanium Spirit Shield" "Harmonic Spirit Shield" "Fossilised Spirit Shield" "Supreme Spiked Shield" "Mirrored Spiked Shield"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
 	SetFontSize 35
 
 Hide # T2 Shields
 	Rarity Rare
-	BaseType == "Vaal Spirit Shield" "Archon Kite Shield" "Angelic Kite Shield" "Ezomyte Tower Shield" "Shagreen Tower Shield" "Crested Tower Shield" "Mahogany Tower Shield" "Titanium Spirit Shield" "Harmonic Spirit Shield" "Fossilised Spirit Shield" "Pinnacle Tower Shield" "Ebony Tower Shield" 
+	BaseType == "Vaal Spirit Shield" "Archon Kite Shield" "Angelic Kite Shield" "Ezomyte Tower Shield" "Shagreen Tower Shield" "Crested Tower Shield" "Mahogany Tower Shield" "Sovereign Spiked Shield" "Polished Spiked Shield" "Pinnacle Tower Shield" "Ebony Tower Shield"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
 	SetFontSize 35
@@ -1920,26 +1928,26 @@ Show # T2 Gloves
 
 Show # T1 Boots
 	Rarity Rare
-	BaseType == "Brimstone Treads" "Two-Toned Boots" "Sorcerer Boots" "Dreamquest Slippers" "Slink Boots" "Stormrider Boots" "Fugitive Boots" "Runic Sabatons" "Murder Boots" "Dragonscale Boots" "Dragonscale Boots" "Hydrascale Boots" 
+	BaseType == "Brimstone Treads" "Two-Toned Boots" "Sorcerer Boots" "Dreamquest Slippers" "Slink Boots" "Stormrider Boots" "Fugitive Boots" "Runic Sabatons" "Murder Boots" "Dragonscale Boots" "Hydrascale Boots"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
 	SetFontSize 35
 
 Show # T2 Boots
 	Rarity Rare
-	BaseType == "Vaal Greaves" "Arcanist Slippers" "Stealth Boots" "Assassin's Boots" "Carnal Boots" "Crusader Boots" "Legion Boots" "Hydrascale Boots" "Titan Greaves" 
+	BaseType == "Vaal Greaves" "Arcanist Slippers" "Stealth Boots" "Assassin's Boots" "Carnal Boots" "Crusader Boots" "Legion Boots" "Titan Greaves"
 	SetBorderColor 255 255 0
 
 Show # T1 Helm
 	Rarity Rare
-	BaseType == "Lion Pelt" "Sinner Tricorne" "Bone Helmet" "Hubris Circlet" "Runic Crown" "Penitent Mask" "Nightmare Bascinet" "Archdemon Crown" "Blizzard Crown" "Pig-Faced Bascinet" "Fluted Bascinet" 
+	BaseType == "Lion Pelt" "Sinner Tricorne" "Bone Helmet" "Hubris Circlet" "Runic Crown" "Penitent Mask" "Nightmare Bascinet" "Archdemon Crown" "Blizzard Crown" "Pig-Faced Bascinet" "Fluted Bascinet" "Deicide Mask"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
 	SetFontSize 35
 
 Show # T2 Helm
 	Rarity Rare
-	BaseType == "Ezomyte Burgonet" "Samnite Helmet" "Silken Hood" "Ursine Pelt" "Mind Cage" "Solaris Circlet""Praetor Crown" "Deicide Mask" "Vaal Mask" "Royal Burgonet" "Eternal Burgonet"
+	BaseType == "Ezomyte Burgonet" "Samnite Helmet" "Silken Hood" "Ursine Pelt" "Mind Cage" "Solaris Circlet" "Praetor Crown" "Vaal Mask" "Royal Burgonet" "Eternal Burgonet"
 	SetBorderColor 255 255 0
 
 
