@@ -166,7 +166,7 @@ Show # Flaring Allfames
 
 Show # T1 Allflames
 	Class "Embers of the Allflame"
-	BaseType == "Allflame Ember of Frogs" "Allflame Ember of Rats" "Allflame Ember of Untainted Beasts" "Allflame Ember of Apes" "Allflame Ember of Rhoas" "Allflame Ember of Spitters" "Allflame Ember of Maws" "Allflame Ember of Chimerals" "Allflame Ember of Devourers" "Allflame Ember of Valako" "Allflame Ember of Tukohama" "Allflame Ember of Tawhoa" "Allflame Ember of Tasalio" "Allflame Ember of Rongokurai" "Allflame Ember of Ramako" "Allflame Ember of Ngamahu" "Allflame Ember of Kitava" "Allflame Ember of Hinekora" "Allflame Ember of Arohongui"
+	BaseType == "Allflame Ember of Frogs" "Allflame Ember of Rats" "Allflame Ember of Untainted Beasts" "Allflame Ember of Untainted Apes" "Allflame Ember of Untainted Rhoas" "Allflame Ember of Untainted Spitters" "Allflame Ember of Untainted Maws" "Allflame Ember of Untainted Chimerals" "Allflame Ember of Untainted Devourers" "Allflame Ember of Valako" "Allflame Ember of Tukohama" "Allflame Ember of Tawhoa" "Allflame Ember of Tasalio" "Allflame Ember of Rongokurai" "Allflame Ember of Ramako" "Allflame Ember of Ngamahu" "Allflame Ember of Kitava" "Allflame Ember of Hinekora" "Allflame Ember of Arohongui"
 	SetTextColor 255 0 0
 	SetBorderColor 255 0 0
 	PlayAlertSound 11 300
@@ -1848,47 +1848,53 @@ Show # +Gem Wands
 # WEAPONS
 Show # T1 1H Weps
 	Rarity Rare
-	BaseType == "Demon's Horn" "Void Sceptre" "Opal Sceptre" "Short Bow"
+	BaseType == "Demon's Horn" "Void Sceptre" "Opal Sceptre"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
 	SetFontSize 40
 
 Show # T1 1H Weps Crafting
 	Rarity Normal
-	BaseType == "Demon's Horn" "Void Sceptre" "Opal Sceptre" "Short Bow"
+	BaseType == "Demon's Horn" "Void Sceptre" "Opal Sceptre"
 	SetBorderColor 255 255 255
 	SetFontSize 38
 
 Show # T2 1H Weps
 	Rarity Rare
 	BaseType == "Corsair Sword" "Siege Axe" "Imperial Claw" "Gemini Claw" "Sambar Sceptre" "Void Sceptre" "Opal Sceptre" "Platinum Kris" "Golden Kris" "Copper Kris" "Profane Wand" "Prophecy Wand" "Imbued Wand" "Opal Wand" "Carved Wand" "Engraved Wand" "Convoking Wand" "Calling Wand" "Convening Wand" "Jewelled Foil" "Spiraled Foil" 
-	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
 	SetFontSize 38
 
+Show # 1H Weps
+	Rarity Rare
+	Class == "One Hand Swords" "One Hand Maces" "One Hand Axes" "Thrusting One Hand Swords" "Claws"
+
 Show # Wands
 	Rarity Rare
-	Class Wand
+	Class == "Wands"
 	SetBorderColor 255 255 0
 	Continue
 
 Show # T1 2H WEPS
 	Rarity Rare
-	BaseType == "Eclipse Staff" "Harbinger Bow" "Exquisite Blade" "Vaal Axe"
+	BaseType == "Short Bow"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
 	SetFontSize 40
 
 Show # T2 2H WEPS
 	Rarity Rare
-	BaseType == "Thicket Bow" "Imperial Bow" "Citadel Bow"
-	SetTextColor 100 200 200
+	BaseType == "Thicket Bow" "Imperial Bow" "Citadel Bow" "Harbinger Bow"
 	SetBorderColor 255 255 0
 	SetFontSize 38
 
+Show # 2H WEPS
+	Rarity Rare
+	Class == "Bows" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Warstaves"
+
 Show # T1 Quivers
 	Rarity Rare
-	Class Quiver
+	Class == "Quivers"
 	BaseType == "Penetrating Arrow Quiver" "Artillery Quiver" "Broadhead Arrow Quiver" "Primal Arrow Quiver" "Two-Point Arrow Quiver"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
@@ -1896,18 +1902,19 @@ Show # T1 Quivers
 
 Show # T2 Quivers
 	Rarity Rare
-	Class Quiver
+	Class == "Quivers"
 	BaseType == "Spike-Point Arrow Quiver" "Heavy Arrow Quiver" "Vile Arrow Quiver"
 	SetBorderColor 255 255 0
 
 Show # T3 Quivers
 	Rarity Rare
-	Class Quiver
+	Class == "Quivers"
 	Continue
 
 # ARMOUR
 Show # T1 Chests
 	Rarity Rare
+	Class == "Body Armours"
 	BaseType == "Astral Plate" "Assassin's Garb" "Zodiac Leather" "Vaal Regalia" "Grasping Mail" "General's Brigandine" "Triumphant Lamellar" "Sadist Garb"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
@@ -1915,12 +1922,20 @@ Show # T1 Chests
 
 Show # T2 Chests
 	Rarity Rare
+	Class == "Body Armours"
 	BaseType == "Full Dragonscale" "Desert Brigandine" "Dragonscale Doublet" "Battle Lamellar" "Commander's Brigandine" "Exquisite Leather" "Destiny Leather" "Glorious Plate" "Gladiator Plate" "Crusader Plate"
 	SetBorderColor 255 255 0
 	SetFontSize 38
 
+Show # Chests
+	Rarity Rare
+	Class == "Body Armours"
+	SetBorderColor 255 255 0
+	Continue
+
 Show # T1 Shields
 	Rarity Rare
+	Class == "Shields"
 	BaseType == "Titanium Spirit Shield" "Harmonic Spirit Shield" "Fossilised Spirit Shield" "Pinnacle Tower Shield" "Ebony Tower Shield" "Supreme Spiked Shield" "Mirrored Spiked Shield"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
@@ -1928,19 +1943,18 @@ Show # T1 Shields
 
 Show # T2 Shields
 	Rarity Rare
+	Class == "Shields"
 	BaseType == "Vaal Spirit Shield" "Archon Kite Shield" "Angelic Kite Shield" "Ezomyte Tower Shield" "Shagreen Tower Shield" "Crested Tower Shield" "Mahogany Tower Shield" "Sovereign Spiked Shield" "Polished Spiked Shield"
-	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
 	SetFontSize 38
 
 Show # Shields
 	Rarity Rare
-	Class Shield
-	SetBorderColor 255 255 0
-	Continue
+	Class == "Shields"
 
 Show # T1 Gloves
 	Rarity Rare
+	Class == "Gloves"
 	BaseType == "Spiked Gloves" "Titan Gauntlets" "Debilitation Gauntlets" "Gripped Gloves" "Slink Gloves" "Sinistral Gloves" "Sorcerer Gloves" "Fingerless Silk Gloves" "Nexus Gloves" "Apothecary's Gloves" "Runic Gauntlets" "Dragonscale Gauntlets"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
@@ -1948,18 +1962,19 @@ Show # T1 Gloves
 
 Show # T2 Gloves
 	Rarity Rare
+	Class == "Gloves"
 	BaseType == "Shagreen Gloves" "Stealth Gloves" "Vaal Gauntlets" "Goliath Gauntlets" "Murder Mitts" "Assassin's Mitts" "Hydrascale Gauntlets"
 	SetBorderColor 255 255 0
 	SetFontSize 38
 
 Show # Gloves
 	Rarity Rare
-	Class Glove
-	SetBorderColor 255 255 0
+	Class == "Gloves"
 	Continue
 
 Show # T1 Boots
 	Rarity Rare
+	Class == "Boots"
 	BaseType == "Titan Greaves" "Brimstone Treads" "Two-Toned Boots" "Sorcerer Boots" "Dreamquest Slippers" "Slink Boots" "Stormrider Boots" "Fugitive Boots" "Runic Sabatons" "Murder Boots" "Dragonscale Boots" "Hydrascale Boots"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
@@ -1967,19 +1982,20 @@ Show # T1 Boots
 
 Show # T2 Boots
 	Rarity Rare
+	Class == "Boots"
 	BaseType == "Vaal Greaves" "Arcanist Slippers" "Stealth Boots" "Assassin's Boots" "Carnal Boots" "Crusader Boots" "Legion Boots"
-	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
 	SetFontSize 38
 
 Show # Boots
 	Rarity Rare
-	Class Boots
+	Class == "Boots"
 	SetBorderColor 255 255 0
 	Continue
 
 Show # T1 Helm
 	Rarity Rare
+	Class == "Helmets"
 	BaseType == "Lion Pelt" "Sinner Tricorne" "Bone Helmet" "Hubris Circlet" "Runic Crown" "Penitent Mask" "Nightmare Bascinet" "Archdemon Crown" "Blizzard Crown" "Pig-Faced Bascinet" "Fluted Bascinet" "Deicide Mask"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
@@ -1987,19 +2003,19 @@ Show # T1 Helm
 
 Show # T2 Helm
 	Rarity Rare
+	Class == "Helmets"
 	BaseType == "Ezomyte Burgonet" "Samnite Helmet" "Silken Hood" "Ursine Pelt" "Mind Cage" "Solaris Circlet" "Praetor Crown" "Vaal Mask" "Royal Burgonet" "Eternal Burgonet"
 	SetBorderColor 255 255 0
 	SetFontSize 38
 
 Show # Helm
 	Rarity Rare
-	Class Helmet
-	SetBorderColor 255 255 0
+	Class == "Helmets"
 	Continue
 
 Show # T1 Rare Rings
 	Rarity Rare
-	Class Ring
+	Class == "Rings"
 	BaseType == "Prismatic Ring" "Opal Ring" "Steel Ring" "Vermillion Ring" "Cerulean Ring" "Iolite Ring"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
@@ -2007,7 +2023,7 @@ Show # T1 Rare Rings
 
 Show # T2 Rare Rings
 	Rarity Rare
-	Class Ring
+	Class == "Rings"
 	BaseType == "Ruby Ring" "Topaz Ring" "Sapphire Ring" "Two-Stone Ring" "Coral Ring" "Amethyst Ring" "Dusk Ring" "Penumbra Ring" "Gloam Ring" "Tenebrous Ring" "Shadowed Ring" "Bone Ring" "Ring"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
@@ -2015,13 +2031,13 @@ Show # T2 Rare Rings
 
 Show # T3 Rare Rings
 	Rarity Rare
-	Class Ring
+	Class == "Rings"
 	BaseType "Unset Ring" "Diamond Ring" "Moonstone Ring" "Gold Ring"
 	SetBorderColor 255 255 0
 
-Show # AMULETS
+Show # Amulets
 	Rarity Rare
-	Class Amulet
+	Class == "Amulets"
 	BaseType "Marble Amulet" "Blue Pearl Amulet" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Agate Amulet" "Citrine Amulet" "Turquoise Amulet" "Onyx Amulet" "Seaglass Amulet" "Unset Amulet"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
@@ -2029,7 +2045,7 @@ Show # AMULETS
 
 Show # T1 Belts
 	Rarity Rare
-	Class Belt
+	Class == "Belts"
 	BaseType "Crystal Belt" "Stygian Vise"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
@@ -2037,7 +2053,7 @@ Show # T1 Belts
 
 Show # T2 Belts
 	Rarity Rare
-	Class Belt
+	Class == "Belts"
 	BaseType "Leather Belt"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
@@ -2045,9 +2061,10 @@ Show # T2 Belts
 
 Show # T3 Belts
 	Rarity Rare
-	Class Belt
+	Class == "Belts"
 	BaseType "Vanguard Belt" "Rustic Sash" "Heavy Belt"
 	SetBorderColor 255 255 0
+	SetFontSize 40
 
 
 # CRAFTING BASES
@@ -2124,6 +2141,7 @@ Show # Weapons i83+
 	ItemLevel >= 83
 
 Show # T1 Special Belts
+	Class == "Belts"
 	BaseType "Stygian Vise"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
@@ -2131,6 +2149,7 @@ Show # T1 Special Belts
 	MinimapIcon 0 Yellow Circle
 	
 Show # T2 Special Belts
+	Class == "Belts"
 	BaseType "Crystal Belt"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
@@ -2139,13 +2158,14 @@ Show # T2 Special Belts
 	MinimapIcon 1 Yellow Circle
 
 Show # Special Belts
+	Class == "Belts"
 	BaseType "Vanguard Belt"
 	SetBorderColor 255 255 255
 	SetFontSize 40
 	MinimapIcon 2 Yellow Circle
 
 Show # T1 Atlas Rings
-	Class Ring
+	Class == "Rings"
 	BaseType == "Opal Ring" "Steel Ring" "Vermillion Ring" "Iolite Ring" "Dusk Ring" "Penumbra Ring" "Gloam Ring" "Tenebrous Ring" "Shadowed Ring" "Ring"
 	SetTextColor 100 200 200
 	SetBorderColor 100 200 200
@@ -2153,14 +2173,14 @@ Show # T1 Atlas Rings
 	PlayAlertSound 13 300
 
 Show # Atlas Jewelry
-	Class Amulet Ring
+	Class == "Amulets" "Rings"
 	BaseType "Marble Amulet" "Blue Pearl Amulet" "Prismatic Ring" "Cerulean Ring" "Seaglass Amulet"
 	SetTextColor 100 200 200
 	SetBorderColor 100 200 200
 	SetFontSize 40
 
 Show # Atlas Items
-	BaseType "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Convoking Wand" "Grasping Mail" "Fugitive Boots" "Apothecary's Gloves" "Artillery Quiver"
+	BaseType "Bone Helmet" "Two-Toned Boots" "Grasping Mail" "Fugitive Boots" "Apothecary's Gloves" "Artillery Quiver"
 	SetTextColor 100 200 200
 	SetBorderColor 100 200 200
 	SetFontSize 40
@@ -2170,8 +2190,9 @@ Show # Atlas Items
 # Chaos Recipe Bases
 Show # 1H 1x3 Weps
 	ItemLevel >= 60
-	ItemLevel <= 74
+	ItemLevel <= 77
 	Rarity Rare
+	Class == "Daggers" "Rune Daggers" "Wands"
 	Width 1
 	Height 3
 	SetTextColor 255 255 0
@@ -2180,9 +2201,9 @@ Show # 1H 1x3 Weps
 
 Show # All non-wep slots
 	ItemLevel >= 60
-	ItemLevel <= 74
+	ItemLevel <= 77
 	Rarity Rare
-	Class Armour Boots Gloves Helm Ring Amulet Belt
+	Class == "Body Armours" "Boots" "Gloves" "Helmets" "Rings" "Amulets" "Belts"
 	SetTextColor 255 255 0
 	SetBorderColor 255 255 0
 	SetBackgroundColor 150 150 0 150
@@ -2191,7 +2212,7 @@ Show # All non-wep slots
 Hide
 	Rarity Rare
 	Class Shield Boots Gloves Armour Helm "One Hand" "Two Hand" "Bow" "Staves" "Claw" "Sceptre" "Quiver" "Warstaves" "Dagger"
-	AreaLevel > 75
+	AreaLevel >= 78
 
 
 # FLASKS

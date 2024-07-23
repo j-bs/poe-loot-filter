@@ -148,7 +148,7 @@ Show # Flaring Allfames
 
 Show # T1 Allflames
 	Class "Embers of the Allflame"
-	BaseType == "Allflame Ember of Frogs" "Allflame Ember of Rats" "Allflame Ember of Untainted Beasts" "Allflame Ember of Apes" "Allflame Ember of Rhoas" "Allflame Ember of Spitters" "Allflame Ember of Maws" "Allflame Ember of Chimerals" "Allflame Ember of Devourers" "Allflame Ember of Valako" "Allflame Ember of Tukohama" "Allflame Ember of Tawhoa" "Allflame Ember of Tasalio" "Allflame Ember of Rongokurai" "Allflame Ember of Ramako" "Allflame Ember of Ngamahu" "Allflame Ember of Kitava" "Allflame Ember of Hinekora" "Allflame Ember of Arohongui"
+	BaseType == "Allflame Ember of Frogs" "Allflame Ember of Rats" "Allflame Ember of Untainted Beasts" "Allflame Ember of Untainted Apes" "Allflame Ember of Untainted Rhoas" "Allflame Ember of Untainted Spitters" "Allflame Ember of Untainted Maws" "Allflame Ember of Untainted Chimerals" "Allflame Ember of Untainted Devourers" "Allflame Ember of Valako" "Allflame Ember of Tukohama" "Allflame Ember of Tawhoa" "Allflame Ember of Tasalio" "Allflame Ember of Rongokurai" "Allflame Ember of Ramako" "Allflame Ember of Ngamahu" "Allflame Ember of Kitava" "Allflame Ember of Hinekora" "Allflame Ember of Arohongui"
 	SetTextColor 255 0 0
 	SetBorderColor 255 0 0
 	PlayAlertSound 11 300
