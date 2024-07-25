@@ -1,33 +1,6 @@
 # SPECIAL ITEMS
-Show # Quest
-	Class Quest
-	SetTextColor 0 255 0
-	SetBorderColor 0 255 0
-	SetFontSize 45
-	PlayAlertSound 15 200
-	MinimapIcon 0 Green Circle
-	PlayEffect Green
-
-Show # Atlas Stones
-	Class "Atlas Upgrade Item"
-	SetTextColor 0 255 0
-	SetBorderColor 0 255 0
-	SetFontSize 45
-	PlayAlertSound 15 200
-	MinimapIcon 0 Green Circle
-	PlayEffect Green
-
-Show # LAB
-	Class "Labyrinth"
-	SetTextColor 0 255 0
-	SetBorderColor 0 255 0
-	SetFontSize 45
-	PlayAlertSound 15 200
-	MinimapIcon 0 Green Circle
-	PlayEffect Green
-
-Show # Incursion
-	Class "Incursion Item"
+Show # Quest-type items
+	Class Quest "Atlas Upgrade Item" "Labyrinth" "Incursion Item" "Pantheon Souls"
 	SetTextColor 0 255 0
 	SetBorderColor 0 255 0
 	SetFontSize 45
@@ -136,32 +109,19 @@ Show # Gems with low max level
 	MinimapIcon 1 Cyan Triangle
 
 # LEAGUE ITEMS
-# Necropolis
-Show # Flaring Allfames
-	Class "Embers of the Allflame"
-	BaseType "Flaring Allflame"
-	SetTextColor 255 0 0
-	SetBorderColor 255 0 0
-	PlayAlertSound 11 300
+# Settlers
+Show # Gold
+	Class Gold
+	BaseType Gold
+
+Show # Runes
+	Class "Stackable Currency"
+	BaseType == "Life Rune" "Sun Rune" "Bound Rune" "War Rune" "River Rune" "Bounty Rune" "Journey Rune" "Mountain Rune" "Time Rune" "Power Rune"
+	SetTextColor 255 0 255
+	SetBorderColor 255 0 255
+	PlayAlertSound 12 300
 	SetFontSize 45
-	MinimapIcon 0 Red UpsideDownHouse
-
-Show # T1 Allflames
-	Class "Embers of the Allflame"
-	BaseType == "Allflame Ember of Frogs" "Allflame Ember of Rats" "Allflame Ember of Untainted Beasts" "Allflame Ember of Untainted Apes" "Allflame Ember of Untainted Rhoas" "Allflame Ember of Untainted Spitters" "Allflame Ember of Untainted Maws" "Allflame Ember of Untainted Chimerals" "Allflame Ember of Untainted Devourers" "Allflame Ember of Valako" "Allflame Ember of Tukohama" "Allflame Ember of Tawhoa" "Allflame Ember of Tasalio" "Allflame Ember of Rongokurai" "Allflame Ember of Ramako" "Allflame Ember of Ngamahu" "Allflame Ember of Kitava" "Allflame Ember of Hinekora" "Allflame Ember of Arohongui"
-	SetTextColor 255 0 0
-	SetBorderColor 255 0 0
-	PlayAlertSound 11 300
-	SetFontSize 42
-	MinimapIcon 1 Red UpsideDownHouse
-
-Show # Allflames
-	Class "Embers of the Allflame"
-	SetTextColor 255 0 0
-	SetBorderColor 255 0 0
-	PlayAlertSound 11 300
-	SetFontSize 40
-	MinimapIcon 2 Red UpsideDownHouse
+	MinimapIcon 0 Red Triangle
 
 # Affliction
 Show # Tinctures
@@ -273,9 +233,9 @@ Show # Relic
 	MinimapIcon 0 Yellow Star
 	PlayEffect Yellow
 
-Show # Kalandra Oil
+Show # Kalandra
 	Class "Stackable Currency"
-	BaseType "Reflective Oil"
+	BaseType == "Reflective Oil" "Reflecting Mist"
 	SetTextColor 255 181 0
 	SetBorderColor 255 181 0
 	SetFontSize 45
@@ -360,26 +320,6 @@ Show # Expedition Logbooks
 	MinimapIcon 0 Cyan Cross
 	PlayEffect Cyan
 
-Show # Ultimatum Map
-	Class "Misc Map Items"
-	BaseType "Inscribed Ultimatum"
-	SetTextColor 255 0 0
-	SetBorderColor 255 0 0
-	SetFontSize 45
-	PlayAlertSound 4 300
-	MinimapIcon 0 Red Cross
-	PlayEffect Red
-
-Show # Ultimatum Engraved Map
-	Class Map
-	BaseType "Engraved Ultimatum"
-	SetTextColor 255 0 0
-	SetBorderColor 255 0 0
-	SetFontSize 45
-	PlayAlertSound 4 300
-	MinimapIcon 0 Red Cross
-	PlayEffect Red
-
 Show # Ritual Splinters
 	Class Currency
 	BaseType "Ritual Splinter"
@@ -410,7 +350,7 @@ Show # Crescent Splinters
 	PlayEffect Red
 
 Show # T1 Ritual BaseTypes
-	BaseType "Dreamquest Slippers" "Brimstone Treads" "Stormrider Boots" "Debilitation Gauntlets" "Sinistral Gloves" "Nexus Gloves" "Blizzard Crown" "Archdemon Crown" "Penitent Mask"
+	BaseType "Dreamquest Slippers" "Brimstone Treads" "Stormrider Boots" "Thwarting Gauntlets" "Trapsetter Gloves" "Nexus Gloves" "Blizzard Crown" "Archdemon Crown" "Penitent Mask"
 	SetTextColor 255 181 0
 	SetBorderColor 255 181 0
 	PlayAlertSound 11 300
@@ -418,7 +358,7 @@ Show # T1 Ritual BaseTypes
 	MinimapIcon 0 Yellow UpsideDownHouse
 
 Hide # T2-3 Ritual BaseTypes
-	BaseType "Cloudwhisper Boots" "Nightwind Slippers" "Windbreak Boots" "Darksteel Treads" "Duskwalk Slippers" "Basemetal Treads" "Gruelling Gauntlets" "Taxing Gauntlets" "Southswing Gloves" "Gauche Gloves" "Aetherwind Gloves" "Leyline Gloves" "Winter Crown" "Gale Crown" "Demon Crown" "Imp Crown" "Atonement Mask" "Sorrow Mask"
+	BaseType "Cloudwhisper Boots" "Nightwind Slippers" "Windbreak Boots" "Darksteel Treads" "Duskwalk Slippers" "Basemetal Treads" "Guarding Gauntlets" "Preserving Gauntlets" "Apprentice Gloves" "Tinker Gloves" "Aetherwind Gloves" "Leyline Gloves" "Winter Crown" "Gale Crown" "Demon Crown" "Imp Crown" "Atonement Mask" "Sorrow Mask"
 	SetTextColor 255 181 0
 	SetBorderColor 255 181 0
 	PlayAlertSound 11 300
@@ -539,26 +479,6 @@ Show # Harvested Currency
 	MinimapIcon 0 Blue Star
 	PlayEffect Blue
 
-Show # Harvested Goddess Fragments
-	Class "Map Fragments"
-	BaseType "Tribute to the Goddess" "Gift to the Goddess" "Dedication to the Goddess"
-	SetTextColor 45 133 223
-	SetBorderColor 45 133 223
-	SetFontSize 45
-	PlayAlertSound 11 300
-	MinimapIcon 0 Blue Star
-	PlayEffect Blue
-
-Show # Harvested Goddess Fragments
-	Class "Map Fragments"
-	BaseType "Tribute to the Goddess" "Gift to the Goddess" "Dedication to the Goddess" "Deregulation Scroll" "Electroshock Scroll" "Haemocombustion Scroll" "Specularity Scroll" "Facetor's Lens"
-	SetTextColor 45 133 223
-	SetBorderColor 45 133 223
-	SetFontSize 45
-	PlayAlertSound 11 300
-	MinimapIcon 0 Blue Star
-	PlayEffect Blue
-
 Show # Delirium Orbs
 	Class "Stackable Currency"
 	BaseType "Delirium Orb"
@@ -601,7 +521,7 @@ Show # T1 Blight Oils
 
 Show # Blight Oils
 	Class "Stackable Currency"
-	BaseType "Verdant Oil" "Teal Oil" "Azure Oil" "Indigo Oil" "Violet Oil" "Crimson Oil" "Black Oil" "Opalescent Oil" "Tainted Oil"
+	BaseType == "Verdant Oil" "Teal Oil" "Azure Oil" "Indigo Oil" "Violet Oil" "Crimson Oil" "Black Oil" "Opalescent Oil" "Prismatic Oil"
 	SetTextColor 255 181 0
 	SetBorderColor 255 181 0
 	SetFontSize 40
@@ -758,7 +678,7 @@ Hide # T2 Shields
 
 Show # T1 Gloves
 	FracturedItem True
-	BaseType == "Debilitation Gauntlets" "Gripped Gloves" "Slink Gloves" "Sinistral Gloves" "Fingerless Silk Gloves" "Nexus Gloves" "Apothecary's Gloves" "Runic Gauntlets" "Dragonscale Gauntlets" "Murder Mitts" "Assassin's Mitts" "Hydrascale Gauntlets"
+	BaseType == "Thwarting Gauntlets" "Gripped Gloves" "Slink Gloves" "Trapsetter Gloves" "Fingerless Silk Gloves" "Nexus Gloves" "Apothecary's Gloves" "Runic Gauntlets" "Dragonscale Gauntlets" "Murder Mitts" "Assassin's Mitts" "Hydrascale Gauntlets"
 	SetFontSize 45
 	SetTextColor 28 132 186
 	SetBorderColor 28 132 186
@@ -854,7 +774,7 @@ Show # Veiled Scarabs
 
 Show # Delve Fossils
 	Class Currency
-	BaseType "Scorched Fossil" "Frigid Fossil" "Metallic Fossil" "Jagged Fossil" "Aberrant Fossil" "Pristine Fossil" "Dense Fossil" "Corroded Fossil" "Prismatic Fossil" "Aetheric Fossil" "Serrated Fossil" "Lucent Fossil" "Shuddering Fossil" "Bound Fossil" "Perfect Fossil" "Deft Fossil" "Fundamental Fossil" "Faceted Fossil" "Bloodstained Fossil" "Hollow Fossil" "Fractured Fossil" "Glyphic Fossil" "Tangled Fossil" "Sanctified Fossil" "Gilded Fossil"
+	BaseType "Scorched Fossil" "Frigid Fossil" "Metallic Fossil" "Jagged Fossil" "Aberrant Fossil" "Pristine Fossil" "Dense Fossil" "Corroded Fossil" "Prismatic Fossil" "Aetheric Fossil" "Serrated Fossil" "Lucent Fossil" "Shuddering Fossil" "Bound Fossil" "Opulent Fossil" "Deft Fossil" "Fundamental Fossil" "Faceted Fossil" "Bloodstained Fossil" "Hollow Fossil" "Fractured Fossil" "Glyphic Fossil" "Tangled Fossil" "Sanctified Fossil" "Gilded Fossil"
 	SetTextColor 100 159 255
 	SetBorderColor 100 159 255
 	SetFontSize 45
@@ -1012,40 +932,25 @@ Show # Essence Remnant
 
 # MAPS
 Show # Reliquary Keys
-	Class "Misc Map Items"
-	BaseType "Timeworn Reliquary Key" "Ancient Reliquary Key" "Vaal Reliquary Key" "Forgotten Reliquary Key" "Visceral Reliquary Key" "Shiny Reliquary Key" "Archive Reliquary Key" "Oubliette Reliquary Key" "Cosmic Reliquary Key" "Decaying Reliquary Key" "Reliquary Key"
+	BaseType == "Timeworn Reliquary Key" "Ancient Reliquary Key" "Vaal Reliquary Key" "Shiny Reliquary Key" "Archive Reliquary Key" "Cosmic Reliquary Key" "Decaying Reliquary Key" "Forgotten Reliquary Key" "Oubliette Reliquary Key" "Visceral Reliquary Key" "Voidborn Reliquary Key"
 	SetTextColor 255 0 255
 	SetBorderColor 255 0 255
 	PlayAlertSound 1 300
 	SetFontSize 45
 
-Show # Temple
-	Class "Misc Map Items"
-	BaseType "Chronicle of Atzoatl"
+Show # Reliquary Keys
+	Class == "Vault Keys"
+	SetTextColor 255 0 255
+	SetBorderColor 255 0 255
+	PlayAlertSound 1 300
+	SetFontSize 45
+
+Show # Misc League Items
+	BaseType == "Chronicle of Atzoatl" "Inscribed Ultimatum" "Mirrored Tablet" "Primeval Remnant" "Primordial Remnant"
 	SetTextColor 255 255 255
 	SetBorderColor 255 90 90
 	SetFontSize 45
 	PlayAlertSound 1 250
-	MinimapIcon 0 Orange Cross
-	PlayEffect Orange
-
-Show # Legion Emblems T1
-	Class "Map Fragments"
-	BaseType "Unrelenting Timeless" "Timeless Maraketh Emblem" "Timeless Templar Emblem"
-	SetTextColor 255 255 255
-	SetBorderColor 255 90 90
-	SetFontSize 45
-	PlayAlertSound 1 250
-	MinimapIcon 0 Orange Cross
-	PlayEffect Orange
-
-Show # Legion Emblems
-	Class "Map Fragments"
-	BaseType "Timeless Karui Emblem" "Timeless Eternal Emblem" "Timeless Vaal Emblem"
-	SetTextColor 255 255 255
-	SetBorderColor 255 90 90
-	SetFontSize 45
-	PlayAlertSound 4 250
 	MinimapIcon 0 Orange Cross
 	PlayEffect Orange
 
@@ -1078,7 +983,7 @@ Show # Legion Splinters
 # Map Fragments
 Show # Uber Boss Fragments
 	Class "Map Fragments"
-	BaseType "Cosmic Fragment" "Decaying Fragment" "Awakening Fragment" "Synthesising Fragment" "Reality Fragment" "Devouring Fragment" "Blazing Fragment"
+	BaseType == "Cosmic Fragment" "Decaying Fragment" "Awakening Fragment" "Synthesising Fragment" "Reality Fragment" "Devouring Fragment" "Blazing Fragment" "Synthesising Fragment"
 	SetTextColor 255 255 255
 	SetBorderColor 255 90 90
 	SetFontSize 45
@@ -1088,7 +993,7 @@ Show # Uber Boss Fragments
 
 Show # Boss Fragments
 	Class "Map Fragments"
-	BaseType "Fragment of Enslavement" "Fragment of Eradication" "Fragment of Constriction" "Fragment of Purification" "Fragment of Shape" "Fragment of Knowledge" "Fragment of Terror" "Fragment of Emptiness" "Fragment of the Hydra" "Fragment of the Phoenix" "Fragment of the Minotaur" "Fragment of the Chimera" "Mortal Grief" "Mortal Rage" "Mortal Hope" "Mortal Ignorance" "Al-Hezmin's Crest" "Baran's Crest" "Drox's Crest" "Veritania's Crest"
+	BaseType == "Fragment of Enslavement" "Fragment of Eradication" "Fragment of Constriction" "Fragment of Purification" "Fragment of Shape" "Fragment of Knowledge" "Fragment of Terror" "Fragment of Emptiness" "Fragment of the Hydra" "Fragment of the Phoenix" "Fragment of the Minotaur" "Fragment of the Chimera" "Mortal Grief" "Mortal Rage" "Mortal Hope" "Mortal Ignorance" "Al-Hezmin's Crest" "Baran's Crest" "Drox's Crest" "Veritania's Crest" "An Audience With The King"
 	SetTextColor 255 255 255
 	SetBorderColor 255 90 90
 	SetFontSize 45
@@ -1098,11 +1003,41 @@ Show # Boss Fragments
 
 Show # Atziri Fragments
 	Class "Map Fragments"
-	BaseType "Sacrifice at Dusk" "Sacrifice at Dawn" "Sacrifice at Noon" "Sacrifice at Midnight"
+	BaseType == "Sacrifice at Dusk" "Sacrifice at Dawn" "Sacrifice at Noon" "Sacrifice at Midnight"
 	SetBorderColor 255 90 90
 	SetTextColor 255 90 90
 	SetFontSize 40
 	PlayAlertSound 12 300
+
+Show # Goddess Lab Fragments
+	Class "Map Fragments"
+	BaseType == "Tribute to the Goddess" "Gift to the Goddess" "Dedication to the Goddess"
+	SetTextColor 45 133 223
+	SetBorderColor 45 133 223
+	SetFontSize 45
+	PlayAlertSound 11 300
+	MinimapIcon 0 Blue Star
+	PlayEffect Blue
+
+Show # Legion Emblems T1
+	Class "Map Fragments"
+	BaseType "Unrelenting Timeless" "Timeless Maraketh Emblem" "Timeless Templar Emblem"
+	SetTextColor 255 255 255
+	SetBorderColor 255 90 90
+	SetFontSize 45
+	PlayAlertSound 1 250
+	MinimapIcon 0 Orange Cross
+	PlayEffect Orange
+
+Show # Legion Emblems
+	Class "Map Fragments"
+	BaseType "Timeless Karui Emblem" "Timeless Eternal Emblem" "Timeless Vaal Emblem"
+	SetTextColor 255 255 255
+	SetBorderColor 255 90 90
+	SetFontSize 45
+	PlayAlertSound 4 250
+	MinimapIcon 0 Orange Cross
+	PlayEffect Orange
 
 Show # Breachstones
 	Class "Breachstone"
@@ -1163,10 +1098,10 @@ Show # Memory Maps
 	MinimapIcon 0 Red Square
 	PlayEffect Red
 
-Show # Synth Unique Maps
+Show # T1 Unique Maps
 	Rarity Unique
-	Class Map
-	BaseType "Synthesised Map"
+	Class == "Map"
+	BaseType == "Synthesised Map" "Engraved Ultimatum" "Harbinger Map"
 	SetFontSize 45
 	PlayAlertSound 1 300
 	MinimapIcon 0 Brown Star
@@ -1174,7 +1109,7 @@ Show # Synth Unique Maps
 
 Show # Unique Maps
 	Rarity Unique
-	Class Map
+	Class == "Maps"
 	SetFontSize 45
 	PlayAlertSound 6 250
 	MinimapIcon 0 Brown Star
@@ -1455,7 +1390,7 @@ Show # T1 Currency
 
 Show # T2 Currency
 	Class Currency
-	BaseType "Orb of Annulment" "Eldritch Chaos Orb" "Eldritch Exalted Orb" "Eldritch Orb of Annulment" "Oil Extractor" "Fracturing Shard" "Exalted Orb"
+	BaseType "Orb of Annulment" "Eldritch Chaos Orb" "Eldritch Exalted Orb" "Eldritch Orb of Annulment" "Fracturing Shard" "Exalted Orb"
 	SetBorderColor 255 0 255
 	SetTextColor 255 0 255
 	PlayAlertSound 4 300
@@ -1465,7 +1400,7 @@ Show # T2 Currency
 
 Show # T3 Currency
 	Class Currency
-	BaseType "Harbinger's Orb" "Ancient Orb" "Tempering Catalyst" "Fertile Catalyst" "Prismatic Catalyst" "Accelerating Catalyst" "Noxious Catalyst" "Unstable Catalyst" "Grand Eldritch" "Greater Eldritch" "Lesser Eldritch" "Tainted Catalyst"
+	BaseType "Harbinger's Orb" "Ancient Orb" "Tempering Catalyst" "Fertile Catalyst" "Prismatic Catalyst" "Accelerating Catalyst" "Noxious Catalyst" "Unstable Catalyst" "Grand Eldritch" "Greater Eldritch" "Lesser Eldritch" "Tainted Catalyst" "Maven's Chisel"
 	SetTextColor 255 0 255
 	SetBorderColor 255 0 255
 	PlayAlertSound 12 300
@@ -1577,7 +1512,7 @@ Show # T1 Cards
 
 Show # T2 Cards
 	Class == "Divination Cards"
-	BaseType == "A Familiar Call" "Alluring Bounty" "Altered Perception" "Anarchy's Price" "Broken Promises" "Brotherhood in Exile" "Deadly Joy" "Duality" "Eternal Bonds" "Fateful Meeting" "Gemcutter's Mercy" "Home" "Hunter's Reward" "Imperfect Memories" "Luminous Trove" "Magnum Opus" "Matryoshka" "Misery in Darkness" "Monochrome" "Nook's Crown" "Pride of the First Ones" "Remembrance" "The Academic" "The Catch" "The Damned" "The Destination" "The Eldritch Decay" "The Escape" "The Eternal War" "The Eye of Terror" "The Eye of the Dragon" "The Fortunate" "The Garish Power" "The Greatest Intentions" "The Gulf" "The Hook" "The Last Supper" "The Leviathan" "The Long Con" "The Mind's Eyes" "The Polymath" "The Professor" "The Progeny of Lunaris" "The Sacrifice" "The Scout" "The Shortcut" "The Strategist" "The Undisputed" "The Void" "The Wedding Gift" "The World Eater" "Tranquillity" "Winter's Embrace"
+	BaseType == "A Familiar Call" "Alluring Bounty" "Altered Perception" "Anarchy's Price" "Broken Promises" "Brotherhood in Exile" "Deadly Joy" "Duality" "Eternal Bonds" "Fateful Meeting" "Gemcutter's Mercy" "Home" "Hunter's Reward" "Imperfect Memories" "Luminous Trove" "Magnum Opus" "Matryoshka" "Misery in Darkness" "Monochrome" "Nook's Crown" "Pride of the First Ones" "Remembrance" "The Academic" "The Catch" "The Damned" "The Destination" "The Eldritch Decay" "The Escape" "The Eternal War" "The Eye of Terror" "The Eye of the Dragon" "The Fortunate" "The Garish Power" "The Greatest Intentions" "The Gulf" "The Hook" "The Last Supper" "The Leviathan" "The Long Con" "The Mind's Eyes" "The Polymath" "The Professor" "The Progeny of Lunaris" "The Sacrifice" "The Scout" "The Shortcut" "The Strategist" "The Undisputed" "The Void" "The Wedding Gift" "The World Eater" "Tranquillity" "Winter's Embrace" "Friendship" "The Long Watch"
 	SetBorderColor 30 144 255
 	SetTextColor 0 125 200
 	SetFontSize 45
@@ -1587,7 +1522,7 @@ Show # T2 Cards
 	
 Show # T3 Cards
 	Class Card
-	BaseType == "The Encroaching Darkness" "The Survivalist" "The Fathomless Depths" "Humility" "Scholar of the Seas" "Vinia's Token" "No Traces" "The Wrath" "The Seeker" "Lucky Connections" "The Jeweller's Boon" "The Inventor" "Emperor of Purity" "Monochrome" "The Mad King" "The Obscured" "The Valkyrie" "Three Faces in the Dark" "The Valley of Steel Boxes" "Dark Dreams" "The Fool" "Imperial Legacy" "Vanity" "The Primordial" "Demigod's Wager" "The Deep Ones" "The Wretched" "More is Never Enough" "The Deal" "Void of the Elements" "The Wolf's Legacy" "The Heroic Shot" "The Journey" "A Dab of Ink" "Arrogance of the Vaal" "Sambodhi's Vow" "The Beast" "The Price of Protection" "Cameria's Cut" "The Bones" "Deathly Designs" "The Tinkerer's Table" "The Easy Stroll" "Prometheus' Armoury" "The Tumbleweed" "The Hive of Knowledge" "A Note in the Wind" "The Greatest Intentions" "The White Knight" "The Sustenance" "Peaceful Moments" "The Awakened" "A Familiar Call" "The Long Con" "The Gulf" "The Bitter Blossom" "Triskaidekaphobia" "The Cache" "The Academic" "Desecrated Virtue" "Unchained" "The Unexpected Prize" "The Journalist" "Boon of Justice" "Time-Lost Relic" "The Last Supper" "The Emptiness" "A Sea of Blue" "The Offspring" "The Price of Prescience" "The Mind's Eyes" "Terrible Secret of Space" "The Blessing of Moosh" "Costly Curio" "Lachrymal Necrosis" "Dementophobia" "Ambitious Obsession" "Desperate Crusade" "A Stone Perfected" "Treasures of the Vaal" "The Rabbit's Foot" "Chasing Risk" "The Prince of Darkness" "The Catch" "Eternal Bonds" "Disdain" "The Scout" "Guardian's Challenge" "The Forgotten Treasure" "The Fox in the Brambles" "The Aspirant" "Prejudice" "Buried Treasure" "The Tireless Extractor" "Misery in Darkness" "Parasitic Passengers" "Duality" "The One That Got Away" "The Transformation" "Magnum Opus" "Imperfect Memories" "The Magma Crab" "Acclimatisation" "The Brawny Battle Mage" "Darker Half" "The Forward Gaze" "From Bone to Ashes" "Further Invention" "Rebirth and Renewal" "The Dungeon Master" "The Wolf's Shadow" "The Master Artisan" "Astral Protection" "The Shepherd's Sandals" "The Enforcer" "The Master" "Man With Bear" "Alivia's Grace" "Auspicious Ambitions" "Ever-Changing" "A Dusty Memory" "The Return of the Rat" "The Finishing Touch" "A Chilling Wind" "The Harvester"
+	BaseType == "The Encroaching Darkness" "The Survivalist" "The Fathomless Depths" "Humility" "Scholar of the Seas" "Vinia's Token" "No Traces" "The Wrath" "The Seeker" "Lucky Connections" "The Jeweller's Boon" "The Inventor" "Emperor of Purity" "Monochrome" "The Mad King" "The Obscured" "The Valkyrie" "Three Faces in the Dark" "The Valley of Steel Boxes" "Dark Dreams" "The Fool" "Imperial Legacy" "Vanity" "The Primordial" "Demigod's Wager" "The Deep Ones" "The Wretched" "More is Never Enough" "The Deal" "Void of the Elements" "The Wolf's Legacy" "The Heroic Shot" "The Journey" "A Dab of Ink" "Arrogance of the Vaal" "Sambodhi's Vow" "The Beast" "The Price of Protection" "Cameria's Cut" "The Bones" "Deathly Designs" "The Tinkerer's Table" "The Easy Stroll" "Prometheus' Armoury" "The Tumbleweed" "The Hive of Knowledge" "A Note in the Wind" "The Greatest Intentions" "The White Knight" "The Sustenance" "Peaceful Moments" "The Awakened" "A Familiar Call" "The Long Con" "The Gulf" "The Bitter Blossom" "Triskaidekaphobia" "The Cache" "The Academic" "Desecrated Virtue" "Unchained" "The Unexpected Prize" "The Journalist" "Boon of Justice" "Time-Lost Relic" "The Last Supper" "The Emptiness" "A Sea of Blue" "The Offspring" "The Price of Prescience" "The Mind's Eyes" "Terrible Secret of Space" "The Blessing of Moosh" "Costly Curio" "Lachrymal Necrosis" "Dementophobia" "Ambitious Obsession" "Desperate Crusade" "A Stone Perfected" "Treasures of the Vaal" "The Rabbit's Foot" "Chasing Risk" "The Prince of Darkness" "The Catch" "Eternal Bonds" "Disdain" "The Scout" "Guardian's Challenge" "The Forgotten Treasure" "The Fox in the Brambles" "The Aspirant" "Prejudice" "Buried Treasure" "The Tireless Extractor" "Misery in Darkness" "Parasitic Passengers" "Duality" "The One That Got Away" "The Transformation" "Magnum Opus" "Imperfect Memories" "The Magma Crab" "Acclimatisation" "The Brawny Battle Mage" "Darker Half" "The Forward Gaze" "From Bone to Ashes" "Further Invention" "Rebirth and Renewal" "The Dungeon Master" "The Wolf's Shadow" "The Master Artisan" "Astral Protection" "The Shepherd's Sandals" "The Enforcer" "The Master" "Man With Bear" "Alivia's Grace" "Auspicious Ambitions" "Ever-Changing" "A Dusty Memory" "The Return of the Rat" "The Finishing Touch" "A Chilling Wind" "The Harvester" "Father's Love" "Avian Pursuit" "Temperance" "Lonely Warrior" "Toxic Tidings" "Rebirth and Renewal" "More is Never Enough"
 	SetBorderColor 30 144 255
 	SetTextColor 0 125 200
 	SetFontSize 45
@@ -1851,33 +1786,55 @@ Hide # T1 ES Gear
 
 Hide # T1 Chests
 	Rarity Rare
-	BaseType "Grasping Mail" "General's Brigandine" "Triumphant Lamellar" "Sadist Garb" "Vaal Regalia"
+	Class == "Body Armours"
+	BaseType == "Titan Plate" "Legion Plate" "Royal Plate" "Supreme Leather" "Astral Leather" "Syndicate's Garb" "Arcane Vestment" "Nightweave Robe" "Twilight Regalia" "Full Wyvernscale" "Marshall's Brigandine" "Conquest Lamellar" "Grand Ringmail" "Paladin's Hauberk" "Sacred Chainmail" "Sanguine Raiment" "Torturer Garb" "Necrotic Armour"
+	SetTextColor 100 200 200
+	SetBorderColor 255 255 0
+	SetFontSize 40
+
+Hide # T1.5 Armour
+	Rarity Rare
+	Class == "Body Armours"
+	BaseType == "Astral Plate" "Assassin's Garb" "Zodiac Leather" "Vaal Regalia" "General's Brigandine" "Triumphant Lamellar" "Sadist Garb"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
 	SetFontSize 40
 
 Hide # T2 Chests
 	Rarity Rare
-	BaseType "Full Dragonscale" "Desert Brigandine" "Dragonscale Doublet" "Battle Lamellar" "Commander's Brigandine" "Exquisite Leather" "Destiny Leather" "Glorious Plate" "Gladiator Plate" "Crusader Plate" "Astral Plate" "Assassin's Garb" "Zodiac Leather"
+	Class == "Body Armours"
+	BaseType == "Full Dragonscale" "Desert Brigandine" "Dragonscale Doublet" "Battle Lamellar" "Commander's Brigandine" "Exquisite Leather" "Destiny Leather" "Glorious Plate" "Gladiator Plate" "Crusader Plate"
 	SetBorderColor 255 255 0
+	SetFontSize 38
 
 Hide # T1 Shields
 	Rarity Rare
-	BaseType "Titanium Spirit Shield" "Harmonic Spirit Shield" "Fossilised Spirit Shield" "Supreme Spiked Shield" "Mirrored Spiked Shield"
+	Class == "Shields"
+	BaseType == "Titanium Spirit Shield" "Harmonic Spirit Shield" "Fossilised Spirit Shield" "Pinnacle Tower Shield" "Ebony Tower Shield" "Supreme Spiked Shield" "Mirrored Spiked Shield"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
 	SetFontSize 35
 
 Hide # T2 Shields
 	Rarity Rare
-	BaseType "Vaal Spirit Shield" "Archon Kite Shield" "Angelic Kite Shield" "Ezomyte Tower Shield" "Shagreen Tower Shield" "Crested Tower Shield" "Mahogany Tower Shield" "Sovereign Spiked Shield" "Polished Spiked Shield" "Pinnacle Tower Shield" "Ebony Tower Shield"
+	Class == "Shields"
+	BaseType == "Vaal Spirit Shield" "Archon Kite Shield" "Angelic Kite Shield" "Ezomyte Tower Shield" "Shagreen Tower Shield" "Crested Tower Shield" "Mahogany Tower Shield" "Sovereign Spiked Shield" "Polished Spiked Shield"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
 	SetFontSize 35
 
 Hide # T1 Gloves
 	Rarity Rare
-	BaseType == "Debilitation Gauntlets" "Gripped Gloves" "Slink Gloves" "Sinistral Gloves" "Fingerless Silk Gloves" "Nexus Gloves" "Apothecary's Gloves" "Runic Gauntlets" "Dragonscale Gauntlets" "Murder Mitts" "Assassin's Mitts" "Hydrascale Gauntlets"
+	Class == "Gloves"
+	BaseType == "Precursor Gauntlets" "Leviathan Gauntlets" "Harpyskin Gloves" "Velour Gloves" "Sage Gloves" "Warlock Gloves" "Chimerascale Gauntlets" "Wyvernscale Gauntlets" "Martyr Gloves" "Paladin Gloves" "Infiltrator Mitts" "Phantom Mitts"
+	SetTextColor 100 200 200
+	SetBorderColor 255 255 0
+	SetFontSize 35
+
+Hide # T1.5 Gloves
+	Rarity Rare
+	Class == "Gloves"
+	BaseType == "Spiked Gloves" "Titan Gauntlets" "Thwarting Gauntlets" "Gripped Gloves" "Slink Gloves" "Trapsetter Gloves" "Sorcerer Gloves" "Fingerless Silk Gloves" "Nexus Gloves" "Apothecary's Gloves" "Runic Gauntlets" "Dragonscale Gauntlets"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
 	SetFontSize 35
@@ -1889,25 +1846,45 @@ Hide # T2 Gloves
 
 Hide # T1 Boots
 	Rarity Rare
-	BaseType == "Brimstone Treads" "Two-Toned Boots" "Sorcerer Boots" "Dreamquest Slippers" "Slink Boots" "Stormrider Boots" "Fugitive Boots" "Runic Sabatons" "Murder Boots" "Dragonscale Boots" "Dragonscale Boots" "Hydrascale Boots"
+	Class == "Boots"
+	BaseType == "Precursor Greaves" "Leviathan Greaves" "Harpyskin Boots" "Velour Boots" "Sage Slippers" "Warlock Boots" "Chimerascale Boots" "Wyvernscale Boots" "Martyr Boots" "Paladin Boots" "Infiltrator Boots" "Phantom Boots"
+	SetTextColor 100 200 200
+	SetBorderColor 255 255 0
+	SetFontSize 35
+
+Show # T1.5 Boots
+	Rarity Rare
+	Class == "Boots"
+	BaseType == "Titan Greaves" "Brimstone Treads" "Two-Toned Boots" "Sorcerer Boots" "Dreamquest Slippers" "Slink Boots" "Stormrider Boots" "Fugitive Boots" "Runic Sabatons" "Murder Boots" "Dragonscale Boots" "Hydrascale Boots"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
 	SetFontSize 35
 
 Hide # T2 Boots
 	Rarity Rare
-	BaseType == "Vaal Greaves" "Arcanist Slippers" "Stealth Boots" "Assassin's Boots" "Carnal Boots" "Crusader Boots" "Legion Boots" "Hydrascale Boots" "Titan Greaves"
+	Class == "Boots"
+	BaseType == "Vaal Greaves" "Arcanist Slippers" "Stealth Boots" "Assassin's Boots" "Carnal Boots" "Crusader Boots" "Legion Boots"
 	SetBorderColor 255 255 0
 
 Hide # T1 Helm
 	Rarity Rare
-	BaseType == "Lion Pelt" "Sinner Tricorne" "Bone Helmet" "Hubris Circlet" "Runic Crown" "Penitent Mask" "Nightmare Bascinet" "Archdemon Crown" "Blizzard Crown" "Pig-Faced Bascinet" "Fluted Bascinet" "Deicide Mask"
+	Class == "Helmets"
+	BaseType == "General's Helmet" "Conqueror's Helmet" "Giantslayer Helmet" "Dire Pelt" "Grizzly Pelt" "Majestic Pelt" "Moonlit Circlet" "Sunfire Circlet" "Lich's Circlet" "Knight Helm" "Conquest Helmet" "Haunted Bascinet" "Faithful Helmet" "Paladin Crown" "Divine Crown" "Jester Mask" "Ancient Mask" "Torturer's Mask"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
 	SetFontSize 35
 
+Hide # T1.5 Helm
+	Rarity Rare
+	Class == "Helmets"
+	BaseType == "Lion Pelt" "Sinner Tricorne" "Bone Helmet" "Hubris Circlet" "Runic Crown" "Penitent Mask" "Nightmare Bascinet" "Archdemon Crown" "Blizzard Crown" "Pig-Faced Bascinet" "Fluted Bascinet" "Deicide Mask"
+	SetTextColor 100 200 200
+	SetBorderColor 255 255 0
+	SetFontSize 40
+
 Hide # T2 Helm
 	Rarity Rare
+	Class == "Helmets"
 	BaseType == "Ezomyte Burgonet" "Samnite Helmet" "Silken Hood" "Ursine Pelt" "Mind Cage" "Solaris Circlet" "Praetor Crown" "Vaal Mask" "Royal Burgonet" "Eternal Burgonet"
 	SetBorderColor 255 255 0
 
