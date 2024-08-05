@@ -1839,15 +1839,7 @@ Show # T3 Quivers
 Show # T1 Armour
 	Rarity Rare
 	Class == "Body Armours"
-	BaseType == "Titan Plate" "Legion Plate" "Royal Plate" "Supreme Leather" "Astral Leather" "Syndicate's Garb" "Arcane Vestment" "Nightweave Robe" "Twilight Regalia" "Full Wyvernscale" "Marshall's Brigandine" "Conquest Lamellar" "Grand Ringmail" "Paladin's Hauberk" "Sacred Chainmail" "Sanguine Raiment" "Torturer Garb" "Necrotic Armour"
-	SetTextColor 100 200 200
-	SetBorderColor 255 255 0
-	SetFontSize 40
-
-Show # T1.5 Armour
-	Rarity Rare
-	Class == "Body Armours"
-	BaseType == "Astral Plate" "Assassin's Garb" "Zodiac Leather" "Vaal Regalia" "General's Brigandine" "Triumphant Lamellar" "Sadist Garb"
+	BaseType == "Royal Plate" "Syndicate's Garb" "Twilight Regalia" "Conquest Lamellar" "Sacred Chainmail" "Necrotic Armour"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
 	SetFontSize 40
@@ -1855,9 +1847,32 @@ Show # T1.5 Armour
 Show # T2 Armour
 	Rarity Rare
 	Class == "Body Armours"
+	BaseType == "Legion Plate" "Astral Leather" "Nightweave Robe" "Marshall's Brigandine" "Paladin's Hauberk" "Torturer Garb"
+	SetTextColor 100 200 200
+	SetBorderColor 255 255 0
+	SetFontSize 40
+
+Show # T3 Armour
+	Rarity Rare
+	Class == "Body Armours"
+	BaseType == "Titan Plate" "Supreme Leather" "Arcane Vestment" "Full Wyvernscale" "Grand Ringmail" "Sanguine Raiment"
+	SetTextColor 100 200 200
+	SetBorderColor 255 255 0
+	SetFontSize 40
+
+Show # T4 Armour
+	Rarity Rare
+	Class == "Body Armours"
+	BaseType == "Astral Plate" "Assassin's Garb" "Zodiac Leather" "Vaal Regalia" "General's Brigandine" "Triumphant Lamellar" "Sadist Garb"
+	SetTextColor 100 200 200
+	SetBorderColor 255 255 0
+	SetFontSize 40
+
+Show # T5+ Chests
+	Rarity Rare
+	Class == "Body Armours"
 	BaseType == "Full Dragonscale" "Desert Brigandine" "Dragonscale Doublet" "Battle Lamellar" "Commander's Brigandine" "Exquisite Leather" "Destiny Leather" "Glorious Plate" "Gladiator Plate" "Crusader Plate"
 	SetBorderColor 255 255 0
-	SetFontSize 38
 
 Show # Armour
 	Rarity Rare
@@ -1887,15 +1902,7 @@ Show # Shields
 Show # T1 Gloves
 	Rarity Rare
 	Class == "Gloves"
-	BaseType == "Precursor Gauntlets" "Leviathan Gauntlets" "Harpyskin Gloves" "Velour Gloves" "Sage Gloves" "Warlock Gloves" "Chimerascale Gauntlets" "Wyvernscale Gauntlets" "Martyr Gloves" "Paladin Gloves" "Infiltrator Mitts" "Phantom Mitts"
-	SetTextColor 100 200 200
-	SetBorderColor 255 255 0
-	SetFontSize 40
-
-Show # T1.5 Gloves
-	Rarity Rare
-	Class == "Gloves"
-	BaseType == "Spiked Gloves" "Titan Gauntlets" "Thwarting Gauntlets" "Gripped Gloves" "Slink Gloves" "Trapsetter Gloves" "Sorcerer Gloves" "Fingerless Silk Gloves" "Nexus Gloves" "Apothecary's Gloves" "Runic Gauntlets" "Dragonscale Gauntlets"
+	BaseType == "Leviathan Gauntlets" "Velour Gloves" "Warlock Gloves" "Wyvernscale Gauntlets" "Paladin Gloves" "Phantom Mitts"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
 	SetFontSize 40
@@ -1903,9 +1910,23 @@ Show # T1.5 Gloves
 Show # T2 Gloves
 	Rarity Rare
 	Class == "Gloves"
-	BaseType == "Shagreen Gloves" "Stealth Gloves" "Vaal Gauntlets" "Goliath Gauntlets" "Murder Mitts" "Assassin's Mitts" "Hydrascale Gauntlets"
+	BaseType == "Precursor Gauntlets" "Harpyskin Gloves" "Sage Gloves" "Chimerascale Gauntlets" "Martyr Gloves" "Infiltrator Mitts"
+	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
-	SetFontSize 38
+	SetFontSize 40
+
+Show # T3 Gloves
+	Rarity Rare
+	Class == "Gloves"
+	BaseType == "Spiked Gloves" "Titan Gauntlets" "Thwarting Gauntlets" "Gripped Gloves" "Slink Gloves" "Trapsetter Gloves" "Sorcerer Gloves" "Fingerless Silk Gloves" "Nexus Gloves" "Apothecary's Gloves" "Runic Gauntlets" "Dragonscale Gauntlets"
+	SetTextColor 100 200 200
+	SetBorderColor 255 255 0
+	SetFontSize 40
+
+Show # T4+ Gloves
+	Rarity Rare
+	BaseType == "Shagreen Gloves" "Stealth Gloves" "Vaal Gauntlets" "Goliath Gauntlets" "Spiked Gloves" "Titan Gauntlets" "Sorcerer Gloves"
+	SetBorderColor 255 255 0
 
 Show # Gloves
 	Rarity Rare
@@ -1915,15 +1936,7 @@ Show # Gloves
 Show # T1 Boots
 	Rarity Rare
 	Class == "Boots"
-	BaseType == "Precursor Greaves" "Leviathan Greaves" "Harpyskin Boots" "Velour Boots" "Sage Slippers" "Warlock Boots" "Chimerascale Boots" "Wyvernscale Boots" "Martyr Boots" "Paladin Boots" "Infiltrator Boots" "Phantom Boots"
-	SetTextColor 100 200 200
-	SetBorderColor 255 255 0
-	SetFontSize 40
-
-Show # T1.5 Boots
-	Rarity Rare
-	Class == "Boots"
-	BaseType == "Titan Greaves" "Brimstone Treads" "Two-Toned Boots" "Sorcerer Boots" "Dreamquest Slippers" "Slink Boots" "Stormrider Boots" "Fugitive Boots" "Runic Sabatons" "Murder Boots" "Dragonscale Boots" "Hydrascale Boots"
+	BaseType == "Leviathan Greaves" "Velour Boots" "Warlock Boots" "Wyvernscale Boots" "Paladin Boots" "Phantom Boots"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
 	SetFontSize 40
@@ -1931,9 +1944,24 @@ Show # T1.5 Boots
 Show # T2 Boots
 	Rarity Rare
 	Class == "Boots"
+	BaseType == "Precursor Greaves" "Harpyskin Boots" "Sage Slippers" "Chimerascale Boots" "Martyr Boots" "Infiltrator Boots"
+	SetTextColor 100 200 200
+	SetBorderColor 255 255 0
+	SetFontSize 40
+
+Show # T3 Boots
+	Rarity Rare
+	Class == "Boots"
+	BaseType == "Titan Greaves" "Brimstone Treads" "Two-Toned Boots" "Sorcerer Boots" "Dreamquest Slippers" "Slink Boots" "Stormrider Boots" "Fugitive Boots" "Runic Sabatons" "Murder Boots" "Dragonscale Boots" "Hydrascale Boots"
+	SetTextColor 100 200 200
+	SetBorderColor 255 255 0
+	SetFontSize 40
+
+Show # T4+ Boots
+	Rarity Rare
+	Class == "Boots"
 	BaseType == "Vaal Greaves" "Arcanist Slippers" "Stealth Boots" "Assassin's Boots" "Carnal Boots" "Crusader Boots" "Legion Boots"
 	SetBorderColor 255 255 0
-	SetFontSize 38
 
 Show # Boots
 	Rarity Rare
@@ -1941,18 +1969,10 @@ Show # Boots
 	SetBorderColor 255 255 0
 	Continue
 
-Show # T1 Helms
+Show # T1 Helm
 	Rarity Rare
 	Class == "Helmets"
-	BaseType == "General's Helmet" "Conqueror's Helmet" "Giantslayer Helmet" "Dire Pelt" "Grizzly Pelt" "Majestic Pelt" "Moonlit Circlet" "Sunfire Circlet" "Lich's Circlet" "Knight Helm" "Conquest Helmet" "Haunted Bascinet" "Faithful Helmet" "Paladin Crown" "Divine Crown" "Jester Mask" "Ancient Mask" "Torturer's Mask"
-	SetTextColor 100 200 200
-	SetBorderColor 255 255 0
-	SetFontSize 40
-
-Show # T1.5 Helm
-	Rarity Rare
-	Class == "Helmets"
-	BaseType == "Lion Pelt" "Sinner Tricorne" "Bone Helmet" "Hubris Circlet" "Runic Crown" "Penitent Mask" "Nightmare Bascinet" "Archdemon Crown" "Blizzard Crown" "Pig-Faced Bascinet" "Fluted Bascinet" "Deicide Mask"
+	BaseType == "Giantslayer Helmet" "Majestic Pelt" "Lich's Circlet" "Haunted Bascinet" "Divine Crown" "Torturer's Mask"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
 	SetFontSize 40
@@ -1960,9 +1980,30 @@ Show # T1.5 Helm
 Show # T2 Helm
 	Rarity Rare
 	Class == "Helmets"
+	BaseType == "Conqueror's Helmet" "Grizzly Pelt" "Sunfire Circlet" "Conquest Helmet" "Paladin Crown" "Ancient Mask"
+	SetTextColor 100 200 200
+	SetBorderColor 255 255 0
+	SetFontSize 40
+
+Show # T3 Helm
+	Rarity Rare
+	Class == "Helmets"
+	BaseType == "General's Helmet" "Dire Pelt" "Moonlit Circlet" "Knight Helm" "Faithful Helmet" "Jester Mask"
+	SetTextColor 100 200 200
+	SetBorderColor 255 255 0
+	SetFontSize 40
+
+Show # T4 Helm
+	Rarity Rare
+	Class == "Helmets"
+	BaseType == "Lion Pelt" "Sinner Tricorne" "Bone Helmet" "Hubris Circlet" "Runic Crown" "Penitent Mask" "Nightmare Bascinet" "Archdemon Crown" "Blizzard Crown" "Pig-Faced Bascinet" "Fluted Bascinet" "Deicide Mask"
+	SetTextColor 100 200 200
+
+Show # T5+ Helm
+	Rarity Rare
+	Class == "Helmets"
 	BaseType == "Ezomyte Burgonet" "Samnite Helmet" "Silken Hood" "Ursine Pelt" "Mind Cage" "Solaris Circlet" "Praetor Crown" "Vaal Mask" "Royal Burgonet" "Eternal Burgonet"
 	SetBorderColor 255 255 0
-	SetFontSize 38
 
 Show # Helm
 	Rarity Rare
