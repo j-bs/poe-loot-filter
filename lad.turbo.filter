@@ -375,8 +375,8 @@ Show # Heist Replica Uniques
 	PlayEffect Brown
 
 Show # Heist Currency
-	Class "Stackable Currency"
-	BaseType "Rogue's Marker" "Tailoring Orb" "Tempering Orb" "Secondary Regrading Lens" "Prime Regrading Lens"
+	Class == "Stackable Currency"
+	BaseType == "Tailoring Orb" "Tempering Orb" "Secondary Regrading Lens" "Prime Regrading Lens"
 	SetTextColor 255 181 0
 	SetBorderColor 255 181 0
 	PlayAlertSound 11 300
@@ -1138,12 +1138,12 @@ Show # Blighted Maps
 Show # T17 Maps
 	Class Map
 	MapTier == 17
-	SetTextColor 255 90 90
-	SetBorderColor 255 90 90
+	SetTextColor 160 32 240
+	SetBorderColor 160 32 240
 	SetFontSize 45
 	PlayAlertSound 4 300
-	MinimapIcon 0 Red Square
-	PlayEffect Red
+	MinimapIcon 0 Purple Square
+	PlayEffect Purple
 
 Show # Red T11+ Maps
 	Class Map
@@ -1292,13 +1292,11 @@ Show # SIX LINK
 # 	MinimapIcon 1 Pink Diamond
 # 	PlayEffect Pink Temp
 
-Show # SIX SOCKET
+Hide # SIX SOCKET
 	Sockets 6
 	SetTextColor 138 234 172
 	SetBorderColor 255 0 0
-	SetFontSize 45
-	PlayAlertSound 12 300
-	MinimapIcon 0 Yellow Hexagon
+	SetFontSize 40
 
 Show # Corrupted 3 White Weps/Shields
 	SocketGroup WWW
@@ -1447,20 +1445,34 @@ Show # stack Perandus Coins
 	SetTextColor 170 158 130
 	SetBorderColor 170 158 130
 
-Hide # Semi useful currency
-	Class Currency
-	BaseType "Glassblower's Bauble" "Orb of Alteration"
-	SetTextColor 170 158 130
-	SetBorderColor 170 158 130
-	SetFontSize 45
-
 Show # Useful low currency multistack
 	Class Currency
-	StackSize > 1
+	StackSize >= 5
 	BaseType "Orb of Augmentation" "Orb of Transmutation" "Jeweller's Orb" "Chromatic Orb" "Orb of Chance" "Orb of Alteration" "Glassblower's Bauble"
-	SetFontSize 43
 	SetTextColor 170 158 130
 	SetBorderColor 170 158 130
+
+Show # Rogue Markers
+	Class == "Stackable Currency"
+	BaseType == "Rogue's Marker"
+	StackSize >= 250
+	SetTextColor 170 158 130
+	SetBorderColor 170 158 130
+	SetFontSize 40
+
+Hide # Semi useful currency
+	Class Currency
+	BaseType "Orb of Alteration"
+	SetTextColor 170 158 130
+	SetBorderColor 170 158 130
+	SetFontSize 40
+
+Show # Override
+	Class Currency
+	BaseType "Glassblower's Bauble"
+	SetTextColor 170 158 130
+	SetBorderColor 170 158 130
+	SetFontSize 40
 
 Hide # Low Currency 1 Stacks
 	Class Currency
@@ -1469,16 +1481,16 @@ Hide # Low Currency 1 Stacks
 	SetTextColor 170 158 130
 	SetBorderColor 170 158 130
 
-Show # Low Currency Multistacks
+Hide # Low Currency Multistacks
 	Class Currency
-	StackSize >= 10
+	StackSize >= 5
 	BaseType "Portal Scroll" "Scroll of Wisdom" "Armourer's Scrap" "Blacksmith's Whetstone"
 	SetTextColor 170 158 130
 	SetBorderColor 170 158 130
 
 Hide # Low Currency Multistacks
 	Class Currency
-	StackSize < 10
+	StackSize < 5
 	BaseType "Portal Scroll" "Scroll of Wisdom" "Armourer's Scrap" "Blacksmith's Whetstone"
 	SetTextColor 170 158 130
 	SetBorderColor 170 158 130
@@ -1491,7 +1503,7 @@ Hide # Potentially Useful Currency Shards
 
 Hide # Hide worthless currency 
 	Class Currency
-	BaseType "Transmutation Shard" "Alteration Shard" "Alchemy Shard" "Scroll Fragment" "Binding Shard" "Engineer's Shard" "Horizon Shard" "Engineer's Orb" "Regal Shard" "Scroll of Wisdom" "Armourer's Scrap" "Blacksmith's Whetstone"
+	BaseType "Transmutation Shard" "Alteration Shard" "Alchemy Shard" "Scroll Fragment" "Binding Shard" "Engineer's Shard" "Horizon Shard" "Engineer's Orb" "Regal Shard" "Scroll of Wisdom" "Armourer's Scrap" "Blacksmith's Whetstone" "Rogue's Marker"
 
 Show # Default Currency
 	Class Currency

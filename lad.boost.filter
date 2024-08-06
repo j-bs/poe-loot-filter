@@ -393,8 +393,8 @@ Show # Heist Replica Uniques
 	PlayEffect Brown
 
 Show # Heist Currency
-	Class "Stackable Currency"
-	BaseType "Rogue's Marker" "Tailoring Orb" "Tempering Orb" "Secondary Regrading Lens" "Prime Regrading Lens"
+	Class == "Stackable Currency"
+	BaseType == "Tailoring Orb" "Tempering Orb" "Secondary Regrading Lens" "Prime Regrading Lens"
 	SetTextColor 255 181 0
 	SetBorderColor 255 181 0
 	PlayAlertSound 11 300
@@ -1155,12 +1155,12 @@ Show # Blighted Maps
 Show # T17 Maps
 	Class Map
 	MapTier == 17
-	SetTextColor 255 90 90
-	SetBorderColor 255 90 90
+	SetTextColor 160 32 240
+	SetBorderColor 160 32 240
 	SetFontSize 45
 	PlayAlertSound 4 300
-	MinimapIcon 0 Red Square
-	PlayEffect Red
+	MinimapIcon 0 Purple Square
+	PlayEffect Purple
 
 Show # Red T11+ Maps
 	Class Map
@@ -1324,9 +1324,8 @@ Show # SIX SOCKET
 	Sockets 6
 	SetTextColor 138 234 172
 	SetBorderColor 255 0 0
-	SetFontSize 45
+	SetFontSize 40
 	PlayAlertSound 12 300
-	MinimapIcon 0 Yellow Hexagon
 
 Show # Corrupted 3 White Weps/Shields
 	SocketGroup WWW
@@ -1472,20 +1471,27 @@ Show # Perandus Coins
 	SetTextColor 170 158 130
 	SetBorderColor 170 158 130
 
+Show # Useful low currency multistack
+	Class Currency
+	StackSize > 1
+	BaseType "Orb of Augmentation" "Orb of Transmutation" "Portal Scroll" "Jeweller's Orb" "Chromatic Orb" "Orb of Chance"
+	SetFontSize 42
+	SetTextColor 170 158 130
+	SetBorderColor 170 158 130
+
+Show # Rogue Markers
+	Class == "Stackable Currency"
+	BaseType == "Rogue's Marker"
+	SetTextColor 170 158 130
+	SetBorderColor 170 158 130
+	SetFontSize 40
+
 Show # Semi useful currency
 	Class Currency
 	BaseType "Glassblower's Bauble" "Orb of Alteration"
 	SetTextColor 170 158 130
 	SetBorderColor 170 158 130
-	SetFontSize 45
-
-Show # Useful low currency multistack
-	Class Currency
-	StackSize > 1
-	BaseType "Orb of Augmentation" "Orb of Transmutation" "Portal Scroll" "Jeweller's Orb" "Chromatic Orb" "Orb of Chance"
 	SetFontSize 40
-	SetTextColor 170 158 130
-	SetBorderColor 170 158 130
 
 Show # Useful low currency 1 stack
 	Class Currency
@@ -1830,7 +1836,6 @@ Show # T1 Armour
 	BaseType == "Royal Plate" "Syndicate's Garb" "Twilight Regalia" "Conquest Lamellar" "Sacred Chainmail" "Necrotic Armour"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
-	SetFontSize 35
 
 Show # T2 Armour
 	Rarity Rare
@@ -1838,20 +1843,18 @@ Show # T2 Armour
 	BaseType == "Legion Plate" "Astral Leather" "Nightweave Robe" "Marshall's Brigandine" "Paladin's Hauberk" "Torturer Garb"
 	SetTextColor 100 200 200
 	SetBorderColor 255 255 0
-	SetFontSize 35
 
 Show # T3 Armour
 	Rarity Rare
 	Class == "Body Armours"
 	BaseType == "Titan Plate" "Supreme Leather" "Arcane Vestment" "Full Wyvernscale" "Grand Ringmail" "Sanguine Raiment"
 	SetTextColor 100 200 200
-	SetBorderColor 255 255 0
 
 Show # T4 Armour
 	Rarity Rare
 	Class == "Body Armours"
 	BaseType == "Astral Plate" "Assassin's Garb" "Zodiac Leather" "Vaal Regalia" "General's Brigandine" "Triumphant Lamellar" "Sadist Garb"
-	SetTextColor 100 200 200
+	SetBorderColor 255 255 0
 
 Hide # T5+ Chests
 	Rarity Rare
