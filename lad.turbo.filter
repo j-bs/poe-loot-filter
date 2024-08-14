@@ -1081,12 +1081,12 @@ Show # Atlas Invitations
 Show # Influence Maps
 	Class Map
 	HasInfluence Redeemer Warlord Hunter Crusader Elder Shaper
-	SetTextColor 255 90 90
-	SetBorderColor 255 90 90
+	SetTextColor 0 0 255
+	SetBorderColor 0 0 255
 	SetFontSize 45
 	PlayAlertSound 4 300
-	MinimapIcon 0 Red Square
-	PlayEffect Red
+	MinimapIcon 0 Blue Square
+	PlayEffect Blue
 
 Show # Memory Maps
 	Class Memory
@@ -1378,7 +1378,7 @@ Hide
 # CURRENCY
 Show # T1 Currency
 	Class Currency
-	BaseType "Divine Orb" "Eternal Orb" "Mirror of Kalandra" "Albino Rhoa Feather" "Crusader's Exalted Orb" "Redeemer's Exalted Orb" "Hunter's Exalted Orb" "Warlord's Exalted Orb" "Awakener's Orb" "Mirror Shard" "Orb of Conflict" "Orb of Dominance" "Sacred Orb" "Exceptional Eldritch" "Fracturing Orb" "Valdo's Puzzle Box"
+	BaseType "Divine Orb" "Eternal Orb" "Mirror of Kalandra" "Albino Rhoa Feather" "Crusader's Exalted Orb" "Redeemer's Exalted Orb" "Hunter's Exalted Orb" "Warlord's Exalted Orb" "Awakener's Orb" "Mirror Shard" "Orb of Conflict" "Orb of Dominance" "Sacred Orb" "Exceptional Eldritch" "Fracturing Orb" "Valdo's Puzzle Box" "Veiled Orb"
 	SetBorderColor 255 0 255
 	SetTextColor 255 0 255
 	PlayAlertSound 1 300
@@ -1447,7 +1447,7 @@ Show # stack Perandus Coins
 
 Show # Useful low currency multistack
 	Class Currency
-	StackSize >= 5
+	StackSize >= 10
 	BaseType "Orb of Augmentation" "Orb of Transmutation" "Jeweller's Orb" "Chromatic Orb" "Orb of Chance" "Orb of Alteration" "Glassblower's Bauble"
 	SetTextColor 170 158 130
 	SetBorderColor 170 158 130
@@ -1460,13 +1460,6 @@ Show # Rogue Markers
 	SetBorderColor 170 158 130
 	SetFontSize 40
 
-Hide # Semi useful currency
-	Class Currency
-	BaseType "Orb of Alteration"
-	SetTextColor 170 158 130
-	SetBorderColor 170 158 130
-	SetFontSize 40
-
 Show # Override
 	Class Currency
 	BaseType "Glassblower's Bauble"
@@ -1474,36 +1467,15 @@ Show # Override
 	SetBorderColor 170 158 130
 	SetFontSize 40
 
-Hide # Low Currency 1 Stacks
+Hide # Low Currency
 	Class Currency
-	StackSize 1
-	BaseType "Scroll of Wisdom" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Chance" "Jeweller's Orb"
-	SetTextColor 170 158 130
-	SetBorderColor 170 158 130
-
-Hide # Low Currency Multistacks
-	Class Currency
-	StackSize >= 5
-	BaseType "Portal Scroll" "Scroll of Wisdom" "Armourer's Scrap" "Blacksmith's Whetstone"
-	SetTextColor 170 158 130
-	SetBorderColor 170 158 130
-
-Hide # Low Currency Multistacks
-	Class Currency
-	StackSize < 5
-	BaseType "Portal Scroll" "Scroll of Wisdom" "Armourer's Scrap" "Blacksmith's Whetstone"
-	SetTextColor 170 158 130
-	SetBorderColor 170 158 130
-
-Hide # Potentially Useful Currency Shards
-	Class Currency
-	BaseType "Chaos Shard" "Horizon Shard" "Regal Shard"
+	BaseType "Portal Scroll" "Scroll of Wisdom" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Jeweller's Orb" "Chromatic Orb" "Orb of Chance" "Orb of Alteration" "Glassblower's Bauble"
 	SetTextColor 170 158 130
 	SetBorderColor 170 158 130
 
 Hide # Hide worthless currency 
 	Class Currency
-	BaseType "Transmutation Shard" "Alteration Shard" "Alchemy Shard" "Scroll Fragment" "Binding Shard" "Engineer's Shard" "Horizon Shard" "Engineer's Orb" "Regal Shard" "Scroll of Wisdom" "Armourer's Scrap" "Blacksmith's Whetstone" "Rogue's Marker"
+	BaseType "Chaos Shard" "Regal Shard" "Horizon Shard" "Transmutation Shard" "Alteration Shard" "Alchemy Shard" "Scroll Fragment" "Binding Shard" "Engineer's Shard" "Horizon Shard" "Engineer's Orb" "Regal Shard" "Scroll of Wisdom" "Armourer's Scrap" "Blacksmith's Whetstone" "Rogue's Marker"
 
 Show # Default Currency
 	Class Currency
@@ -1617,31 +1589,11 @@ Show # T2 Veiled Mod
 	SetFontSize 40
 	PlayAlertSound 16 250
 
-Hide # Small Veiled Mod
-	Identified True
-	Rarity Rare
-	Width <= 2
-	Height <= 2
-	HasExplicitMod "Veil"
-	SetBorderColor 155 210 135
-	SetFontSize 40
-
-Hide # Small Veiled Mod
-	Identified True
-	Rarity Rare
-	Width <= 1
-	Height <= 4
-	HasExplicitMod "Veil"
-	SetBorderColor 155 210 135
-	SetFontSize 40
-
-Hide # Veiled Mod
+Show # Small Veiled Mod
 	Identified True
 	Rarity Rare
 	HasExplicitMod "Veil"
 	SetBorderColor 155 210 135
-	SetFontSize 38
-	PlayAlertSound 16 250
 
 Show # Bestiary Mod Items
 	Identified True
